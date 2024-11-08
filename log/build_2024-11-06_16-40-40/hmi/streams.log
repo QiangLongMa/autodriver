@@ -1,0 +1,42 @@
+[0.065s] Invoking command in '/home/mm/longshan11_6/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/hmi -- -j4 -l4
+[0.431s] [  2%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/main.cpp.o[0m
+[0.446s] [  4%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/mainwindow.cpp.o[0m
+[0.471s] [  6%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_mItem.cpp.o[0m
+[0.477s] [  8%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_mainwindow.cpp.o[0m
+[13.365s] [ 11%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_mmItem.cpp.o[0m
+[19.564s] [ 13%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_rclcomm.cpp.o[0m
+[30.798s] [ 15%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runcam.cpp.o[0m
+[39.955s] [ 17%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runglobal.cpp.o[0m
+[42.389s] [ 20%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_rungps.cpp.o[0m
+[44.238s] [ 22%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runlidar.cpp.o[0m
+[46.086s] [ 24%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runlocal.cpp.o[0m
+[49.472s] [ 26%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runrviz.cpp.o[0m
+[54.497s] [ 28%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runsocketcan.cpp.o[0m
+[58.835s] [ 31%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_toolKits.cpp.o[0m
+[58.917s] [ 33%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runcontrol.cpp.o[0m
+[63.456s] [ 35%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runcenterpoint.cpp.o[0m
+[67.236s] [ 37%] [32m[1mLinking CXX executable hmi[0m
+[74.959s] [100%] Built target hmi
+[75.137s] Invoked command in '/home/mm/longshan11_6/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/hmi -- -j4 -l4
+[75.860s] Invoking command in '/home/mm/longshan11_6/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/hmi
+[75.892s] -- Install configuration: ""
+[75.893s] -- Installing: /home/mm/longshan11_6/install/hmi/lib/hmi/hmi
+[75.977s] -- Set runtime path of "/home/mm/longshan11_6/install/hmi/lib/hmi/hmi" to ""
+[75.977s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/launch
+[75.986s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/launch/hmi.launch.py
+[75.993s] -- Installing: /home/mm/longshan11_6/install/hmi/share/ament_index/resource_index/package_run_dependencies/hmi
+[75.998s] -- Installing: /home/mm/longshan11_6/install/hmi/share/ament_index/resource_index/parent_prefix_path/hmi
+[76.017s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/environment/ament_prefix_path.sh
+[76.017s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/environment/ament_prefix_path.dsv
+[76.018s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/environment/path.sh
+[76.018s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/environment/path.dsv
+[76.018s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/local_setup.bash
+[76.018s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/local_setup.sh
+[76.018s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/local_setup.zsh
+[76.018s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/local_setup.dsv
+[76.019s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/package.dsv
+[76.019s] -- Installing: /home/mm/longshan11_6/install/hmi/share/ament_index/resource_index/packages/hmi
+[76.019s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/cmake/hmiConfig.cmake
+[76.019s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/cmake/hmiConfig-version.cmake
+[76.022s] -- Installing: /home/mm/longshan11_6/install/hmi/share/hmi/package.xml
+[76.033s] Invoked command in '/home/mm/longshan11_6/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/hmi

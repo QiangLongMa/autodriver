@@ -1,0 +1,17 @@
+/home/mm/longshan11_6/install/global/lib/global/global_node
+/home/mm/longshan11_6/install/global/share/global/launch/global.launch.py
+/home/mm/longshan11_6/install/global/share/ament_index/resource_index/package_run_dependencies/global
+/home/mm/longshan11_6/install/global/share/ament_index/resource_index/parent_prefix_path/global
+/home/mm/longshan11_6/install/global/share/global/environment/ament_prefix_path.sh
+/home/mm/longshan11_6/install/global/share/global/environment/ament_prefix_path.dsv
+/home/mm/longshan11_6/install/global/share/global/environment/path.sh
+/home/mm/longshan11_6/install/global/share/global/environment/path.dsv
+/home/mm/longshan11_6/install/global/share/global/local_setup.bash
+/home/mm/longshan11_6/install/global/share/global/local_setup.sh
+/home/mm/longshan11_6/install/global/share/global/local_setup.zsh
+/home/mm/longshan11_6/install/global/share/global/local_setup.dsv
+/home/mm/longshan11_6/install/global/share/global/package.dsv
+/home/mm/longshan11_6/install/global/share/ament_index/resource_index/packages/global
+/home/mm/longshan11_6/install/global/share/global/cmake/globalConfig.cmake
+/home/mm/longshan11_6/install/global/share/global/cmake/globalConfig-version.cmake
+/home/mm/longshan11_6/install/global/share/global/package.xml

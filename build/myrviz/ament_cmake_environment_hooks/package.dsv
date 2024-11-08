@@ -1,0 +1,4 @@
+source;share/myrviz/local_setup.bash
+source;share/myrviz/local_setup.dsv
+source;share/myrviz/local_setup.sh
+source;share/myrviz/local_setup.zsh

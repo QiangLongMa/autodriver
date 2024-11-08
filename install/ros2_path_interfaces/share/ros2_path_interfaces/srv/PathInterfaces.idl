@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ros2_path_interfaces/srv/PathInterfaces.srv
+// generated code does not contain a copyright notice
+
+
+module ros2_path_interfaces {
+  module srv {
+    struct PathInterfaces_Request {
+      int32 global_request;
+    };
+    struct PathInterfaces_Response {
+      int32 local_response;
+
+      sequence<double> data;
+    };
+  };
+};

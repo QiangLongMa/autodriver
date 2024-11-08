@@ -1,0 +1,3 @@
+Invoking command in '/home/mm/longshan11_6/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/myrviz -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/myrviz
+Invoked command in '/home/mm/longshan11_6/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/myrviz -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/myrviz
+Invoking command in '/home/mm/longshan11_6/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/myrviz -- -j4 -l4

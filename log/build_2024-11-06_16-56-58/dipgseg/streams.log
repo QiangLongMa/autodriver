@@ -1,0 +1,24 @@
+[0.354s] Invoking command in '/home/mm/longshan11_6/build/dipgseg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/dipgseg -- -j4 -l4
+[0.688s] [100%] Built target demo_node
+[0.720s] Invoked command in '/home/mm/longshan11_6/build/dipgseg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/dipgseg -- -j4 -l4
+[0.782s] Invoking command in '/home/mm/longshan11_6/build/dipgseg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/dipgseg
+[0.801s] -- Install configuration: ""
+[0.802s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/lib/dipgseg/demo_node
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/launch
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/launch/run.launch.py
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/ament_index/resource_index/package_run_dependencies/dipgseg
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/ament_index/resource_index/parent_prefix_path/dipgseg
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/ament_prefix_path.sh
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/ament_prefix_path.dsv
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/path.sh
+[0.805s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/path.dsv
+[0.806s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.bash
+[0.806s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.sh
+[0.806s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.zsh
+[0.810s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.dsv
+[0.810s] -- Installing: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/package.dsv
+[0.810s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/ament_index/resource_index/packages/dipgseg
+[0.811s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/cmake/dipgsegConfig.cmake
+[0.811s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/cmake/dipgsegConfig-version.cmake
+[0.811s] -- Up-to-date: /home/mm/longshan11_6/install/dipgseg/share/dipgseg/package.xml
+[0.867s] Invoked command in '/home/mm/longshan11_6/build/dipgseg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/dipgseg

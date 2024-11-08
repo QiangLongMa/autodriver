@@ -1,0 +1,48 @@
+[0.061s] Invoking command in '/home/mm/longshan11_6/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/control -- -j4 -l4
+[0.206s] [35m[1mScanning dependencies of target control_node[0m
+[0.361s] [  9%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[5.846s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::gps_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.846s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:99:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpre_index[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.847s]    99 |                             int [01;35m[Kpre_index[m[K = (index + 5) > (globalPath.cols()-1) ?
+[5.847s]       |                                 [01;35m[K^~~~~~~~~[m[K
+[5.847s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:150:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.848s]   150 |                             double [01;35m[KdeltaX[m[K =  dx;
+[5.848s]       |                                    [01;35m[K^~~~~~[m[K
+[5.849s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:151:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.850s]   151 |                             double [01;35m[KdeltaY[m[K =  dy;
+[5.851s]       |                                    [01;35m[K^~~~~~[m[K
+[5.851s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:152:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.852s]   152 |                             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+[5.852s]       |                                    [01;35m[K^~~~~~~~[m[K
+[5.853s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:170:43:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_sw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.853s]   170 |                             static double [01;35m[Klast_sw[m[K = 0;
+[5.853s]       |                                           [01;35m[K^~~~~~~[m[K
+[5.922s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::timer_can_callback0()[m[K’:
+[5.923s] [01m[K/home/mm/longshan11_6/src/control/src/control_node.cpp:294:32:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocal_length[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.923s]   294 |                         double [01;35m[Klocal_length[m[K = optTrajxy.cols()*0.5;
+[5.924s]       |                                [01;35m[K^~~~~~~~~~~~[m[K
+[17.112s] [ 18%] [32m[1mLinking CXX executable control_node[0m
+[19.366s] [100%] Built target control_node
+[19.387s] Invoked command in '/home/mm/longshan11_6/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/control -- -j4 -l4
+[19.445s] Invoking command in '/home/mm/longshan11_6/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/control
+[19.459s] -- Install configuration: ""
+[19.461s] -- Installing: /home/mm/longshan11_6/install/control/lib/control/control_node
+[19.472s] -- Set runtime path of "/home/mm/longshan11_6/install/control/lib/control/control_node" to ""
+[19.473s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/launch
+[19.474s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/launch/control.launch.py
+[19.477s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[19.478s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[19.480s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/environment/ament_prefix_path.sh
+[19.482s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/environment/ament_prefix_path.dsv
+[19.482s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/environment/path.sh
+[19.483s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/environment/path.dsv
+[19.483s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/local_setup.bash
+[19.484s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/local_setup.sh
+[19.485s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/local_setup.zsh
+[19.485s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/local_setup.dsv
+[19.486s] -- Installing: /home/mm/longshan11_6/install/control/share/control/package.dsv
+[19.490s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/ament_index/resource_index/packages/control
+[19.491s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/cmake/controlConfig.cmake
+[19.491s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/cmake/controlConfig-version.cmake
+[19.491s] -- Up-to-date: /home/mm/longshan11_6/install/control/share/control/package.xml
+[19.495s] Invoked command in '/home/mm/longshan11_6/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/control

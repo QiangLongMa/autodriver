@@ -1,0 +1,6 @@
+Invoking command in '/home/mm/longshan11_6/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/ros2_path_interfaces -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/ros2_path_interfaces
+Invoked command in '/home/mm/longshan11_6/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/ros2_path_interfaces -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/ros2_path_interfaces
+Invoking command in '/home/mm/longshan11_6/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/ros2_path_interfaces -- -j4 -l4
+Invoked command in '/home/mm/longshan11_6/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/ros2_path_interfaces -- -j4 -l4
+Invoking command in '/home/mm/longshan11_6/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/ros2_path_interfaces
+Invoked command in '/home/mm/longshan11_6/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/ros2_path_interfaces

@@ -1,0 +1,25 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
+[01m[K/home/mm/longshan11_6/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mm/longshan11_6/src/myrviz/src/pubrviz.cpp:272:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocalid[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  272 |         static int [01;35m[Klocalid[m[K =0;
+      |                    [01;35m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable points_and_lines_publisher[0m
+[100%] Built target points_and_lines_publisher
+-- Install configuration: ""
+-- Installing: /home/mm/longshan11_6/install/myrviz/lib/myrviz/points_and_lines_publisher
+-- Set runtime path of "/home/mm/longshan11_6/install/myrviz/lib/myrviz/points_and_lines_publisher" to ""
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/environment/ament_prefix_path.sh
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/environment/path.sh
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/environment/path.dsv
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/local_setup.bash
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/local_setup.sh
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/local_setup.zsh
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/local_setup.dsv
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/package.dsv
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/ament_index/resource_index/packages/myrviz
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake
+-- Installing: /home/mm/longshan11_6/install/myrviz/share/myrviz/package.xml

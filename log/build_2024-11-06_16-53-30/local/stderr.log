@@ -1,0 +1,5 @@
+In file included from [01m[K/home/mm/longshan11_6/src/local/./include/localFuns.h:5[m[K,
+                 from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:14[m[K:
+[01m[K/home/mm/longshan11_6/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+   64 |     inline double [01;35m[Kd2r[m[K(double theta);
+      |                   [01;35m[K^~~[m[K

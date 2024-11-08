@@ -1,0 +1,6 @@
+Invoking command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nvidia/weiLiu/auto_v10.1.1/src/control -DCMAKE_INSTALL_PREFIX=/home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control
+Invoked command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nvidia/weiLiu/auto_v10.1.1/src/control -DCMAKE_INSTALL_PREFIX=/home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control
+Invoking command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control -- -j8 -l8
+Invoked command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control -- -j8 -l8
+Invoking command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control
+Invoked command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control

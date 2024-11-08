@@ -1,0 +1,33 @@
+[0.028s] Invoking command in '/home/mm/longshan11_6/build/local': AMENT_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan11_6/build/local -- -j4 -l4
+[0.104s] [35m[1mScanning dependencies of target local_node3[0m
+[0.193s] [  5%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/local_node3.cpp.o[0m
+[6.482s] In file included from [01m[K/home/mm/longshan11_6/src/local/./include/localFuns.h:5[m[K,
+[6.482s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:14[m[K:
+[6.482s] [01m[K/home/mm/longshan11_6/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+[6.483s]    64 |     inline double [01;35m[Kd2r[m[K(double theta);
+[6.483s]       |                   [01;35m[K^~~[m[K
+[12.902s] [ 11%] [32m[1mLinking CXX executable local_node3[0m
+[14.381s] [100%] Built target local_node3
+[14.394s] Invoked command in '/home/mm/longshan11_6/build/local' returned '0': AMENT_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan11_6/build/local -- -j4 -l4
+[14.449s] Invoking command in '/home/mm/longshan11_6/build/local': AMENT_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mm/longshan11_6/build/local
+[14.459s] -- Install configuration: ""
+[14.459s] -- Installing: /home/mm/longshan11_6/install/local/lib/local/local_node3
+[14.469s] -- Set runtime path of "/home/mm/longshan11_6/install/local/lib/local/local_node3" to ""
+[14.469s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/launch
+[14.469s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/launch/local.launch.py
+[14.470s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/ament_index/resource_index/package_run_dependencies/local
+[14.470s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/ament_index/resource_index/parent_prefix_path/local
+[14.470s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/environment/ament_prefix_path.sh
+[14.470s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/environment/ament_prefix_path.dsv
+[14.471s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/environment/path.sh
+[14.471s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/environment/path.dsv
+[14.471s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/local_setup.bash
+[14.471s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/local_setup.sh
+[14.471s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/local_setup.zsh
+[14.472s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/local_setup.dsv
+[14.472s] -- Installing: /home/mm/longshan11_6/install/local/share/local/package.dsv
+[14.472s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/ament_index/resource_index/packages/local
+[14.472s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/cmake/localConfig.cmake
+[14.472s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/cmake/localConfig-version.cmake
+[14.472s] -- Up-to-date: /home/mm/longshan11_6/install/local/share/local/package.xml
+[14.476s] Invoked command in '/home/mm/longshan11_6/build/local' returned '0': AMENT_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mm/longshan11_6/build/local

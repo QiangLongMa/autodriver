@@ -1,0 +1,38 @@
+In file included from [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:1[m[K:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:[m[K In constructor ‘[01m[KCan::Can()[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:58:46:[m[K [01;35m[Kwarning: [m[K‘[01m[KCan::can_index_3[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+   58 |  UINT can_index_0, can_index_1, can_index_2, [01;35m[Kcan_index_3[m[K;//0~4294967295。无符号
+      |                                              [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:55:8:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat Can::Vehspeed[m[K’ [[01;35m[K-Wreorder[m[K]
+   55 |  float [01;35m[KVehspeed[m[K;
+      |        [01;35m[K^~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:6:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+    6 | [01;35m[KCan[m[K::Can():can_index_0(0),can_index_1(1),can_index_2(2),can_index_3(3),Vehspeed(-1){
+      | [01;35m[K^~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In destructor ‘[01m[KCan::~Can()[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:37:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   37 |  int [01;35m[Kreturn_code2[m[K = send(0x1C5, data1); //0x1C5
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In member function ‘[01m[Kvoid Can::ExitModle()[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:183:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  183 |  int [01;35m[Kreturn_code2[m[K = send(0x1C5, data1); //0x1C5
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In member function ‘[01m[Kint Can::send_repname(ControlQuantity&, EnableAutoDrive&, Car_Light_Control&)[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:201:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KgearASK[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  201 |  int [01;35m[KgearASK[m[K = enable_auto.gear_ask;
+      |      [01;35m[K^~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:203:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KSpeedUpAskMSG[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  203 |  int [01;35m[KSpeedUpAskMSG[m[K = ControlAskMSG | (speedASK << 5);
+      |      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:283:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code0[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  283 |  int [01;35m[Kreturn_code0[m[K = send(0x20, data1); //0x20
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/localFuns.cpp:[m[K In function ‘[01m[Kint local::frenet2Cartesian(const MatrixXd&, const double&, const double&, const int&, Eigen::Vector2d&)[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/localFuns.cpp:325:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ks[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  325 |     int frenet2Cartesian(const Eigen::MatrixXd& globalPath, [01;35m[Kconst double& s[m[K, const double& d, const int& minIndex, Eigen::Vector2d& cartesianXY){
+      |                                                             [01;35m[K~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/lqr.cpp:2[m[K:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/RiccatiSolver.h:[m[K In function ‘[01m[Kbool solveRiccatiArimotoPotter(const MatrixXd&, const MatrixXd&, const MatrixXd&, const MatrixXd&, Eigen::MatrixXd&)[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/RiccatiSolver.h:76:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdim_u[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   76 |  const unsigned int [01;35m[Kdim_u[m[K = B.cols();
+      |                     [01;35m[K^~~~~[m[K

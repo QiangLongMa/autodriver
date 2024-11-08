@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target local_node3[0m
+[  5%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/local_node3.cpp.o[0m
+[ 11%] [32m[1mLinking CXX executable local_node3[0m
+[100%] Built target local_node3
+-- Install configuration: ""
+-- Installing: /home/mm/longshan11_6/install/local/lib/local/local_node3
+-- Set runtime path of "/home/mm/longshan11_6/install/local/lib/local/local_node3" to ""
+-- Installing: /home/mm/longshan11_6/install/local/share/local/launch
+-- Installing: /home/mm/longshan11_6/install/local/share/local/launch/local.launch.py
+-- Installing: /home/mm/longshan11_6/install/local/share/ament_index/resource_index/package_run_dependencies/local
+-- Installing: /home/mm/longshan11_6/install/local/share/ament_index/resource_index/parent_prefix_path/local
+-- Installing: /home/mm/longshan11_6/install/local/share/local/environment/ament_prefix_path.sh
+-- Installing: /home/mm/longshan11_6/install/local/share/local/environment/ament_prefix_path.dsv
+-- Installing: /home/mm/longshan11_6/install/local/share/local/environment/path.sh
+-- Installing: /home/mm/longshan11_6/install/local/share/local/environment/path.dsv
+-- Installing: /home/mm/longshan11_6/install/local/share/local/local_setup.bash
+-- Installing: /home/mm/longshan11_6/install/local/share/local/local_setup.sh
+-- Installing: /home/mm/longshan11_6/install/local/share/local/local_setup.zsh
+-- Installing: /home/mm/longshan11_6/install/local/share/local/local_setup.dsv
+-- Installing: /home/mm/longshan11_6/install/local/share/local/package.dsv
+-- Installing: /home/mm/longshan11_6/install/local/share/ament_index/resource_index/packages/local
+-- Installing: /home/mm/longshan11_6/install/local/share/local/cmake/localConfig.cmake
+-- Installing: /home/mm/longshan11_6/install/local/share/local/cmake/localConfig-version.cmake
+-- Installing: /home/mm/longshan11_6/install/local/share/local/package.xml

@@ -1,0 +1,37 @@
+[3.183s] Invoking command in '/home/mm/longshan11_6/src/draw_messages': PYTHONPATH=/home/mm/longshan11_6/build/draw_messages/prefix_override:/home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/draw_messages build --build-base /home/mm/longshan11_6/build/draw_messages/build install --record /home/mm/longshan11_6/build/draw_messages/install.log --install-scripts $base/lib/draw_messages --single-version-externally-managed install_data
+[4.201s] running egg_info
+[4.205s] creating ../../build/draw_messages/draw_messages.egg-info
+[4.205s] writing ../../build/draw_messages/draw_messages.egg-info/PKG-INFO
+[4.206s] writing dependency_links to ../../build/draw_messages/draw_messages.egg-info/dependency_links.txt
+[4.206s] writing entry points to ../../build/draw_messages/draw_messages.egg-info/entry_points.txt
+[4.206s] writing requirements to ../../build/draw_messages/draw_messages.egg-info/requires.txt
+[4.206s] writing top-level names to ../../build/draw_messages/draw_messages.egg-info/top_level.txt
+[4.233s] writing manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'
+[4.374s] reading manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'
+[4.375s] writing manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'
+[4.376s] running build
+[4.376s] running build_py
+[4.376s] creating /home/mm/longshan11_6/build/draw_messages/build
+[4.377s] creating /home/mm/longshan11_6/build/draw_messages/build/lib
+[4.377s] creating /home/mm/longshan11_6/build/draw_messages/build/lib/draw_messages
+[4.378s] copying draw_messages/mymessages.py -> /home/mm/longshan11_6/build/draw_messages/build/lib/draw_messages
+[4.380s] copying draw_messages/__init__.py -> /home/mm/longshan11_6/build/draw_messages/build/lib/draw_messages
+[4.384s] running install
+[4.384s] running install_lib
+[4.386s] creating /home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages/draw_messages
+[4.389s] copying /home/mm/longshan11_6/build/draw_messages/build/lib/draw_messages/mymessages.py -> /home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages/draw_messages
+[4.390s] copying /home/mm/longshan11_6/build/draw_messages/build/lib/draw_messages/__init__.py -> /home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages/draw_messages
+[4.397s] byte-compiling /home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages/draw_messages/mymessages.py to mymessages.cpython-38.pyc
+[4.405s] byte-compiling /home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages/draw_messages/__init__.py to __init__.cpython-38.pyc
+[4.407s] running install_data
+[4.408s] creating /home/mm/longshan11_6/install/draw_messages/share/ament_index
+[4.409s] creating /home/mm/longshan11_6/install/draw_messages/share/ament_index/resource_index
+[4.410s] creating /home/mm/longshan11_6/install/draw_messages/share/ament_index/resource_index/packages
+[4.410s] copying resource/draw_messages -> /home/mm/longshan11_6/install/draw_messages/share/ament_index/resource_index/packages
+[4.412s] copying package.xml -> /home/mm/longshan11_6/install/draw_messages/share/draw_messages
+[4.412s] running install_egg_info
+[4.420s] Copying ../../build/draw_messages/draw_messages.egg-info to /home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages/draw_messages-0.0.0-py3.8.egg-info
+[4.424s] running install_scripts
+[4.468s] Installing real_time_plot script to /home/mm/longshan11_6/install/draw_messages/lib/draw_messages
+[4.469s] writing list of installed files to '/home/mm/longshan11_6/build/draw_messages/install.log'
+[4.538s] Invoked command in '/home/mm/longshan11_6/src/draw_messages' returned '0': PYTHONPATH=/home/mm/longshan11_6/build/draw_messages/prefix_override:/home/mm/longshan11_6/install/draw_messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/draw_messages build --build-base /home/mm/longshan11_6/build/draw_messages/build install --record /home/mm/longshan11_6/build/draw_messages/install.log --install-scripts $base/lib/draw_messages --single-version-externally-managed install_data

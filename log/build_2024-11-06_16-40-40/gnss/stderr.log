@@ -1,0 +1,19 @@
+In file included from [01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/data_parser.h:27[m[K,
+                 from [01m[K/home/mm/longshan11_6/src/gnss/stream/raw_stream.h:27[m[K,
+                 from [01m[K/home/mm/longshan11_6/src/gnss/gnss_node.cc:3[m[K:
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual gnss::MessageType gnss::Parser::GetMessage(void**)[m[K’:
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:95:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   95 |   virtual MessageType GetMessage([01;35m[KMessagePtr* message_ptr[m[K) { return MessageType::NONE; }
+      |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfoVec*)[m[K’:
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:96:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessages[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   96 |   virtual void GetMessages([01;35m[KMessageInfoVec* messages[m[K) {}
+      |                            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfo*)[m[K’:
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:97:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   97 |   virtual void GetMessages([01;35m[KMessageInfo* message[m[K) {}
+      |                            [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual bool gnss::Parser::GetInsStat(void**)[m[K’:
+[01m[K/home/mm/longshan11_6/src/gnss/stream/../parser/parser.h:98:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   98 |   virtual bool GetInsStat([01;35m[KMessagePtr *message_ptr[m[K) { return false; }
+      |                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K

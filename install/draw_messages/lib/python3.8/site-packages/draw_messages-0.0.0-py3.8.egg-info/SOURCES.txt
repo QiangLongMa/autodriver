@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/draw_messages/draw_messages.egg-info/PKG-INFO
+../../build/draw_messages/draw_messages.egg-info/SOURCES.txt
+../../build/draw_messages/draw_messages.egg-info/dependency_links.txt
+../../build/draw_messages/draw_messages.egg-info/entry_points.txt
+../../build/draw_messages/draw_messages.egg-info/requires.txt
+../../build/draw_messages/draw_messages.egg-info/top_level.txt
+../../build/draw_messages/draw_messages.egg-info/zip-safe
+draw_messages/__init__.py
+draw_messages/mymessages.py
+resource/draw_messages
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

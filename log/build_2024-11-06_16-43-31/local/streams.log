@@ -1,0 +1,89 @@
+[0.060s] Invoking command in '/home/mm/longshan11_6/build/local': AMENT_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan11_6/build/local -- -j4 -l4
+[0.260s] [35m[1mScanning dependencies of target local_node3[0m
+[0.376s] [  5%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/Calobs.cpp.o[0m
+[0.389s] [ 11%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/local_node3.cpp.o[0m
+[0.389s] [ 16%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/QP.cpp.o[0m
+[1.419s] [ 22%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/localmath.cpp.o[0m
+[3.441s] [ 27%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/piecewise_jerk_path_problem.cpp.o[0m
+[3.889s] [ 33%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/piecewise_jerk_problem.cpp.o[0m
+[4.529s] [ 38%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/piecewise_jerk_speed_optimizer.cpp.o[0m
+[5.287s] [ 44%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/piecewise_jerk_speed_problem.cpp.o[0m
+[5.387s] [ 50%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/piecewise_jerk_trajectory1d.cpp.o[0m
+[6.193s] [ 55%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/quintic_polynomial_curve1d.cpp.o[0m
+[6.877s] [ 61%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/speed_.cpp.o[0m
+[7.348s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:[m[K In member function ‘[01m[Kstd::array<double, 6> local_trajs_node::Decidestartsl(tool::frentPoint&, int, bool, int, Eigen::MatrixXd&, Eigen::VectorXd&, bool)[m[K’:
+[7.348s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1547:99:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmin(int, size_t)[m[K’
+[7.349s]  1547 |            auto prev_matched_index = std::min(position_matched_index + 1, prev_trajectory_size - 1[01;31m[K)[m[K;
+[7.349s]       |                                                                                                   [01;31m[K^[m[K
+[7.350s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[7.351s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[7.351s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1[m[K:
+[7.352s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)[m[K’
+[7.352s]   198 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b)
+[7.353s]       |     [01;36m[K^~~[m[K
+[7.353s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.354s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1547:99:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’})
+[7.355s]  1547 |            auto prev_matched_index = std::min(position_matched_index + 1, prev_trajectory_size - 1[01;36m[K)[m[K;
+[7.355s]       |                                                                                                   [01;36m[K^[m[K
+[7.356s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[7.356s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[7.357s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1[m[K:
+[7.357s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)[m[K’
+[7.358s]   246 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[7.359s]       |     [01;36m[K^~~[m[K
+[7.360s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.360s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1547:99:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’})
+[7.361s]  1547 |            auto prev_matched_index = std::min(position_matched_index + 1, prev_trajectory_size - 1[01;36m[K)[m[K;
+[7.361s]       |                                                                                                   [01;36m[K^[m[K
+[7.363s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[7.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:18[m[K,
+[7.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[7.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[7.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[7.366s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1[m[K:
+[7.367s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)[m[K’
+[7.367s]  3450 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l)
+[7.368s]       |     [01;36m[K^~~[m[K
+[7.368s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.368s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1547:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[7.369s]  1547 |            auto prev_matched_index = std::min(position_matched_index + 1, prev_trajectory_size - 1[01;36m[K)[m[K;
+[7.369s]       |                                                                                                   [01;36m[K^[m[K
+[7.371s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[7.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:18[m[K,
+[7.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[7.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[7.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[7.372s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1[m[K:
+[7.373s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3456:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)[m[K’
+[7.373s]  3456 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[7.373s]       |     [01;36m[K^~~[m[K
+[7.373s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3456:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.373s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1547:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[7.377s]  1547 |            auto prev_matched_index = std::min(position_matched_index + 1, prev_trajectory_size - 1[01;36m[K)[m[K;
+[7.377s]       |                                                                                                   [01;36m[K^[m[K
+[7.405s] [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1586:83:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::array<double, 6>[m[K’ and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[7.405s]  1586 |                 localpath(2, prev_matched_index), localpath(6, prev_matched_index)[01;31m[K}[m[K;
+[7.406s]       |                                                                                   [01;31m[K^[m[K
+[7.407s] In file included from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[7.408s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[7.408s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[7.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[7.409s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:1[m[K:
+[7.410s] [01m[K/usr/include/c++/9/array:94:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<double, 6>& std::array<double, 6>::operator=(const std::array<double, 6>&)[m[K’
+[7.411s]    94 |     struct [01;36m[Karray[m[K
+[7.411s]       |            [01;36m[K^~~~~[m[K
+[7.412s] [01m[K/usr/include/c++/9/array:94:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::array<double, 6>&[m[K’
+[7.413s] [01m[K/usr/include/c++/9/array:94:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<double, 6>& std::array<double, 6>::operator=(std::array<double, 6>&&)[m[K’
+[7.413s] [01m[K/usr/include/c++/9/array:94:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::array<double, 6>&&[m[K’
+[8.354s] [ 66%] [32mBuilding CXX object CMakeFiles/local_node3.dir/src/toolKits.cpp.o[0m
+[12.675s] In file included from [01m[K/home/mm/longshan11_6/src/local/./include/localFuns.h:5[m[K,
+[12.675s]                  from [01m[K/home/mm/longshan11_6/src/local/src/local_node3.cpp:14[m[K:
+[12.675s] [01m[K/home/mm/longshan11_6/src/local/./include/toolKits.h:[m[K At global scope:
+[12.675s] [01m[K/home/mm/longshan11_6/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+[12.676s]    64 |     inline double [01;35m[Kd2r[m[K(double theta);
+[12.676s]       |                   [01;35m[K^~~[m[K
+[13.579s] make[2]: *** [CMakeFiles/local_node3.dir/build.make:154：CMakeFiles/local_node3.dir/src/local_node3.cpp.o] 错误 1
+[13.579s] make[2]: *** 正在等待未完成的任务....
+[21.031s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/local_node3.dir/all] 错误 2
+[21.032s] make: *** [Makefile:141：all] 错误 2
+[21.032s] Invoked command in '/home/mm/longshan11_6/build/local' returned '2': AMENT_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan11_6/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan11_6/build/local -- -j4 -l4

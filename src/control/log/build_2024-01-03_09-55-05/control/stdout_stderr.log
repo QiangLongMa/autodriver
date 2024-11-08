@@ -1,0 +1,119 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda-11.4 (found suitable exact version "11.4") 
+-- Found OpenCV: /usr/local (found version "4.4.0") 
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/nvidia/weiLiu/auto_v10.1.1/src/control/./include;$<BUILD_INTERFACE:/home/nvidia/weiLiu/auto_v10.1.1/src/control/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control
+[35m[1mScanning dependencies of target control_node[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/Can.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/stanley.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/toolKits.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/localFuns.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/lqr.cpp.o[0m
+In file included from [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:1[m[K:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:[m[K In constructor ‘[01m[KCan::Can()[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:58:46:[m[K [01;35m[Kwarning: [m[K‘[01m[KCan::can_index_3[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+   58 |  UINT can_index_0, can_index_1, can_index_2, [01;35m[Kcan_index_3[m[K;//0~4294967295。无符号
+      |                                              [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:55:8:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat Can::Vehspeed[m[K’ [[01;35m[K-Wreorder[m[K]
+   55 |  float [01;35m[KVehspeed[m[K;
+      |        [01;35m[K^~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:6:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+    6 | [01;35m[KCan[m[K::Can():can_index_0(0),can_index_1(1),can_index_2(2),can_index_3(3),Vehspeed(-1){
+      | [01;35m[K^~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In destructor ‘[01m[KCan::~Can()[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:37:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   37 |  int [01;35m[Kreturn_code2[m[K = send(0x1C5, data1); //0x1C5
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In member function ‘[01m[Kvoid Can::ExitModle()[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:183:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  183 |  int [01;35m[Kreturn_code2[m[K = send(0x1C5, data1); //0x1C5
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In member function ‘[01m[Kint Can::send_repname(ControlQuantity&, EnableAutoDrive&, Car_Light_Control&)[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:201:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KgearASK[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  201 |  int [01;35m[KgearASK[m[K = enable_auto.gear_ask;
+      |      [01;35m[K^~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:203:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KSpeedUpAskMSG[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  203 |  int [01;35m[KSpeedUpAskMSG[m[K = ControlAskMSG | (speedASK << 5);
+      |      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:283:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code0[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  283 |  int [01;35m[Kreturn_code0[m[K = send(0x20, data1); //0x20
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/localFuns.cpp:[m[K In function ‘[01m[Kint local::frenet2Cartesian(const MatrixXd&, const double&, const double&, const int&, Eigen::Vector2d&)[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/localFuns.cpp:325:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ks[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  325 |     int frenet2Cartesian(const Eigen::MatrixXd& globalPath, [01;35m[Kconst double& s[m[K, const double& d, const int& minIndex, Eigen::Vector2d& cartesianXY){
+      |                                                             [01;35m[K~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/lqr.cpp:2[m[K:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/RiccatiSolver.h:[m[K In function ‘[01m[Kbool solveRiccatiArimotoPotter(const MatrixXd&, const MatrixXd&, const MatrixXd&, const MatrixXd&, Eigen::MatrixXd&)[m[K’:
+[01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/RiccatiSolver.h:76:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdim_u[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   76 |  const unsigned int [01;35m[Kdim_u[m[K = B.cols();
+      |                     [01;35m[K^~~~~[m[K
+[100%] [32m[1mLinking CXX executable control_node[0m
+[100%] Built target control_node
+-- Install configuration: ""
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/lib/control/control_node
+-- Set runtime path of "/home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/lib/control/control_node" to ""
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/launch
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/launch/control.launch.py
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/ament_index/resource_index/package_run_dependencies/control
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/ament_index/resource_index/parent_prefix_path/control
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/ament_prefix_path.sh
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/ament_prefix_path.dsv
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/path.sh
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/path.dsv
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.bash
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.sh
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.zsh
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.dsv
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/package.dsv
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/ament_index/resource_index/packages/control
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/cmake/controlConfig.cmake
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/cmake/controlConfig-version.cmake
+-- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/package.xml

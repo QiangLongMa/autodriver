@@ -1,0 +1,125 @@
+[0.070s] Invoking command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nvidia/weiLiu/auto_v10.1.1/src/control -DCMAKE_INSTALL_PREFIX=/home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control
+[0.170s] -- The C compiler identification is GNU 9.4.0
+[0.254s] -- The CXX compiler identification is GNU 9.4.0
+[0.260s] -- Check for working C compiler: /usr/bin/cc
+[0.380s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.381s] -- Detecting C compiler ABI info
+[0.530s] -- Detecting C compiler ABI info - done
+[0.544s] -- Detecting C compile features
+[0.544s] -- Detecting C compile features - done
+[0.548s] -- Check for working CXX compiler: /usr/bin/c++
+[0.687s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.689s] -- Detecting CXX compiler ABI info
+[0.820s] -- Detecting CXX compiler ABI info - done
+[0.836s] -- Detecting CXX compile features
+[0.836s] -- Detecting CXX compile features - done
+[0.840s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.884s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.885s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.190s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.252s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.383s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.425s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.533s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.607s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.608s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.610s] -- Looking for pthread.h
+[1.731s] -- Looking for pthread.h - found
+[1.731s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.871s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.871s] -- Looking for pthread_create in pthreads
+[1.983s] -- Looking for pthread_create in pthreads - not found
+[1.984s] -- Looking for pthread_create in pthread
+[2.112s] -- Looking for pthread_create in pthread - found
+[2.114s] -- Found Threads: TRUE  
+[2.337s] -- Found CUDA: /usr/local/cuda-11.4 (found suitable exact version "11.4") 
+[2.359s] -- Found OpenCV: /usr/local (found version "4.4.0") 
+[2.361s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.476s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.482s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.483s] -- Configured cppcheck include dirs: /home/nvidia/weiLiu/auto_v10.1.1/src/control/./include;$<BUILD_INTERFACE:/home/nvidia/weiLiu/auto_v10.1.1/src/control/include>
+[2.483s] -- Configured cppcheck exclude dirs and/or files: 
+[2.489s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.489s] -- Configured cpplint exclude dirs and/or files: 
+[2.490s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.492s] -- Added test 'lint_cmake' to check CMake code style
+[2.494s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.500s] -- Added test 'uncrustify' to check C / C++ code style
+[2.500s] -- Configured uncrustify additional arguments: 
+[2.502s] -- Added test 'xmllint' to check XML markup files
+[2.507s] -- Configuring done
+[2.531s] -- Generating done
+[2.534s] -- Build files have been written to: /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control
+[2.553s] Invoked command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nvidia/weiLiu/auto_v10.1.1/src/control -DCMAKE_INSTALL_PREFIX=/home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control
+[2.559s] Invoking command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control -- -j8 -l8
+[2.630s] [35m[1mScanning dependencies of target control_node[0m
+[2.755s] [ 14%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/Can.cpp.o[0m
+[2.764s] [ 42%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/stanley.cpp.o[0m
+[2.764s] [ 42%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[2.768s] [ 57%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/toolKits.cpp.o[0m
+[2.770s] [ 71%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/localFuns.cpp.o[0m
+[2.776s] [ 85%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/lqr.cpp.o[0m
+[3.110s] In file included from [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:1[m[K:
+[3.111s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:[m[K In constructor ‘[01m[KCan::Can()[m[K’:
+[3.111s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:58:46:[m[K [01;35m[Kwarning: [m[K‘[01m[KCan::can_index_3[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[3.111s]    58 |  UINT can_index_0, can_index_1, can_index_2, [01;35m[Kcan_index_3[m[K;//0~4294967295。无符号
+[3.111s]       |                                              [01;35m[K^~~~~~~~~~~[m[K
+[3.111s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/Can.h:55:8:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat Can::Vehspeed[m[K’ [[01;35m[K-Wreorder[m[K]
+[3.111s]    55 |  float [01;35m[KVehspeed[m[K;
+[3.111s]       |        [01;35m[K^~~~~~~~[m[K
+[3.111s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:6:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[3.111s]     6 | [01;35m[KCan[m[K::Can():can_index_0(0),can_index_1(1),can_index_2(2),can_index_3(3),Vehspeed(-1){
+[3.111s]       | [01;35m[K^~~[m[K
+[3.112s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In destructor ‘[01m[KCan::~Can()[m[K’:
+[3.112s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:37:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.112s]    37 |  int [01;35m[Kreturn_code2[m[K = send(0x1C5, data1); //0x1C5
+[3.112s]       |      [01;35m[K^~~~~~~~~~~~[m[K
+[3.119s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In member function ‘[01m[Kvoid Can::ExitModle()[m[K’:
+[3.119s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:183:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.119s]   183 |  int [01;35m[Kreturn_code2[m[K = send(0x1C5, data1); //0x1C5
+[3.119s]       |      [01;35m[K^~~~~~~~~~~~[m[K
+[3.120s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:[m[K In member function ‘[01m[Kint Can::send_repname(ControlQuantity&, EnableAutoDrive&, Car_Light_Control&)[m[K’:
+[3.120s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:201:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KgearASK[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.120s]   201 |  int [01;35m[KgearASK[m[K = enable_auto.gear_ask;
+[3.120s]       |      [01;35m[K^~~~~~~[m[K
+[3.120s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:203:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KSpeedUpAskMSG[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.120s]   203 |  int [01;35m[KSpeedUpAskMSG[m[K = ControlAskMSG | (speedASK << 5);
+[3.121s]       |      [01;35m[K^~~~~~~~~~~~~[m[K
+[3.121s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/Can.cpp:283:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code0[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.121s]   283 |  int [01;35m[Kreturn_code0[m[K = send(0x20, data1); //0x20
+[3.121s]       |      [01;35m[K^~~~~~~~~~~~[m[K
+[5.703s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/localFuns.cpp:[m[K In function ‘[01m[Kint local::frenet2Cartesian(const MatrixXd&, const double&, const double&, const int&, Eigen::Vector2d&)[m[K’:
+[5.703s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/localFuns.cpp:325:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ks[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.703s]   325 |     int frenet2Cartesian(const Eigen::MatrixXd& globalPath, [01;35m[Kconst double& s[m[K, const double& d, const int& minIndex, Eigen::Vector2d& cartesianXY){
+[5.703s]       |                                                             [01;35m[K~~~~~~~~~~~~~~^[m[K
+[6.018s] In file included from [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/src/lqr.cpp:2[m[K:
+[6.018s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/RiccatiSolver.h:[m[K In function ‘[01m[Kbool solveRiccatiArimotoPotter(const MatrixXd&, const MatrixXd&, const MatrixXd&, const MatrixXd&, Eigen::MatrixXd&)[m[K’:
+[6.018s] [01m[K/home/nvidia/weiLiu/auto_v10.1.1/src/control/./include/RiccatiSolver.h:76:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdim_u[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.018s]    76 |  const unsigned int [01;35m[Kdim_u[m[K = B.cols();
+[6.019s]       |                     [01;35m[K^~~~~[m[K
+[23.762s] [100%] [32m[1mLinking CXX executable control_node[0m
+[25.784s] [100%] Built target control_node
+[25.808s] Invoked command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control -- -j8 -l8
+[25.886s] Invoking command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control
+[25.905s] -- Install configuration: ""
+[25.906s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/lib/control/control_node
+[25.922s] -- Set runtime path of "/home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/lib/control/control_node" to ""
+[25.922s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/launch
+[25.922s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/launch/control.launch.py
+[25.922s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[25.923s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[25.923s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/ament_prefix_path.sh
+[25.923s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/ament_prefix_path.dsv
+[25.923s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/path.sh
+[25.924s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/environment/path.dsv
+[25.924s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.bash
+[25.924s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.sh
+[25.925s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.zsh
+[25.925s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/local_setup.dsv
+[25.925s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/package.dsv
+[25.925s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/ament_index/resource_index/packages/control
+[25.926s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/cmake/controlConfig.cmake
+[25.926s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/cmake/controlConfig-version.cmake
+[25.926s] -- Installing: /home/nvidia/weiLiu/auto_v10.1.1/src/control/install/control/share/control/package.xml
+[25.931s] Invoked command in '/home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/weiLiu/auto_v10.1.1/src/control/build/control

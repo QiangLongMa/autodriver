@@ -1,0 +1,10 @@
+/home/mm/longshan11_6/build/hmi/CMakeFiles/install/strip.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/install.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/list_install_components.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/rebuild_cache.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/edit_cache.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/test.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/install/local.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/hmi_uninstall.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/hmi.dir
+/home/mm/longshan11_6/build/hmi/CMakeFiles/uninstall.dir

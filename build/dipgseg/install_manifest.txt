@@ -1,0 +1,17 @@
+/home/mm/longshan11_6/install/dipgseg/lib/dipgseg/demo_node
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/launch/run.launch.py
+/home/mm/longshan11_6/install/dipgseg/share/ament_index/resource_index/package_run_dependencies/dipgseg
+/home/mm/longshan11_6/install/dipgseg/share/ament_index/resource_index/parent_prefix_path/dipgseg
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/ament_prefix_path.sh
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/ament_prefix_path.dsv
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/path.sh
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/environment/path.dsv
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.bash
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.sh
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.zsh
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/local_setup.dsv
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/package.dsv
+/home/mm/longshan11_6/install/dipgseg/share/ament_index/resource_index/packages/dipgseg
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/cmake/dipgsegConfig.cmake
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/cmake/dipgsegConfig-version.cmake
+/home/mm/longshan11_6/install/dipgseg/share/dipgseg/package.xml

@@ -1,0 +1,6 @@
+{
+  "package_name": "ros2_path_interfaces",
+  "non_idl_tuples": [
+    "/home/mm/longshan11_6/src/ros2_path_interfaces:srv/PathInterfaces.srv"
+  ]
+}

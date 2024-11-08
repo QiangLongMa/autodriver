@@ -1,0 +1,4 @@
+source;share/gnss/local_setup.bash
+source;share/gnss/local_setup.dsv
+source;share/gnss/local_setup.sh
+source;share/gnss/local_setup.zsh

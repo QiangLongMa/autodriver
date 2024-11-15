@@ -71,6 +71,9 @@
         "bit": "cpp",
         "*.ipp": "cpp",
         "core": "cpp",
-        "numericaldiff": "cpp"
+        "numericaldiff": "cpp",
+        "any": "cpp",
+        "regex": "cpp",
+        "shared_mutex": "cpp"
     }
 }

@@ -683,7 +683,7 @@ void local_dp_qp::GetSpeedLimit(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Ve
         if(std::abs(optTrajsd[i](0) - obsesSD_[j].centre_points.s) < 20){//20m的距离
           double min_s = std::min({obsesSD_[j].point1.s , obsesSD_[j].point2.s , obsesSD_[j].point3.s , obsesSD_[j].point4.s});
           double max_s = std::max({obsesSD_[j].point1.s , obsesSD_[j].point2.s , obsesSD_[j].point3.s , obsesSD_[j].point4.s});
-          if(optTrajsd[i](0) >= (min_s - 2) && optTrajsd[i](0) <= (max_s + 2)){//在障碍物s内 障碍物扩大 
+          if(optTrajsd[i](0) >= (min_s - 5) && optTrajsd[i](0) <= (max_s + 5)){//在障碍物s内 障碍物扩大 
             Eigen::Vector3d car_pose(optTrajxy(0,i),optTrajxy(1,i),optTrajxy(3,i));
             Eigen::MatrixXd car_Fpoint;
             tool::get_car_fourpoint(vehicle_length_,vehicle_width_,car_pose,car_Fpoint);//由车辆的中心点 计算局部路径上的每个店对应的车辆的四个顶点

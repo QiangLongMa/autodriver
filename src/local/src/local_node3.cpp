@@ -244,10 +244,10 @@ class local_trajs_node : public rclcpp::Node{
                     cartofrenet(car,globalPath, index, FrentPoint_);
                     //CalStartCarD(FrentPoint_.d, -1.5, start_l, end_l);
                     delta_l = 0.5; target_v = 10;
-                    start_l = -1.5; end_l = -1.5;
+                    start_l = 1.5; end_l = -1.5;
                     Decisionflags_.DriveStraightLineFlag = true;
                     LOCAL_.setPatam(gpsA, car(2),FrentPoint_.s,FrentPoint_.d,dl,ddl,globalPath,30,10,index,obses_limit_SD,GlobalcoordinatesystemObsesLimit,
-                                    start_l,end_l,delta_l,target_v, 1.5, Decisionflags_,0,true);//最后一位时最近障碍物的位置 
+                                    start_l,end_l,delta_l,target_v, -1.5, Decisionflags_,0,true);//最后一位时最近障碍物的位置 
                     none=LOCAL_.GetoptTrajxy(lastOptTrajxy, lastOptTrajsd);
                     if (none){//找到路径再进行之后的操作 确保初始时找到局部路径
                         first_run = false;
@@ -257,7 +257,6 @@ class local_trajs_node : public rclcpp::Node{
                         optTrajsd = lastOptTrajsd;
                         lastOptTrajsd.clear();
                         timer_local_callback_to_control();
-                        //timer_local_callback_to_hmi();
                     } 
                     std::cout<<"first run"<<std::endl; 
                 }
@@ -279,8 +278,8 @@ class local_trajs_node : public rclcpp::Node{
                     bool closeroute = Approachingintersection(index,end_index);//判断是否接近路口   
 
                     //计算最近障碍物 右侧车道中的障碍物 
-                    double obsmins,obslength;
-                    CalObsMInS(obsmins,globalPath(6,index),obslength,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal);
+                    double obsmins, obslength;
+                    CalObsMInS(obsmins, globalPath(6, index), obslength, onlylocalpath, GlobalcoordinatesystemObsesLimitinlocal);
 
                     //计算需不需要直接重新规划路径 
                     if(Decisionflags_.ObstacleAvoidanceFlag && obsmins == 1e16){//正在超车 但是右侧车道中无障碍物了
@@ -379,7 +378,7 @@ class local_trajs_node : public rclcpp::Node{
                                      //判断能不能借道超车 
                                     if (!closeroute) {
                                         start_l = 1.5; end_l = 1.5;
-                                        delta_l = 0.5; target_v = 10;
+                                        delta_l = 0.5; target_v = 8;
                                         target_l = 1.5;
                                     } else {
                                         start_l = 1.0; end_l = 1.0;
@@ -462,22 +461,16 @@ class local_trajs_node : public rclcpp::Node{
                                             ReplanVehiclevertices = true;
                                             return ;
                                         } else {  // 中间避让车辆 
-                                            start_l = 0; end_l = 0.5;
-                                            target_l = 0.0;
+                                            start_l = 0; end_l = -0.5;
+                                            target_l = -0.5;
                                             LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
                                                                 globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
                                                                 start_l,end_l,delta_l,target_v,target_l,Decisionflags_, 0, false);
                                             none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
                                             if (none == 0) {
-                                                LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                                globalPath,10,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                                start_l,end_l,delta_l,target_v,target_l,Decisionflags_, 0, false);
-                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                                if (none == 0) {
-                                                    Pathplanningduringdeceleration(GlobalcoordinatesystemObsesLimitinlocal);
-                                                    DecelerationPathRelease(optTrajxy);
-                                                    return ; 
-                                                }
+                                                Pathplanningduringdeceleration(GlobalcoordinatesystemObsesLimitinlocal);
+                                                DecelerationPathRelease(optTrajxy);
+                                                return ;                                                
                                             }
                                         }
                                     }
@@ -494,13 +487,9 @@ class local_trajs_node : public rclcpp::Node{
                                     //timer_local_callback_to_hmi();
                                     std::cout<<"减速"<<std::endl;                                    
                                 }
-                                if (none){//找到路径再进行之后的操作 确保初始时找到局部路径
-                                    optTrajsd.clear();
-                                    optTrajxy.resize(lastOptTrajxy.rows(), lastOptTrajxy.cols());
-                                    optTrajxy = lastOptTrajxy;
-                                    optTrajsd = lastOptTrajsd;
-                                    lastOptTrajsd.clear();
-                                    timer_local_callback_to_control();
+                                if (none){//
+                                   Decisionflags_.DecelerateFlag = false ;
+                                   return ;
                                 } 
                                 return ;
                             }
@@ -557,9 +546,9 @@ class local_trajs_node : public rclcpp::Node{
                                                     target_l = 1.0;
                                                 }
                                                 //CalStartCarD(FrentPoint_.d,1.5,start_l,end_l);
-                                                Decisionflags_.ObstacleAvoidanceFlag =true;Decisionflags_.DecelerateFlag =false;
-                                                Decisionflags_ .DriveStraightLineFlag=false;Decisionflags_.righttoleftlane=false;
-                                                Decisionflags_.Overtakinginlaneflag=false;
+                                                Decisionflags_.ObstacleAvoidanceFlag = true; Decisionflags_.DecelerateFlag = false;
+                                                Decisionflags_ .DriveStraightLineFlag = false; Decisionflags_.righttoleftlane = false;
+                                                Decisionflags_.Overtakinginlaneflag = false;
                                                 LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
                                                                     globalPath,DpAllDistance,DpSingleDistance,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
                                                                     start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
@@ -607,148 +596,102 @@ class local_trajs_node : public rclcpp::Node{
                                         delta_l = 0.5; target_v = 5;
                                         target_l = 1.0;
                                     }
-                                    Decisionflags_.ObstacleAvoidanceFlag = true;Decisionflags_.DecelerateFlag = false;
-                                    Decisionflags_ .DriveStraightLineFlag = false;Decisionflags_.righttoleftlane = false;
+                                    Decisionflags_.ObstacleAvoidanceFlag = true; Decisionflags_.DecelerateFlag = false;
+                                    Decisionflags_.DriveStraightLineFlag = false; Decisionflags_.righttoleftlane = false;
                                     Decisionflags_.Overtakinginlaneflag = false;
                                     LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
                                                         globalPath,DpAllDistance,DpSingleDistance,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
                                                         start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
                                     none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                    if(none==0){ //超车路径发生碰撞  先向右侧寻路30m   向右侧车道寻路 20m远 10m 不能占用左侧车道 
-                                        if (!closeroute) {
-                                            start_l = -1.5; end_l = -1.5;
-                                            delta_l = 0.5; target_v = 8;
-                                            target_l = -1.5;
-                                        } else {
+                                    if(none==0){ //超车路径发生碰撞  
+                                        // 判别车子和障碍物的位置信息 
+                                        double car_s = FrentPoint_.s;
+                                        double real_distance =  obsmins - car_s; //障碍物和车辆的距离
+                                        double front_to_realaxle = 3.6;
+                                        double CarAndObsStopDistance = 3;
+                                        Decisionflags_.ObstacleAvoidanceFlag = true; Decisionflags_.DecelerateFlag = true;
+                                        Decisionflags_.DriveStraightLineFlag = false; Decisionflags_.righttoleftlane = false;
+                                        Decisionflags_.Overtakinginlaneflag = false;
+                                        if (real_distance > (front_to_realaxle + CarAndObsStopDistance) && obsmins != 1e16) { //距离符合阈值 向右侧进行行使 减速行使 
                                             start_l = -1.0; end_l = -1.0;
-                                            delta_l = 0.5; target_v = 5;
+                                            delta_l = 0.5; target_v = 0;
                                             target_l = -1.0;
-                                        }
-                                        Decisionflags_.ObstacleAvoidanceFlag =false;Decisionflags_.DecelerateFlag =false;
-                                        Decisionflags_ .DriveStraightLineFlag=false;Decisionflags_.righttoleftlane=true;
-                                        //CalStartCarD(FrentPoint_.d,-1.5,start_l,end_l);
-                                        LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                        globalPath,DpAllDistance,DpSingleDistance,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                        start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
-                                        none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//向右侧30m寻路
-                                        if(none==0){
-                                            Decisionflags_.ObstacleAvoidanceFlag = true; Decisionflags_.DecelerateFlag = true;
-                                            Decisionflags_.righttoleftlane = false;
-                                            //CalStartCarD(FrentPoint_.d,-1.5,start_l,end_l);
-                                            target_v = 0;
+                                            int planning_length = static_cast<int>(real_distance - CarAndObsStopDistance -front_to_realaxle) + 1;
                                             LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                            globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                            start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
+                                                        globalPath,planning_length,planning_length,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                        start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
                                             none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                            if(none == 0){//15m远
-                                                LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                            globalPath,15,15,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                            start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
-                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                                if (none == 0 && local_start_l >= -0.5){ //考虑中间行使
-                                                    start_l = 0; end_l = -0.5;
-                                                    delta_l = 0.5; target_v = 5;
-                                                    target_l = 0.0;
-                                                    LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                            globalPath,15,15,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                            start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
-                                                    none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                                    if(none == 0){ //寻路失败
-                                                        if (!closeroute) {
-                                                            start_l = -1.5; end_l = -1.5;
-                                                            delta_l = 0.5; target_v = 0;
-                                                            target_l = -1.5;
+                                            if (none == 0) {
+                                                size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
+                                                double deceleration = - car(2) / T;
+                                                for(size_t i = 0; i < optTrajxy.cols(); ++i){
+                                                    if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
+                                                        continue;
+                                                    } else {
+                                                        double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
+                                                        double v_pow =  2 * deceleration * x + car(2) * car(2);                                                                
+                                                        if(v_pow < 0){
+                                                            optTrajxy(2, i) = 0;
+                                                            optTrajxy(6, i) = 0;
                                                         } else {
-                                                            start_l = -1.0; end_l = -1.0;
-                                                            delta_l = 0.5; target_v = 0;
-                                                            target_l = -1.0;
-                                                        }
-                                                        if(obsmins == 1e16){ //右侧暂时无障碍物 
-                                                            LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                            globalPath,10,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                            start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
-                                                            none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                                            if(none == 0){
-                                                                Decisionflags_.ObstacleAvoidanceFlag = true;
-                                                                Decisionflags_.DecelerateFlag = true;//超车时 减速停车 并且向右侧车道寻路无果
-                                                                size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
-                                                                double deceleration = - car(2) / T;
-                                                                for(size_t i = 0; i < optTrajxy.cols(); ++i){
-                                                                    if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
-                                                                        continue;
-                                                                    } else {
-                                                                        double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
-                                                                        double v_pow =  2 * deceleration * x + car(2) * car(2);
-                                                                        if(v_pow < 0){
-                                                                            optTrajxy(2, i) = 0;
-                                                                            optTrajxy(6, i) = 0;
-                                                                        } else {
-                                                                            optTrajxy(2, i) = std::sqrt(v_pow);
-                                                                            optTrajxy(6, i) = deceleration;
-                                                                        }
-                                                                    }
-                                                                }
-                                                                DecelerationPathRelease(optTrajxy);
-                                                                return ;      
-                                                            }
-                                                        } else { //右侧暂时有障碍物 
-                                                            double safety_distance = 3.574 + obslength / 2 + 2;
-                                                            if(obsmins - globalPath(5, index) > safety_distance){
-                                                                LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                                globalPath,static_cast<int>(safety_distance),static_cast<int>(safety_distance),
-                                                                            index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                                start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
-                                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                                                if(none==0){
-                                                                    Decisionflags_.ObstacleAvoidanceFlag = true;
-                                                                    Decisionflags_.DecelerateFlag = true;//超车时 减速停车 并且向右侧车道寻路无果
-                                                                    size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
-                                                                    double deceleration = - car(2) / T;
-                                                                    for(size_t i = 0; i < optTrajxy.cols(); ++i){
-                                                                        if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
-                                                                            continue;
-                                                                        } else {
-                                                                            double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
-                                                                            double v_pow =  2 * deceleration * x + car(2) * car(2);
-                                                                            if(v_pow < 0){
-                                                                                optTrajxy(2, i) = 0;
-                                                                                optTrajxy(6, i) = 0;
-                                                                            } else {
-                                                                                optTrajxy(2, i) = std::sqrt(v_pow);
-                                                                                optTrajxy(6, i) = deceleration;
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                    DecelerationPathRelease(optTrajxy);
-                                                                    return ;      
-                                                                }
-                                                            } else {
-                                                                Decisionflags_.ObstacleAvoidanceFlag = true;
-                                                                Decisionflags_.DecelerateFlag = true;//超车时 减速停车 并且向右侧车道寻路无果
-                                                                size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
-                                                                double deceleration = - car(2) / T;
-                                                                for(size_t i = 0; i < optTrajxy.cols(); ++i){
-                                                                    if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
-                                                                        continue;
-                                                                    } else {
-                                                                        double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
-                                                                        double v_pow =  2 * deceleration * x + car(2) * car(2);
-                                                                        if(v_pow < 0){
-                                                                            optTrajxy(2, i) = 0;
-                                                                            optTrajxy(6, i) = 0;
-                                                                        } else {
-                                                                            optTrajxy(2, i) = std::sqrt(v_pow);
-                                                                            optTrajxy(6, i) = deceleration;
-                                                                        }
-                                                                    }
-                                                                }
-                                                                DecelerationPathRelease(optTrajxy);
-                                                                return ;      
-                                                            }
+                                                            optTrajxy(2, i) = std::sqrt(v_pow);
+                                                            optTrajxy(6, i) = deceleration;
                                                         }
                                                     }
-                                                }                                               
+                                                }
+                                                DecelerationPathRelease(optTrajxy);
+                                                return ;      
                                             }
+                                        } else { //距离不符合阈值 ；车辆和右侧障碍物纵向距离太近 不能向右侧停车 向前寻路
+                                            Decisionflags_.ObstacleAvoidanceFlag = true; Decisionflags_.DecelerateFlag = false;
+                                            Decisionflags_.DriveStraightLineFlag = false; Decisionflags_.righttoleftlane = false;
+                                            Decisionflags_.Overtakinginlaneflag = false;
+                                            start_l = 1.0; end_l = -1.5;
+                                            delta_l = 0.25; target_v = 5;
+                                            target_l = -1.5;
+                                            LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
+                                                        globalPath,30,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                        start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
+                                            none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
+                                            if (none == 0) {
+                                                Decisionflags_.ObstacleAvoidanceFlag = true; Decisionflags_.DecelerateFlag = true;
+                                                Decisionflags_.DriveStraightLineFlag = false; Decisionflags_.righttoleftlane = false;
+                                                Decisionflags_.Overtakinginlaneflag = false;
+                                                target_v = 0;
+                                                LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
+                                                        globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                        start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
+                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
+                                                if (none == 0) {
+                                                    LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
+                                                        globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                        start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false);
+                                                    none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
+                                                    if(none == 0){
+                                                        size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
+                                                        double deceleration = - car(2) / T;
+                                                        for(size_t i = 0; i < optTrajxy.cols(); ++i){
+                                                            if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
+                                                                continue;
+                                                            } else {
+                                                                double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
+                                                                double v_pow =  2 * deceleration * x + car(2) * car(2);                                                                
+                                                                if(v_pow < 0){
+                                                                    optTrajxy(2, i) = 0;
+                                                                    optTrajxy(6, i) = 0;
+                                                                } else {
+                                                                    optTrajxy(2, i) = std::sqrt(v_pow);
+                                                                    optTrajxy(6, i) = deceleration;
+                                                                }
+                                                            }
+                                                        }
+                                                        DecelerationPathRelease(optTrajxy);
+                                                        return ;      
+                                                    }
+                                                }
+                                            }
+
+ 
                                         }
                                     }
                                     std::cout<<"正在超车"<<std::endl; 
@@ -788,31 +731,36 @@ class local_trajs_node : public rclcpp::Node{
                                         Decisionflags_.Overtakinginlaneflag=false;
                                         //CalStartCarD(FrentPoint_.d,1.5,start_l,end_l);
                                         start_l = 1.5; end_l = 1.5;
-                                        delta_l =0.5;target_v = 10;
+                                        delta_l = 0.5;target_v = 8;
                                         LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
                                                     globalPath,DpAllDistance,DpSingleDistance,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
                                                     start_l,end_l,delta_l,target_v,1.5,Decisionflags_,0,false);//里面进行了碰撞检测 外面无需再进行了 
                                         none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
-                                        if(none==0){ //借道超车时 有碰撞
-                                            //CalStartCarD(FrentPoint_.d,-1.5,start_l,end_l);
+                                        if(none==0){ //借道超车时 有碰撞 确定停止的位置 车辆和障碍物需要保持一定的距离
+                                            Decisionflags_.ObstacleAvoidanceFlag = false;
+                                            Decisionflags_.DecelerateFlag = true;
+                                            Decisionflags_.DriveStraightLineFlag = true;//
+                                            Decisionflags_.righttoleftlane = false;
+                                            Decisionflags_.Overtakinginlaneflag = false;
                                             start_l = -1.5; end_l = -1.5;
                                             delta_l =0.5; target_v = 0;
-                                            Decisionflags_.ObstacleAvoidanceFlag =false;
-                                            Decisionflags_.DecelerateFlag =true;
-                                            Decisionflags_.DriveStraightLineFlag=true;//
-                                            Decisionflags_.righttoleftlane=false;
-                                            Decisionflags_.Overtakinginlaneflag=false;
-                                            LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                    globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                    start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false);
-                                            none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//20m
-                                            if(none==0){
+                                            double CarAndObsStopDistanceThreshold = 5;//车辆和障碍物之间停止的距离阈值
+                                            double front_to_Rearaxle = 3.6; //车辆前端到后轴中心的位置
+                                            double real_distance = obsmins - FrentPoint_.s;
+                                            if (real_distance > (CarAndObsStopDistanceThreshold + front_to_Rearaxle)) { //距离满足
+                                                int planning_length =  static_cast<int>(real_distance - CarAndObsStopDistanceThreshold - front_to_Rearaxle) + 1;
                                                 LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                    globalPath,10,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                    globalPath,planning_length,planning_length,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
                                                     start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false);
-                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//10m
-                                                if(none==0){//直接停车 
-                                                    size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
+                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
+                                                if (none == 0) {//规划失败了 
+                                                    size_t T ;                                              
+                                                    if (real_distance > 3) {
+                                                        T = 1 ;
+                                                    } else if (real_distance < 3) {
+                                                        T = 0.5;
+                                                    }
+                                                    // size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
                                                     double deceleration = - car(2) / T;
                                                     for(size_t i = 0; i < optTrajxy.cols(); ++i){
                                                         if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
@@ -830,9 +778,11 @@ class local_trajs_node : public rclcpp::Node{
                                                         }
                                                     }
                                                     DecelerationPathRelease(optTrajxy);
-                                                    return ;      
+                                                    return ; 
                                                 }
+
                                             }
+                                                
                                         }
                                     }
                                     //要不要确保当前生存的路径中不存在碰撞 这样会有一定的耗时操作 
@@ -874,25 +824,31 @@ class local_trajs_node : public rclcpp::Node{
                                                         start_l, end_l, delta_l,target_v,1.5,Decisionflags_,0,false);
                                             none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
                                             std::cout<<"当前车道有障碍，远离路口，正在借道超车 "<<std::endl; 
-                                            if(none==0){//借到超车也失败 道路全被堵死 直线行使时 借道超车 
-                                                CalStartCarD(FrentPoint_.d,-1.5,start_l,end_l);
-                                                delta_l = 0.5; target_v = 0;
-                                                Decisionflags_.ObstacleAvoidanceFlag =false;
-                                                Decisionflags_.DecelerateFlag =true;
-                                                Decisionflags_.DriveStraightLineFlag=true;//
-                                                Decisionflags_.righttoleftlane=false;
-                                                Decisionflags_.Overtakinginlaneflag=false;
-                                                LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                        globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                        start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false);
-                                                none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//20m
-                                                if(none==0){
+                                            if(none==0){//借到超车也失败 道路全被堵死 直线行使时 借道超车  需要直线行使 
+                                                Decisionflags_.ObstacleAvoidanceFlag = false;
+                                                Decisionflags_.DecelerateFlag = true;
+                                                Decisionflags_.DriveStraightLineFlag = true;//
+                                                Decisionflags_.righttoleftlane = false;
+                                                Decisionflags_.Overtakinginlaneflag = false;
+                                                start_l = -1.5; end_l = -1.5;
+                                                delta_l =0.5; target_v = 0;
+                                                double CarAndObsStopDistanceThreshold = 5;//车辆和障碍物之间停止的距离阈值
+                                                double front_to_Rearaxle = 3.6; //车辆前端到后轴中心的位置
+                                                double real_distance = obsmins - FrentPoint_.s;
+                                                if (real_distance > (CarAndObsStopDistanceThreshold + front_to_Rearaxle)) { //距离满足
+                                                    int planning_length = static_cast<int>(real_distance - CarAndObsStopDistanceThreshold - front_to_Rearaxle) + 1;
                                                     LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                        globalPath,10,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                        globalPath,planning_length,planning_length,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
                                                         start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false);
-                                                    none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//10m    
-                                                    if(none==0){//直接停车 
-                                                        size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
+                                                    none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
+                                                    if (none == 0) {//规划失败了 
+                                                        size_t T ;                                              
+                                                        if (real_distance > 3) {
+                                                            T = 1 ;
+                                                        } else if (real_distance < 3) {
+                                                            T = 0.5;
+                                                        }
+                                                        // size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
                                                         double deceleration = - car(2) / T;
                                                         for(size_t i = 0; i < optTrajxy.cols(); ++i){
                                                             if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
@@ -900,6 +856,7 @@ class local_trajs_node : public rclcpp::Node{
                                                             } else {
                                                                 double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
                                                                 double v_pow =  2 * deceleration * x + car(2) * car(2);
+                                                                               
                                                                 if(v_pow < 0){
                                                                     optTrajxy(2, i) = 0;
                                                                     optTrajxy(6, i) = 0;
@@ -910,9 +867,32 @@ class local_trajs_node : public rclcpp::Node{
                                                             }
                                                         }
                                                         DecelerationPathRelease(optTrajxy);
-                                                        return ;      
+                                                        return ; 
                                                     }
+
+                                                } else {
+                                                    size_t T = 1 ;
+                                                    double deceleration = - car(2) / T;
+                                                    for(size_t i = 0; i < optTrajxy.cols(); ++i){
+                                                        if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
+                                                            continue;
+                                                        } else {
+                                                            double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
+                                                            double v_pow =  2 * deceleration * x + car(2) * car(2);
+                                                                           
+                                                            if(v_pow < 0){
+                                                                optTrajxy(2, i) = 0;
+                                                                optTrajxy(6, i) = 0;
+                                                            } else {
+                                                                optTrajxy(2, i) = std::sqrt(v_pow);
+                                                                optTrajxy(6, i) = deceleration;
+                                                            }
+                                                        }
+                                                    }
+                                                    DecelerationPathRelease(optTrajxy);
+                                                    return ; 
                                                 }
+                            
                                             }   
                                         }
                                     } else { //障碍物在路口附近在路口附近  路口也会偏移                                        
@@ -929,7 +909,6 @@ class local_trajs_node : public rclcpp::Node{
                                             none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
                                             std::cout<<"路口车道内偏移"<<std::endl;                               
                                             if(none==0){//车道内偏移失败 有碰撞 
-                                                //CalStartCarD(FrentPoint_.d,1.0,start_l,end_l);//超车
                                                 start_l = 1.0; end_l = 1.0;
                                                 delta_l =0.5;target_v = 5;
                                                 Decisionflags_.ObstacleAvoidanceFlag =true;
@@ -944,24 +923,30 @@ class local_trajs_node : public rclcpp::Node{
                                                 std::cout<<"路口借道超车"<<std::endl; 
                                                 if(none==0){//借道超车，会发生碰撞 速度还是0
                                                     //CalStartCarD(FrentPoint_.d,-1.0,start_l,end_l);
+                                                    Decisionflags_.ObstacleAvoidanceFlag = false;
+                                                    Decisionflags_.DecelerateFlag = true;
+                                                    Decisionflags_.DriveStraightLineFlag = true;//
+                                                    Decisionflags_.righttoleftlane = false;
+                                                    Decisionflags_.Overtakinginlaneflag = false;
                                                     start_l = -1.0; end_l = -1.0;
-                                                    delta_l =0.5;target_v = 0;
-                                                    Decisionflags_.ObstacleAvoidanceFlag =false;
-                                                    Decisionflags_.DecelerateFlag =true;
-                                                    Decisionflags_.DriveStraightLineFlag=true;//
-                                                    Decisionflags_.righttoleftlane=false;
-                                                    Decisionflags_.Overtakinginlaneflag=false;
-                                                    LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                            globalPath,20,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                            start_l,end_l,delta_l,target_v,-1.0,Decisionflags_,0,false);
-                                                    none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//20m
-                                                    if(none==0){
+                                                    delta_l =0.5; target_v = 0;
+                                                    double CarAndObsStopDistanceThreshold = 5;//车辆和障碍物之间停止的距离阈值
+                                                    double front_to_Rearaxle = 3.6; //车辆前端到后轴中心的位置
+                                                    double real_distance = obsmins - FrentPoint_.s;
+                                                    if (real_distance > (CarAndObsStopDistanceThreshold + front_to_Rearaxle)) { //距离满足
+                                                        int planning_length = static_cast<int>(real_distance - CarAndObsStopDistanceThreshold - front_to_Rearaxle) + 1;
                                                         LOCAL_.setPatam(gpsA,car(2),local_start_s,local_start_l,dl,ddl,
-                                                            globalPath,10,10,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
-                                                            start_l,end_l,delta_l,target_v,-1.0,Decisionflags_,0,false);
-                                                        none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);//10m
-                                                        if(none==0){//直接停车 
-                                                            size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
+                                                            globalPath,planning_length,planning_length,index,onlylocalpath,GlobalcoordinatesystemObsesLimitinlocal,
+                                                            start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false);
+                                                        none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
+                                                        if (none == 0) {//规划失败了 
+                                                            size_t T ;                                              
+                                                            if (real_distance > 3) {
+                                                                T = 1 ;
+                                                            } else if (real_distance < 3) {
+                                                                T = 0.5;
+                                                            }
+                                                            // size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
                                                             double deceleration = - car(2) / T;
                                                             for(size_t i = 0; i < optTrajxy.cols(); ++i){
                                                                 if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
@@ -969,6 +954,7 @@ class local_trajs_node : public rclcpp::Node{
                                                                 } else {
                                                                     double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
                                                                     double v_pow =  2 * deceleration * x + car(2) * car(2);
+                                                                                 
                                                                     if(v_pow < 0){
                                                                         optTrajxy(2, i) = 0;
                                                                         optTrajxy(6, i) = 0;
@@ -979,8 +965,29 @@ class local_trajs_node : public rclcpp::Node{
                                                                 }
                                                             }
                                                             DecelerationPathRelease(optTrajxy);
-                                                            return ;      
+                                                            return ; 
                                                         }
+                                                    } else {
+                                                        size_t T = 1 ;
+                                                        double deceleration = - car(2) / T;
+                                                        for(size_t i = 0; i < optTrajxy.cols(); ++i){
+                                                            if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){
+                                                                continue;
+                                                            } else {
+                                                                double x = optTrajxy(5, i) - optTrajxy(5, closestIndex); 
+                                                                double v_pow =  2 * deceleration * x + car(2) * car(2) >0 ;
+                                                                                
+                                                                if(v_pow < 0){
+                                                                    optTrajxy(2, i) = 0;
+                                                                    optTrajxy(6, i) = 0;
+                                                                } else {
+                                                                    optTrajxy(2, i) = std::sqrt(v_pow);
+                                                                    optTrajxy(6, i) = deceleration;
+                                                                }
+                                                            }
+                                                        }
+                                                        DecelerationPathRelease(optTrajxy);
+                                                        return ; 
                                                     }
                                                 }
                                             }                                                                                                                     
@@ -1276,22 +1283,22 @@ class local_trajs_node : public rclcpp::Node{
             carFrent.s = std::abs(path_s);
         }
  
-        void CalObsMInS(double &ObsMinS,double car_s,double &obs_length,std::vector<obses_sd>& obses,std::vector<Eigen::VectorXd> &globalobs_in_local){
+        void CalObsMInS(double &ObsMinS, double car_s, double &obs_length, std::vector<obses_sd>& obses,
+                        std::vector<Eigen::VectorXd> &globalobs_in_local){
             size_t obses_size = obses.size();
             ObsMinS = 1e16;
-            double obs_s;
+            double obs_s = std::numeric_limits<double>::max();
             double obs_l;
             size_t mindex = 1e4;
             if(obses_size == 0) return;
-            
             for (size_t i = 0; i < obses_size; ++i){
                 double min_s = std::min({obses[i].point1.s, obses[i].point2.s, obses[i].point3.s, obses[i].point4.s});
                 double Kthreshold = 20; 
-                if ((obs_s - min_s) <= Kthreshold){
+                if ((car_s - min_s) <= Kthreshold){
                     //std::cout<<"obs "<<obs::decide_obs_true_false(obses_limit_SD[i],-0.3,-2.9)<<std::endl;
                     if(obs::decide_obs_true_false(obses[i],-0.5,-2.6) == 1){ //在这个范围内的都是算成障碍物 1.5-0.9-0.3  1.5+0.9+0.3 
-                        if(obs_s < ObsMinS){
-                            ObsMinS = obs_s;
+                        if(min_s < ObsMinS){
+                            ObsMinS = min_s;
                             mindex = i;
                         }
                     }
@@ -1772,21 +1779,23 @@ class local_trajs_node : public rclcpp::Node{
             getclose_s(optTrajxy, GlobalcoordinatesystemObsesLimitinlocal_, collision_detection_s, collision_detection_flag);
             /***************后续考虑******************/
             if(collision_detection_flag){//若当前减速路径中有障碍物 并且知道当前路径在什么位置发生了碰撞 
-                double distance_threshold = 10;//碰撞位置阈值为 10m
+                double distance_threshold = 4;//碰撞位置阈值为 10m
                 double car_collision_detection_distance = std::abs(collision_detection_s - optTrajxy(5, closestIndex));
+               
                 if(car_collision_detection_distance > distance_threshold &&
                             collision_detection_s > optTrajxy(5, closestIndex)){ //路径碰撞位置与车辆位置的插值大于阈值 而且碰撞位置要大于车辆在局部路径中的位置 
+                    int planning_length = static_cast<int>(car_collision_detection_distance - distance_threshold) + 1;
                     for (size_t i = 0; i < optTrajxy.cols(); ++i){
                         if(optTrajxy(5, i) < optTrajxy(5, closestIndex)){ //车辆当前位置之前的轨迹点 不考虑
                             continue;
                         } else if(optTrajxy(5, i) >= optTrajxy(5, closestIndex) && 
                                 (optTrajxy(5, i) - optTrajxy(5, closestIndex)) <= 
-                                (car_collision_detection_distance - distance_threshold)){ //在范围内 
+                                (planning_length)){ //在范围内 
                             //以恒定减速度 进行减速 在距离障碍物位置10m远的地方停下来 
-                            double a = -(car(2) * car(2)) / (2 * (car_collision_detection_distance - distance_threshold));
+                            double a = -(car(2) * car(2)) / (2 * (planning_length));
                             double x = optTrajxy(5, i) - optTrajxy(5, closestIndex);
-                            double v = std::sqrt(std::abs(2 * a * x + std::pow(car(2) , 2))); 
-                            optTrajxy(2, i) = v > 0 ? v : 0;
+                            double v = 2 * a * x + car(2) * car(2) > 0 ? std::sqrt(2 * a * x + car(2) * car(2)) : 0; 
+                            optTrajxy(2, i) = v;
                             optTrajxy(6, i) = a;
                             if(i == optTrajxy.cols() -1){
                                 optTrajxy(2, i) = 0;
@@ -1799,7 +1808,7 @@ class local_trajs_node : public rclcpp::Node{
                     }
                 } else { //小于设定的阈值 
                     //首先判断车速 小于0.1 默认是停车状态 
-                    if(car(2) <= 0.1){
+                    if(car(2) <= 0.27){
                         for (size_t i = 0; i < optTrajxy.cols(); ++i){
                             optTrajxy(2, i) = 0;
                             optTrajxy(6, i) = 0;
@@ -1835,14 +1844,16 @@ class local_trajs_node : public rclcpp::Node{
             std_msgs::msg::Float64MultiArray local_trajs_msg;
             std::vector<double> localTrajReshape(&dec_path(0), dec_path.data() + dec_path.size());
             local_trajs_msg.data = localTrajReshape;
+            local_trajs_msg.data.push_back(globalPath.cols());
+            local_trajs_msg.data.push_back(heading_time_);
             local_to_control_publisher->publish(local_trajs_msg);
-            write_localpath(dec_path);
+            //write_localpath(dec_path);
             std_msgs::msg::Float64MultiArray local_trajs_msg2;
             std::vector<double> localTrajReshape2(&dec_path(0), dec_path.data() + dec_path.size());
             local_trajs_msg2.data = localTrajReshape2;
             local_to_hmi_publisher->publish(local_trajs_msg2);
         }
-    
+
     private:
         // 声明global服务端
         rclcpp::Service<ros2_path_interfaces::srv::PathInterfaces>::SharedPtr global_path_service_;

@@ -27,6 +27,7 @@ DigitalFilter::DigitalFilter(const std::vector<double> &denominators,
 }
 DigitalFilter ::DigitalFilter(){};
 DigitalFilter::~DigitalFilter(){};
+
 void DigitalFilter::set_denominators(const std::vector<double> &denominators) {
   denominators_ = denominators;
   y_values_.resize(denominators_.size(), 0.0);

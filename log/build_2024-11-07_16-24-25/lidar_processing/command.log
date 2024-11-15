@@ -1,4 +1,0 @@
-Invoking command in '/home/mm/longshan11_6/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/lidar_processing -- -j4 -l4
-Invoked command in '/home/mm/longshan11_6/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/lidar_processing -- -j4 -l4
-Invoking command in '/home/mm/longshan11_6/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/lidar_processing
-Invoked command in '/home/mm/longshan11_6/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan11_6/build/lidar_processing

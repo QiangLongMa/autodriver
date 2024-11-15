@@ -24,8 +24,8 @@
 #include <cstdlib> // 包含 <cstdlib> 头文件以使用 std::abs()
 #include "lon_controller.h"
 #include <chrono>
-#define ts_ 0.02//0.01 car0.02 yijie
-#define cutoff_freq 8   //20  ///8  car yijie  
+#define ts_ 0.01//0.01 car0.02 yijie
+#define cutoff_freq 20   //20  ///8  car yijie  
 class control_node : public rclcpp::Node{
     public:
         //构造函数,有一个参数为节点名称
@@ -54,7 +54,7 @@ class control_node : public rclcpp::Node{
            // sub_global= this->create_publisher<std_msgs::msg::Float64MultiArray>("global_local_topic",10);
             pub_speed = this->create_publisher<std_msgs::msg::Float32>("/speed_topic",1);
             pub_error = this->create_publisher<std_msgs::msg::Float32>("/error_topic",1);
-
+            pub_steer_angle = this->create_publisher<std_msgs::msg::Float32MultiArray>("/steer_angle_topic",1);
             //创建话题订阅者, 订阅者速度与档位消息
             speed_gears_subscribe = this->create_subscription<std_msgs::msg::Int64MultiArray>("speed_gears_pub", 10, std::bind(&control_node::speed_gears_callback, this, std::placeholders::_1));
             //初始化can
@@ -67,7 +67,8 @@ class control_node : public rclcpp::Node{
             // control_publisher = this->create_publisher<std_msgs::msg::Float64MultiArray>("control_pub", 10);         
             ofs.open(fileName);
             double kp = 50, ki = 0, kd = 0;
-            pid.setPID(kp,ki,kd);    
+            pid.setPID(kp,ki,kd);   
+            InitializeFilters(); 
         }
 
         void gps_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg){
@@ -107,10 +108,10 @@ class control_node : public rclcpp::Node{
                             //     0, 500,  0,
                             //     0,  0, 200;
                             // R << 0, 0, 0, 100;
-                            Q <<10,  0,  0,
-                                0, 10,  0,
-                                0,  0, 9;
-                            R << 0, 0, 0, 9;
+                            Q <<20,  0,  0,
+                                0, 20,  0,
+                                0,  0, 10;
+                            R << 0, 0, 0, 2;
                             // if (std::abs(globalPath(4, index) < 0.05)){
                             //     pre_distance=2;
                             //     //double kp = 100, ki = 0, kd = 0;
@@ -169,6 +170,7 @@ class control_node : public rclcpp::Node{
                             /***************方向盘限幅*****************/
                             static double last_sw = 0;
                             const double swth = 520.0;
+
                             //弯道 
                             // if (std::abs(globalPath(4, index)) > 0.03 || std::abs(globalPath(4, pre_index)) > 0.03){
                             //     sw = K * u;
@@ -181,6 +183,11 @@ class control_node : public rclcpp::Node{
                             } else if (sw < -swth){
                                 sw = -swth;
                             } 
+                            double steer_angle = digital_filter_.Filter(sw);
+                            std_msgs::msg::Float32MultiArray steer_angle_msg;
+                            steer_angle_msg.data.emplace_back(sw);
+                            steer_angle_msg.data.emplace_back(steer_angle);
+                            pub_steer_angle->publish(steer_angle_msg);
                             //newSpeedRef = gpsS + globalPath(6,closestIndex)*0.1; 
                             // std::cout << "u: " <<  u << std::endl;
                             // std::cout << "sw: " << K * u<< std::endl;                                                               
@@ -291,20 +298,17 @@ class control_node : public rclcpp::Node{
                         /*****************Driving*******************/
                         std_msgs::msg::Float32MultiArray msg;
                         //接近局部路径的终点 车辆正在减速 3m的距离 
-                        double local_length = optTrajxy.cols()*0.5;
+                        if (closestIndex > optTrajxy.cols() - 2) { //也就是1m的距离
+                            SendCan(0,2,sw,1,1);  
+                        } else {
+                            SendCan(std::round(newSpeedRef),2,sw,0,1);    
+                        }
                         // if(closestIndex>=static_cast<int>(optTrajxy.cols()-6)&&DecelerateFlag){//3m的距离 
                         //     SendCan(0,1,sw,1,1);//速度为0 刹车 
                         //     std::cout << "stop car!!!!" << std::endl; 
                         
-                            //std::cout << "SendCannewSpeedRef: " <<newSpeedRef<< std::endl; 
-                        SendCan(std::round(newSpeedRef),2,sw,0,1);    
-                        //std::cout << "Driving!!!!" << std::endl; 
                     }      
-                    // else if (closestIndex>(optTrajxy.cols()-speedRef*2))
-                    // {
-                    //     SendCan(0,1,0,1,0);
-                    //     std::cout << "End-brake!!!" << std::endl;
-                    // }          
+                          
                 }                        
             }
             else{
@@ -450,10 +454,13 @@ class control_node : public rclcpp::Node{
         void carfindClosestPoint(const Eigen::VectorXd& realPosition, const Eigen::MatrixXd& globalPath, int& minIndex){
             static int startIndex = 0;
             static int end = globalPath.cols();
-            double distance, d_min = 999999;
+            double distance, d_min = std::numeric_limits<double>::max();
             int i = startIndex;
+            double dx , dy;
             for (; i < end; i++) {
-                distance = std::abs(globalPath(0, i) - realPosition(0)) + std::abs(globalPath(1, i) - realPosition(1));
+                dx = globalPath(0, i) - realPosition(0);
+                dy = globalPath(1, i) - realPosition(1);
+                distance = dx * dx + dy * dy;
                 if (distance < d_min) {
                     minIndex = i;
                     d_min = distance;
@@ -479,7 +486,15 @@ class control_node : public rclcpp::Node{
             carFrent.d = std::copysign(cross_rd_nd, cross_rd_nd);
             carFrent.s = path(6, mindex);
         }
-	
+
+        void InitializeFilters(){
+             // Low pass filter
+            std::vector<double> den(3, 0.0);
+            std::vector<double> num(3, 0.0);
+            common::LpfCoefficients(
+                ts_, cutoff_freq , &den, &num);
+            digital_filter_.set_coefficients(den, num);
+        }
     private:
         // 声明gps话题订阅者
         rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr gps_subscribe;
@@ -503,6 +518,9 @@ class control_node : public rclcpp::Node{
 
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr pub_speed;
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr pub_error;
+        rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr pub_steer_angle;
+
+
 
 
 
@@ -603,6 +621,9 @@ class control_node : public rclcpp::Node{
 
 
         double Constant_deceleration = -0.5; 
+
+        DigitalFilter digital_filter_;
+        
 };
 
 int main(int argc, char **argv){

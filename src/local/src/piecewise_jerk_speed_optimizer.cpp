@@ -100,7 +100,7 @@ bool PiecewiseJerkSpeedOptimizer::Process(double init_v,double init_a,Eigen::Mat
         //std::cout<<"localpath: "<<localpath.transpose()<<std::endl;
         // std::cout<<"localpathcols: "<<localpath.cols()<<std::endl;
       auto comp1=[](const SpeedPoint & sp,const double & s){
-      return sp.s > s;
+      return sp.s < s;
       };
       for (size_t i = 0; i < vec.size(); ++i) {
         double path_s = vec[i][5];
@@ -179,7 +179,7 @@ bool PiecewiseJerkSpeedOptimizer::Process(double init_v,double init_a,Eigen::Mat
   //                   << "t: "<<localpath(7, i)<<" "<<std::endl;
   // }
     auto comp=[](const SpeedPoint & sp,const double & s){
-      return sp.s > s;
+      return sp.s < s;
     };
     for (size_t i = 0; i < vec.size(); ++i) {
       double path_s = vec[i][5];
@@ -197,8 +197,8 @@ bool PiecewiseJerkSpeedOptimizer::Process(double init_v,double init_a,Eigen::Mat
         auto p0 = it_lower - 1;
         auto p1 = it_lower;
         localpath(2, i) = InterpolateUsingLinearApproximation(p0->s, p1->s, path_s, p0->v, p1->v);// v
-        localpath(6, i) = InterpolateUsingLinearApproximation(p0->s, p1->s, path_s, p0->a, p1->a);
-        localpath(7, i) = InterpolateUsingLinearApproximation(p0->s, p1->s, path_s, p0->t, p1->t);
+        localpath(6, i) = InterpolateUsingLinearApproximation(p0->s, p1->s, path_s, p0->a, p1->a);//a
+        localpath(7, i) = InterpolateUsingLinearApproximation(p0->s, p1->s, path_s, p0->t, p1->t);//t
       }
     }
 

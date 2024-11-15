@@ -1,3 +1,0 @@
-Invoking command in '/home/mm/longshan11_6/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/gnss -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/gnss
-Invoked command in '/home/mm/longshan11_6/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/gnss -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/gnss
-Invoking command in '/home/mm/longshan11_6/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/gnss -- -j4 -l4

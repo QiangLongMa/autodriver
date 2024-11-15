@@ -1,4 +1,0 @@
-source;share/gnss/environment/ament_prefix_path.sh
-source;share/gnss/environment/library_path.sh
-source;share/gnss/environment/path.sh
-source;share/gnss/environment/pythonpath.sh

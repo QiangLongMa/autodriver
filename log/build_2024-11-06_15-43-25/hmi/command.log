@@ -1,3 +1,0 @@
-Invoking command in '/home/mm/longshan11_6/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/hmi -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/hmi
-Invoked command in '/home/mm/longshan11_6/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan11_6/src/hmi -DCMAKE_INSTALL_PREFIX=/home/mm/longshan11_6/install/hmi
-Invoking command in '/home/mm/longshan11_6/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan11_6/build/hmi -- -j4 -l4

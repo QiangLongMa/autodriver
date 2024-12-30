@@ -1,0 +1,407 @@
+[0.024s] Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/gnss -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/gnss
+[0.879s] -- The C compiler identification is GNU 9.4.0
+[1.093s] -- The CXX compiler identification is GNU 9.4.0
+[1.107s] -- Check for working C compiler: /usr/bin/cc
+[1.341s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.345s] -- Detecting C compiler ABI info
+[1.557s] -- Detecting C compiler ABI info - done
+[1.573s] -- Detecting C compile features
+[1.574s] -- Detecting C compile features - done
+[1.577s] -- Check for working CXX compiler: /usr/bin/c++
+[1.897s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.897s] -- Detecting CXX compiler ABI info
+[2.161s] -- Detecting CXX compiler ABI info - done
+[2.181s] -- Detecting CXX compile features
+[2.182s] -- Detecting CXX compile features - done
+[2.185s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.255s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.255s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.714s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.719s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.739s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.108s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.148s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.326s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.405s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.562s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.564s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.565s] -- Looking for pthread.h
+[3.877s] -- Looking for pthread.h - found
+[3.877s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.157s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.158s] -- Looking for pthread_create in pthreads
+[4.373s] -- Looking for pthread_create in pthreads - not found
+[4.373s] -- Looking for pthread_create in pthread
+[4.648s] -- Looking for pthread_create in pthread - found
+[4.649s] -- Found Threads: TRUE  
+[4.910s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[4.917s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.166s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[5.420s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[5.859s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.015s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.083s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[6.086s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[6.144s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[6.145s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.145s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[6.145s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[6.210s] -- Found PythonExtra: .so  
+[6.382s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.386s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.390s] -- Configured cppcheck include dirs: /home/mm/longshan12_2/src/gnss/config;/home/mm/longshan12_2/src/gnss/parser;/home/mm/longshan12_2/src/gnss/stream;/home/mm/longshan12_2/src/gnss/util
+[6.390s] -- Configured cppcheck exclude dirs and/or files: 
+[6.394s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.394s] -- Configured cpplint exclude dirs and/or files: 
+[6.401s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.403s] -- Added test 'lint_cmake' to check CMake code style
+[6.404s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[6.406s] -- Added test 'uncrustify' to check C / C++ code style
+[6.406s] -- Configured uncrustify additional arguments: 
+[6.407s] -- Added test 'xmllint' to check XML markup files
+[6.423s] -- Configuring done
+[6.571s] -- Generating done
+[6.575s] -- Build files have been written to: /home/mm/longshan12_2/build/gnss
+[6.604s] Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/gnss -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/gnss
+[6.606s] Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[6.769s] [35m[1mScanning dependencies of target gnss__cpp[0m
+[6.803s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.834s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.068s] [  3%] Built target gnss__cpp
+[8.105s] [35m[1mScanning dependencies of target gnss__rosidl_generator_c[0m
+[8.130s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.165s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.210s] [  8%] [32mBuilding C object CMakeFiles/gnss__rosidl_generator_c.dir/rosidl_generator_c/gnss/msg/detail/imu__functions.c.o[0m
+[8.433s] [ 10%] [32mBuilding C object CMakeFiles/gnss__rosidl_generator_c.dir/rosidl_generator_c/gnss/msg/detail/ins__functions.c.o[0m
+[8.589s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_cpp[0m
+[8.623s] [ 12%] [32mBuilding C object CMakeFiles/gnss__rosidl_generator_c.dir/rosidl_generator_c/gnss/msg/detail/message__functions.c.o[0m
+[8.645s] [ 14%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gnss/msg/imu__type_support.cpp.o[0m
+[8.776s] [ 16%] [32m[1mLinking C shared library libgnss__rosidl_generator_c.so[0m
+[8.817s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_introspection_cpp[0m
+[8.902s] [ 17%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gnss/msg/detail/imu__type_support.cpp.o[0m
+[8.939s] [ 17%] Built target gnss__rosidl_generator_c
+[9.309s] [ 19%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gnss/msg/ins__type_support.cpp.o[0m
+[9.461s] [ 21%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gnss/msg/detail/ins__type_support.cpp.o[0m
+[9.861s] [ 23%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gnss/msg/message__type_support.cpp.o[0m
+[10.153s] [ 25%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gnss/msg/detail/message__type_support.cpp.o[0m
+[10.265s] [ 26%] [32m[1mLinking CXX shared library libgnss__rosidl_typesupport_cpp.so[0m
+[10.393s] [ 26%] Built target gnss__rosidl_typesupport_cpp
+[10.634s] [ 28%] [32m[1mLinking CXX shared library libgnss__rosidl_typesupport_introspection_cpp.so[0m
+[10.842s] [ 28%] Built target gnss__rosidl_typesupport_introspection_cpp
+[10.879s] [ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.264s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_c[0m
+[11.316s] [ 32%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_c.dir/rosidl_typesupport_c/gnss/msg/imu__type_support.cpp.o[0m
+[11.400s] [ 33%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_c.dir/rosidl_typesupport_c/gnss/msg/ins__type_support.cpp.o[0m
+[11.497s] [ 35%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_c.dir/rosidl_typesupport_c/gnss/msg/message__type_support.cpp.o[0m
+[11.605s] [ 37%] [32m[1mLinking CXX shared library libgnss__rosidl_typesupport_c.so[0m
+[11.716s] [ 37%] Built target gnss__rosidl_typesupport_c
+[11.728s] [ 39%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[12.192s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_introspection_c[0m
+[12.214s] [ 41%] [32mBuilding C object CMakeFiles/gnss__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gnss/msg/detail/imu__type_support.c.o[0m
+[12.250s] [ 42%] [32mBuilding C object CMakeFiles/gnss__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gnss/msg/detail/message__type_support.c.o[0m
+[12.286s] [ 44%] [32mBuilding C object CMakeFiles/gnss__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gnss/msg/detail/ins__type_support.c.o[0m
+[12.322s] [ 46%] [32m[1mLinking C shared library libgnss__rosidl_typesupport_introspection_c.so[0m
+[12.355s] [ 46%] Built target gnss__rosidl_typesupport_introspection_c
+[12.368s] [ 48%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.733s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_fastrtps_cpp[0m
+[12.764s] [ 50%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gnss/msg/detail/dds_fastrtps/imu__type_support.cpp.o[0m
+[13.198s] [ 51%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gnss/msg/detail/dds_fastrtps/message__type_support.cpp.o[0m
+[13.635s] [ 53%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gnss/msg/detail/dds_fastrtps/ins__type_support.cpp.o[0m
+[14.064s] [ 55%] [32m[1mLinking CXX shared library libgnss__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.193s] [ 55%] Built target gnss__rosidl_typesupport_fastrtps_cpp
+[14.207s] [ 57%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.585s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_fastrtps_c[0m
+[14.611s] [ 58%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gnss/msg/detail/imu__type_support_c.cpp.o[0m
+[14.988s] [ 60%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gnss/msg/detail/message__type_support_c.cpp.o[0m
+[15.337s] [ 62%] [32mBuilding CXX object CMakeFiles/gnss__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gnss/msg/detail/ins__type_support_c.cpp.o[0m
+[15.708s] [ 64%] [32m[1mLinking CXX shared library libgnss__rosidl_typesupport_fastrtps_c.so[0m
+[15.824s] [ 64%] Built target gnss__rosidl_typesupport_fastrtps_c
+[15.839s] [35m[1mScanning dependencies of target gnss[0m
+[15.850s] [ 64%] Built target gnss
+[15.867s] [35m[1mScanning dependencies of target gnss_lib[0m
+[15.936s] [ 66%] [32mBuilding CXX object CMakeFiles/gnss_lib.dir/parser/data_parser.cc.o[0m
+[17.942s] In file included from [01m[K/home/mm/longshan12_2/src/gnss/parser/data_parser.h:27[m[K,
+[17.942s]                  from [01m[K/home/mm/longshan12_2/src/gnss/parser/data_parser.cc:26[m[K:
+[17.942s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual gnss::MessageType gnss::Parser::GetMessage(void**)[m[K’:
+[17.942s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:95:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[17.942s]    95 |   virtual MessageType GetMessage([01;35m[KMessagePtr* message_ptr[m[K) { return MessageType::NONE; }
+[17.943s]       |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[17.943s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfoVec*)[m[K’:
+[17.943s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:96:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessages[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[17.943s]    96 |   virtual void GetMessages([01;35m[KMessageInfoVec* messages[m[K) {}
+[17.943s]       |                            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[17.943s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfo*)[m[K’:
+[17.943s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:97:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[17.944s]    97 |   virtual void GetMessages([01;35m[KMessageInfo* message[m[K) {}
+[17.944s]       |                            [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[17.944s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual bool gnss::Parser::GetInsStat(void**)[m[K’:
+[17.944s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:98:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[17.944s]    98 |   virtual bool GetInsStat([01;35m[KMessagePtr *message_ptr[m[K) { return false; }
+[17.944s]       |                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[19.972s] [ 67%] [32mBuilding CXX object CMakeFiles/gnss_lib.dir/parser/novatel_parser.cc.o[0m
+[21.719s] In file included from [01m[K/home/mm/longshan12_2/src/gnss/parser/novatel_parser.cc:37[m[K:
+[21.719s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual gnss::MessageType gnss::Parser::GetMessage(void**)[m[K’:
+[21.719s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:95:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[21.719s]    95 |   virtual MessageType GetMessage([01;35m[KMessagePtr* message_ptr[m[K) { return MessageType::NONE; }
+[21.719s]       |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[21.720s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfoVec*)[m[K’:
+[21.720s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:96:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessages[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[21.720s]    96 |   virtual void GetMessages([01;35m[KMessageInfoVec* messages[m[K) {}
+[21.720s]       |                            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[21.720s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfo*)[m[K’:
+[21.720s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:97:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[21.720s]    97 |   virtual void GetMessages([01;35m[KMessageInfo* message[m[K) {}
+[21.720s]       |                            [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[21.720s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:[m[K In member function ‘[01m[Kvirtual bool gnss::Parser::GetInsStat(void**)[m[K’:
+[21.720s] [01m[K/home/mm/longshan12_2/src/gnss/parser/parser.h:98:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[21.720s]    98 |   virtual bool GetInsStat([01;35m[KMessagePtr *message_ptr[m[K) { return false; }
+[21.720s]       |                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[21.723s] [01m[K/home/mm/longshan12_2/src/gnss/parser/novatel_parser.cc:[m[K In constructor ‘[01m[Kgnss::NovatelParser::NovatelParser(const config::Config&)[m[K’:
+[21.723s] [01m[K/home/mm/longshan12_2/src/gnss/parser/novatel_parser.cc:198:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kconfig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[21.723s]   198 |   NovatelParser::NovatelParser([01;35m[Kconst config::Config &config[m[K)
+[21.723s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[22.452s] [ 69%] [32mBuilding CXX object CMakeFiles/gnss_lib.dir/stream/raw_stream.cc.o[0m
+[23.949s] In file included from [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/data_parser.h:27[m[K,
+[23.950s]                  from [01m[K/home/mm/longshan12_2/src/gnss/stream/raw_stream.h:27[m[K,
+[23.950s]                  from [01m[K/home/mm/longshan12_2/src/gnss/stream/raw_stream.cc:17[m[K:
+[23.950s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual gnss::MessageType gnss::Parser::GetMessage(void**)[m[K’:
+[23.950s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:95:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[23.950s]    95 |   virtual MessageType GetMessage([01;35m[KMessagePtr* message_ptr[m[K) { return MessageType::NONE; }
+[23.950s]       |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[23.950s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfoVec*)[m[K’:
+[23.950s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:96:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessages[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[23.950s]    96 |   virtual void GetMessages([01;35m[KMessageInfoVec* messages[m[K) {}
+[23.951s]       |                            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[23.951s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfo*)[m[K’:
+[23.951s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:97:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[23.951s]    97 |   virtual void GetMessages([01;35m[KMessageInfo* message[m[K) {}
+[23.951s]       |                            [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[23.951s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual bool gnss::Parser::GetInsStat(void**)[m[K’:
+[23.951s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:98:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[23.951s]    98 |   virtual bool GetInsStat([01;35m[KMessagePtr *message_ptr[m[K) { return false; }
+[23.951s]       |                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[24.583s] [ 71%] [32mBuilding CXX object CMakeFiles/gnss_lib.dir/stream/serial_stream.cc.o[0m
+[25.011s] [01m[K/home/mm/longshan12_2/src/gnss/stream/serial_stream.cc:[m[K In member function ‘[01m[Kvirtual size_t gnss::SerialStream::read(uint8_t*, size_t)[m[K’:
+[25.011s] [01m[K/home/mm/longshan12_2/src/gnss/stream/serial_stream.cc:330:9:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K-Wimplicit-fallthrough=[m[K]
+[25.011s]   330 |         [01;35m[Kif[m[K (Connect())
+[25.011s]       |         [01;35m[K^~[m[K
+[25.011s] [01m[K/home/mm/longshan12_2/src/gnss/stream/serial_stream.cc:337:7:[m[K [01;36m[Knote: [m[Khere
+[25.011s]   337 |       [01;36m[Kdefault[m[K:
+[25.011s]       |       [01;36m[K^~~~~~~[m[K
+[25.011s] [01m[K/home/mm/longshan12_2/src/gnss/stream/serial_stream.cc:[m[K In member function ‘[01m[Kvirtual size_t gnss::SerialStream::write(const uint8_t*, size_t)[m[K’:
+[25.011s] [01m[K/home/mm/longshan12_2/src/gnss/stream/serial_stream.cc:394:9:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K-Wimplicit-fallthrough=[m[K]
+[25.012s]   394 |         [01;35m[Kif[m[K (Connect())
+[25.012s]       |         [01;35m[K^~[m[K
+[25.012s] [01m[K/home/mm/longshan12_2/src/gnss/stream/serial_stream.cc:401:7:[m[K [01;36m[Knote: [m[Khere
+[25.012s]   401 |       [01;36m[Kdefault[m[K:
+[25.012s]       |       [01;36m[K^~~~~~~[m[K
+[25.068s] [ 73%] [32m[1mLinking CXX shared library libgnss_lib.so[0m
+[25.268s] [ 73%] Built target gnss_lib
+[25.284s] [35m[1mScanning dependencies of target gnss_sync_node[0m
+[25.332s] [ 75%] [32mBuilding CXX object CMakeFiles/gnss_sync_node.dir/gnss_sync_node.cc.o[0m
+[34.993s] [ 76%] [32m[1mLinking CXX executable gnss_sync_node[0m
+[35.570s] [ 76%] Built target gnss_sync_node
+[35.585s] [35m[1mScanning dependencies of target gnss_node[0m
+[35.656s] [ 78%] [32mBuilding CXX object CMakeFiles/gnss_node.dir/gnss_node.cc.o[0m
+[37.109s] In file included from [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/data_parser.h:27[m[K,
+[37.109s]                  from [01m[K/home/mm/longshan12_2/src/gnss/stream/raw_stream.h:27[m[K,
+[37.109s]                  from [01m[K/home/mm/longshan12_2/src/gnss/gnss_node.cc:3[m[K:
+[37.109s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual gnss::MessageType gnss::Parser::GetMessage(void**)[m[K’:
+[37.109s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:95:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[37.109s]    95 |   virtual MessageType GetMessage([01;35m[KMessagePtr* message_ptr[m[K) { return MessageType::NONE; }
+[37.109s]       |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[37.109s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfoVec*)[m[K’:
+[37.109s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:96:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessages[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[37.109s]    96 |   virtual void GetMessages([01;35m[KMessageInfoVec* messages[m[K) {}
+[37.109s]       |                            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[37.109s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual void gnss::Parser::GetMessages(gnss::MessageInfo*)[m[K’:
+[37.109s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:97:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[37.109s]    97 |   virtual void GetMessages([01;35m[KMessageInfo* message[m[K) {}
+[37.110s]       |                            [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[37.110s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:[m[K In member function ‘[01m[Kvirtual bool gnss::Parser::GetInsStat(void**)[m[K’:
+[37.110s] [01m[K/home/mm/longshan12_2/src/gnss/stream/../parser/parser.h:98:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage_ptr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[37.110s]    98 |   virtual bool GetInsStat([01;35m[KMessagePtr *message_ptr[m[K) { return false; }
+[37.110s]       |                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[37.711s] [ 80%] [32m[1mLinking CXX executable gnss_node[0m
+[37.870s] [ 80%] Built target gnss_node
+[37.882s] [35m[1mScanning dependencies of target gnss__py[0m
+[37.898s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[38.716s] [ 82%] Built target gnss__py
+[38.728s] [35m[1mScanning dependencies of target gnss__python[0m
+[38.805s] [ 83%] [32mBuilding C object CMakeFiles/gnss__python.dir/rosidl_generator_py/gnss/msg/_imu_s.c.o[0m
+[39.018s] [ 85%] [32mBuilding C object CMakeFiles/gnss__python.dir/rosidl_generator_py/gnss/msg/_message_s.c.o[0m
+[39.107s] [ 87%] [32mBuilding C object CMakeFiles/gnss__python.dir/rosidl_generator_py/gnss/msg/_ins_s.c.o[0m
+[39.217s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/gnss/libgnss__python.so[0m
+[39.268s] [ 89%] Built target gnss__python
+[39.280s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_c__pyext[0m
+[39.303s] [ 91%] [32mBuilding C object CMakeFiles/gnss__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/gnss/_gnss_s.ep.rosidl_typesupport_c.c.o[0m
+[39.387s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/gnss/gnss_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[39.427s] [ 92%] Built target gnss__rosidl_typesupport_c__pyext
+[39.440s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_introspection_c__pyext[0m
+[39.465s] [ 94%] [32mBuilding C object CMakeFiles/gnss__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/gnss/_gnss_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[39.565s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/gnss/gnss_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[39.602s] [ 96%] Built target gnss__rosidl_typesupport_introspection_c__pyext
+[39.619s] [35m[1mScanning dependencies of target gnss__rosidl_typesupport_fastrtps_c__pyext[0m
+[39.645s] [ 98%] [32mBuilding C object CMakeFiles/gnss__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/gnss/_gnss_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[39.736s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/gnss/gnss_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[39.838s] [100%] Built target gnss__rosidl_typesupport_fastrtps_c__pyext
+[39.857s] Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[39.967s] Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/gnss
+[39.984s] -- Install configuration: ""
+[39.984s] -- Installing: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/rosidl_interfaces/gnss
+[39.985s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss
+[39.985s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[39.985s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/ins.h
+[39.985s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/message.h
+[39.986s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/imu.h
+[39.986s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_generator_c__visibility_control.h
+[39.986s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[39.986s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.h
+[39.987s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__functions.c
+[39.987s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.h
+[39.987s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__functions.h
+[39.987s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__functions.h
+[39.987s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__functions.c
+[39.988s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.h
+[39.988s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__struct.h
+[39.988s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__functions.h
+[39.988s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__functions.c
+[39.988s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__struct.h
+[39.988s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__struct.h
+[39.990s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/library_path.sh
+[39.990s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/library_path.dsv
+[39.990s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_generator_c.so
+[39.991s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_generator_c.so" to ""
+[39.991s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[39.991s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[39.992s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[39.992s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[39.992s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_fastrtps_c.h
+[39.992s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_fastrtps_c.h
+[39.992s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_fastrtps_c.h
+[39.992s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_c.so
+[39.993s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_c.so" to ""
+[39.993s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[39.993s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[39.993s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[39.993s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[39.993s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp
+[39.994s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_fastrtps_cpp.hpp
+[39.994s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/dds_fastrtps
+[39.994s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp
+[39.994s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_cpp.so
+[39.994s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_cpp.so" to ""
+[39.994s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[39.995s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[39.995s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.c
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.c
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.c
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_introspection_c.h
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_introspection_c.h
+[39.995s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_introspection_c.h
+[39.996s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_c.so
+[39.996s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_c.so" to ""
+[39.996s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_c.so
+[39.996s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_c.so" to ""
+[39.996s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[39.996s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[39.997s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_generator_cpp__visibility_control.hpp
+[39.997s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/ins.hpp
+[39.997s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/message.hpp
+[39.997s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/imu.hpp
+[39.997s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[39.997s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.hpp
+[39.997s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__struct.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__builder.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__struct.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__traits.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__struct.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__builder.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__builder.hpp
+[39.998s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__traits.hpp
+[39.999s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__traits.hpp
+[39.999s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.hpp
+[39.999s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[39.999s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[39.999s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[40.001s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.cpp
+[40.001s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.cpp
+[40.001s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.cpp
+[40.001s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp
+[40.001s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
+[40.002s] -- Installing: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_introspection_cpp.hpp
+[40.002s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_cpp.so
+[40.002s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_cpp.so" to ""
+[40.002s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_cpp.so
+[40.002s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_cpp.so" to ""
+[40.002s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/pythonpath.sh
+[40.003s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/pythonpath.dsv
+[40.003s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/__init__.py
+[40.041s] Compiling '/home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/__init__.py'...
+[40.045s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_message_s.c
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/__init__.py
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_ins_s.c
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_message.py
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_ins.py
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_imu.py
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_imu_s.c
+[40.046s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[40.047s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[40.047s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[40.047s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[40.047s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[40.048s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[40.048s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss__python.so
+[40.048s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss__python.so" to ""
+[40.048s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Imu.idl
+[40.048s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Ins.idl
+[40.048s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Message.idl
+[40.049s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Imu.msg
+[40.049s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Ins.msg
+[40.050s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Message.msg
+[40.050s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/libgnss_lib.so
+[40.055s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/libgnss_lib.so" to ""
+[40.055s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/gnss/gnss_node
+[40.055s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/gnss/gnss_node" to ""
+[40.055s] -- Installing: /home/mm/longshan12_2/install/gnss/lib/gnss/gnss_sync_node
+[40.061s] -- Set runtime path of "/home/mm/longshan12_2/install/gnss/lib/gnss/gnss_sync_node" to ""
+[40.061s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/launch
+[40.061s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/launch/gnss.launch.py
+[40.062s] -- Installing: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/package_run_dependencies/gnss
+[40.065s] -- Installing: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/parent_prefix_path/gnss
+[40.067s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/ament_prefix_path.sh
+[40.067s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/ament_prefix_path.dsv
+[40.068s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/path.sh
+[40.068s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/environment/path.dsv
+[40.069s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.bash
+[40.069s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.sh
+[40.070s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.zsh
+[40.070s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.dsv
+[40.071s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/package.dsv
+[40.071s] -- Installing: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/packages/gnss
+[40.072s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cExport.cmake
+[40.073s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cExport-noconfig.cmake
+[40.073s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cExport.cmake
+[40.074s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[40.075s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cExport.cmake
+[40.076s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cExport-noconfig.cmake
+[40.076s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cppExport.cmake
+[40.077s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cppExport.cmake
+[40.077s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[40.078s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cppExport.cmake
+[40.078s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cppExport-noconfig.cmake
+[40.079s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake-extras.cmake
+[40.080s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_dependencies-extras.cmake
+[40.081s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_libraries-extras.cmake
+[40.082s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_targets-extras.cmake
+[40.082s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_include_directories-extras.cmake
+[40.083s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[40.083s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[40.084s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnssConfig.cmake
+[40.084s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnssConfig-version.cmake
+[40.084s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/package.xml
+[40.088s] Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/gnss

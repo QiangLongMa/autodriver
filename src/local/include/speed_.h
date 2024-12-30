@@ -67,8 +67,8 @@ private:
   int  unit_t_ = 1.0;
   double  dense_unit_s_ ,dimension_t_;
 
-  double max_deceleration_ =-2.5; //最大减速度 
-  double max_acceleration_ =2;//最大加速度 
+  double max_deceleration_ = -2.5; //最大减速度 
+  double max_acceleration_ = 2;//最大加速度 
   // cost_table_[t][s]
   std::vector<std::vector<StGraphPoint>> cost_table_;
   std::vector<double>                 spatial_distance_by_index_;
@@ -80,7 +80,7 @@ private:
   double sparse_length_s = 0.5;
   double init_point_v;// 初始的速度 
   double init_point_a;
-  double spatial_potential_penalty = 1.0e5;//终点权重 
+  double spatial_potential_penalty = 1e5;//终点权重 
   double speed_limit;//速度限制 后面应该要根据全局路径的曲率进行选择
   std::vector<SpeedDkappa> car_cruise_speed;//巡航速度 参考的速度
   std::vector<double> speed_limit_list;

@@ -1,0 +1,107 @@
+[0.037s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[0.126s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.166s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.508s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.622s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.629s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.805s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.910s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.914s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.162s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.308s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.422s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[1.554s] -- The imported target "vtkParseOGLExt" references the file
+[1.554s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.554s] but this file does not exist.  Possible reasons include:
+[1.554s] * The file was deleted, renamed, or moved to another location.
+[1.555s] * An install or uninstall procedure did not complete successfully.
+[1.555s] * The installation package was faulty and contained
+[1.555s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.555s] but not all the files it references.
+[1.555s] 
+[1.557s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.557s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.557s] but this file does not exist.  Possible reasons include:
+[1.557s] * The file was deleted, renamed, or moved to another location.
+[1.558s] * An install or uninstall procedure did not complete successfully.
+[1.558s] * The installation package was faulty and contained
+[1.558s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.558s] but not all the files it references.
+[1.558s] 
+[1.558s] -- The imported target "vtk" references the file
+[1.558s]    "/usr/bin/vtk"
+[1.558s] but this file does not exist.  Possible reasons include:
+[1.558s] * The file was deleted, renamed, or moved to another location.
+[1.558s] * An install or uninstall procedure did not complete successfully.
+[1.558s] * The installation package was faulty and contained
+[1.558s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.558s] but not all the files it references.
+[1.558s] 
+[1.559s] -- The imported target "pvtk" references the file
+[1.559s]    "/usr/bin/pvtk"
+[1.559s] but this file does not exist.  Possible reasons include:
+[1.559s] * The file was deleted, renamed, or moved to another location.
+[1.559s] * An install or uninstall procedure did not complete successfully.
+[1.559s] * The installation package was faulty and contained
+[1.559s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.559s] but not all the files it references.
+[1.559s] 
+[1.623s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.633s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.634s] ** WARNING ** io features related to pcap will be disabled
+[1.634s] ** WARNING ** io features related to png will be disabled
+[1.653s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[1.664s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.676s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.721s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.728s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.741s] -- looking for PCL_COMMON
+[1.741s] -- looking for PCL_KDTREE
+[1.742s] -- looking for PCL_OCTREE
+[1.742s] -- looking for PCL_SEARCH
+[1.743s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.744s] -- looking for PCL_FILTERS
+[1.744s] -- looking for PCL_2D
+[1.745s] -- looking for PCL_GEOMETRY
+[1.745s] -- looking for PCL_IO
+[1.746s] -- looking for PCL_FEATURES
+[1.755s] -- looking for PCL_ML
+[1.756s] -- looking for PCL_SEGMENTATION
+[1.756s] -- looking for PCL_VISUALIZATION
+[1.756s] -- looking for PCL_SURFACE
+[1.756s] -- looking for PCL_REGISTRATION
+[1.756s] -- looking for PCL_KEYPOINTS
+[1.756s] -- looking for PCL_TRACKING
+[1.756s] -- looking for PCL_RECOGNITION
+[1.760s] -- looking for PCL_STEREO
+[1.760s] -- looking for PCL_APPS
+[1.760s] -- looking for PCL_IN_HAND_SCANNER
+[1.760s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.760s] -- looking for PCL_OUTOFCORE
+[1.760s] -- looking for PCL_PEOPLE
+[1.792s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[2.324s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.435s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.531s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.533s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.533s] -- Configured cppcheck include dirs: 
+[2.533s] -- Configured cppcheck exclude dirs and/or files: 
+[2.534s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.535s] -- Configured cpplint exclude dirs and/or files: 
+[2.536s] -- Added test 'lint_cmake' to check CMake code style
+[2.537s] -- Added test 'uncrustify' to check C / C++ code style
+[2.537s] -- Configured uncrustify additional arguments: 
+[2.538s] -- Added test 'xmllint' to check XML markup files
+[2.542s] -- Configuring done
+[2.646s] -- Generating done
+[2.650s] -- Build files have been written to: /home/mm/longshan12_2/build/myrviz
+[2.702s] [35m[1mScanning dependencies of target points_and_lines_publisher[0m
+[2.772s] [ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
+[5.192s] [01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:18:9:[m[K [01;31m[Kfatal error: [m[Kvisualization_msgs/msg/maker.hpp: 没有那个文件或目录
+[5.192s]    18 | #include[01;31m[K<visualization_msgs/msg/maker.hpp>[m[K
+[5.192s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.192s] compilation terminated.
+[5.221s] make[2]: *** [CMakeFiles/points_and_lines_publisher.dir/build.make:63：CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o] 错误 1
+[5.221s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/points_and_lines_publisher.dir/all] 错误 2
+[5.221s] make: *** [Makefile:141：all] 错误 2
+[5.226s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4

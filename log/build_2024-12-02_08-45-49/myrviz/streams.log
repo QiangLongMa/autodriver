@@ -1,0 +1,193 @@
+[0.010s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/myrviz -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/myrviz
+[0.089s] -- The C compiler identification is GNU 9.4.0
+[0.139s] -- The CXX compiler identification is GNU 9.4.0
+[0.143s] -- Check for working C compiler: /usr/bin/cc
+[0.207s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.208s] -- Detecting C compiler ABI info
+[0.274s] -- Detecting C compiler ABI info - done
+[0.288s] -- Detecting C compile features
+[0.288s] -- Detecting C compile features - done
+[0.291s] -- Check for working CXX compiler: /usr/bin/c++
+[0.372s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.373s] -- Detecting CXX compiler ABI info
+[0.460s] -- Detecting CXX compiler ABI info - done
+[0.476s] -- Detecting CXX compile features
+[0.477s] -- Detecting CXX compile features - done
+[0.479s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.503s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.503s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.727s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.770s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.774s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.846s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.864s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.916s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.968s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.969s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.970s] -- Looking for pthread.h
+[1.075s] -- Looking for pthread.h - found
+[1.075s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.159s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.159s] -- Looking for pthread_create in pthreads
+[1.216s] -- Looking for pthread_create in pthreads - not found
+[1.216s] -- Looking for pthread_create in pthread
+[1.282s] -- Looking for pthread_create in pthread - found
+[1.284s] -- Found Threads: TRUE  
+[1.440s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.545s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.657s] -- Checking for module 'eigen3'
+[1.691s] --   Found eigen3, version 3.3.7
+[1.733s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.733s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[1.773s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[1.790s] -- Checking for module 'flann'
+[1.811s] --   Found flann, version 1.9.1
+[1.858s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.922s] -- The imported target "vtkParseOGLExt" references the file
+[1.922s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.922s] but this file does not exist.  Possible reasons include:
+[1.922s] * The file was deleted, renamed, or moved to another location.
+[1.922s] * An install or uninstall procedure did not complete successfully.
+[1.922s] * The installation package was faulty and contained
+[1.922s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.922s] but not all the files it references.
+[1.922s] 
+[1.922s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.922s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.923s] but this file does not exist.  Possible reasons include:
+[1.923s] * The file was deleted, renamed, or moved to another location.
+[1.923s] * An install or uninstall procedure did not complete successfully.
+[1.923s] * The installation package was faulty and contained
+[1.923s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.923s] but not all the files it references.
+[1.923s] 
+[1.925s] -- The imported target "vtk" references the file
+[1.926s]    "/usr/bin/vtk"
+[1.926s] but this file does not exist.  Possible reasons include:
+[1.926s] * The file was deleted, renamed, or moved to another location.
+[1.926s] * An install or uninstall procedure did not complete successfully.
+[1.926s] * The installation package was faulty and contained
+[1.926s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.926s] but not all the files it references.
+[1.926s] 
+[1.927s] -- The imported target "pvtk" references the file
+[1.927s]    "/usr/bin/pvtk"
+[1.927s] but this file does not exist.  Possible reasons include:
+[1.927s] * The file was deleted, renamed, or moved to another location.
+[1.927s] * An install or uninstall procedure did not complete successfully.
+[1.927s] * The installation package was faulty and contained
+[1.927s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.927s] but not all the files it references.
+[1.927s] 
+[1.947s] -- Checking for module 'libusb-1.0'
+[1.973s] --   Found libusb-1.0, version 1.0.23
+[2.017s] -- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.062s] -- Found OpenNI: /usr/lib/libOpenNI.so  
+[2.062s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[2.125s] -- Found OpenNI2: /usr/lib/libOpenNI2.so  
+[2.125s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[2.125s] ** WARNING ** io features related to pcap will be disabled
+[2.125s] ** WARNING ** io features related to png will be disabled
+[2.137s] -- Found libusb-1.0: /usr/include  
+[2.138s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[2.143s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[2.149s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[2.178s] -- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  
+[2.179s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[2.185s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[2.197s] -- looking for PCL_COMMON
+[2.198s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.198s] -- looking for PCL_KDTREE
+[2.201s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.201s] -- looking for PCL_OCTREE
+[2.201s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.202s] -- looking for PCL_SEARCH
+[2.202s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.203s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.203s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.204s] -- looking for PCL_FILTERS
+[2.205s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.205s] -- looking for PCL_2D
+[2.205s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[2.205s] -- looking for PCL_GEOMETRY
+[2.206s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[2.206s] -- looking for PCL_IO
+[2.207s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.207s] -- looking for PCL_FEATURES
+[2.208s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.208s] -- looking for PCL_ML
+[2.209s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.209s] -- looking for PCL_SEGMENTATION
+[2.210s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.210s] -- looking for PCL_VISUALIZATION
+[2.211s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.212s] -- looking for PCL_SURFACE
+[2.213s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.213s] -- looking for PCL_REGISTRATION
+[2.214s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.214s] -- looking for PCL_KEYPOINTS
+[2.215s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.215s] -- looking for PCL_TRACKING
+[2.216s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.217s] -- looking for PCL_RECOGNITION
+[2.217s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.218s] -- looking for PCL_STEREO
+[2.219s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.219s] -- looking for PCL_APPS
+[2.220s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.221s] -- looking for PCL_IN_HAND_SCANNER
+[2.221s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+[2.221s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.222s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+[2.222s] -- looking for PCL_OUTOFCORE
+[2.223s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.223s] -- looking for PCL_PEOPLE
+[2.224s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.225s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  
+[2.228s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[2.551s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.636s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.706s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.708s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.709s] -- Configured cppcheck include dirs: 
+[2.709s] -- Configured cppcheck exclude dirs and/or files: 
+[2.709s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.709s] -- Configured cpplint exclude dirs and/or files: 
+[2.710s] -- Added test 'lint_cmake' to check CMake code style
+[2.711s] -- Added test 'uncrustify' to check C / C++ code style
+[2.711s] -- Configured uncrustify additional arguments: 
+[2.711s] -- Added test 'xmllint' to check XML markup files
+[2.714s] -- Configuring done
+[2.762s] -- Generating done
+[2.764s] -- Build files have been written to: /home/mm/longshan12_2/build/myrviz
+[2.782s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/myrviz -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/myrviz
+[2.787s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[2.846s] [35m[1mScanning dependencies of target points_and_lines_publisher[0m
+[2.926s] [ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
+[8.315s] [01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.315s] [01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:272:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocalid[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[8.315s]   272 |         static int [01;35m[Klocalid[m[K =0;
+[8.315s]       |                    [01;35m[K^~~~~~~[m[K
+[19.379s] [100%] [32m[1mLinking CXX executable points_and_lines_publisher[0m
+[20.822s] [100%] Built target points_and_lines_publisher
+[20.837s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[20.866s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz
+[20.877s] -- Install configuration: ""
+[20.877s] -- Installing: /home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher
+[20.881s] -- Set runtime path of "/home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher" to ""
+[20.881s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz
+[20.882s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz
+[20.882s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.sh
+[20.883s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv
+[20.883s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.sh
+[20.883s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.dsv
+[20.884s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.bash
+[20.884s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.sh
+[20.885s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.zsh
+[20.885s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.dsv
+[20.885s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv
+[20.886s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/packages/myrviz
+[20.886s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake
+[20.886s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake
+[20.887s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.xml
+[20.890s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz

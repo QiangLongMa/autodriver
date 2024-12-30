@@ -1,0 +1,237 @@
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:[m[K In member function ‘[01m[Kvoid local_trajs_node::GetLocalPath()[m[K’:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:494:94:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} and ‘[01m[Kstd::chrono::_V2::system_clock::time_point[m[K’ {aka ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’})
+  494 |                                         first_time = std::chrono::high_resolution_clock::now([01;31m[K)[m[K;
+      |                                                                                              [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/mutex:39[m[K,
+                 from [01m[K/usr/include/c++/9/future:38[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/chrono:828:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::chrono::_V2::system_clock& std::chrono::_V2::system_clock::operator=(const std::chrono::_V2::system_clock&)[m[K’
+  828 |     struct [01;36m[Ksystem_clock[m[K
+      |            [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/chrono:828:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::chrono::_V2::system_clock::time_point[m[K’ {aka ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’} to ‘[01m[Kconst std::chrono::_V2::system_clock&[m[K’
+[01m[K/usr/include/c++/9/chrono:828:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::chrono::_V2::system_clock& std::chrono::_V2::system_clock::operator=(std::chrono::_V2::system_clock&&)[m[K’
+[01m[K/usr/include/c++/9/chrono:828:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::chrono::_V2::system_clock::time_point[m[K’ {aka ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’} to ‘[01m[Kstd::chrono::_V2::system_clock&&[m[K’
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:93:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} and ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’})
+  499 |                                         std::chrono::duration<double> duration = [32m[Kfirst_time[m[K [01;31m[K-[m[K [34m[Ksecond_time[m[K;
+      |                                                                                  [32m[K~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~[m[K
+      |                                                                                  [32m[K|[m[K            [34m[K|[m[K
+      |                                                                                  [32m[K|[m[K            [34m[Kstd::chrono::_V2::high_resolution_clock {aka std::chrono::_V2::system_clock}[m[K
+      |                                                                                  [32m[Kstd::chrono::_V2::high_resolution_clock {aka std::chrono::_V2::system_clock}[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/memory:62[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  415 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/memory:62[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1209 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:68[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)[m[K’
+  214 |   [01;36m[Koperator[m[K-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} to ‘[01m[Kconst std::_Bit_iterator_base&[m[K’
+  214 |   operator-([01;36m[Kconst _Bit_iterator_base& __x[m[K, const _Bit_iterator_base& __y)
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:96[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:16[m[K:
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  361 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:96[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:16[m[K:
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:96[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:16[m[K:
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)[m[K’
+  379 |     [01;36m[Koperator[m[K-(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:96[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:16[m[K:
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)[m[K’
+  456 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/valarray:603[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__minus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)[m[K’
+  406 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(-, __minus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/valarray:603[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__minus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)[m[K’
+  406 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(-, __minus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/valarray:603[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__minus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)[m[K’
+  406 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(-, __minus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/valarray:603[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__minus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)[m[K’
+  406 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(-, __minus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/valarray:603[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__minus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)[m[K’
+  406 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(-, __minus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/valarray_after.h:406:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/valarray:1186:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__minus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const std::valarray<_Tp>&, const std::valarray<_Tp>&)[m[K’
+ 1186 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(-, __minus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/valarray:1186:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/valarray:1186:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__minus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)[m[K’
+ 1186 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(-, __minus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/valarray:1186:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/yaml-cpp/node/convert.h:18[m[K,
+                 from [01m[K/usr/local/include/yaml-cpp/yaml.h:18[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:11[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/usr/include/c++/9/valarray:1186:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__minus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)[m[K’
+ 1186 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(-, __minus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/valarray:1186:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/mutex:39[m[K,
+                 from [01m[K/usr/include/c++/9/future:38[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/chrono:463:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Rep1, class _Period1, class _Rep2, class _Period2> constexpr typename std::common_type<std::chrono::duration<_Rep1, _Period1>, std::chrono::duration<_Rep2, _Period2> >::type std::chrono::operator-(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::duration<_Rep2, _Period2>&)[m[K’
+  463 |       [01;36m[Koperator[m[K-(const duration<_Rep1, _Period1>& __lhs,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/chrono:463:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::chrono::duration<_Rep1, _Period1>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/mutex:39[m[K,
+                 from [01m[K/usr/include/c++/9/future:38[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/chrono:751:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Clock, class _Dur1, class _Rep2, class _Period2> constexpr std::chrono::time_point<_Clock, typename std::common_type<_Dur1, std::chrono::duration<_Rep2, _Period2> >::type> std::chrono::operator-(const std::chrono::time_point<_Clock, _Duration1>&, const std::chrono::duration<_Rep2, _Period2>&)[m[K’
+  751 |       [01;36m[Koperator[m[K-(const time_point<_Clock, _Dur1>& __lhs,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/chrono:751:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::chrono::time_point<_Clock, _Duration1>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/mutex:39[m[K,
+                 from [01m[K/usr/include/c++/9/future:38[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:4[m[K:
+[01m[K/usr/include/c++/9/chrono:762:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Clock, class _Dur1, class _Dur2> constexpr typename std::common_type<_Duration1, _Duration2>::type std::chrono::operator-(const std::chrono::time_point<_Clock, _Duration1>&, const std::chrono::time_point<_Clock, _Duration2>&)[m[K’
+  762 |       [01;36m[Koperator[m[K-(const time_point<_Clock, _Dur1>& __lhs,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/chrono:762:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:499:95:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::_V2::high_resolution_clock[m[K’ {aka ‘[01m[Kstd::chrono::_V2::system_clock[m[K’} is not derived from ‘[01m[Kconst std::chrono::time_point<_Clock, _Duration1>[m[K’
+  499 |                                         std::chrono::duration<double> duration = first_time - [01;36m[Ksecond_time[m[K;
+      |                                                                                               [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/./include/localFuns.h:5[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:17[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/toolKits.h:[m[K At global scope:
+[01m[K/home/mm/longshan12_2/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+   64 |     inline double [01;35m[Kd2r[m[K(double theta);
+      |                   [01;35m[K^~~[m[K
+make[2]: *** [CMakeFiles/local_node4.dir/build.make:167：CMakeFiles/local_node4.dir/src/local_node4.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/local_node4.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

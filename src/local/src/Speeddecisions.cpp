@@ -30,22 +30,18 @@ void SpeedDecisions::GetSpeed(double car_s,double start_v,double end_v,
             optTrajxy(6,i) = a;
         }
     }
-    else{//路径中有障碍物 减速操作 减速  
+    else {//路径中有障碍物 减速操作 减速  
         a = -start_v*start_v/(2*safetydistance+1e-3);//加速度 速度 m/s
         for (size_t i = 0; i < optsize; ++i){
             double X = optTrajxy(5,i) - optTrajxy(5,0);
-            if (X  <= safetydistance){
-                v = std::sqrt(std::abs(2 * a * X + std::pow(start_v , 2)));  // m/s
+            double v_pow =  2 * a * X + start_v * start_v;
+            if (v_pow < 0) {
+                optTrajxy(2,i) = 0; //四舍五入 m/s
+                optTrajxy(6,i) = 0;           
+            } else {
+                optTrajxy(2,i) = std::sqrt(v_pow); //四舍五入 m/s
+                optTrajxy(6,i) = a;           
             }
-            else{
-                v=0;
-            }
-            if(v < end_v / 3.6){
-                v = end_v / 3.6;
-            }
-            
-            optTrajxy(2,i) = v; //四舍五入 m/s
-            optTrajxy(6,i) = a;           
         }
     }
 }

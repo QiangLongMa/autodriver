@@ -72,4 +72,14 @@ namespace tool{
     int Rectanglecollisions(std::vector<Eigen::MatrixXd> carpoint,std::vector<Eigen::VectorXd> obses);
     bool HasOverlap(Eigen::MatrixXd &car_point, Eigen::VectorXd &obs, double thea);
 
+
+    //sl 碰撞 
+    void get_car_fourpoint_sl(Eigen::MatrixXd& car_Fpoint, int index, std::vector<std::pair<double, double>> &car_Fpoint_sl, Eigen::MatrixXd& globalpath);
+    bool IsPointInRect(std::vector<std::pair<double, double>> &car_Fpoint_sl, const  std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> &obstacle);
+    bool PointInRect(Eigen::Vector2d &vec12, Eigen::Vector2d &vec23, Eigen::Vector2d &vec34, Eigen::Vector2d &vec41
+					,Eigen::Vector2d &vec1_p1, Eigen::Vector2d &vec1_p2, Eigen::Vector2d &vec1_p3, Eigen::Vector2d &vec1_p4);
+    bool HasOverlapUseSl(std::vector<std::pair<double, double>> &car_Fpoint_sl, std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> obstaclelist);
+
 }

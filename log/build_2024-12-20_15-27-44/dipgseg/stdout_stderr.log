@@ -1,0 +1,21 @@
+[100%] Built target demo_node
+-- Install configuration: ""
+-- Installing: /home/mm/longshan12_2/install/dipgseg/lib/dipgseg/demo_node
+-- Set runtime path of "/home/mm/longshan12_2/install/dipgseg/lib/dipgseg/demo_node" to ""
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/launch
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/launch/run.launch.py
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/package_run_dependencies/dipgseg
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/parent_prefix_path/dipgseg
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.bash
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.sh
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.zsh
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.dsv
+-- Installing: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/packages/dipgseg
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/cmake/dipgsegConfig.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/cmake/dipgsegConfig-version.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.xml

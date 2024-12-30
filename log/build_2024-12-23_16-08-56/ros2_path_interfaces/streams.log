@@ -1,0 +1,122 @@
+[0.049s] Invoking command in '/home/mm/longshan12_2/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/ros2_path_interfaces -- -j4 -l4
+[0.153s] [  3%] Built target ros2_path_interfaces__cpp
+[0.177s] [ 12%] Built target ros2_path_interfaces__rosidl_generator_c
+[0.242s] [ 22%] Built target ros2_path_interfaces__rosidl_typesupport_cpp
+[0.253s] [ 32%] Built target ros2_path_interfaces__rosidl_typesupport_c
+[0.280s] [ 41%] Built target ros2_path_interfaces__rosidl_typesupport_introspection_cpp
+[0.296s] [ 51%] Built target ros2_path_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.318s] [ 61%] Built target ros2_path_interfaces__rosidl_typesupport_introspection_c
+[0.363s] [ 70%] Built target ros2_path_interfaces__rosidl_typesupport_fastrtps_c
+[0.410s] [ 70%] Built target ros2_path_interfaces
+[0.444s] [ 74%] Built target ros2_path_interfaces__py
+[0.505s] [ 80%] Built target ros2_path_interfaces__python
+[0.609s] [ 87%] Built target ros2_path_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.616s] [ 93%] Built target ros2_path_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.630s] [100%] Built target ros2_path_interfaces__rosidl_typesupport_c__pyext
+[1.017s] Invoked command in '/home/mm/longshan12_2/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/ros2_path_interfaces -- -j4 -l4
+[1.303s] Invoking command in '/home/mm/longshan12_2/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/ros2_path_interfaces
+[1.344s] -- Install configuration: ""
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_path_interfaces
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/path_interfaces.h
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.h
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__struct.h
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__functions.h
+[1.344s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__functions.c
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/library_path.sh
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/library_path.dsv
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_generator_c.so
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_fastrtps_c.h
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.345s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.346s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces
+[1.346s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv
+[1.346s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail
+[1.346s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/dds_fastrtps
+[1.346s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_fastrtps_cpp.hpp
+[1.346s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg
+[1.356s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.371s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.371s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces
+[1.371s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv
+[1.371s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail
+[1.371s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_introspection_c.h
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.c
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_introspection_c.so
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_c.so
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/path_interfaces.hpp
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__traits.hpp
+[1.372s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__struct.hpp
+[1.373s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.hpp
+[1.373s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__builder.hpp
+[1.373s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_introspection_cpp.hpp
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.cpp
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.380s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_cpp.so
+[1.381s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/pythonpath.sh
+[1.384s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/pythonpath.dsv
+[1.384s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/__init__.py
+[1.429s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv
+[1.431s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv/__init__.py
+[1.431s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv/_path_interfaces.py
+[1.431s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv/_path_interfaces_s.c
+[1.431s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/ros2_path_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.431s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/ros2_path_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.431s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/ros2_path_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.432s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__python.so
+[1.432s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces.idl
+[1.432s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces.srv
+[1.432s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces_Request.msg
+[1.433s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces_Response.msg
+[1.433s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_path_interfaces
+[1.433s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_path_interfaces
+[1.433s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/ament_prefix_path.sh
+[1.433s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/ament_prefix_path.dsv
+[1.434s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/path.sh
+[1.434s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/path.dsv
+[1.434s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.bash
+[1.434s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.sh
+[1.434s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.zsh
+[1.434s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.dsv
+[1.435s] -- Installing: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.dsv
+[1.435s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/packages/ros2_path_interfaces
+[1.435s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_generator_cExport.cmake
+[1.435s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.435s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.435s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.435s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cExport.cmake
+[1.436s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.436s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_generator_cppExport.cmake
+[1.436s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.436s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.436s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cppExport.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.437s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfacesConfig.cmake
+[1.438s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfacesConfig-version.cmake
+[1.438s] -- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.xml
+[1.440s] Invoked command in '/home/mm/longshan12_2/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/ros2_path_interfaces

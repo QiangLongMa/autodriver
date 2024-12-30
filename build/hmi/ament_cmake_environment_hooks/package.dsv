@@ -1,0 +1,4 @@
+source;share/hmi/local_setup.bash
+source;share/hmi/local_setup.dsv
+source;share/hmi/local_setup.sh
+source;share/hmi/local_setup.zsh

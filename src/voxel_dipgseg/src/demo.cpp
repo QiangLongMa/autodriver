@@ -58,7 +58,7 @@ public:
 
             pcl::fromROSMsg(*cloud_msg, *input_cloud2);
             // 定义旋转角度（60度转换为弧度）
-            double angle =4* M_PI/180.0;
+            double angle = 4.5* M_PI/180.0;
              // 计算旋转矩阵
             Eigen::Affine3f transform = Eigen::Affine3f::Identity();
             transform.rotate(Eigen::AngleAxisf(angle, Eigen::Vector3f::UnitZ()));

@@ -1,0 +1,27 @@
+[0.036s] Invoking command in '/home/mm/longshan12_2/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/model -- -j4 -l4
+[0.159s] Invoked command in '/home/mm/longshan12_2/build/model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/model -- -j4 -l4
+[0.279s] Invoking command in '/home/mm/longshan12_2/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/model
+[0.310s] -- Install configuration: ""
+[0.311s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//launch
+[0.312s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//launch/load_launch.py
+[0.313s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//car_model
+[0.313s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//car_model/_51225ex1diffuse.jpeg
+[0.313s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//car_model/_51225ex2diffuse.jpeg
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//car_model/CAR_original.dae
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model//car_model/default.urdf
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/ament_index/resource_index/package_run_dependencies/model
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/ament_index/resource_index/parent_prefix_path/model
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/environment/ament_prefix_path.sh
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/environment/ament_prefix_path.dsv
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/environment/path.sh
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/environment/path.dsv
+[0.314s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/local_setup.bash
+[0.315s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/local_setup.sh
+[0.315s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/local_setup.zsh
+[0.315s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/local_setup.dsv
+[0.315s] -- Installing: /home/mm/longshan12_2/install/model/share/model/package.dsv
+[0.319s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/ament_index/resource_index/packages/model
+[0.322s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/cmake/modelConfig.cmake
+[0.322s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/cmake/modelConfig-version.cmake
+[0.322s] -- Up-to-date: /home/mm/longshan12_2/install/model/share/model/package.xml
+[0.397s] Invoked command in '/home/mm/longshan12_2/build/model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/model

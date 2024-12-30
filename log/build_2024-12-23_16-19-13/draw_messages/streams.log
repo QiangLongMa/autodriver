@@ -1,0 +1,21 @@
+[3.771s] Invoking command in '/home/mm/longshan12_2/src/draw_messages': PYTHONPATH=/home/mm/longshan12_2/build/draw_messages/prefix_override:/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/draw_messages build --build-base /home/mm/longshan12_2/build/draw_messages/build install --record /home/mm/longshan12_2/build/draw_messages/install.log --install-scripts $base/lib/draw_messages --single-version-externally-managed install_data
+[4.989s] running egg_info
+[4.990s] writing ../../build/draw_messages/draw_messages.egg-info/PKG-INFO
+[4.991s] writing dependency_links to ../../build/draw_messages/draw_messages.egg-info/dependency_links.txt
+[4.993s] writing entry points to ../../build/draw_messages/draw_messages.egg-info/entry_points.txt
+[4.994s] writing requirements to ../../build/draw_messages/draw_messages.egg-info/requires.txt
+[4.994s] writing top-level names to ../../build/draw_messages/draw_messages.egg-info/top_level.txt
+[5.123s] reading manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'
+[5.124s] writing manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'
+[5.124s] running build
+[5.124s] running build_py
+[5.124s] running install
+[5.124s] running install_lib
+[5.130s] running install_data
+[5.131s] running install_egg_info
+[5.132s] removing '/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages/draw_messages-0.0.0-py3.8.egg-info' (and everything under it)
+[5.134s] Copying ../../build/draw_messages/draw_messages.egg-info to /home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages/draw_messages-0.0.0-py3.8.egg-info
+[5.135s] running install_scripts
+[5.271s] Installing real_time_plot script to /home/mm/longshan12_2/install/draw_messages/lib/draw_messages
+[5.278s] writing list of installed files to '/home/mm/longshan12_2/build/draw_messages/install.log'
+[5.389s] Invoked command in '/home/mm/longshan12_2/src/draw_messages' returned '0': PYTHONPATH=/home/mm/longshan12_2/build/draw_messages/prefix_override:/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/draw_messages build --build-base /home/mm/longshan12_2/build/draw_messages/build install --record /home/mm/longshan12_2/build/draw_messages/install.log --install-scripts $base/lib/draw_messages --single-version-externally-managed install_data

@@ -1,0 +1,30 @@
+[0.118s] Invoking command in '/home/mm/longshan12_2/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/lidar_processing -- -j4 -l4
+[0.474s] [ 50%] [32m[1mLinking CXX executable Lidar_Processing_node[0m
+[6.265s] [100%] Built target Lidar_Processing_node
+[6.281s] Invoked command in '/home/mm/longshan12_2/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/lidar_processing -- -j4 -l4
+[6.323s] Invoking command in '/home/mm/longshan12_2/build/lidar_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/lidar_processing
+[6.338s] -- Install configuration: ""
+[6.338s] -- Installing: /home/mm/longshan12_2/install/lidar_processing/lib/lidar_processing/Lidar_Processing_node
+[6.344s] -- Set runtime path of "/home/mm/longshan12_2/install/lidar_processing/lib/lidar_processing/Lidar_Processing_node" to ""
+[6.344s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/launch
+[6.344s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/launch/lidar_Processing.launch.py
+[6.344s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src
+[6.344s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src/Processing_lidar.cpp
+[6.345s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src/box.hpp
+[6.345s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src/obstacle_detector.hpp
+[6.345s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing
+[6.347s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing
+[6.347s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh
+[6.347s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv
+[6.347s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/path.sh
+[6.347s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/path.dsv
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.bash
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.sh
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.zsh
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.dsv
+[6.348s] -- Installing: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.dsv
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake
+[6.348s] -- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.xml
+[6.351s] Invoked command in '/home/mm/longshan12_2/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/lidar_processing

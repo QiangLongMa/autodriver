@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target local_node4[0m
+[  5%] [32mBuilding CXX object CMakeFiles/local_node4.dir/src/Calobs.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/local_node4.dir/src/local_node4.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/local_node4.dir/src/local_dp_qp.cpp.o[0m

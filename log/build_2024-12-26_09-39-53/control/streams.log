@@ -1,0 +1,43 @@
+[0.072s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.227s] [35m[1mScanning dependencies of target control_node[0m
+[0.503s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/KineMPCControler.cpp.o[0m
+[0.534s] [ 14%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[3.105s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:[m[K In constructor ‘[01m[KKineMPCController::KineMPCController()[m[K’:
+[3.105s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:11:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthetar[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.105s]    11 |     double [01;35m[Kthetar[m[K = 0;
+[3.106s]       |            [01;35m[K^~~~~~[m[K
+[3.106s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:12:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.106s]    12 |     double [01;35m[Kvr[m[K = 0;
+[3.106s]       |            [01;35m[K^~[m[K
+[3.106s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:13:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdeltar[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.106s]    13 |     double [01;35m[Kdeltar[m[K = 0;
+[3.107s]       |            [01;35m[K^~~~~~[m[K
+[3.126s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:[m[K In member function ‘[01m[Kvoid KineMPCController::UpdateMatrix(std::tuple<double, double, double, double>&, std::tuple<double, double, double, double>&)[m[K’:
+[3.126s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:69:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K([m[K’ token
+[3.126s]    69 |     double thetar = control_math::[01;31m[K([m[Kstd::get<2>(reference_point));
+[3.126s]       |                                   [01;31m[K^[m[K
+[3.126s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:65:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.127s]    65 | roller::UpdateMatrix([01;35m[Kstd::tuple<double,double,double,double> &state[m[K,
+[3.127s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.127s] 
+[3.285s] In file included from [01m[K/home/mm/longshan12_2/src/control/./include/KineMPCControler.h:10[m[K,
+[3.285s]                  from [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:4[m[K:
+[3.285s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:[m[K At global scope:
+[3.285s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:10:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble control_math::NormalizeAngle(double)[m[K’ used but never defined
+[3.287s]    10 |     inline double [01;35m[KNormalizeAngle[m[K(double angle) ;
+[3.287s]       |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[3.372s] make[2]: *** [CMakeFiles/control_node.dir/build.make:63：CMakeFiles/control_node.dir/src/KineMPCControler.cpp.o] 错误 1
+[3.375s] make[2]: *** 正在等待未完成的任务....
+[6.375s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kdouble control_node::CalculateSteerAngle(const int&)[m[K’:
+[6.375s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:418:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.375s]   418 |             double [01;35m[KdeltaX[m[K =  dx;
+[6.375s]       |                    [01;35m[K^~~~~~[m[K
+[6.375s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:419:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.375s]   419 |             double [01;35m[KdeltaY[m[K =  dy;
+[6.375s]       |                    [01;35m[K^~~~~~[m[K
+[6.375s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.376s]   420 |             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+[6.376s]       |                    [01;35m[K^~~~~~~~[m[K
+[16.280s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+[16.280s] make: *** [Makefile:141：all] 错误 2
+[16.283s] Invoked command in '/home/mm/longshan12_2/build/control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4

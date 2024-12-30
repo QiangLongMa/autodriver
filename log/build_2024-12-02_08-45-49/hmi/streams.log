@@ -1,0 +1,127 @@
+[0.033s] Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/hmi -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/hmi
+[0.219s] -- The C compiler identification is GNU 9.4.0
+[0.383s] -- The CXX compiler identification is GNU 9.4.0
+[0.387s] -- Check for working C compiler: /usr/bin/cc
+[0.640s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.641s] -- Detecting C compiler ABI info
+[0.903s] -- Detecting C compiler ABI info - done
+[0.921s] -- Detecting C compile features
+[0.921s] -- Detecting C compile features - done
+[0.923s] -- Check for working CXX compiler: /usr/bin/c++
+[1.232s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.234s] -- Detecting CXX compiler ABI info
+[1.503s] -- Detecting CXX compiler ABI info - done
+[1.524s] -- Detecting CXX compile features
+[1.524s] -- Detecting CXX compile features - done
+[1.526s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.599s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.600s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.904s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.945s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.951s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.246s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.281s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.459s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.580s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.581s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.581s] -- Looking for pthread.h
+[2.958s] -- Looking for pthread.h - found
+[2.958s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.273s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.273s] -- Looking for pthread_create in pthreads
+[3.481s] -- Looking for pthread_create in pthreads - not found
+[3.481s] -- Looking for pthread_create in pthread
+[3.806s] -- Looking for pthread_create in pthread - found
+[3.807s] -- Found Threads: TRUE  
+[4.243s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.649s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.65.1") found components: thread 
+[4.744s] -- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4.2") 
+[4.772s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.002s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.009s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.010s] -- Configured cppcheck include dirs: /home/mm/longshan12_2/src/hmi/include
+[5.010s] -- Configured cppcheck exclude dirs and/or files: 
+[5.017s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.017s] -- Configured cpplint exclude dirs and/or files: 
+[5.025s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.029s] -- Added test 'lint_cmake' to check CMake code style
+[5.029s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.031s] -- Added test 'uncrustify' to check C / C++ code style
+[5.031s] -- Configured uncrustify additional arguments: 
+[5.037s] -- Added test 'xmllint' to check XML markup files
+[5.052s] -- Configuring done
+[5.099s] -- Generating done
+[5.113s] -- Build files have been written to: /home/mm/longshan12_2/build/hmi
+[5.132s] Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/hmi -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/hmi
+[5.134s] Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/hmi -- -j4 -l4
+[5.281s] [  2%] [34m[1mGenerating include/moc_toolKits.cpp[0m
+[5.537s] /home/mm/longshan12_2/src/hmi/include/toolKits.h:0: Note: No relevant classes found. No output generated.
+[5.550s] [  4%] [34m[1mGenerating include/moc_mainwindow.cpp[0m
+[5.973s] [  6%] [34m[1mGenerating include/moc_mmItem.cpp[0m
+[6.025s] [  8%] [34m[1mGenerating include/moc_rclcomm.cpp[0m
+[6.361s] [ 11%] [34m[1mGenerating include/moc_runcam.cpp[0m
+[6.412s] [ 13%] [34m[1mGenerating include/moc_runcenterpoint.cpp[0m
+[6.424s] [ 15%] [34m[1mGenerating include/moc_runcontrol.cpp[0m
+[6.454s] [ 17%] [34m[1mGenerating include/moc_runglobal.cpp[0m
+[6.525s] [ 20%] [34m[1mGenerating include/moc_rungps.cpp[0m
+[6.589s] [ 22%] [34m[1mGenerating include/moc_runlidar.cpp[0m
+[6.645s] [ 24%] [34m[1mGenerating include/moc_runlocal.cpp[0m
+[6.695s] [ 26%] [34m[1mGenerating include/moc_runrviz.cpp[0m
+[6.770s] [ 28%] [34m[1mGenerating include/moc_runsocketcan.cpp[0m
+[6.817s] [ 31%] [34m[1mGenerating include/moc_mItem.cpp[0m
+[7.047s] [ 33%] [34m[1mGenerating ui_mainwindow.h[0m
+[7.136s] [35m[1mScanning dependencies of target hmi[0m
+[7.588s] [ 35%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/mItem.cpp.o[0m
+[9.834s] [ 37%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/mmItem.cpp.o[0m
+[10.875s] [ 40%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/rclcomm.cpp.o[0m
+[20.688s] [ 42%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runcam.cpp.o[0m
+[21.609s] [ 44%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runcenterpoint.cpp.o[0m
+[22.511s] [ 46%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runcontrol.cpp.o[0m
+[23.428s] [ 48%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runglobal.cpp.o[0m
+[24.381s] [ 51%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/rungps.cpp.o[0m
+[25.312s] [ 53%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runlidar.cpp.o[0m
+[26.265s] [ 55%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runlocal.cpp.o[0m
+[27.157s] [ 57%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runrviz.cpp.o[0m
+[28.090s] [ 60%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/runsocketcan.cpp.o[0m
+[29.007s] [ 62%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/toolKits.cpp.o[0m
+[31.375s] [ 64%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_mItem.cpp.o[0m
+[33.357s] [ 66%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_mainwindow.cpp.o[0m
+[39.670s] [ 68%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_mmItem.cpp.o[0m
+[40.626s] [ 71%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_rclcomm.cpp.o[0m
+[44.343s] [ 73%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runcam.cpp.o[0m
+[45.410s] [ 75%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runcenterpoint.cpp.o[0m
+[46.413s] [ 77%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runcontrol.cpp.o[0m
+[47.301s] [ 80%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runglobal.cpp.o[0m
+[48.168s] [ 82%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_rungps.cpp.o[0m
+[49.033s] [ 84%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runlidar.cpp.o[0m
+[49.861s] [ 86%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runlocal.cpp.o[0m
+[50.740s] [ 88%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runrviz.cpp.o[0m
+[51.751s] [ 91%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_runsocketcan.cpp.o[0m
+[52.754s] [ 93%] [32mBuilding CXX object CMakeFiles/hmi.dir/include/moc_toolKits.cpp.o[0m
+[52.857s] [ 95%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/mainwindow.cpp.o[0m
+[59.331s] [ 97%] [32mBuilding CXX object CMakeFiles/hmi.dir/src/main.cpp.o[0m
+[64.966s] [100%] [32m[1mLinking CXX executable hmi[0m
+[67.057s] [100%] Built target hmi
+[67.070s] Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/hmi -- -j4 -l4
+[67.145s] Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/hmi
+[67.153s] -- Install configuration: ""
+[67.154s] -- Installing: /home/mm/longshan12_2/install/hmi/lib/hmi/hmi
+[67.157s] -- Set runtime path of "/home/mm/longshan12_2/install/hmi/lib/hmi/hmi" to ""
+[67.157s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/launch
+[67.157s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/launch/hmi.launch.py
+[67.159s] -- Installing: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/package_run_dependencies/hmi
+[67.160s] -- Installing: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/parent_prefix_path/hmi
+[67.160s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/environment/ament_prefix_path.sh
+[67.161s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/environment/ament_prefix_path.dsv
+[67.161s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/environment/path.sh
+[67.161s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/environment/path.dsv
+[67.161s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.bash
+[67.162s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.sh
+[67.162s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.zsh
+[67.162s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.dsv
+[67.163s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/package.dsv
+[67.163s] -- Installing: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/packages/hmi
+[67.163s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/cmake/hmiConfig.cmake
+[67.164s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/cmake/hmiConfig-version.cmake
+[67.164s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/package.xml
+[67.166s] Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/hmi

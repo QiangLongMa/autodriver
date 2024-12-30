@@ -3,11 +3,17 @@
 #include<time.h>
 
 //设置车辆位置和障碍物信息
+
+local_dp_qp::local_dp_qp(){
+  loadyaml();
+}
+
+
 void local_dp_qp::setPatam(double car_a,double car_v,double car_s,double car_l,double dl,double dll,const Eigen::MatrixXd& globalPath,int all_distances ,
                           int one_distances,int car_index,std::vector<obses_sd> obses_limit_SD, 
                           std::vector<Eigen::VectorXd> GlobalcoordinatesystemObsesLimit,double start_l,double end_l,
                           double delta_l,double target_v,double traget_l,Decisionflags Decisionflags_,double safetydistance_,
-                          bool firstrunflag){
+                          bool firstrunflag, bool ReducedDistanceFlag_,  double Reducedistanceeachtime_,  size_t Reducedistancesize_ ){
     //车辆位置 
     vehicle_position.s = car_s;
     vehicle_position.l = car_l;
@@ -25,10 +31,12 @@ void local_dp_qp::setPatam(double car_a,double car_v,double car_s,double car_l,d
     DriveStraightLineFlag_ = Decisionflags_.DriveStraightLineFlag;//直线行使
     Overtakinginlaneflag_  = Decisionflags_.Overtakinginlaneflag;
     righttoleftlane_       = Decisionflags_.righttoleftlane;
-    safetydistance =safetydistance_;//最近障碍物的s位置  基于车辆坐标系下的 
-    FirstRunFlag= firstrunflag;//第一次运行标志
+    safetydistance = safetydistance_;//最近障碍物的s位置  基于车辆坐标系下的 
+    FirstRunFlag = firstrunflag;//第一次运行标志
+    ReducedDistanceFlag = ReducedDistanceFlag_;
+    Reducedistanceeachtime = Reducedistanceeachtime_;
+    Reducedistancesize = Reducedistancesize_;
     //加载yaml文件
-    loadyaml();
     std::cout<<"Start_l: "<<Start_l<<"End_l: "<<End_l<<"Delta_l: "<<Delta_l<<"Target_v: "<<Target_v<<" traget_l: "<<traget_l<<std::endl;
     std::cout<<"all_distances: "<<all_distances<<"one_distances: "<<one_distances<<std::endl;
     std::cout<<"ObstacleAvoidanceFlag_: "<<ObstacleAvoidanceFlag_<<" "
@@ -60,16 +68,20 @@ int local_dp_qp::GetoptTrajxy(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Vect
 }
 
 //设置
-void local_dp_qp::Setpraents(const std::vector<std::vector<SlPoint>>& sample_points) {
-  for (const auto& level : sample_points) 
-  {
-    std::vector<Node> level_points;
-    for (const auto& p : level) 
-    {
-      level_points.emplace_back(Node(p));
-    }
-    cost_table_.emplace_back(level_points);//设置成node节点模式 
+void local_dp_qp::Setpraents(const std::vector<std::vector<std::vector<SlPoint>>>& sample_points) {
+ // std::cout<<"sample_points_size: "<<sample_points.size()<<std::endl;
+  cost_table_.resize(sample_points.size());
+  for (size_t i = 0; i < sample_points.size(); ++i) {
+    for (const auto& level : sample_points[i]) {
+      std::vector<Node> level_points;
+      for (const auto& p : level) 
+      {
+        level_points.emplace_back(Node(p));
+      }
+      cost_table_[i].emplace_back(level_points);//设置成node节点模式 
+    }      
   }
+  //std::cout<<"cost_table__size: "<<cost_table_.size()<<std::endl;
   //打印节点名
   // for (auto& level_points :cost_table_)
   // {
@@ -83,13 +95,15 @@ void local_dp_qp::Setpraents(const std::vector<std::vector<SlPoint>>& sample_poi
 
 //计算代价 
 void local_dp_qp::CalculateCostTable() {
-  cost_table_[0][0].cost = 0.0;
-  cost_table_[0][0].dl = first_dl;
-  cost_table_[0][0].ddl = first_dll;
   auto start = std::chrono::high_resolution_clock::now();
-  for (uint32_t s = 1; s < cost_table_.size(); ++s) {
-    for (uint32_t l = 0; l < cost_table_[s].size(); ++l) {
-      CalculateCostAt(s, l);
+  for (auto &p : cost_table_) {
+    p[0][0].cost = 0.0;
+    p[0][0].dl = first_dl;
+    p[0][0].ddl = first_dll;
+    for (uint32_t s = 1; s < p.size(); ++s) {
+      for (uint32_t l = 0; l < p[s].size(); ++l) {
+        CalculateCostAt(s, l, p);
+      }
     }
   }
   auto end = std::chrono::high_resolution_clock::now();
@@ -97,70 +111,106 @@ void local_dp_qp::CalculateCostTable() {
   std::cout << "AllCosttime: " << duration.count()<< " 秒" << std::endl;
 }
 
-void local_dp_qp::CalculateCostAt(const int32_t s, const int32_t l)
+void local_dp_qp::CalculateCostAt(const int32_t s, const int32_t l,  std::vector<std::vector<Node>> &single_cost)
 {
-  auto &pre_level = cost_table_[s-1]; //前一层
+  auto &pre_level = single_cost[s-1]; //前一层
   //auto &level_points  = cost_table_[s];//当前层
   double min_cost = std::numeric_limits<double>::max();
   quintic_polynomial_curve5d curve;//多项式 
   Eigen::VectorXd X_PARAM(6);//获取多项式的系数 
   //double timecost;
-  double cost_obs = 0;
-  for (auto& pre_point : pre_level)
-  {
+  for (auto& pre_point : pre_level) {
     curve.setparam(pre_point.sl_point.s, pre_point.sl_point.l, pre_point.dl, pre_point.ddl, 
-                cost_table_[s][l].sl_point.s,cost_table_[s][l].sl_point.l,0.0,0.0);
+                single_cost[s][l].sl_point.s,single_cost[s][l].sl_point.l,0.0,0.0);
     curve.Calcurver(X_PARAM);
     // if(DecelerateFlag_==false){//在进行减速时，所需的路径不进行障碍物的cost计算 只有当false时才可以 
     //   cost_obs = CalculateAllObstacleCost(curve,pre_point.sl_point, cost_table_[s][l].sl_point);//在直线行驶时，不进行障碍物的COST计算 
     // }else{
     //   cost_obs = CalculateAllObstacleCost(curve,pre_point.sl_point, cost_table_[s][l].sl_point);//在直线行驶时，不进行障碍物的COST计算 
     // }
-    cost_obs = CalculateAllObstacleCost(curve,pre_point.sl_point, cost_table_[s][l].sl_point);
+    double cost_obs = CalculateAllObstacleCost(curve,pre_point.sl_point, single_cost[s][l].sl_point);
     //auto end = std::chrono::high_resolution_clock::now();
-    double cost_path = CalculateReferenceLineCost(curve,pre_point.sl_point, cost_table_[s][l].sl_point);
-    double all_cost = cost_obs +cost_path;
+    double cost_path = CalculateReferenceLineCost(curve,pre_point.sl_point, single_cost[s][l].sl_point);
+    double all_cost = cost_obs + cost_path;
     if(all_cost<min_cost){
       min_cost = all_cost;
-      cost_table_[s][l].pre_node = &pre_point;
-      cost_table_[s][l].curve = curve;
-      cost_table_[s][l].cost = min_cost;
+      single_cost[s][l].pre_node = &pre_point;
+      single_cost[s][l].curve = curve;
+      single_cost[s][l].cost = min_cost;
     }
   }
 }
 
-int local_dp_qp::FinalPath(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Vector4d> &frenet_path){
-  //先从最后一列中找到cost最小的点
-  double min_cost = std::numeric_limits<double>::max();
-  Node * min_node=nullptr;
-  std::vector<Node> min_path; 
-  /*寻找前三个较小的cost值*/
-  int index;  int index2; int index3;
-  for(int i = 0; i<cost_table_[cost_table_.size()-1].size(); ++i){
-    if (cost_table_[cost_table_.size()-1][i].cost < min_cost){
-      min_cost = cost_table_[cost_table_.size()-1][i].cost;
-      index = i;
+int local_dp_qp::FinalPath(Eigen::MatrixXd &optTrajxy, std::vector<Eigen::Vector4d> &frenet_path){
+  std::vector<Node> min_path;
+  if (ReducedDistanceFlag) { //进行距离的缩减 
+    std::vector<std::tuple<double, std::vector<Node>>> min_cost_list;
+    for (size_t i = 0; i < cost_table_.size(); ++i){ //计算不同长度范围的cost
+      auto & single_cost = cost_table_[i];
+      double min_cost = std::numeric_limits<double>::max();
+      Node * min_node=nullptr;
+      int index; 
+      std::vector<Node> path;
+      for(int i = 0; i < single_cost[single_cost.size() - 1].size(); ++i){
+        if (single_cost[single_cost.size()-1][i].cost < min_cost){
+          min_cost = single_cost[single_cost.size()-1][i].cost;
+          index = i;
+        }
+      }
+      min_node = &single_cost[single_cost.size()-1][index]; //找到cost最小的局部路径 
+      path.push_back(*min_node);
+      while (min_node!=nullptr){
+        min_node = min_node->pre_node;
+        path.push_back(*min_node);
+        if(min_node->pre_node==nullptr){
+          break;
+        }
+      }
+      min_cost_list.push_back(std::make_tuple(min_cost, path));
     }
-  }
-  min_node = &cost_table_[cost_table_.size()-1][index]; //找到cost最小的局部路径 
-  min_path.push_back(*min_node);
-  while (min_node!=nullptr){
-    min_node = min_node->pre_node;
+    for (size_t i = 0; i < min_cost_list.size(); ++i){ //规划路径的总长度由变短 
+      if (std::get<0>(min_cost_list[i]) < 1e100) {
+        min_path = std::get<1>(min_cost_list[i]);
+        break;
+      } else { //下一组数据 
+        if (i + 1 == min_cost_list.size()) { //如果是最后一组数据
+          std::cout<<"多个路径均未找到"<<std::endl;
+          return 0;
+        } 
+      }
+    }
+  } else { // 不进行距离的缩减 
+   //先从最后一列中找到cost最小的点
+    auto &single_cost = cost_table_.front();
+    double min_cost = std::numeric_limits<double>::max();
+    Node * min_node = nullptr;
+    int index; 
+    for(int i = 0; i < single_cost[single_cost.size() - 1].size(); ++i){
+      if (single_cost[single_cost.size()-1][i].cost < min_cost){
+        min_cost = single_cost[single_cost.size()-1][i].cost;
+        index = i;
+      }
+    }
+    min_node = &single_cost[single_cost.size()-1][index]; //找到cost最小的局部路径 
     min_path.push_back(*min_node);
-    if(min_node->pre_node==nullptr){
-      break;
+    while (min_node!=nullptr){
+      min_node = min_node->pre_node;
+      min_path.push_back(*min_node);
+      if(min_node->pre_node==nullptr){
+        break;
+      }
+    }
+    if(min_cost >= 1e100){
+      std::cout<<"未找到局部路径"<<std::endl;
+      return 0;
     }
   }
   //换算成从起点开始的排序 
   std::reverse(min_path.begin(),min_path.end());
   //最小cost的路已经发生碰撞 说明所有的路径均发生碰撞 
-  if(min_cost>=1e100){
-    std::cout<<"未找到局部路径"<<std::endl;
-    return 0;
-  }
+ 
   // 生成min_cost_path
   if (frenet_path.size()!=0){frenet_path.clear();}
-  
   frenet_path.reserve((min_path.size()-1)*(SIZE_+1));
   Eigen::Vector4d frenet_frame_point;
   for (size_t i = 1; i < min_path.size(); ++i){
@@ -201,7 +251,6 @@ int local_dp_qp::FinalPath(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Vector4
     optinglobalindex[i]= INDEX;
     xy_list.col(i)=XY_;
   }
- 
   // static int loopCount =1;
   // std::string fileName = "/home/mm/longshan_speedoptimisation/local/" + std::to_string(loopCount) + ".txt";
   // std::ofstream outFile;
@@ -237,16 +286,18 @@ int local_dp_qp::FinalPath(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Vector4
         changelaneflag = true; 
       }
       if(std::abs(vehicle_position.l)>2.3){
-        std::cout<<"vehicle_position.l: "<<vehicle_position.l<<std::endl;
         leftbound = std::abs(vehicle_position.l);
         rightbound = -std::abs(vehicle_position.l);
       }else{
         leftbound = 2.3;
         rightbound = -2.3;
       }
-      std::cout<<"qp_.Process"<<std::endl;
+      //std::cout<<"qp_.Process"<<std::endl;
       bool flag =qp_.Process(my_pair,std::move(obsesSD_),frenet_path,globalPath_,xy_list_qp,changelaneflag,leftbound,rightbound);
-      std::cout<<"qp_.Process over "<<std::endl;
+      if (!flag) {
+        return 0;
+      }
+      std::cout<<"slqp_.flag"<< flag <<std::endl;
       // for (size_t i = 0; i < frenet_path_qp.size(); i++)
       // {
       //   std::cout<<frenet_path_qp[i](0)<<" "<<frenet_path_qp[i](1)<<" "<<frenet_path_qp[i](2)<<std::endl;
@@ -312,7 +363,7 @@ void local_dp_qp::sdtofrenet(const SlPoint SL,int &index,Eigen::Vector3d &tesian
       index =mid;
       break;
     }
-    else if (globalPath_(6,mid)<SL.s)
+    else if (globalPath_(6,mid) < SL.s)
     {
        left = mid+1;
     }else{
@@ -553,12 +604,20 @@ double local_dp_qp::CalculateAllObstacleCost(quintic_polynomial_curve5d curver,S
   int level_points_index;
   Eigen::MatrixXd car_Fpoint;
   double safedistance = vehicle_width_ * 1.8, s_cost = 0,l_cost = 0, last_point_cost;
-  double obstacle_collision_distance = 0.5;
+  double obstacle_collision_distance ;
   constexpr double obstacle_collision_cost = 1e7;
   double l_min, l_max,l_wigth;
   constexpr double s_distance = 20; 
   SlPoint level_points;
   constexpr double kSafeDistance = 0.6;
+  // std::vector<std::tuple<std::pair<double, double>,
+	// 				std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> obstaclelist;
+  // for (const auto &p : obsesSD_) {
+  //   obstaclelist.emplace_back(std::make_tuple(std::make_pair(p.point1.s, p.point1.l), 
+  //                                             std::make_pair(p.point2.s, p.point2.l),
+  //                                             std::make_pair(p.point3.s, p.point3.l), 
+  //                                             std::make_pair(p.point4.s, p.point4.l)));
+  // }
   //与车辆位置的连线不进行障碍物的代价计算
   for (size_t i = 0; i <= SIZE_; ++i){
     if(i == 0){
@@ -576,15 +635,22 @@ double local_dp_qp::CalculateAllObstacleCost(quintic_polynomial_curve5d curver,S
     const double theta = tool::normalizeAngle(delta_theta + globalPath_(3, level_points_index));//局部路径的角度值 
     XY_(2) = theta;
     tool::get_car_fourpoint(vehicle_length_,vehicle_width_,XY_,car_Fpoint);//由车辆的中心点 计算局部路径上的每个店对应的车辆的四个顶点
+    //右车辆的四个顶点 计算车辆四个顶点的SL；
+    // std::vector<std::pair<double, double>> car_Fpoint_sl;
+    // tool::get_car_fourpoint_sl(car_Fpoint, CAR_INDEX_, car_Fpoint_sl, globalPath_); //获取四个顶点的sl 
+    // if (tool::HasOverlapUseSl(car_Fpoint_sl, obstaclelist)) {
+    //   std::cout<<"sl线路上有碰撞"<<std::endl;
+    //   return 1e100;//线路上有碰
+    // }
     //计算车辆四个顶点的 s l 
     //与所有的障碍物进行一个判断 
     double CarAndObsDistanceThreshld = 2;
     for(size_t j = 0; j < obsesSD_.size(); ++j){
       auto &obsea_points = obsesSD_[j];
-      double s_min = std::min({obsea_points.point1.s,obsea_points.point2.s, obsea_points.point3.s, obsea_points.point4.s});
-      l_min = std::min({obsea_points.point1.l,obsea_points.point2.l,obsea_points.point3.l,obsea_points.point4.l});
-      l_max = std::max({obsea_points.point1.l,obsea_points.point2.l,obsea_points.point3.l,obsea_points.point4.l});
-      l_wigth = std::abs(l_max-l_min);
+      double s_min = obsea_points.min_s;
+      // l_min = std::min({obsea_points.point1.l,obsea_points.point2.l,obsea_points.point3.l,obsea_points.point4.l});
+      // l_max = std::max({obsea_points.point1.l,obsea_points.point2.l,obsea_points.point3.l,obsea_points.point4.l});
+      l_wigth = obsea_points.wigth;
       if(std::abs(s_min - level_points.s) > s_distance || 
         std::abs(obsea_points.centre_points.l-level_points.l) > (CarAndObsDistanceThreshld + l_wigth/2 + vehicle_width_/2)){ //纵向距离和横向距离的限制
         continue;
@@ -596,12 +662,12 @@ double local_dp_qp::CalculateAllObstacleCost(quintic_polynomial_curve5d curver,S
           }
           if(std::fabs(s_min - level_points.s) <= s_distance){
             if(Overtakinginlaneflag_ || DriveStraightLineFlag_){
-              obstacle_collision_distance = vehicle_width_/2 + l_wigth / 2 + 0.3;
+              obstacle_collision_distance = vehicle_width_/2 + l_wigth / 2 + 1.0;
             }else if (ObstacleAvoidanceFlag_){
               if(l_wigth<1){ //障碍物较小 人
-                obstacle_collision_distance = vehicle_width_/2 + l_wigth/2 + 0.5;
+                obstacle_collision_distance = vehicle_width_/2 + l_wigth/2 + 1.0;
                 }else{//车子 
-                obstacle_collision_distance = vehicle_width_/2 + l_wigth/2 + 0.5;
+                obstacle_collision_distance = vehicle_width_/2 + l_wigth/2 + 1.0;
               }
             }
             double delta_l = std::fabs(obsea_points.centre_points.l - level_points.l);
@@ -614,7 +680,7 @@ double local_dp_qp::CalculateAllObstacleCost(quintic_polynomial_curve5d curver,S
 }
 
 //路径的代价
-double local_dp_qp::CalculateReferenceLineCost(quintic_polynomial_curve5d curver,SlPoint pre_point, SlPoint cur_point){
+double local_dp_qp::CalculateReferenceLineCost(quintic_polynomial_curve5d curver, SlPoint pre_point, SlPoint cur_point){
   double path_cost;
   //0介导的损失  使用直线代替弧线距离
   //与车辆位置的连线不进行障碍物的代价计算 暂时 
@@ -683,14 +749,14 @@ void local_dp_qp::GetSpeedLimit(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Ve
         if(std::abs(optTrajsd[i](0) - obsesSD_[j].centre_points.s) < 20){//20m的距离
           double min_s = std::min({obsesSD_[j].point1.s , obsesSD_[j].point2.s , obsesSD_[j].point3.s , obsesSD_[j].point4.s});
           double max_s = std::max({obsesSD_[j].point1.s , obsesSD_[j].point2.s , obsesSD_[j].point3.s , obsesSD_[j].point4.s});
-          if(optTrajsd[i](0) >= (min_s - 5) && optTrajsd[i](0) <= (max_s + 5)){//在障碍物s内 障碍物扩大 
+          if(optTrajsd[i](0) >= (min_s - 10) && optTrajsd[i](0) <= (max_s + 10)){//在障碍物s内 障碍物扩大 
             Eigen::Vector3d car_pose(optTrajxy(0,i),optTrajxy(1,i),optTrajxy(3,i));
             Eigen::MatrixXd car_Fpoint;
             tool::get_car_fourpoint(vehicle_length_,vehicle_width_,car_pose,car_Fpoint);//由车辆的中心点 计算局部路径上的每个店对应的车辆的四个顶点
             //Eigen::Vector4d dd(obs_limits_distance[j](0),obs_limits_distance[j](1),obs_limits_distance[j](2),obs_limits_distance[j](3));
             double lat_min_diatcne = getmindistance(car_Fpoint,obsesSD_[j]);//求取 l 距离最小的值 
             if(lat_min_diatcne <= distancethreshold){
-              speedlimit_[i]=closrobslimitspeed;//3.6km/h 
+              speedlimit_[i] = closrobslimitspeed;//3.6km/h 
             }
           }
         }
@@ -815,7 +881,7 @@ void local_dp_qp::getspeeduselinearinterpolation(Eigen::MatrixXd &path){
  SpeedDecisions SpeedDecisions_;
   //首先需要先判断是否减速 
   if(DecelerateFlag_){  
-    SpeedDecisions_.GetSpeed(vehicle_position.s,CAR_V,Target_v,path,all_distance,true); //all_distance 
+    SpeedDecisions_.GetSpeed(vehicle_position.s,CAR_V,0,path,all_distance,true); //all_distance 
   }else if(ObstacleAvoidanceFlag_ || righttoleftlane_){
     SpeedDecisions_.GetSpeed(vehicle_position.s,CAR_V,Target_v,path,0,false);//
   }else if(Overtakinginlaneflag_ || DriveStraightLineFlag_){
@@ -832,9 +898,9 @@ void local_dp_qp::getspeeduselinearinterpolation(Eigen::MatrixXd &path){
 void local_dp_qp::getspeeduseST(Eigen::MatrixXd &path,std::vector<Eigen::Vector4d> &frenetpath){
   speed_ speed;
   std::vector<double> speedlimit;
-  std::cout<<"GetSpeedLimit"<<std::endl;
+  //std::cout<<"GetSpeedLimit"<<std::endl;
   GetSpeedLimit(path, frenetpath, speedlimit);
-  std::cout<<"GetSpeedLimit over"<<std::endl;
+  //std::cout<<"GetSpeedLimit over"<<std::endl;
   size_t limit_size = speedlimit.size();
   // 输出速度限制信息（仅用于调试目的）
   // std::cout << "path: "<<path.cols()<<std::endl;
@@ -849,7 +915,7 @@ void local_dp_qp::getspeeduseST(Eigen::MatrixXd &path,std::vector<Eigen::Vector4
     curise_speed[i].dkappa = path(4,i);
     curise_speed[i].s = path(5,i);
   }
-  std::cout<<"speed.Search"<<std::endl;
+  
   bool flag = speed.Search(all_distance,speeddata,CAR_V,CAR_A,curise_speed,speedlimit,speeddkppa,config);
   std::cout << "speed_dp_flag: "<<flag<<std::endl;
   // for (size_t i = 0; i < speeddata.size(); i++){
@@ -882,8 +948,10 @@ void local_dp_qp::getspeeduseST(Eigen::MatrixXd &path,std::vector<Eigen::Vector4
     // }
     //这里需要车辆的加速度
     //std::cout<<path.transpose()<<std::endl;
+    //std::cout<<"speeddata: "<<speeddata.size()<<" s" <<speeddata.back().s<<" t "<<speeddata.back().t<<std::endl;
     bool speed_qp_ = PiecewiseJerkSpeedOptimizer_.Process(CAR_V,CAR_A,path,speeddata,speeddata.back().s,speeddata.back().t,
                                                           speedlimit_,curise_speed,output_speed_data,config);
+    
     std::cout<<"speed_qp_: "<<speed_qp_<<std::endl;
     //std::cout<<"path: "<<std::endl;
     //std::cout<<path.transpose()<<std::endl;
@@ -894,13 +962,30 @@ void local_dp_qp::getspeeduseST(Eigen::MatrixXd &path,std::vector<Eigen::Vector4
 }
 
 void local_dp_qp::getsamplepoints(){
- //清空之前的内容
-  if (sample_points_.size()!=0){sample_points_.clear();}
-  if(cost_table_.size()!=0){cost_table_.clear();}
-  //设置采样点 
-  sample_points_.emplace_back(std::vector<SlPoint>{vehicle_position});//车辆位置 
-  //首先进行当前车道的采样 
-  if(!ObstacleAvoidanceFlag_){ //不进行超车
+  //清空之前的内容
+  sample_points_.clear();
+  cost_table_.clear();
+  if (ReducedDistanceFlag) { //需要进行多个距离的计算 
+    sample_points_.resize(Reducedistancesize); // 设置尺寸
+    for (size_t i = 0; i < Reducedistancesize; i++){
+      sample_points_[i].emplace_back(std::vector<SlPoint>{vehicle_position});//车辆位置 
+      double alldistance = all_distance - i * Reducedistanceeachtime;//计算总长 
+      for(double s = vehicle_position.s + one_distance; s <= vehicle_position.s + alldistance; s += one_distance) {
+        std::vector<SlPoint> level_points;
+        SlPoint sl;
+        for (double l = Start_l; l >= End_l; l -= Delta_l) {
+          sl.s = s;
+          sl.l = l;
+          level_points.emplace_back(sl);
+        }
+        sample_points_[i].emplace_back(level_points);
+      }
+    }
+  } else { //不需要设置多个采样点 
+    //设置采样点 
+    sample_points_.resize(1);
+    sample_points_[0].emplace_back(std::vector<SlPoint>{vehicle_position});//车辆位置 
+    //首先进行当前车道的采样 
     for(double s = vehicle_position.s + one_distance; s <= vehicle_position.s + all_distance; s += one_distance) {
       std::vector<SlPoint> level_points;
       SlPoint sl;
@@ -909,22 +994,13 @@ void local_dp_qp::getsamplepoints(){
         sl.l = l;
         level_points.emplace_back(sl);
       }
-      sample_points_.emplace_back(level_points);
-    }
-  } else {//进行超车
-  for(double s = vehicle_position.s + one_distance; s <= vehicle_position.s + all_distance; s += one_distance) {
-      std::vector<SlPoint> level_points;
-      SlPoint sl;
-      for (double l = Start_l; l >= End_l; l -= Delta_l) {
-        sl.s = s;
-        sl.l = l;
-        level_points.emplace_back(sl);
-      }
-      sample_points_.emplace_back(level_points);
+      sample_points_[0].emplace_back(level_points);
     }
   }
   
 }
+
+
 void local_dp_qp::findClosestPoint(const Eigen::VectorXd& car, const Eigen::MatrixXd& path, int& minIndex) {
 		
   int startIndex = std::max(minIndex - 30, 0);

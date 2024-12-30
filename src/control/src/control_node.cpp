@@ -24,6 +24,8 @@
 #include <cstdlib> // 包含 <cstdlib> 头文件以使用 std::abs()
 #include "lon_controller.h"
 #include <chrono>
+#include"KineMPCControler.h"
+#include"controlmath.h"
 #define ts_ 0.01//0.01 car0.02 yijie
 #define cutoff_freq 20   //20  ///8  car yijie  
 class control_node : public rclcpp::Node{
@@ -36,9 +38,9 @@ class control_node : public rclcpp::Node{
             //创建话题订阅者, 订阅者全局路径消息
             local_subscribe = this->create_subscription<std_msgs::msg::Float64MultiArray>("local_to_control_pub", 10, std::bind(&control_node::local_callback, this, std::placeholders::_1));
             
-            local_subscribe0 = this->create_subscription<std_msgs::msg::Float64MultiArray>("local_publisher", 10, std::bind(&control_node::local_callback0, this, std::placeholders::_1));
+            //local_subscribe0 = this->create_subscription<std_msgs::msg::Float64MultiArray>("local_publisher", 10, std::bind(&control_node::local_callback0, this, std::placeholders::_1));
             
-            
+
             sub_global=this->create_subscription<std_msgs::msg::Float64MultiArray>("global_local_topic", 10, std::bind(&control_node::global_callback, this, std::placeholders::_1));
             
             //创建相机目标检测订阅者
@@ -63,7 +65,7 @@ class control_node : public rclcpp::Node{
             oendTime = std::chrono::steady_clock::now();
             sTime = std::chrono::steady_clock::now();
             // timer_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&control_node::timer_can_callback, this));  
-            timer0 = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&control_node::timer_can_callback0, this));     
+            timer0 = this->create_wall_timer(std::chrono::milliseconds(20), std::bind(&control_node::timer_can_callback0, this));     
             // control_publisher = this->create_publisher<std_msgs::msg::Float64MultiArray>("control_pub", 10);         
             ofs.open(fileName);
             double kp = 50, ki = 0, kd = 0;
@@ -80,135 +82,20 @@ class control_node : public rclcpp::Node{
                 gpsD = msg->data[2];
                 gpsS = msg->data[3];
                 gpsA = msg->data[7];
-                if((optTrajxy.array() != 0.0).any() == 0){
-                    //std::cout << "Waiting local traj receive,check local node..." << std::endl;
-                    newSpeedRef=0;
-                } else {
-                    if(!in_flag){
-                        std::cout << "Local traj has been generated!" << std::endl;
-                        newSpeedRef=0;
-                        in_flag = true;
-                    }
-                    if(run_stop_flag){
-                        car.resize(5,1);
-                        tool::getCarPosition(gpsx, gpsy, gpsD, gpsS, car);
-                        if(optTrajxy.cols()== 1 && optTrajxy.rows() == 1){
-                            std::cout<<"optTrajxy in None!!!"<<std::endl;
-                            newSpeedRef=0;    
-                        }
-                        else{
-                            int pre_index = (index + 5) > (globalPath.cols()-1) ? 
-                                            (globalPath.cols()-1) : (index + 5);//在全局路径向前四个点 也就是2m的距离 
-                            //速度较大时，直线段的一种情况 
-                            // pre_distance=2;
-                            //double kp = 100, ki = 0, kd = 0;
-                            //pid.setPID(kp,ki,kd);  
-                            prepoint = 0;//弯道时预瞄距离变短两个点的育苗 1m
-                            // Q <<500,  0,  0,
-                            //     0, 500,  0,
-                            //     0,  0, 200;
-                            // R << 0, 0, 0, 100;
-                            Q <<20,  0,  0,
-                                0, 20,  0,
-                                0,  0, 10;
-                            R << 0, 0, 0, 2;
-                            // if (std::abs(globalPath(4, index) < 0.05)){
-                            //     pre_distance=2;
-                            //     //double kp = 100, ki = 0, kd = 0;
-                            //     //pid.setPID(kp,ki,kd);  
-                            //     prepoint=0;//弯道时预瞄距离变短
-                            //     Q <<10,  0,  0,
-                            //         0, 10,  0,
-                            //         0,  0, 9;
-                            //     R << 0, 0, 0, 5;
-                            // }
-                            // //弯道 
-                            // else if (std::abs(globalPath(4,index) >= 0.05)){
-                            //     //pre_distance=2;//纯路径跟踪的预瞄距离 
-                            //     //double kp = 100, ki = 0, kd = 0;
-                            //     //pid.setPID(kp,ki,kd);  
-                            //     prepoint=0;//弯道时预瞄距离变长 
-                            //     Q <<10,  0,  0,
-                            //         0, 10,  0,
-                            //         0,  0, 9;
-                            //     R << 0, 0, 0, 5; //4
-                            // }
-                            //弯道  m
-                            local::findClosestPoint(car, optTrajxy, closestIndex);
-                            int pre_closestIndex = (closestIndex + prepoint) > (optTrajxy.cols()-1) ? 
-                                            (optTrajxy.cols()-1):(closestIndex + prepoint);//预瞄点的数量为2
-                            // x y v thea dk 投点计算 
-                            std::array<double,5> Projection_point_message = 
-                                                Projectionpoint::GetProjectionpoint(closestIndex,optTrajxy,car(0),car(1));
-                            
-                            double dx = car(0) - optTrajxy(0, pre_closestIndex);
-                            double dy = car(1) - optTrajxy(1, pre_closestIndex);
-                            double theta = optTrajxy(3, pre_closestIndex);
-                            float error = dy * std::cos(theta) - dx * std::sin(theta);
-                            std_msgs::msg::Float32 error_msg;
-                            error_msg.data = error;
-                            pub_error->publish(error_msg);
-                            double deltaX =  dx;
-                            double deltaY =  dy;
-                            double deltaYAW = tool::normalizeAngle(tool::d2r(car(3)) - theta);
-                            /***************LQR***********/
-                            /*Q中元素的大小表示状态量的重要程度，越大表示越重要，控制的快速性会越好，但会增大输入（能量消耗增多），导致超调、震荡可能会比较明显；
-                            控制权重矩阵R中元素的大小表示对能量消耗的关注度，越大表示对该输入的能量消耗越敏感，会减小输入，有效降低超调、震荡，控制过程柔和，但快速性较差；
-                            QR的选取是两种约束互相妥协的过程，重点关注调参*/
-                            //在轨迹跟踪中，前一项优化目标表示跟踪过程路径偏差的累积大小，第二项优化目标表示跟踪过程控制能量的损耗
-                            ref_delta = atan2(car(4) * optTrajxy(4, pre_closestIndex), 1);                     
-                            LQR.stateSpaceMatrix(A, B, car, cps, ref_delta, theta);
-                            //u = LQR.calcU(car, optTrajxy, pre_closestIndex, A, B, Q, R)(1);
-                            u=LQR.calcU(car, optTrajxy, Projection_point_message, A, B, Q, R)(1);
-                            u = -(u+ref_delta);//-kx+kl
-                            // Q2 << 10      , 0    , 0,
-                            //         0      , 10    , 0,
-                            //         0      , 0    , 12;
-                            // R2 << 5;   
-                            // u = LQR.lqrComputeCommand(theta, deltaX, deltaY, deltaYAW, 
-                            //                         optTrajxy(4, pre_closestIndex), 3.0,car(4),0.01,Q2,R2);          
-                            /***************方向盘限幅*****************/
-                            static double last_sw = 0;
-                            const double swth = 520.0;
-
-                            //弯道 
-                            // if (std::abs(globalPath(4, index)) > 0.03 || std::abs(globalPath(4, pre_index)) > 0.03){
-                            //     sw = K * u;
-                            // }else{
-                            //     sw = K * u;
-                            // }
-                            sw = K * u;
-                            if(sw > swth){
-                                sw = swth;
-                            } else if (sw < -swth){
-                                sw = -swth;
-                            } 
-                            double steer_angle = digital_filter_.Filter(sw);
-                            std_msgs::msg::Float32MultiArray steer_angle_msg;
-                            steer_angle_msg.data.emplace_back(sw);
-                            steer_angle_msg.data.emplace_back(steer_angle);
-                            pub_steer_angle->publish(steer_angle_msg);
-                            //newSpeedRef = gpsS + globalPath(6,closestIndex)*0.1; 
-                            // std::cout << "u: " <<  u << std::endl;
-                            // std::cout << "sw: " << K * u<< std::endl;                                                               
-                        }
-                    }else{
-                        newSpeedRef=0;
-                    }
-                }            
-            }else{
-                std::cout << "Local Node gps is none!!!" << std::endl;
-                newSpeedRef=0;
+                car.resize(5,1);
+                tool::getCarPosition(gpsx, gpsy, gpsD, gpsS, car);
             }
             auto end = std::chrono::high_resolution_clock::now();  
             std::chrono::duration<double> duration = end - start;
             //std::cout << "control运行时间: " << duration.count() << " 秒" << std::endl;
         } 
         
-        void timer_can_callback0(){
+        void timer_can_callback0(){           
             if(run_stop_flag){
                 //没有局部路径规划 
-                if((optTrajxy.array() != 0.0).any() == 0||optTrajxy.cols()== 1){
+                if((interpolationoptTrajxy.array() != 0.0).any() == 0||interpolationoptTrajxy.cols()== 1) {
+                    std::cout<<"optTrajxy in None!!!"<<std::endl;
+                    newSpeedRef=0;    
                     return;
                 }
                 /**********************激光雷达未启动时****************************/
@@ -228,88 +115,98 @@ class control_node : public rclcpp::Node{
                 }else{
                     return;
                 }
-                bool UES_PID = false;
-                if(!UES_PID){
-                    int pre_closestIndex = std::min(static_cast<int>(optTrajxy.cols()-1), closestIndex+1);
-                    double a = optTrajxy(6,pre_closestIndex);
-                    double target_v = optTrajxy(2,pre_closestIndex);
-                    //std::cout<<"target_v: "<<target_v<<std::endl;  
-                    //std::cout<<"a: "<<a<<std::endl;  
-                    if(std::abs(a) <= 0.01){//当前的加速度为0
-                        newSpeedRef = std::abs(target_v) * 3.6;//按照局部路径里的速度进行行驶
-                    }else{
-                        current_v = current_v + a * 0.01;// v =v +at 
-                        //std::cout<<"current_v: "<<current_v<<std::endl;
-                        if(a>0){
-                            if(target_v==0){
-                                current_v = std::min(current_v,target_v);// 不能超过设定的最大速度
-                            }else{
-                                current_v = std::min(current_v,target_v);// 不能超过设定的最大速度
-                            }
-                            newSpeedRef = std::ceil((current_v * 3.6));
-                        }else if(a<0){
-                            current_v = std::min(current_v,target_v);// 不能小于设定的最小速度
-                            if(current_v<0){
-                                current_v = 0;
-                            }
-                            newSpeedRef = std::ceil((current_v *3.6));// 
-                        }
-                        //std::cout<<"newSpeedRef: "<<newSpeedRef<<std::endl;
+                if (first_vehicle_start_flag) {  //车辆首次启动的操作 
+                    current_v = current_v + vehicle_start_acc * 0.02;
+                    if (current_v > speed_threshold) {
+                        first_vehicle_start_flag = false;
                     }
+                    newSpeedRef = std::round(current_v * 3.6); //四舍五入 
                 } else {
-                    /******************PID************************/
-                    // x y theta v  a  解决不掉人为踩刹车 速度累加的行为 
-                    double a;
-                    std::tuple<double, double, double, double, double> vehicle_state;
-                    vehicle_state = std::make_tuple(car(0), car(1), car(3), car(2), gpsA);
-                    loncontroller_.Init(closestIndex, vehicle_state, localpath_time);
-                    loncontroller_.ComputeControlCommand(optTrajxy, a);
-                    //std::cout<<"pid a: "<<a<<std::endl;
-                    current_v = current_v + a * 0.01;
-                    if(current_v < 0) current_v = 0;
-                    newSpeedRef = std::round(current_v * 3.6);
-                    //std::cout<<"current_v: "<<current_v<<std::endl;
+                    //判断是否由静止转为起步  上一步标志为 true 当前帧为false 并且车辆静止 这仅仅是启动条件 
+                    //启动后 由replan_vehicle_start_flag标志符进行控制 
+                    if ((previous_DecelerateFlag && !DecelerateFlag && car(2) < 0.1) ||
+                        replan_vehicle_start_flag) {
+                        current_v = current_v + vehicle_start_acc * 0.02;
+                        replan_vehicle_start_flag = true;
+                        if (current_v > speed_threshold) {
+                            replan_vehicle_start_flag = false;
+                        } 
+                        newSpeedRef = std::round(current_v * 3.6); //四舍五入 
+                    } else {
+                        bool UES_PID = false;
+                        if(!UES_PID){
+                            int pre_closestIndex = std::min(static_cast<int>(interpolationoptTrajxy.cols()-1), closestIndex+1);
+                            double a = interpolationoptTrajxy(6,pre_closestIndex);
+                            double target_v = interpolationoptTrajxy(2,pre_closestIndex);
+                            //std::cout<<"target_v: "<<target_v<<std::endl;  
+                            //std::cout<<"a: "<<a<<std::endl;  
+                            if(std::abs(a) <= 0.01){//当前的加速度为0
+                                newSpeedRef = std::abs(target_v) * 3.6;//按照局部路径里的速度进行行驶
+                            }else{
+                                current_v = current_v + a * 0.02;// v =v +at 
+                                //std::cout<<"current_v: "<<current_v<<std::endl;
+                                if(a > 0){
+                                    if(target_v==0){
+                                        current_v = std::min(current_v,target_v);// 不能超过设定的最大速度
+                                    }else{
+                                        current_v = std::min(current_v,target_v);// 不能超过设定的最大速度
+                                    }
+                                    newSpeedRef = std::ceil((current_v * 3.6));
+                                } else if( a < 0 ){
+                                    current_v = std::max(current_v,target_v);// 不能小于设定的最小速度
+                                    if(current_v < 0){
+                                        current_v = 0;
+                                    }
+                                    newSpeedRef = std::ceil((current_v *3.6));// 
+                                }
+                                //std::cout<<"newSpeedRef: "<<newSpeedRef<<std::endl;
+                            }
+                        } else {
+                            /******************PID************************/
+                            // x y theta v  a  解决不掉人为踩刹车 速度累加的行为 
+                            double a;
+                            std::tuple<double, double, double, double, double> vehicle_state;
+                            vehicle_state = std::make_tuple(car(0), car(1), car(3), car(2), gpsA);
+                            loncontroller_.Init(closestIndex, vehicle_state, localpath_time);
+                            loncontroller_.ComputeControlCommand(interpolationoptTrajxy, a);
+                            //std::cout<<"pid a: "<<a<<std::endl;
+                            current_v = current_v + a * 0.02;
+                            if(current_v < 0) current_v = 0;
+                            newSpeedRef = std::round(current_v * 3.6);
+                            //std::cout<<"current_v: "<<current_v<<std::endl;
+                        }                        
+                    }
                 }
-                //std::cout<<"current_v: "<<current_v*3.6<<std::endl;
+                previous_DecelerateFlag = DecelerateFlag;
                 std_msgs::msg::Float32 speed_msg;
                 speed_msg.data = current_v;
                 pub_speed->publish(speed_msg);
-                
-                if((std::abs((min_long_dis-car_frent.s) > disOfObsMin) && (std::abs(min_long_dis-car_frent.s) < disOfObsMax) && 
-                            (std::fabs(obs_lidar(1, minCol)-car_frent.d) < 1.5))){
-                    /*****************************AEB***********************************/
-                    /*speed ,gear,sw,brake,flag */
-                    SendCan(0,1,0,1,1);
-                    std::cout << "Run-Brake!!!" << std::endl;
-                }
-                else{             
-                   // std::cout << "index: " << index << ", maxIndex: " << maxIndex << std::endl;
-                    if((index > (maxIndex - 40))){
-                        /****************************End Stop*******************************/
-                        SendCan(0,1,0,1,0);
-                        std::cout << "End-brake!!!" << std::endl;
-                        std::cout << "car.v: " << car(2) << std::endl;
-                        if(gpsS < 0.03){
-                            SendCan(0,1,1,1,0);
-                            run_stop_flag = false;
-                            std::cout << "End-Stop!!!" << std::endl;
-                        }
-                    }else{
-                        /*****************Driving*******************/
-                        std_msgs::msg::Float32MultiArray msg;
-                        //接近局部路径的终点 车辆正在减速 3m的距离 
-                        if (closestIndex > optTrajxy.cols() - 2) { //也就是1m的距离
-                            SendCan(0,2,sw,1,1);  
-                        } else {
-                            SendCan(std::round(newSpeedRef),2,sw,0,1);    
-                        }
-                        // if(closestIndex>=static_cast<int>(optTrajxy.cols()-6)&&DecelerateFlag){//3m的距离 
-                        //     SendCan(0,1,sw,1,1);//速度为0 刹车 
-                        //     std::cout << "stop car!!!!" << std::endl; 
-                        
-                    }      
-                          
-                }                        
+                /***********************转角**************************/
+                sw = CalculateSteerAngle(index);       
+                // std::cout << "index: " << index << ", maxIndex: " << maxIndex << std::endl;
+                if((index > (maxIndex - 40))){
+                    /****************************End Stop*******************************/
+                    SendCan(0,1,0,1,0);
+                    std::cout << "End-brake!!!" << std::endl;
+                    std::cout << "car.v: " << car(2) << std::endl;
+                    if(gpsS < 0.03){
+                        SendCan(0,1,1,1,0);
+                        run_stop_flag = false;
+                        std::cout << "End-Stop!!!" << std::endl;
+                    }
+                }else{
+                    /*****************Driving*******************/
+                    std_msgs::msg::Float32MultiArray msg;
+                    //接近局部路径的终点 车辆正在减速 3m的距离 
+                    if (closestIndex > interpolationoptTrajxy.cols() - 2) { //也就是2m的距离
+                        SendCan(0,2,sw,1,1);  
+                    } else {
+                        SendCan(newSpeedRef,2,sw,0,1);    
+                    }
+                    // if(closestIndex>=static_cast<int>(optTrajxy.cols()-6)&&DecelerateFlag){//3m的距离 
+                    //     SendCan(0,1,sw,1,1);//速度为0 刹车 
+                    //     std::cout << "stop car!!!!" << std::endl; 
+                }                             
             }
             else{
                 SendCan(0,1,0,1,0);
@@ -379,11 +276,13 @@ class control_node : public rclcpp::Node{
                // maxIndex = (int)msg->data.back();//全局路径的长度 
                 msg->data.pop_back();
                 int cols = msg->data.size()/9;
-                optTrajxy.resize(8, cols);
+                optTrajxy.resize(9, cols);
                 Eigen::Map<Eigen::MatrixXd> optTrajxyReshaped(msg->data.data(), 9, cols);
-                optTrajxy= std::move(optTrajxyReshaped);
+                optTrajxy = std::move(optTrajxyReshaped);
+                //control_math::InterpolateUsingS(optTrajxy, interpolationoptTrajxy);
+                interpolationoptTrajxy = optTrajxy;
+                //线性插值 使用s
             } 
-           
         }
 
         void local_callback0(const std_msgs::msg::Float64MultiArray::SharedPtr msg){ 
@@ -395,7 +294,7 @@ class control_node : public rclcpp::Node{
                 // std::cout << "No optimal local trajs generation 000"<< std::endl;
             }else{
                 int cols = msg->data.size()/9;
-                optTrajxy0.resize(8, cols);
+                optTrajxy0.resize(9, cols);
                 Eigen::Map<Eigen::MatrixXd> optTrajxyReshaped(msg->data.data(), 9, cols);
                 optTrajxy0= optTrajxyReshaped;
             } 
@@ -433,11 +332,10 @@ class control_node : public rclcpp::Node{
         }
 
         void subDecelerateFlag(const std_msgs::msg::Int32::SharedPtr msg){
-            if (msg->data==0)
-            {
-                DecelerateFlag=false;
-            }else{
-                DecelerateFlag=true;
+            if (msg->data==0) {
+                DecelerateFlag = false;
+            } else {
+                DecelerateFlag = true;
             }           
         }
 
@@ -495,6 +393,92 @@ class control_node : public rclcpp::Node{
                 ts_, cutoff_freq , &den, &num);
             digital_filter_.set_coefficients(den, num);
         }
+    
+        double CalculateSteerAngle(const int &minindex) {
+            int pre_index = (minindex + 8) > (globalPath.cols()-1) ? 
+                            (globalPath.cols()-1) : (minindex + 8);//在全局路径向前四个点 也就是4m的距离
+            prepoint = 0;//弯道时预瞄距离变短两个点的育苗 1m
+            if (std::abs(globalPath(4, minindex)) > 0.03 || std::abs(globalPath(4, pre_index)) > 0.03){ //弯道 
+                Q <<100,  0,  0,
+                    0, 100,  0,
+                    0,  0, 10;
+                R << 0, 0, 0, 4;
+            } else {
+                Q <<20,  0,  0,
+                    0, 20,  0,
+                    0,  0, 10;
+                R << 0, 0, 0, 4;
+            }
+            //弯道  m
+            local::findClosestPoint(car, interpolationoptTrajxy, closestIndex);
+            double preview_time = 0.8; //
+            double preview_distance = preview_time * gpsS;
+
+            //int pre_closestIndex = closestIndex ;//control_math::findcloseindex(interpolationoptTrajxy, closestIndex, preview_distance);
+            // x y v thea dk 投点计算 
+            std::array<double,5> Projection_point_message = 
+                                Projectionpoint::GetProjectionpoint(closestIndex,interpolationoptTrajxy,car(0),car(1));
+            double dx = car(0) - Projection_point_message[0];
+            double dy = car(1) - Projection_point_message[1];
+            double theta = Projection_point_message[3];
+            float error = dy * std::cos(theta) - dx * std::sin(theta);
+            std_msgs::msg::Float32 error_msg;
+            error_msg.data = error;
+            pub_error->publish(error_msg);
+            double deltaX =  dx;
+            double deltaY =  dy;
+            double deltaYAW = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+            /***************LQR***********/
+            /*Q中元素的大小表示状态量的重要程度，越大表示越重要，控制的快速性会越好，但会增大输入（能量消耗增多），导致超调、震荡可能会比较明显；
+            控制权重矩阵R中元素的大小表示对能量消耗的关注度，越大表示对该输入的能量消耗越敏感，会减小输入，有效降低超调、震荡，控制过程柔和，但快速性较差；
+            QR的选取是两种约束互相妥协的过程，重点关注调参*/
+            //在轨迹跟踪中，前一项优化目标表示跟踪过程路径偏差的累积大小，第二项优化目标表示跟踪过程控制能量的损耗
+            ref_delta = atan2(car(4) * interpolationoptTrajxy(4, closestIndex), 1);                     
+            LQR.stateSpaceMatrix(A, B, car, cps, ref_delta, theta);
+            //u = LQR.calcU(car, interpolationoptTrajxy, pre_closestIndex, A, B, Q, R)(1);
+            u=LQR.calcU(car, interpolationoptTrajxy, Projection_point_message, A, B, Q, R)(1);
+            u = -(u+ref_delta);//-kx+kl
+            // Q2 << 10      , 0    , 0,
+            //         0      , 10    , 0,
+            //         0      , 0    , 12;
+            // R2 << 5;   
+            // u = LQR.lqrComputeCommand(theta, deltaX, deltaY, deltaYAW, 
+            //                         optTrajxy(4, pre_closestIndex), 3.0,car(4),0.01,Q2,R2);          
+            std::cout<<"lqr: " << K * u <<std::endl;
+            /***************方向盘限幅*****************/
+            /**********MPC************/
+            // std::tuple<double, double, double, double> vehicle_state = {car(0), car(1), tool::normalizeAngle(tool::d2r(car(3))), car(2)};
+            // std::tuple<double, double, double, double> reference_point = {interpolationoptTrajxy(0, closestIndex), interpolationoptTrajxy(1, closestIndex),
+            //                                                                 interpolationoptTrajxy(3, closestIndex), interpolationoptTrajxy(4, closestIndex)};
+            // std::vector<double> cmd;
+            // KineMPCController mpc;
+            // if (mpc.ComputeControlCommand(vehicle_state, reference_point, cmd)){
+            //     if (!cmd.empty()) {
+            //         std::cout<<"cmd.at(0): " << cmd.at(0)<<std::endl;
+            //         u = -(cmd.at(0) + ref_delta);
+            //         std::cout<<"mpc: " << K * u <<std::endl;
+            //     }
+            // }
+            //弯道 
+            // if (std::abs(globalPath(4, index)) > 0.03 || std::abs(globalPath(4, pre_index)) > 0.03){
+            //     sw = K * u;
+            // }else{
+            //     sw = K * u;
+            // }
+            double steerangle = K * u;
+            if (steerangle > swth) {
+                steerangle = swth;
+            } else if (steerangle < -swth) {
+                steerangle = -swth;
+            } 
+            double filter_steer_angle = digital_filter_.Filter(steerangle);
+            std_msgs::msg::Float32MultiArray steer_angle_msg;
+            steer_angle_msg.data.emplace_back(steerangle);
+            steer_angle_msg.data.emplace_back(filter_steer_angle);
+            pub_steer_angle->publish(steer_angle_msg);
+            return filter_steer_angle;
+        }
+
     private:
         // 声明gps话题订阅者
         rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr gps_subscribe;
@@ -530,6 +514,7 @@ class control_node : public rclcpp::Node{
 
         Eigen::VectorXd car;
         Eigen::MatrixXd optTrajxy;//局部路径
+        Eigen::MatrixXd interpolationoptTrajxy;//局部路径
         Eigen::MatrixXd optTrajxy0;//局部路径
         Eigen::MatrixXd optTrajsd;
         Eigen::MatrixXd obs_cam;
@@ -614,17 +599,28 @@ class control_node : public rclcpp::Node{
         std::string fileName = "path1.txt";
         std::ofstream ofs;  //创建输入流对象 
 
-        bool DecelerateFlag=false;
+        bool DecelerateFlag = false;
         double current_v;//车辆当前的速度 
         loncontroller loncontroller_;
         double localpath_time;
-
-
+        double swth = 520.0;
         double Constant_deceleration = -0.5; 
-
         DigitalFilter digital_filter_;
-        
+
+        /**************MPC**************/
+
+
+        /********起步速度控制*********/
+        bool first_vehicle_start_flag = true; //车辆第一次起步控制
+        bool replan_vehicle_start_flag = false; //车辆静止后再次起步 
+        double vehicle_start_acc = 1;//起步加速度控制 1 m/s^s
+        double speed_threshold = 1.38;//起步速度阈值 5km/h  
+        bool previous_DecelerateFlag = false;
 };
+
+
+
+
 
 int main(int argc, char **argv){
     rclcpp::init(argc, argv);

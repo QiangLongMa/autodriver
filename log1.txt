@@ -1,10 +1,32 @@
-Waiting global traj generates... 
-Waiting global traj generates... 
-Waiting global traj generates... 
-Waiting global traj generates... 
-Waiting global traj generates... 
-Waiting global traj generates... 
 running
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
 Waiting global traj generates... 
 Waiting global traj generates... 
 Waiting global traj generates... 
@@ -40,2303 +62,7312 @@ dest_point has been select!
 Successfully set initial key points on the map!
 Successfully set the initial connection relationship of the map!
 Optimal key point sequence:
-19->2->7->6->5->18
+19->1->4->5->6->18
 Turn condition:
-dir1
-cond1
-dir7
-cond7
+dir2
+cond2
+dir8
+cond8
+Waiting global traj generates... 
 全局路径优化成功
-control golbal size: 2456
+control golbal size: 2404
 speedRef:0, gearsRef:11, flag:1
 global traj has been generated
 LiDAR node can't start, Danger!!
 Start_l: 1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0257978 秒
+optTrajxy in None!!!
+optTrajxy in None!!!
+AllCosttime: 0.0221133 秒
 qp_.Process
-Path Optimizer used time: 1.41212 ms.
-qp_.Process over 
+Path Optimizer used time: 0.962157 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:11
+best_end_point—s: 30 best_end_point-t:11
 speed_dp_flag: 1
- init_v; 0.0208399 init_a: 0.347702
+ init_v; 0.00404494 init_a: -0.00660108
 speed_qp_: 1
 getspeeduseST over
 first run
-Local traj has been generated!
-carx: 233.609
-cary: 246.774
-FrentPoint_.S: 1.32273
-FrentPoint_.D: -1.44656
+lqr: -0.951691
+lqr: -0.954354
+lqr: -0.960721
+lqr: -0.958851
+lqr: -0.965988
+lqr: -0.965988
+lqr: -0.97998
+lqr: -0.97998
+lqr: -0.987363
+lqr: -0.997957
+lqr: -1.00539
+lqr: -1.0125
+lqr: -1.03553
+lqr: -1.0458
+lqr: -1.05573
+lqr: -1.06143
+lqr: -1.07843
+lqr: -1.08213
+lqr: -1.08539
+lqr: -1.09803
+lqr: -1.10391
+lqr: -1.10284
+lqr: -1.10908
+lqr: -1.11552
+lqr: -1.11708
+lqr: -1.1229
+lqr: -1.13729
+lqr: -1.13573
+lqr: -1.14701
+lqr: -1.14476
+lqr: -1.14476
+lqr: -1.14694
+lqr: -1.16101
+lqr: -1.17191
+lqr: -1.18198
+lqr: -1.18518
+lqr: -1.20032
+lqr: -1.21732
+lqr: -1.22429
+lqr: -1.24395
+lqr: -1.25506
+lqr: -1.2687
+lqr: -1.2505
+lqr: -1.21152
+lqr: -1.18405
+lqr: -1.1409
+lqr: -1.1409
+lqr: -1.01993
+lqr: -0.921366
+lqr: -0.795086
+lqr: -0.650646
+lqr: -0.507777
+lqr: -0.365429
+lqr: -0.214531
+lqr: -0.214531
+lqr: 0.106637
+lqr: 0.355357
+lqr: 0.597405
+lqr: 0.901046
+lqr: 1.20519
+lqr: 1.55148
+lqr: 1.90707
+lqr: 2.31895
+lqr: 2.72684
+lqr: 3.18053
+lqr: 3.62865
+lqr: 4.36371
+lqr: 4.6055
+lqr: 5.38524
+lqr: 5.93035
+lqr: 3.95568
+lqr: 4.30615
+lqr: 4.66856
+lqr: 5.02861
+lqr: 5.38558
+lqr: 5.74517
+lqr: 6.10146
+lqr: 6.48351
+lqr: 6.48351
+lqr: 7.04672
+lqr: 7.44842
+lqr: 7.83629
+lqr: 8.24911
+carx: 442.012
+cary: 252.659
+FrentPoint_.S: 0.510662
+FrentPoint_.D: -1.91389
+closestIndex: 1
+index: 2
+local_start_s: 0.5
+local_start_l: -1.9549
+dl: -0.058952
+ddl: 0.0183768
+v: 1.21532
+a: 1.54545
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000565633 秒
+qp_.Process
+Path Optimizer used time: 0.959657 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:8
+speed_dp_flag: 1
+ init_v; 1.21532 init_a: 1.54545
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0136706 秒
+lqr: 8.64978
+lqr: 11.4882
+lqr: 12.0972
+lqr: 12.7148
+lqr: 13.319
+lqr: 13.9295
+lqr: 14.5442
+lqr: 15.4349
+lqr: 16.0284
+lqr: 16.6251
+lqr: 17.1925
+lqr: 17.762
+lqr: 14.8936
+lqr: 14.8936
+lqr: 15.3659
+lqr: 15.6112
+lqr: 15.7715
+lqr: 15.8697
+lqr: 15.9637
+lqr: 16.027
+lqr: 16.0844
+lqr: 16.1897
+lqr: 16.2861
+lqr: 16.3666
+lqr: 16.4481
+lqr: 16.5218
+lqr: 16.6097
+lqr: 16.666
+lqr: 16.7409
+lqr: 16.798
+lqr: 16.876
+lqr: 16.922
+lqr: 17.0299
+lqr: 17.084
+lqr: 17.1144
+lqr: 17.1914
+lqr: 17.2588
+lqr: 17.2892
+lqr: 17.4096
+lqr: 17.3642
+lqr: 17.3225
+lqr: 17.2974
+lqr: 17.2974
+lqr: 17.2643
+lqr: 17.2643
+lqr: 17.2167
+lqr: 17.2227
+lqr: 17.1832
+lqr: 17.1752
+lqr: 17.1564
+lqr: 17.1476
+lqr: 17.1109
+lqr: 17.1087
+lqr: 17.0767
+lqr: 17.0695
+lqr: 17.0355
+lqr: 16.9924
+lqr: 16.9924
+lqr: 16.9579
+lqr: 16.9259
+lqr: 16.8919
+lqr: 16.8657
+lqr: 16.8657
+lqr: 16.8384
+lqr: 16.6631
+lqr: 16.5658
+lqr: 16.3282
+lqr: 16.3282
+lqr: 16.0105
+lqr: 15.8708
+lqr: 15.5647
+lqr: 15.3139
+lqr: 15.1154
+lqr: 14.8652
+lqr: 14.6534
+lqr: 14.4288
+lqr: 14.2145
+lqr: 13.9772
+lqr: 13.7692
+lqr: 13.5174
+lqr: 13.1808
+lqr: 12.9703
+lqr: 12.756
+lqr: 12.5225
+lqr: 12.2939
+carx: 440.309
+cary: 252.632
+FrentPoint_.S: 2.21344
+FrentPoint_.D: -1.90831
 closestIndex: 3
-index: 5
-local_start_s: 1.5
-local_start_l: -1.54737
-dl: -0.0533347
-ddl: 0.0117508
-v: 1.97154
-a: 1.06796
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+index: 9
+local_start_s: 2
+local_start_l: -2.02487
+dl: -0.0304557
+ddl: 0.0211339
+v: 2.47033
+a: 1.35511
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000493498 秒
+AllCosttime: 0.00194143 秒
 qp_.Process
-Path Optimizer used time: 0.76174 ms.
-qp_.Process over 
+Path Optimizer used time: 1.81528 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 20 best_end_pointt:7
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 1.97154 init_a: 1.06796
+ init_v; 2.47033 init_a: 1.35511
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0219588 秒
-carx: 235.68
-cary: 246.799
-FrentPoint_.S: 3.39336
-FrentPoint_.D: -1.44815
-closestIndex: 4
-index: 14
-local_start_s: 3.5
-local_start_l: -1.63389
-dl: -0.0311637
-ddl: 0.0114371
-v: 2.48995
-a: 0.422702
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000926025 秒
-qp_.Process
-Path Optimizer used time: 2.33534 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 2.48995 init_a: 0.422702
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0260675 秒
-carx: 238.816
-cary: 246.884
-FrentPoint_.S: 6.53067
-FrentPoint_.D: -1.40288
+程序运行时间: 0.0150558 秒
+lqr: 12.0828
+lqr: 15.9288
+lqr: 15.9288
+lqr: 15.8129
+lqr: 15.5071
+lqr: 15.3535
+lqr: 15.3535
+lqr: 15.1706
+lqr: 15.0258
+lqr: 14.9167
+lqr: 14.7969
+lqr: 14.6965
+lqr: 14.5735
+lqr: 14.4928
+lqr: 14.3718
+lqr: 14.2981
+lqr: 14.1812
+lqr: 14.1112
+lqr: 13.967
+lqr: 13.9253
+lqr: 13.8777
+lqr: 13.7397
+lqr: 13.6214
+lqr: 13.4948
+lqr: 13.3885
+lqr: 13.2604
+lqr: 13.1548
+lqr: 13.0179
+lqr: 13.0179
+lqr: 12.7462
+lqr: 12.621
+lqr: 12.621
+lqr: 12.5197
+lqr: 12.5148
+lqr: 12.5203
+lqr: 12.5084
+lqr: 12.52
+lqr: 12.4517
+lqr: 12.4351
+lqr: 12.4351
+lqr: 12.4087
+lqr: 12.4189
+lqr: 12.5237
+lqr: 12.6479
+lqr: 12.7978
+lqr: 13.003
+lqr: 13.2521
+lqr: 13.5382
+lqr: 13.8491
+lqr: 14.2117
+lqr: 14.5722
+lqr: 14.8968
+lqr: 14.8968
+lqr: 15.3925
+lqr: 15.8877
+lqr: 15.8877
+lqr: 16.3687
+lqr: 16.7121
+lqr: 17.0539
+lqr: 17.4325
+lqr: 17.8054
+lqr: 18.2046
+lqr: 18.637
+lqr: 19.0541
+lqr: 19.5015
+lqr: 19.9626
+lqr: 20.3791
+lqr: 21.0169
+lqr: 21.4432
+lqr: 21.8801
+lqr: 22.3219
+lqr: 22.7512
+lqr: 22.7512
+lqr: 23.6325
+lqr: 24.0794
+lqr: 24.5228
+lqr: 24.9834
+lqr: 25.4469
+lqr: 25.4469
+lqr: 25.9064
+lqr: 26.5849
+lqr: 26.9911
+lqr: 27.3995
+lqr: 27.7762
+lqr: 28.1493
+carx: 437.574
+cary: 252.581
+FrentPoint_.S: 4.94966
+FrentPoint_.D: -1.892
 closestIndex: 6
-index: 26
-local_start_s: 6.5
-local_start_l: -1.69857
-dl: -0.0111367
-ddl: 0.00633193
-v: 2.84811
-a: 0.235102
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+index: 20
+local_start_s: 5
+local_start_l: -2.06847
+dl: 0.00263439
+ddl: 0.0103287
+v: 2.97017
+a: 0.0859233
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000721853 秒
+AllCosttime: 0.000795548 秒
 qp_.Process
-Path Optimizer used time: 1.2064 ms.
-qp_.Process over 
+Path Optimizer used time: 0.964788 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 2.84811 init_a: 0.235102
+ init_v; 2.97017 init_a: 0.0859233
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0114805 秒
-carx: 243.101
-cary: 247.063
-FrentPoint_.S: 10.8176
-FrentPoint_.D: -1.27737
-closestIndex: 9
-index: 43
-local_start_s: 11
-local_start_l: -1.70739
-dl: 0.00680842
-ddl: 0.00319283
-v: 2.99053
-a: 0.0545044
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+程序运行时间: 0.0152349 秒
+lqr: 28.5156
+lqr: 30.3429
+lqr: 30.948
+lqr: 31.5512
+lqr: 32.159
+lqr: 32.7798
+lqr: 33.7091
+lqr: 34.3375
+lqr: 33.6729
+lqr: 34.1312
+lqr: 34.5994
+lqr: 35.0739
+lqr: 35.5473
+lqr: 36.0467
+lqr: 36.5368
+lqr: 37.0432
+lqr: 37.5504
+lqr: 37.5504
+lqr: 38.3408
+lqr: 38.5994
+lqr: 39.4042
+lqr: 40.0136
+lqr: 40.4809
+lqr: 40.9781
+lqr: 41.4446
+lqr: 41.934
+lqr: 42.4244
+lqr: 42.9068
+lqr: 43.4226
+lqr: 43.9453
+lqr: 44.4948
+lqr: 45.3509
+lqr: 45.9079
+lqr: 46.4683
+lqr: 46.9674
+lqr: 47.4676
+lqr: 47.9852
+lqr: 48.4373
+lqr: 48.9289
+lqr: 49.41
+lqr: 49.8859
+lqr: 49.8859
+lqr: 50.6229
+lqr: 51.1096
+lqr: 51.5916
+lqr: 52.0967
+lqr: 52.5534
+lqr: 52.9751
+lqr: 53.3813
+lqr: 53.7709
+lqr: 54.1561
+lqr: 54.5687
+lqr: 54.9682
+lqr: 55.5662
+lqr: 55.7834
+lqr: 56.3742
+lqr: 56.7768
+lqr: 57.1343
+lqr: 57.4974
+lqr: 57.8792
+lqr: 58.2306
+lqr: 58.6046
+lqr: 58.958
+lqr: 59.3114
+lqr: 59.6587
+lqr: 59.9938
+lqr: 59.9938
+lqr: 60.4393
+lqr: 60.6893
+lqr: 60.9065
+lqr: 61.1347
+lqr: 61.3395
+lqr: 61.5506
+lqr: 61.7462
+lqr: 61.9401
+lqr: 62.1232
+lqr: 62.2979
+lqr: 62.471
+lqr: 62.6543
+lqr: 62.7548
+lqr: 62.8655
+lqr: 62.922
+lqr: 63.009
+lqr: 63.079
+lqr: 63.1244
+carx: 433.944
+cary: 252.386
+FrentPoint_.S: 8.58167
+FrentPoint_.D: -1.74245
+closestIndex: 7
+index: 34
+local_start_s: 8.5
+local_start_l: -2.02207
+dl: 0.0240443
+ddl: 0.00526504
+v: 3.00183
+a: 0.0170878
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00185826 秒
+AllCosttime: 0.000845973 秒
 qp_.Process
-Path Optimizer used time: 4.65958 ms.
-qp_.Process over 
+Path Optimizer used time: 1.22709 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 2.99053 init_a: 0.0545044
+ init_v; 3.00183 init_a: 0.0170878
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0317229 秒
-carx: 248.194
-cary: 247.107
-FrentPoint_.S: 15.9101
-FrentPoint_.D: -1.2985
+程序运行时间: 0.0130573 秒
+lqr: 63.2
+lqr: 64.6649
+lqr: 64.8597
+lqr: 64.4635
+lqr: 64.4635
+lqr: 64.5312
+lqr: 64.5845
+lqr: 64.5681
+lqr: 64.5635
+lqr: 64.499
+lqr: 64.4288
+lqr: 64.3392
+lqr: 64.1558
+lqr: 63.9582
+lqr: 63.6952
+lqr: 63.4562
+lqr: 63.1725
+lqr: 62.783
+lqr: 62.5464
+lqr: 62.297
+lqr: 62.013
+lqr: 61.6817
+lqr: 61.388
+lqr: 60.993
+lqr: 60.63
+lqr: 60.2066
+lqr: 59.8125
+lqr: 59.3736
+lqr: 58.7645
+lqr: 58.7645
+lqr: 58.3321
+lqr: 57.9229
+lqr: 57.4661
+lqr: 57.0257
+lqr: 56.5486
+lqr: 56.0687
+lqr: 55.54
+lqr: 55.031
+lqr: 54.4637
+lqr: 53.9119
+lqr: 53.2805
+lqr: 52.3209
+lqr: 51.662
+lqr: 50.939
+lqr: 50.218
+lqr: 49.4574
+lqr: 48.6934
+lqr: 47.862
+lqr: 47.1111
+lqr: 46.3267
+lqr: 45.5469
+lqr: 44.8029
+lqr: 44.8029
+lqr: 43.3342
+lqr: 43.3342
+lqr: 42.2987
+lqr: 41.5816
+lqr: 40.9102
+lqr: 40.1931
+lqr: 39.4891
+lqr: 38.7529
+lqr: 38.0232
+lqr: 37.1322
+lqr: 36.3343
+lqr: 35.477
+lqr: 34.6377
+lqr: 33.3718
+lqr: 32.4925
+lqr: 31.6361
+lqr: 30.7686
+lqr: 29.876
+lqr: 28.9637
+lqr: 28.0791
+lqr: 27.1677
+lqr: 26.293
+lqr: 25.3996
+lqr: 25.3996
+lqr: 23.9946
+lqr: 23.0639
+lqr: 22.1261
+lqr: 21.1901
+lqr: 20.2609
+lqr: 19.2763
+lqr: 18.3424
+lqr: 17.3521
+carx: 429.182
+cary: 252.237
+FrentPoint_.S: 13.3451
+FrentPoint_.D: -1.65398
 closestIndex: 10
-index: 64
-local_start_s: 16
-local_start_l: -1.65628
-dl: 0.0131084
-ddl: 0.00078018
-v: 3.01265
-a: 0.00508839
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+index: 53
+local_start_s: 13.5
+local_start_l: -1.87497
+dl: 0.0337342
+ddl: 0.00102946
+v: 3.01308
+a: 0.00223632
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0022196 秒
+AllCosttime: 0.000626803 秒
 qp_.Process
-Path Optimizer used time: 8.0445 ms.
-qp_.Process over 
+Path Optimizer used time: 0.922453 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01265 init_a: 0.00508839
+ init_v; 3.01308 init_a: 0.00223632
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0312216 秒
-carx: 253.531
-cary: 247.108
-FrentPoint_.S: 21.2472
-FrentPoint_.D: -1.36463
+程序运行时间: 0.00907194 秒
+lqr: 16.5342
+lqr: 15.5975
+lqr: 14.6404
+lqr: 13.1713
+lqr: 12.6621
+lqr: 11.0762
+lqr: 9.96904
+lqr: 9.09202
+lqr: 8.01562
+lqr: 6.97892
+lqr: 5.93077
+lqr: 4.93724
+lqr: 4.93724
+lqr: 2.96662
+lqr: 1.9801
+lqr: 1.06886
+lqr: 1.06886
+lqr: 1.06886
+lqr: -1.20968
+lqr: -2.12951
+lqr: -3.03223
+lqr: -3.93932
+lqr: -4.83465
+lqr: -5.759
+lqr: -6.63693
+lqr: -7.60003
+lqr: -8.53938
+lqr: -9.11614
+lqr: -10.3454
+lqr: -11.1367
+lqr: -11.9118
+lqr: -12.703
+lqr: -13.4291
+lqr: -14.1753
+lqr: -14.9044
+lqr: -15.6033
+lqr: -16.2804
+lqr: -16.9843
+lqr: -17.662
+lqr: -18.3168
+lqr: -18.3168
+lqr: -19.2471
+lqr: -19.8705
+lqr: -20.4325
+lqr: -21.0197
+lqr: -21.5379
+lqr: -22.085
+lqr: -22.6184
+lqr: -23.1514
+lqr: -23.7014
+lqr: -24.2511
+lqr: -24.8069
+lqr: -25.6309
+lqr: -26.1853
+lqr: -26.7124
+lqr: -27.2396
+lqr: -27.7405
+lqr: -28.2461
+lqr: -28.7166
+lqr: -29.1958
+lqr: -29.6483
+lqr: -30.0926
+lqr: -30.5017
+lqr: -30.9304
+lqr: -30.9304
+lqr: -31.2971
+lqr: -31.8811
+lqr: -32.2364
+lqr: -32.595
+lqr: -32.9287
+lqr: -33.2558
+lqr: -33.549
+lqr: -33.848
+lqr: -34.1033
+lqr: -34.3887
+lqr: -34.6498
+lqr: -34.8188
+lqr: -35.1597
+lqr: -35.5054
+lqr: -35.8384
+lqr: -36.1734
+lqr: -36.5056
+lqr: -36.8524
+lqr: -37.2014
+lqr: -37.5795
+carx: 423.932
+cary: 252.18
+FrentPoint_.S: 18.595
+FrentPoint_.D: -1.66283
 closestIndex: 10
-index: 85
-local_start_s: 21
-local_start_l: -1.5929
-dl: 0.0119389
-ddl: -0.000397548
-v: 3.01498
-a: -0.00141005
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00230945 秒
-qp_.Process
-Path Optimizer used time: 1.81729 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01498 init_a: -0.00141005
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0210788 秒
-carx: 258.947
-cary: 247.209
-FrentPoint_.S: 26.6638
-FrentPoint_.D: -1.33202
-closestIndex: 11
-index: 107
-local_start_s: 26.5
-local_start_l: -1.53774
-dl: 0.00797153
-ddl: -0.000724845
-v: 3.01485
-a: -0.00269607
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000993942 秒
-qp_.Process
-Path Optimizer used time: 0.971663 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01485 init_a: -0.00269607
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0168963 秒
-carx: 264.201
-cary: 247.288
-FrentPoint_.S: 31.918
-FrentPoint_.D: -1.31963
-closestIndex: 11
-index: 128
-local_start_s: 32
-local_start_l: -1.50421
-dl: 0.0041688
-ddl: -0.000640309
-v: 3.01482
-a: -0.00263884
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000696467 秒
-qp_.Process
-Path Optimizer used time: 1.07447 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01482 init_a: -0.00263884
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0158785 秒
-carx: 269.336
-cary: 247.333
-FrentPoint_.S: 37.0539
-FrentPoint_.D: -1.3395
-closestIndex: 10
-index: 148
-local_start_s: 37
-local_start_l: -1.48909
-dl: 0.00182508
-ddl: -0.000441756
-v: 3.01518
-a: -0.00201012
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00121484 秒
-qp_.Process
-Path Optimizer used time: 1.66649 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01518 init_a: -0.00201012
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0388338 秒
-carx: 274.431
-cary: 247.378
-FrentPoint_.S: 42.1489
-FrentPoint_.D: -1.35923
-closestIndex: 10
-index: 169
-local_start_s: 42
-local_start_l: -1.48322
-dl: 0.000470814
-ddl: -0.000264326
-v: 3.01522
-a: -0.00213807
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000680497 秒
-qp_.Process
-Path Optimizer used time: 4.50295 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00213807
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0349105 秒
-carx: 279.399
-cary: 247.475
-FrentPoint_.S: 47.1171
-FrentPoint_.D: -1.32496
-closestIndex: 10
-index: 188
-local_start_s: 47
-local_start_l: -1.4823
-dl: -0.0001614
-ddl: -0.0001399
+index: 74
+local_start_s: 18.5
+local_start_l: -1.71842
+dl: 0.0283455
+ddl: -0.00130503
 v: 3.01523
-a: -0.00215006
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00142964
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000636494 秒
+AllCosttime: 0.000727688 秒
 qp_.Process
-Path Optimizer used time: 1.48034 ms.
-qp_.Process over 
+Path Optimizer used time: 1.14525 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215006
+ init_v; 3.01523 init_a: -0.00142964
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0150745 秒
-carx: 284.509
-cary: 247.519
-FrentPoint_.S: 52.2279
-FrentPoint_.D: -1.34652
-closestIndex: 10
-index: 209
-local_start_s: 52
-local_start_l: -1.48344
-dl: -0.00036102
-ddl: -6.78978e-05
-v: 3.01523
-a: -0.00215104
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00308781 秒
-qp_.Process
-Path Optimizer used time: 3.67735 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215104
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0378674 秒
-carx: 289.596
-cary: 247.6
-FrentPoint_.S: 57.3156
-FrentPoint_.D: -1.32921
+程序运行时间: 0.0108193 秒
+lqr: -37.9689
+lqr: -38.7229
+lqr: -38.7229
+lqr: -39.1484
+lqr: -39.1484
+lqr: -39.7091
+lqr: -40.0718
+lqr: -40.4362
+lqr: -40.8186
+lqr: -41.1754
+lqr: -41.53
+lqr: -41.8423
+lqr: -42.1466
+lqr: -42.4348
+lqr: -42.7193
+lqr: -42.9835
+lqr: -43.3473
+lqr: -43.5974
+lqr: -43.8249
+lqr: -44.0738
+lqr: -44.3339
+lqr: -44.6332
+lqr: -44.9422
+lqr: -45.2599
+lqr: -45.5884
+lqr: -45.8922
+lqr: -46.2083
+lqr: -46.2083
+lqr: -46.5956
+lqr: -46.8521
+lqr: -47.104
+lqr: -47.349
+lqr: -47.6113
+lqr: -47.8714
+lqr: -48.1364
+lqr: -48.3515
+lqr: -48.5857
+lqr: -48.8033
+lqr: -49.0916
+lqr: -49.1862
+lqr: -49.4556
+lqr: -49.3779
+lqr: -49.4581
+lqr: -49.5296
+lqr: -49.6165
+lqr: -49.6647
+lqr: -49.7303
+lqr: -49.7337
+lqr: -49.7639
+lqr: -49.7506
+lqr: -49.7506
+lqr: -49.7311
+lqr: -49.7146
+lqr: -49.6915
+lqr: -49.6931
+lqr: -49.6788
+lqr: -49.6729
+lqr: -49.6672
+lqr: -49.6276
+lqr: -49.6021
+lqr: -49.566
+lqr: -49.5498
+lqr: -49.5066
+lqr: -49.4963
+lqr: -49.5013
+lqr: -49.4864
+lqr: -49.4704
+lqr: -49.4487
+lqr: -49.3843
+lqr: -49.3167
+lqr: -49.2606
+lqr: -49.1994
+lqr: -49.1463
+lqr: -49.0797
+lqr: -49.0413
+lqr: -49.0413
+lqr: -48.9724
+lqr: -48.9461
+lqr: -48.8911
+lqr: -48.8755
+lqr: -48.8334
+lqr: -48.8231
+lqr: -48.7989
+lqr: -48.7817
+lqr: -48.7932
+carx: 418.505
+cary: 252.055
+FrentPoint_.S: 24.0238
+FrentPoint_.D: -1.60616
 closestIndex: 11
-index: 229
-local_start_s: 57.5
-local_start_l: -1.48522
-dl: -0.0003666
-ddl: -3.64908e-05
+index: 96
+local_start_s: 24
+local_start_l: -1.59067
+dl: 0.0179449
+ddl: -0.00178491
+v: 3.01515
+a: -0.00284857
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000604604 秒
+qp_.Process
+Path Optimizer used time: 0.820769 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01515 init_a: -0.00284857
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.00980456 秒
+lqr: -48.7959
+lqr: -49.1616
+lqr: -49.3053
+lqr: -49.3938
+lqr: -49.1139
+lqr: -49.1708
+lqr: -49.1586
+lqr: -49.2096
+lqr: -49.2382
+lqr: -49.2944
+lqr: -49.3329
+lqr: -49.4157
+lqr: -49.4447
+lqr: -49.4568
+lqr: -49.5317
+lqr: -49.5317
+lqr: -49.6149
+lqr: -49.6686
+lqr: -49.772
+lqr: -49.8138
+lqr: -49.8656
+lqr: -49.8993
+lqr: -49.9618
+lqr: -49.9562
+lqr: -50.0101
+lqr: -50.0376
+lqr: -50.082
+lqr: -50.1461
+lqr: -50.1661
+lqr: -50.2166
+lqr: -50.2595
+lqr: -50.3249
+lqr: -50.3945
+lqr: -50.4646
+lqr: -50.5749
+lqr: -50.6903
+lqr: -50.6903
+lqr: -50.7778
+lqr: -51.0286
+lqr: -51.0286
+lqr: -51.2227
+lqr: -51.3519
+lqr: -51.489
+lqr: -51.616
+lqr: -51.7674
+lqr: -51.8747
+lqr: -52.0211
+lqr: -52.1516
+lqr: -52.3036
+lqr: -52.4386
+lqr: -52.5818
+lqr: -52.7617
+lqr: -52.8308
+lqr: -52.9503
+lqr: -53.0215
+lqr: -53.1096
+lqr: -53.1882
+lqr: -53.3335
+lqr: -53.4843
+lqr: -53.6393
+lqr: -53.8075
+lqr: -53.9659
+lqr: -53.9659
+lqr: -54.2324
+lqr: -54.4095
+lqr: -54.5918
+lqr: -54.8019
+lqr: -54.9898
+lqr: -55.1757
+lqr: -55.3767
+lqr: -55.5691
+lqr: -55.7797
+lqr: -55.9714
+lqr: -56.1787
+lqr: -56.3962
+lqr: -56.694
+lqr: -56.9222
+lqr: -57.0289
+lqr: -57.0289
+lqr: -57.0289
+lqr: -57.8765
+lqr: -58.113
+lqr: -58.3509
+lqr: -58.5892
+lqr: -58.8197
+carx: 413.19
+cary: 251.937
+FrentPoint_.S: 29.3398
+FrentPoint_.D: -1.55534
+closestIndex: 11
+index: 117
+local_start_s: 29.5
+local_start_l: -1.51686
+dl: 0.0089216
+ddl: -0.00144648
+v: 3.01497
+a: -0.00279123
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00108193 秒
+qp_.Process
+Path Optimizer used time: 1.39393 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01497 init_a: -0.00279123
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0138289 秒
+lqr: -59.0722
+lqr: -59.2065
+lqr: -59.6549
+lqr: -59.9797
+lqr: -60.2781
+lqr: -60.5767
+lqr: -60.8795
+lqr: -60.9024
+lqr: -61.1415
+lqr: -61.3676
+lqr: -61.577
+lqr: -61.8345
+lqr: -62.0564
+lqr: -62.4429
+lqr: -62.5854
+lqr: -62.9742
+lqr: -63.2361
+lqr: -63.4969
+lqr: -63.7412
+lqr: -63.9909
+lqr: -64.2221
+lqr: -64.572
+lqr: -64.4539
+lqr: -64.2776
+lqr: -64.1931
+lqr: -64.1931
+lqr: -63.971
+lqr: -63.8661
+lqr: -63.6759
+lqr: -63.5252
+lqr: -63.2852
+lqr: -63.1357
+lqr: -62.8689
+lqr: -62.7086
+lqr: -62.4757
+lqr: -62.3284
+lqr: -62.1063
+lqr: -61.8059
+lqr: -61.6177
+lqr: -61.3687
+lqr: -61.1708
+lqr: -60.9229
+lqr: -60.7533
+lqr: -60.5316
+lqr: -60.4071
+lqr: -60.2895
+lqr: -60.1016
+lqr: -59.9033
+lqr: -59.7604
+lqr: -59.529
+lqr: -59.529
+lqr: -59.2694
+lqr: -58.9831
+lqr: -58.7819
+lqr: -58.4886
+lqr: -58.2601
+lqr: -58.0071
+lqr: -57.7917
+lqr: -57.5312
+lqr: -57.3562
+lqr: -57.0909
+lqr: -56.8887
+lqr: -56.5098
+lqr: -56.2293
+lqr: -56.0114
+lqr: -55.7406
+lqr: -55.5537
+lqr: -55.318
+lqr: -55.1708
+lqr: -54.9706
+lqr: -54.8535
+lqr: -54.6945
+lqr: -54.6945
+lqr: -55.1145
+lqr: -55.1145
+lqr: -55.3892
+lqr: -55.5885
+lqr: -55.7638
+lqr: -55.9948
+lqr: -56.1882
+lqr: -56.4324
+lqr: -56.6489
+lqr: -56.9071
+lqr: -57.1159
+lqr: -57.3666
+carx: 407.931
+cary: 251.838
+FrentPoint_.S: 34.5996
+FrentPoint_.D: -1.52254
+closestIndex: 10
+index: 138
+local_start_s: 34.5
+local_start_l: -1.48546
+dl: 0.00362755
+ddl: -0.000939081
+v: 3.01523
+a: -0.00207849
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000777434 秒
+qp_.Process
+Path Optimizer used time: 0.965439 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01523 init_a: -0.00207849
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0109608 秒
+lqr: -57.5933
+lqr: -58.193
+lqr: -58.3566
+lqr: -58.6019
+lqr: -58.865
+lqr: -59.1599
+lqr: -59.4656
+lqr: -59.7494
+lqr: -60.0588
+lqr: -60.3204
+lqr: -60.5975
+lqr: -60.846
+lqr: -60.846
+lqr: -61.2809
+lqr: -61.2809
+lqr: -61.5913
+lqr: -61.7792
+lqr: -61.9583
+lqr: -62.1343
+lqr: -62.3208
+lqr: -62.463
+lqr: -62.6562
+lqr: -62.8086
+lqr: -62.9878
+lqr: -63.1697
+lqr: -63.4723
+lqr: -63.7056
+lqr: -63.9026
+lqr: -64.1562
+lqr: -64.3643
+lqr: -64.5786
+lqr: -64.7677
+lqr: -64.9335
+lqr: -65.044
+lqr: -65.1632
+lqr: -65.214
+lqr: -65.214
+lqr: -65.0396
+lqr: -64.7612
+lqr: -64.3899
+lqr: -64.096
+lqr: -63.7278
+lqr: -63.4093
+lqr: -63.0466
+lqr: -62.7546
+lqr: -62.3969
+lqr: -62.1312
+lqr: -61.7795
+lqr: -61.3639
+lqr: -61.1533
+lqr: -60.6235
+lqr: -60.3103
+lqr: -59.8547
+lqr: -59.4735
+lqr: -59.0966
+lqr: -58.6181
+lqr: -58.1685
+lqr: -57.7957
+lqr: -57.3719
+lqr: -57.2176
+lqr: -56.7202
+lqr: -56.7202
+lqr: -56.2142
+lqr: -55.8799
+lqr: -55.5781
+lqr: -55.2111
+lqr: -54.9075
+lqr: -54.5031
+lqr: -54.1793
+lqr: -53.7642
+lqr: -53.397
+lqr: -52.9688
+lqr: -52.3719
+lqr: -52.0142
+lqr: -51.6154
+lqr: -51.249
+lqr: -50.8567
+lqr: -50.5062
+lqr: -50.1277
+lqr: -49.8007
+lqr: -49.4199
+lqr: -49.1346
+lqr: -48.7898
+lqr: -48.7898
+lqr: -48.1801
+carx: 402.833
+cary: 251.748
+FrentPoint_.S: 39.6977
+FrentPoint_.D: -1.49621
+closestIndex: 10
+index: 159
+local_start_s: 39.5
+local_start_l: -1.47457
+dl: 0.000712516
+ddl: -0.000517314
+v: 3.01523
+a: -0.00215997
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000569899 秒
+qp_.Process
+Path Optimizer used time: 1.17242 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01523 init_a: -0.00215997
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0104988 秒
+lqr: -48.1801
+lqr: -47.9222
+lqr: -47.7249
+lqr: -47.6747
+lqr: -47.6522
+lqr: -47.6347
+lqr: -47.6458
+lqr: -47.6659
+lqr: -47.6732
+lqr: -47.6613
+lqr: -47.651
+lqr: -47.5913
+lqr: -47.4922
+lqr: -47.4118
+lqr: -47.3404
+lqr: -47.3023
+lqr: -47.2423
+lqr: -47.1892
+lqr: -47.1403
+lqr: -47.0892
+lqr: -47.0375
+lqr: -46.9967
+lqr: -46.95
+lqr: -46.9107
+lqr: -46.9036
+lqr: -46.8212
+lqr: -46.7751
+lqr: -46.7321
+lqr: -46.707
+lqr: -46.6745
+lqr: -46.6794
+lqr: -46.6622
+lqr: -46.6636
+lqr: -46.6695
+lqr: -46.6483
+lqr: -46.6656
+lqr: -46.681
+lqr: -46.6956
+lqr: -46.7113
+lqr: -46.736
+lqr: -46.7538
+lqr: -46.7693
+lqr: -46.7757
+lqr: -46.7799
+lqr: -46.7448
+lqr: -46.7106
+lqr: -46.6343
+lqr: -46.6343
+lqr: -46.5354
+lqr: -46.4978
+lqr: -46.3921
+lqr: -46.2938
+lqr: -46.3498
+lqr: -46.387
+lqr: -46.387
+lqr: -46.387
+lqr: -46.835
+lqr: -46.9613
+lqr: -47.1423
+lqr: -47.2875
+lqr: -47.4892
+lqr: -47.7874
+lqr: -47.9686
+lqr: -48.1505
+lqr: -48.2709
+lqr: -48.4139
+lqr: -48.5069
+lqr: -48.629
+lqr: -48.73
+lqr: -48.8443
+lqr: -48.9697
+lqr: -49.0398
+lqr: -49.3464
+lqr: -49.5196
+lqr: -49.7688
+lqr: -49.9494
+lqr: -50.166
+lqr: -50.3195
+lqr: -50.5158
+lqr: -50.644
+lqr: -50.8224
+lqr: -50.9463
+lqr: -51.0663
+lqr: -51.2515
+lqr: -51.2883
+carx: 397.749
+cary: 251.683
+FrentPoint_.S: 44.7821
+FrentPoint_.D: -1.49538
+closestIndex: 11
+index: 179
+local_start_s: 45
+local_start_l: -1.47441
+dl: -0.000671878
+ddl: -0.000224156
 v: 3.01484
-a: -0.00275591
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00275805
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00156401 秒
+AllCosttime: 0.00088736 秒
 qp_.Process
-Path Optimizer used time: 1.38702 ms.
-qp_.Process over 
+Path Optimizer used time: 1.10358 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01484 init_a: -0.00275591
+ init_v; 3.01484 init_a: -0.00275805
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0226578 秒
-carx: 294.707
-cary: 247.651
-FrentPoint_.S: 62.4262
-FrentPoint_.D: -1.34314
+程序运行时间: 0.00940894 秒
+lqr: -51.481
+lqr: -51.5945
+lqr: -51.6486
+lqr: -51.7936
+lqr: -51.935
+lqr: -52.0078
+lqr: -52.1419
+lqr: -52.2105
+lqr: -52.3098
+lqr: -52.3782
+lqr: -52.4849
+lqr: -52.4849
+lqr: -52.5856
+lqr: -52.6876
+lqr: -52.771
+lqr: -52.9216
+lqr: -53.0051
+lqr: -53.01
+lqr: -52.9811
+lqr: -52.9379
+lqr: -52.9082
+lqr: -52.8087
+lqr: -52.7056
+lqr: -52.4467
+lqr: -52.2429
+lqr: -52.0057
+lqr: -51.7519
+lqr: -51.5132
+lqr: -51.2671
+lqr: -51.0809
+lqr: -50.8737
+lqr: -50.6612
+lqr: -50.4955
+lqr: -50.4955
+lqr: -50.1347
+lqr: -50.1347
+lqr: -49.8924
+lqr: -49.7189
+lqr: -49.5521
+lqr: -49.3406
+lqr: -49.1626
+lqr: -48.925
+lqr: -48.6949
+lqr: -48.4409
+lqr: -48.1838
+lqr: -47.8935
+lqr: -47.6253
+lqr: -47.2343
+lqr: -46.9505
+lqr: -46.7074
+lqr: -46.4432
+lqr: -46.1769
+lqr: -45.9284
+lqr: -45.6446
+lqr: -45.3449
+lqr: -45.0749
+lqr: -44.7765
+lqr: -44.4696
+lqr: -44.1908
+lqr: -44.1908
+lqr: -43.7647
+lqr: -43.4527
+lqr: -43.1782
+lqr: -42.8808
+lqr: -42.6283
+lqr: -42.329
+lqr: -42.0796
+lqr: -41.6822
+lqr: -41.3238
+lqr: -40.9743
+lqr: -40.6679
+lqr: -40.1408
+lqr: -39.785
+lqr: -39.455
+lqr: -39.096
+lqr: -38.7628
+lqr: -38.3989
+lqr: -38.0959
+lqr: -37.7567
+lqr: -37.4823
+lqr: -37.1795
+lqr: -36.9242
+lqr: -36.9242
+lqr: -36.3638
+lqr: -36.3638
+carx: 392.551
+cary: 251.597
+FrentPoint_.S: 49.9813
+FrentPoint_.D: -1.4743
 closestIndex: 10
-index: 250
-local_start_s: 62.5
-local_start_l: -1.48659
-dl: -0.000257155
-ddl: -1.99541e-05
+index: 200
+local_start_s: 50
+local_start_l: -1.4782
+dl: -0.000897068
+ddl: -6.43783e-05
 v: 3.01518
-a: -0.00201264
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00201206
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00485714 秒
+AllCosttime: 0.000834834 秒
 qp_.Process
-Path Optimizer used time: 1.22661 ms.
-qp_.Process over 
+Path Optimizer used time: 1.40207 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01518 init_a: -0.00201264
+ init_v; 3.01518 init_a: -0.00201206
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0444385 秒
-carx: 299.77
-cary: 247.692
-FrentPoint_.S: 67.4896
-FrentPoint_.D: -1.36655
+程序运行时间: 0.010931 秒
+lqr: -35.9462
+lqr: -35.6841
+lqr: -35.3538
+lqr: -35.0535
+lqr: -34.7127
+lqr: -34.4169
+lqr: -34.1024
+lqr: -33.8538
+lqr: -33.5444
+lqr: -33.3042
+lqr: -33.0096
+lqr: -32.5622
+lqr: -32.2846
+lqr: -31.9156
+lqr: -31.7575
+lqr: -31.2037
+lqr: -30.8963
+lqr: -30.5483
+lqr: -30.2521
+lqr: -29.9854
+lqr: -29.7481
+lqr: -29.7481
+lqr: -29.4145
+lqr: -29.2219
+lqr: -29.0055
+lqr: -28.837
+lqr: -28.6369
+lqr: -28.4994
+lqr: -28.3335
+lqr: -28.1869
+lqr: -28.0236
+lqr: -27.8562
+lqr: -27.6723
+lqr: -27.3761
+lqr: -27.2807
+lqr: -26.9668
+lqr: -26.7257
+lqr: -26.5185
+lqr: -26.3028
+lqr: -26.0838
+lqr: -25.8971
+lqr: -25.6589
+lqr: -25.4817
+lqr: -25.2729
+lqr: -25.1136
+lqr: -24.9265
+lqr: -24.9265
+lqr: -24.7499
+lqr: -24.6431
+lqr: -24.5929
+lqr: -24.5451
+lqr: -24.5182
+lqr: -24.5152
+lqr: -24.4918
+lqr: -24.462
+lqr: -24.4151
+lqr: -24.35
+lqr: -24.2959
+lqr: -24.1708
+lqr: -24.0988
+lqr: -24.0908
+lqr: -24.0792
+lqr: -24.1379
+lqr: -24.1866
+lqr: -24.2651
+lqr: -24.3234
+lqr: -24.4024
+lqr: -24.4481
+lqr: -24.5094
+lqr: -24.5477
+lqr: -24.5477
+lqr: -24.6344
+lqr: -24.6536
+lqr: -24.7078
+lqr: -24.7323
+lqr: -24.7786
+lqr: -24.8203
+lqr: -24.8716
+lqr: -24.9308
+lqr: -24.9951
+lqr: -25.0573
+lqr: -25.1486
+lqr: -25.5314
+lqr: -25.8643
+lqr: -26.182
+carx: 387.451
+cary: 251.486
+FrentPoint_.S: 55.0825
+FrentPoint_.D: -1.42746
 closestIndex: 10
-index: 270
-local_start_s: 67.5
-local_start_l: -1.48744
-dl: -0.000159091
-ddl: -2.31657e-05
+index: 220
+local_start_s: 55
+local_start_l: -1.48216
+dl: -0.00075236
+ddl: -7.28714e-06
 v: 3.01522
-a: -0.00213705
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00213673
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00529963 秒
+AllCosttime: 0.00053955 秒
 qp_.Process
-Path Optimizer used time: 8.73641 ms.
-qp_.Process over 
+Path Optimizer used time: 1.20813 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00213705
+ init_v; 3.01522 init_a: -0.00213673
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0608172 秒
-carx: 304.951
-cary: 247.782
-FrentPoint_.S: 72.6714
-FrentPoint_.D: -1.34209
+程序运行时间: 0.0096606 秒
+lqr: -26.4513
+lqr: -26.817
+lqr: -27.1625
+lqr: -27.43
+lqr: -27.8222
+lqr: -27.8222
+lqr: -28.4612
+lqr: -28.8239
+lqr: -29.1653
+lqr: -29.4835
+lqr: -29.4835
+lqr: -29.992
+lqr: -30.2594
+lqr: -30.5541
+lqr: -30.8125
+lqr: -31.0669
+lqr: -31.2809
+lqr: -31.5441
+lqr: -31.7401
+lqr: -31.9981
+lqr: -32.2049
+lqr: -32.603
+lqr: -32.8802
+lqr: -33.1236
+lqr: -33.3713
+lqr: -33.5772
+lqr: -33.8146
+lqr: -33.9828
+lqr: -34.2001
+lqr: -34.3543
+lqr: -34.4401
+lqr: -34.4401
+lqr: -34.4401
+lqr: -35.0522
+lqr: -35.0522
+lqr: -35.3239
+lqr: -35.4836
+lqr: -35.6776
+lqr: -35.8379
+lqr: -36.0241
+lqr: -36.1861
+lqr: -36.4015
+lqr: -36.5348
+lqr: -36.7075
+lqr: -36.8604
+lqr: -36.9972
+lqr: -37.1182
+lqr: -37.1023
+lqr: -37.0798
+lqr: -37.0437
+lqr: -37.0112
+lqr: -36.9327
+lqr: -36.8616
+lqr: -36.7769
+lqr: -36.7
+lqr: -36.6275
+lqr: -36.5515
+lqr: -36.5515
+lqr: -36.47
+lqr: -36.4195
+lqr: -36.355
+lqr: -36.3036
+lqr: -36.2208
+lqr: -36.1181
+lqr: -36.0298
+lqr: -35.9209
+lqr: -35.8051
+lqr: -35.6836
+lqr: -35.4944
+lqr: -35.4175
+lqr: -35.2193
+lqr: -35.0768
+lqr: -34.9451
+lqr: -34.7959
+lqr: -34.6752
+lqr: -34.5244
+lqr: -34.373
+lqr: -34.2219
+lqr: -34.0487
+lqr: -33.8793
+lqr: -33.7037
+lqr: -33.7037
+lqr: -33.43
+lqr: -33.2477
+lqr: -33.0433
+carx: 382.383
+cary: 251.452
+FrentPoint_.S: 60.1504
+FrentPoint_.D: -1.45766
 closestIndex: 10
-index: 291
-local_start_s: 72.5
-local_start_l: -1.48787
-dl: -9.11824e-05
-ddl: -2.89514e-05
+index: 241
+local_start_s: 60
+local_start_l: -1.48513
+dl: -0.000510167
+ddl: 4.86257e-06
 v: 3.01523
 a: -0.00214977
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000743644 秒
+AllCosttime: 0.00214659 秒
 qp_.Process
-Path Optimizer used time: 4.50791 ms.
-qp_.Process over 
+Path Optimizer used time: 0.922874 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
  init_v; 3.01523 init_a: -0.00214977
+lqr: -32.8221
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0402694 秒
-carx: 310.125
-cary: 247.851
-FrentPoint_.S: 77.8462
-FrentPoint_.D: -1.3385
-closestIndex: 11
-index: 311
-local_start_s: 78
-local_start_l: -1.48806
-dl: -7.02704e-05
-ddl: -3.75859e-05
-v: 3.01484
-a: -0.00268288
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+程序运行时间: 0.0279271 秒
+lqr: -32.6073
+lqr: -32.3951
+lqr: -32.1711
+lqr: -31.9624
+lqr: -31.7582
+lqr: -31.547
+lqr: -31.3613
+lqr: -31.06
+lqr: -30.9664
+lqr: -30.6384
+lqr: -30.3965
+lqr: -30.225
+lqr: -30.0227
+lqr: -29.8415
+lqr: -29.6862
+lqr: -29.5143
+lqr: -29.3662
+lqr: -29.3662
+lqr: -29.0525
+lqr: -29.0525
+lqr: -28.8232
+lqr: -28.6492
+lqr: -28.4837
+lqr: -28.308
+lqr: -28.1016
+lqr: -27.8944
+lqr: -27.6595
+lqr: -27.4321
+lqr: -27.203
+lqr: -26.9442
+lqr: -26.6842
+lqr: -26.2939
+lqr: -26.2939
+lqr: -25.8074
+lqr: -25.5651
+lqr: -25.3162
+lqr: -25.0883
+lqr: -24.8532
+lqr: -24.6278
+lqr: -24.4012
+lqr: -24.1981
+lqr: -23.9831
+lqr: -23.8035
+lqr: -23.6968
+lqr: -23.587
+lqr: -23.2971
+lqr: -23.0854
+lqr: -22.8919
+lqr: -22.6971
+lqr: -22.5147
+lqr: -22.3312
+lqr: -22.1735
+lqr: -22.0097
+lqr: -21.8719
+lqr: -21.7257
+lqr: -21.5602
+lqr: -21.2951
+lqr: -21.0894
+lqr: -20.8961
+lqr: -20.6783
+lqr: -20.4464
+lqr: -20.362
+lqr: -20.3233
+lqr: -20.2246
+lqr: -20.1632
+lqr: -20.1509
+lqr: -20.1509
+lqr: -20.1062
+lqr: -20.1062
+lqr: -20.0894
+lqr: -20.0341
+lqr: -20.0605
+lqr: -20.0102
+lqr: -20.0166
+lqr: -20.017
+lqr: -20.0476
+lqr: -20.0622
+lqr: -20.1442
+lqr: -20.1817
+lqr: -20.2625
+lqr: -20.3579
+lqr: -20.3755
+lqr: -20.3762
+lqr: -20.4115
+carx: 377.368
+cary: 251.362
+FrentPoint_.S: 65.1655
+FrentPoint_.D: -1.43048
+closestIndex: 10
+index: 261
+local_start_s: 65
+local_start_l: -1.48695
+dl: -0.000296338
+ddl: -2.70753e-06
+v: 3.01523
+a: -0.00215112
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00102043 秒
+AllCosttime: 0.000863543 秒
 qp_.Process
-Path Optimizer used time: 6.23489 ms.
-qp_.Process over 
+Path Optimizer used time: 0.936121 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01484 init_a: -0.00268288
+ init_v; 3.01523 init_a: -0.00215112
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0206726 秒
-carx: 315.252
-cary: 247.865
-FrentPoint_.S: 82.9725
-FrentPoint_.D: -1.38969
+程序运行时间: 0.0166019 秒
+lqr: -20.4546
+lqr: -20.4538
+lqr: -20.5122
+lqr: -20.5226
+lqr: -20.4951
+lqr: -20.5085
+lqr: -20.5194
+lqr: -20.5194
+lqr: -20.4403
+lqr: -20.4175
+lqr: -20.3322
+lqr: -20.3012
+lqr: -20.2272
+lqr: -20.2194
+lqr: -20.1539
+lqr: -20.1833
+lqr: -20.1546
+lqr: -20.2044
+lqr: -20.2236
+lqr: -20.2827
+lqr: -20.2871
+lqr: -20.3614
+lqr: -20.397
+lqr: -20.3983
+lqr: -20.4376
+lqr: -20.4543
+lqr: -20.3733
+lqr: -20.275
+lqr: -20.2186
+lqr: -20.0801
+lqr: -19.9602
+lqr: -19.9602
+lqr: -19.7855
+lqr: -19.6137
+lqr: -19.4278
+lqr: -19.2205
+lqr: -19.0054
+lqr: -18.7729
+lqr: -18.5324
+lqr: -18.2811
+lqr: -18.0451
+lqr: -17.8425
+lqr: -17.6219
+lqr: -17.3159
+lqr: -17.2256
+lqr: -16.9367
+lqr: -16.7666
+lqr: -16.6088
+lqr: -16.4697
+lqr: -16.3128
+lqr: -16.168
+lqr: -16.032
+lqr: -15.8531
+lqr: -15.6971
+lqr: -15.5134
+lqr: -15.5134
+lqr: -15.2253
+lqr: -15.0585
+lqr: -14.8816
+lqr: -14.7221
+lqr: -14.5857
+lqr: -14.4306
+lqr: -14.308
+lqr: -14.1551
+lqr: -14.0148
+lqr: -13.8856
+lqr: -13.7299
+lqr: -13.5466
+lqr: -13.4319
+lqr: -13.3338
+lqr: -13.2551
+lqr: -13.1884
+lqr: -13.141
+lqr: -13.141
+lqr: -13.0621
+lqr: -12.9876
+lqr: -12.834
+lqr: -12.7382
+lqr: -12.6709
+lqr: -12.5536
+lqr: -12.5536
+lqr: -12.4332
+lqr: -12.3487
+lqr: -12.2825
+lqr: -12.2219
+carx: 372.24
+cary: 251.268
+FrentPoint_.S: 70.2943
+FrentPoint_.D: -1.40058
+closestIndex: 11
+index: 281
+local_start_s: 70.5
+local_start_l: -1.48794
+dl: -0.000158397
+ddl: -1.98122e-05
+v: 3.01484
+a: -0.002756
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00070689 秒
+qp_.Process
+Path Optimizer used time: 0.949943 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01484 init_a: -0.002756
+lqr: -12.1775
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0201892 秒
+lqr: -12.1514
+lqr: -12.1257
+lqr: -12.0967
+lqr: -12.0989
+lqr: -12.1036
+lqr: -12.1398
+lqr: -12.2314
+lqr: -12.2314
+lqr: -12.2314
+lqr: -12.4766
+lqr: -12.5517
+lqr: -12.628
+lqr: -12.6896
+lqr: -12.7383
+lqr: -12.7969
+lqr: -12.8176
+lqr: -12.8176
+lqr: -12.8645
+lqr: -12.8645
+lqr: -12.8753
+lqr: -12.8815
+lqr: -12.8808
+lqr: -12.8717
+lqr: -12.9073
+lqr: -12.8974
+lqr: -12.9488
+lqr: -12.982
+lqr: -13.0344
+lqr: -13.0991
+lqr: -13.1697
+lqr: -13.308
+lqr: -13.3912
+lqr: -13.4794
+lqr: -13.5188
+lqr: -13.5962
+lqr: -13.6153
+lqr: -13.712
+lqr: -13.712
+lqr: -13.9513
+lqr: -14.034
+lqr: -14.2739
+lqr: -14.2739
+lqr: -14.9375
+lqr: -14.9375
+lqr: -15.3872
+lqr: -15.7357
+lqr: -16.0014
+lqr: -16.3598
+lqr: -16.652
+lqr: -16.9976
+lqr: -17.3024
+lqr: -17.6645
+lqr: -17.9228
+lqr: -18.2687
+lqr: -18.6871
+lqr: -18.9246
+lqr: -19.2465
+lqr: -19.4763
+lqr: -19.8092
+lqr: -20.0562
+lqr: -20.3061
+lqr: -20.6127
+lqr: -20.7338
+lqr: -21.1476
+lqr: -21.4175
+lqr: -21.4175
+lqr: -21.728
+lqr: -21.992
+lqr: -22.1975
+lqr: -22.4533
+lqr: -22.6509
+lqr: -22.9372
+lqr: -23.141
+lqr: -23.4411
+lqr: -23.6661
+lqr: -23.9313
+lqr: -24.1414
+lqr: -24.4419
+lqr: -24.5174
+lqr: -24.8213
+lqr: -25.0115
+lqr: -25.1559
+lqr: -25.37
+lqr: -25.5046
+carx: 367.146
+cary: 251.231
+FrentPoint_.S: 75.389
+FrentPoint_.D: -1.42791
 closestIndex: 10
-index: 332
-local_start_s: 83
-local_start_l: -1.48813
-dl: -3.7147e-05
-ddl: -3.52802e-05
+index: 302
+local_start_s: 75.5
+local_start_l: -1.4883
+dl: -6.43829e-05
+ddl: -2.51576e-05
+v: 3.01518
+a: -0.00201268
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.0019876 秒
+qp_.Process
+Path Optimizer used time: 1.84876 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+lqr: -25.6938
+ init_v; 3.01518 init_a: -0.00201268
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0190159 秒
+lqr: -25.8388
+lqr: -25.9322
+lqr: -26.0691
+lqr: -26.2369
+lqr: -26.2871
+lqr: -26.2871
+lqr: -26.1178
+lqr: -26.0391
+lqr: -25.9309
+lqr: -25.8454
+lqr: -25.7298
+lqr: -25.661
+lqr: -25.577
+lqr: -25.4915
+lqr: -25.4285
+lqr: -25.345
+lqr: -25.2283
+lqr: -25.1469
+lqr: -25.0543
+lqr: -24.9351
+lqr: -24.8335
+lqr: -24.6927
+lqr: -24.567
+lqr: -24.3953
+lqr: -24.2276
+lqr: -24.0435
+lqr: -23.9449
+lqr: -23.6539
+lqr: -23.462
+lqr: -23.462
+lqr: -23.2237
+lqr: -23.0925
+lqr: -22.9331
+lqr: -22.7727
+lqr: -22.5793
+lqr: -22.396
+lqr: -22.1498
+lqr: -21.9184
+lqr: -21.6518
+lqr: -21.3825
+lqr: -21.1402
+lqr: -20.7813
+lqr: -20.5368
+lqr: -20.3268
+lqr: -20.078
+lqr: -19.8383
+lqr: -19.5624
+lqr: -19.2885
+lqr: -19.008
+lqr: -18.7218
+lqr: -18.4536
+lqr: -18.1687
+lqr: -18.1687
+lqr: -17.9549
+lqr: -17.6248
+lqr: -17.4245
+lqr: -17.0159
+lqr: -16.8301
+lqr: -16.6181
+lqr: -16.3672
+lqr: -16.1079
+lqr: -15.8315
+lqr: -15.5427
+lqr: -15.2851
+lqr: -15.0359
+lqr: -14.6714
+lqr: -14.442
+lqr: -14.2166
+lqr: -13.9769
+lqr: -13.7638
+lqr: -13.5251
+lqr: -13.3233
+lqr: -13.1165
+lqr: -12.9381
+lqr: -12.7794
+lqr: -12.6476
+lqr: -12.6476
+lqr: -12.4437
+lqr: -12.4039
+lqr: -12.2018
+lqr: -12.0807
+lqr: -11.9252
+lqr: -11.7709
+lqr: -11.5875
+carx: 362.057
+cary: 251.15
+FrentPoint_.S: 80.4783
+FrentPoint_.D: -1.41156
+closestIndex: 10
+index: 322
+local_start_s: 80.5
+local_start_l: -1.48833
+dl: -2.3051e-05
+ddl: -3.41678e-05
+v: 3.01522
+a: -0.00213708
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000622171 秒
+qp_.Process
+Path Optimizer used time: 0.917862 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01522 init_a: -0.00213708
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0105669 秒
+lqr: -11.4453
+lqr: -11.3053
+lqr: -11.1673
+lqr: -11.0377
+lqr: -10.9036
+lqr: -10.7665
+lqr: -10.5866
+lqr: -10.4599
+lqr: -10.3059
+lqr: -10.1811
+lqr: -10.051
+lqr: -9.93734
+lqr: -9.82655
+lqr: -9.74621
+lqr: -9.67001
+lqr: -9.59214
+lqr: -9.59214
+lqr: -9.46626
+lqr: -9.40245
+lqr: -9.30908
+lqr: -9.21692
+lqr: -9.11822
+lqr: -9.11411
+lqr: -9.10361
+lqr: -9.11871
+lqr: -9.12801
+lqr: -9.15442
+lqr: -9.1609
+lqr: -9.16956
+lqr: -9.16255
+lqr: -9.20441
+lqr: -9.2683
+lqr: -9.31996
+lqr: -9.42227
+lqr: -9.52085
+lqr: -9.64677
+lqr: -9.80783
+lqr: -9.96891
+lqr: -10.1117
+lqr: -10.2663
+lqr: -10.3772
+lqr: -10.3772
+lqr: -10.5501
+lqr: -10.6275
+lqr: -10.6965
+lqr: -10.7321
+lqr: -10.7894
+lqr: -10.802
+lqr: -10.8687
+lqr: -10.8924
+lqr: -10.9771
+lqr: -11.04
+lqr: -11.1485
+lqr: -11.2859
+lqr: -11.3633
+lqr: -11.4819
+lqr: -11.5709
+lqr: -11.6872
+lqr: -11.7944
+lqr: -11.9039
+lqr: -12.0129
+lqr: -12.1069
+lqr: -12.1687
+lqr: -12.2477
+lqr: -12.3057
+lqr: -12.3057
+lqr: -12.3903
+lqr: -12.42
+lqr: -12.4976
+lqr: -12.5759
+lqr: -12.6732
+lqr: -12.6732
+lqr: -12.8394
+lqr: -12.8695
+lqr: -12.9013
+lqr: -12.9059
+lqr: -12.9057
+lqr: -12.8753
+lqr: -12.8594
+lqr: -12.82
+lqr: -12.7734
+lqr: -12.7068
+lqr: -12.6692
+lqr: -12.6155
+lqr: -12.5618
+carx: 357.54
+cary: 251.086
+FrentPoint_.S: 84.9956
+FrentPoint_.D: -1.40396
+closestIndex: 9
+index: 340
+local_start_s: 85
+local_start_l: -1.48822
+dl: 6.38283e-06
+ddl: -3.44089e-05
+v: 3.01552
+a: -0.00160376
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000590914 秒
+qp_.Process
+Path Optimizer used time: 0.982838 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01552 init_a: -0.00160376
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0126297 秒
+lqr: -12.5122
+lqr: -12.4316
+lqr: -12.3475
+lqr: -12.2317
+lqr: -12.2317
+lqr: -12.1513
+lqr: -12.0909
+lqr: -12.0122
+lqr: -11.9455
+lqr: -11.8679
+lqr: -11.7895
+lqr: -11.7433
+lqr: -11.6842
+lqr: -11.6323
+lqr: -11.6026
+lqr: -11.5613
+lqr: -11.5048
+lqr: -11.4673
+lqr: -11.4243
+lqr: -11.3637
+lqr: -11.2976
+lqr: -11.2278
+lqr: -11.157
+lqr: -11.0789
+lqr: -11.0096
+lqr: -10.9358
+lqr: -10.8449
+lqr: -10.8449
+lqr: -10.7105
+lqr: -10.6391
+lqr: -10.4905
+lqr: -10.3614
+lqr: -10.2679
+lqr: -10.1493
+lqr: -10.0557
+lqr: -9.96302
+lqr: -9.89612
+lqr: -9.72994
+lqr: -9.63685
+lqr: -9.53144
+lqr: -9.42409
+lqr: -9.25277
+lqr: -9.1382
+lqr: -9.01316
+lqr: -8.91282
+lqr: -8.79459
+lqr: -8.68508
+lqr: -8.5817
+lqr: -8.45053
+lqr: -8.3531
+lqr: -8.23527
+lqr: -8.23527
+lqr: -8.06841
+lqr: -8.00939
+lqr: -7.93792
+lqr: -7.88289
+lqr: -7.86147
+lqr: -7.81791
+lqr: -7.79594
+lqr: -7.7839
+lqr: -7.7521
+lqr: -7.71918
+lqr: -7.68731
+lqr: -7.54722
+lqr: -7.50325
+lqr: -7.31141
+lqr: -7.20316
+lqr: -7.08918
+lqr: -6.98295
+lqr: -6.90625
+lqr: -6.7982
+lqr: -6.70507
+lqr: -6.62936
+lqr: -6.58239
+lqr: -6.46279
+lqr: -6.4028
+lqr: -6.4028
+lqr: -6.32038
+lqr: -6.28604
+lqr: -6.23376
+lqr: -6.19533
+lqr: -6.15945
+lqr: -6.10201
+lqr: -6.06238
+lqr: -6.01484
+carx: 352.567
+cary: 251
+FrentPoint_.S: 89.9694
+FrentPoint_.D: -1.38022
+closestIndex: 10
+index: 360
+local_start_s: 90
+local_start_l: -1.48803
+dl: -1.06791e-05
+ddl: -4.36802e-05
+v: 3.01527
+a: -0.0022579
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000869616 秒
+qp_.Process
+Path Optimizer used time: 1.28453 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01527 init_a: -0.0022579
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0125874 秒
+lqr: -5.97112
+lqr: -6.00377
+lqr: -6.47016
+lqr: -6.92947
+lqr: -7.20218
+lqr: -7.53928
+lqr: -7.81193
+lqr: -8.07033
+lqr: -8.30664
+lqr: -8.54972
+lqr: -8.7099
+lqr: -8.97771
+lqr: -9.18131
+lqr: -9.43874
+lqr: -9.69763
+lqr: -9.69763
+lqr: -10.086
+lqr: -10.3029
+lqr: -10.5716
+lqr: -10.7717
+lqr: -11.0189
+lqr: -11.1898
+lqr: -11.4281
+lqr: -11.6156
+lqr: -11.8808
+lqr: -12.0924
+lqr: -12.3616
+lqr: -12.7109
+lqr: -12.8632
+lqr: -13.2345
+lqr: -13.4351
+lqr: -13.6551
+lqr: -13.8519
+lqr: -14.0163
+lqr: -14.2377
+lqr: -14.4865
+lqr: -14.6384
+lqr: -14.8706
+lqr: -15.0845
+lqr: -15.1306
+lqr: -15.1306
+lqr: -15.3282
+lqr: -15.4316
+lqr: -15.4983
+lqr: -15.6314
+lqr: -15.7112
+lqr: -15.8824
+lqr: -16.0268
+lqr: -16.2143
+lqr: -16.3661
+lqr: -16.5396
+lqr: -16.7388
+lqr: -16.665
+lqr: -16.5637
+lqr: -16.4586
+lqr: -16.3175
+lqr: -16.2255
+lqr: -16.0973
+lqr: -15.9852
+lqr: -15.8751
+lqr: -15.7405
+lqr: -15.6134
+lqr: -15.6134
+lqr: -15.4032
+lqr: -15.3363
+lqr: -15.1522
+lqr: -15.0128
+lqr: -14.9098
+lqr: -14.7873
+lqr: -14.6771
+lqr: -14.55
+lqr: -14.4059
+lqr: -14.245
+lqr: -14.0775
+lqr: -13.8717
+lqr: -13.6776
+lqr: -13.3552
+lqr: -13.1408
+lqr: -12.9305
+lqr: -12.7483
+lqr: -12.5558
+lqr: -12.3589
+lqr: -12.3589
+lqr: -11.9711
+lqr: -11.7409
+carx: 347.383
+cary: 250.954
+FrentPoint_.S: 95.1536
+FrentPoint_.D: -1.39978
+closestIndex: 10
+index: 381
+local_start_s: 95
+local_start_l: -1.48793
+dl: -2.43574e-05
+ddl: -4.2945e-05
+v: 3.01523
+a: -0.00208466
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00179967 秒
+qp_.Process
+Path Optimizer used time: 0.982483 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01523 init_a: -0.00208466
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0158701 秒
+lqr: -11.5238
+lqr: -11.3048
+lqr: -11.3048
+lqr: -10.989
+lqr: -10.7806
+lqr: -10.5913
+lqr: -10.4202
+lqr: -10.2231
+lqr: -10.0947
+lqr: -9.90524
+lqr: -9.74307
+lqr: -9.58532
+lqr: -9.39255
+lqr: -9.15646
+lqr: -9.06654
+lqr: -8.80422
+lqr: -8.89923
+lqr: -8.89758
+lqr: -8.93691
+lqr: -8.87529
+lqr: -8.89865
+lqr: -8.86518
+lqr: -8.8404
+lqr: -8.83962
+lqr: -8.85214
+lqr: -8.83059
+lqr: -8.83059
+lqr: -8.81288
+lqr: -8.76911
+lqr: -8.77954
+lqr: -8.73067
+lqr: -8.75219
+lqr: -8.73
+lqr: -8.75183
+lqr: -8.76339
+lqr: -8.8011
+lqr: -8.80325
+lqr: -8.8786
+lqr: -8.95349
+lqr: -8.95652
+lqr: -9.01589
+lqr: -9.01862
+lqr: -9.04726
+lqr: -9.02943
+lqr: -9.04074
+lqr: -9.01546
+lqr: -9.03306
+lqr: -9.00111
+lqr: -9.00111
+lqr: -9.00111
+lqr: -8.96317
+lqr: -8.91939
+lqr: -8.87517
+lqr: -8.86161
+lqr: -8.79807
+lqr: -8.79595
+lqr: -8.75792
+lqr: -8.76768
+lqr: -8.73621
+lqr: -8.76811
+lqr: -8.7452
+lqr: -8.75893
+lqr: -8.73346
+lqr: -8.73346
+lqr: -8.67503
+lqr: -8.62866
+lqr: -8.47237
+lqr: -8.3807
+lqr: -8.33145
+lqr: -8.25916
+lqr: -8.23488
+lqr: -8.21582
+lqr: -8.20261
+lqr: -8.21578
+lqr: -8.21584
+lqr: -8.21584
+lqr: -8.20604
+lqr: -8.21635
+lqr: -8.19475
+lqr: -8.17113
+lqr: -8.12096
+lqr: -8.0963
+lqr: -8.02473
+lqr: -7.9696
+lqr: -7.91849
+carx: 342.059
+cary: 250.88
+FrentPoint_.S: 100.478
+FrentPoint_.D: -1.39256
+closestIndex: 11
+index: 402
+local_start_s: 100.5
+local_start_l: -1.4879
+dl: -5.49371e-05
+ddl: -4.50267e-05
+v: 3.01484
+a: -0.00275668
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00151959 秒
+qp_.Process
+Path Optimizer used time: 1.11481 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01484 init_a: -0.00275668
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0125348 秒
+lqr: -7.84341
+lqr: -7.79809
+lqr: -7.67498
+lqr: -7.60906
+lqr: -7.52982
+lqr: -7.43999
+lqr: -7.39043
+lqr: -7.35236
+lqr: -7.28404
+lqr: -7.27032
+lqr: -7.27032
+lqr: -7.19274
+lqr: -7.19274
+lqr: -7.11732
+lqr: -7.11732
+lqr: -7.05215
+lqr: -7.03376
+lqr: -6.99664
+lqr: -7.01235
+lqr: -6.97513
+lqr: -6.99661
+lqr: -6.96197
+lqr: -6.98337
+lqr: -6.94917
+lqr: -6.93241
+lqr: -6.90957
+lqr: -6.82037
+lqr: -6.78142
+lqr: -6.70791
+lqr: -6.62809
+lqr: -6.55445
+lqr: -6.58192
+lqr: -6.55307
+lqr: -6.52289
+lqr: -6.49138
+lqr: -6.45446
+lqr: -6.45446
+lqr: -6.40622
+lqr: -6.33296
+lqr: -6.25557
+lqr: -6.21028
+lqr: -6.13109
+lqr: -6.11255
+lqr: -6.09118
+lqr: -6.08099
+lqr: -6.0817
+lqr: -6.10201
+lqr: -6.10888
+lqr: -6.12543
+lqr: -6.14924
+lqr: -6.16355
+lqr: -6.16697
+lqr: -6.15894
+lqr: -6.15485
+lqr: -6.14136
+lqr: -6.09806
+lqr: -6.08639
+lqr: -6.06602
+lqr: -6.03049
+lqr: -6.00224
+lqr: -5.98814
+lqr: -5.98814
+lqr: -5.9496
+lqr: -5.92325
+lqr: -5.89826
+lqr: -5.87539
+lqr: -5.8457
+lqr: -5.80622
+lqr: -5.78611
+lqr: -5.70668
+lqr: -5.695
+lqr: -5.66869
+lqr: -5.59156
+lqr: -5.46726
+lqr: -5.46422
+lqr: -5.32284
+lqr: -5.3022
+lqr: -5.41177
+lqr: -5.39417
+lqr: -5.43329
+lqr: -5.5727
+lqr: -5.62652
+lqr: -5.54873
+lqr: -5.54115
+lqr: -5.41989
+carx: 336.789
+cary: 250.806
+FrentPoint_.S: 105.748
+FrentPoint_.D: -1.38522
+closestIndex: 10
+index: 423
+local_start_s: 105.5
+local_start_l: -1.48795
+dl: -4.19266e-05
+ddl: -3.84282e-05
+v: 3.01518
+a: -0.00201272
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000579265 秒
+qp_.Process
+Path Optimizer used time: 0.913803 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01518 init_a: -0.00201272
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.00866493 秒
+lqr: -5.43764
+lqr: -5.29577
+lqr: -5.23223
+lqr: -5.08352
+lqr: -5.00784
+lqr: -4.8995
+lqr: -4.76543
+lqr: -4.68716
+lqr: -4.56513
+lqr: -4.4206
+lqr: -4.30136
+lqr: -4.17387
+lqr: -3.97016
+lqr: -3.86073
+lqr: -3.74195
+lqr: -3.65408
+lqr: -3.57946
+lqr: -3.50791
+lqr: -3.50791
+lqr: -3.39396
+lqr: -3.33704
+lqr: -3.25051
+lqr: -3.18264
+lqr: -3.11947
+lqr: -3.00341
+lqr: -3.00341
+lqr: -2.92409
+lqr: -2.86394
+lqr: -2.80503
+lqr: -2.77918
+lqr: -2.68603
+lqr: -2.61426
+lqr: -2.53323
+lqr: -2.40023
+lqr: -2.49437
+lqr: -2.44263
+lqr: -2.22975
+lqr: -2.18782
+lqr: -2.04311
+lqr: -2.02962
+lqr: -1.94304
+lqr: -1.93083
+lqr: -1.88806
+lqr: -1.85501
+lqr: -1.79449
+lqr: -1.71522
+lqr: -1.506
+lqr: -1.506
+lqr: -1.02772
+lqr: -1.02772
+lqr: -0.713478
+lqr: -0.514866
+lqr: -0.339666
+lqr: -0.173129
+lqr: -0.0101669
+lqr: 0.132964
+lqr: 0.246344
+lqr: 0.410139
+lqr: 0.507425
+lqr: 0.631399
+lqr: 0.6973
+lqr: 0.813649
+lqr: 0.902519
+lqr: 0.933273
+lqr: 1.00047
+lqr: 1.11175
+lqr: 1.262
+lqr: 1.38577
+lqr: 1.57726
+lqr: 1.70883
+lqr: 1.86095
+lqr: 2.03662
+lqr: 2.03662
+lqr: 2.26033
+lqr: 2.26033
+lqr: 2.39134
+lqr: 2.45956
+lqr: 2.51115
+lqr: 2.53796
+lqr: 2.58407
+lqr: 2.58889
+lqr: 2.6412
+lqr: 2.64944
+lqr: 2.68931
+lqr: 2.71142
+carx: 331.633
+cary: 250.708
+FrentPoint_.S: 110.905
+FrentPoint_.D: -1.35203
+closestIndex: 11
+index: 444
+local_start_s: 111
+local_start_l: -1.48797
+dl: -5.69112e-05
+ddl: -4.28163e-05
+v: 3.01484
+a: -0.00274343
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000926576 秒
+qp_.Process
+Path Optimizer used time: 0.955193 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01484 init_a: -0.00274343
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0131011 秒
+lqr: 2.76168
+lqr: 2.79004
+lqr: 2.80164
+lqr: 2.75964
+lqr: 2.77314
+lqr: 2.77544
+lqr: 2.68779
+lqr: 2.69069
+lqr: 2.69069
+lqr: 2.55492
+lqr: 2.56078
+lqr: 2.56078
+lqr: 2.41593
+lqr: 2.0913
+lqr: 1.73347
+lqr: 1.43644
+lqr: 1.07344
+lqr: 0.783031
+lqr: 0.442157
+lqr: 0.14461
+lqr: -0.188862
+lqr: -0.480831
+lqr: -0.868588
+lqr: -1.38872
+lqr: -1.65946
+lqr: -2.06205
+lqr: -2.06205
+lqr: -2.06205
+lqr: -3.69906
+lqr: -4.17095
+lqr: -4.57973
+lqr: -5.02908
+lqr: -5.40209
+lqr: -5.85134
+lqr: -6.22535
+lqr: -6.6098
+lqr: -6.6098
+lqr: -7.22172
+lqr: -7.63316
+lqr: -7.97489
+lqr: -8.36406
+lqr: -8.67525
+lqr: -9.04515
+lqr: -9.35411
+lqr: -9.71026
+lqr: -10.0351
+lqr: -10.3684
+lqr: -10.6742
+lqr: -11.1826
+lqr: -11.5196
+lqr: -11.7826
+lqr: -12.1213
+lqr: -12.3769
+lqr: -12.6329
+lqr: -12.9462
+lqr: -13.2278
+lqr: -13.4741
+lqr: -13.7517
+lqr: -14.0745
+lqr: -14.1933
+lqr: -14.1933
+lqr: -14.5205
+lqr: -14.5763
+lqr: -14.5988
+lqr: -14.5972
+lqr: -14.6261
+lqr: -14.6295
+lqr: -14.6568
+lqr: -14.7164
+lqr: -14.7868
+lqr: -14.8655
+lqr: -14.9728
+lqr: -15.1078
+lqr: -15.1603
+lqr: -15.1999
+lqr: -15.1835
+lqr: -15.1348
+lqr: -15.088
+lqr: -14.9746
+lqr: -14.8649
+lqr: -14.7307
+lqr: -14.5974
+lqr: -14.441
+lqr: -14.359
+lqr: -14.2822
+carx: 326.425
+cary: 250.688
+FrentPoint_.S: 116.113
+FrentPoint_.D: -1.39705
+closestIndex: 10
+index: 464
+local_start_s: 116
+local_start_l: -1.48802
+dl: -3.85697e-05
+ddl: -3.76234e-05
+v: 3.01518
+a: -0.00201196
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000630099 秒
+qp_.Process
+Path Optimizer used time: 1.36906 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01518 init_a: -0.00201196
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0113349 秒
+lqr: -14.0487
+lqr: -13.8554
+lqr: -13.6979
+lqr: -13.5208
+lqr: -13.3654
+lqr: -13.2299
+lqr: -13.099
+lqr: -13.0057
+lqr: -12.9199
+lqr: -12.8263
+lqr: -12.7442
+lqr: -12.5683
+lqr: -12.4361
+lqr: -12.2802
+lqr: -12.1255
+lqr: -11.9533
+lqr: -11.7843
+lqr: -11.6178
+lqr: -11.4065
+lqr: -11.2314
+lqr: -11.0056
+lqr: -10.7738
+lqr: -10.7738
+lqr: -10.4229
+lqr: -10.2994
+lqr: -9.94135
+lqr: -9.69873
+lqr: -9.51146
+lqr: -9.34216
+lqr: -9.16445
+lqr: -9.00368
+lqr: -8.82837
+lqr: -8.65394
+lqr: -8.45604
+lqr: -8.26123
+lqr: -8.05481
+lqr: -7.72674
+lqr: -7.51799
+lqr: -7.29332
+lqr: -7.07756
+lqr: -6.87523
+lqr: -6.66663
+lqr: -6.45582
+lqr: -6.25737
+lqr: -6.06719
+lqr: -5.86712
+lqr: -5.86712
+lqr: -5.61585
+lqr: -5.47707
+lqr: -5.33569
+lqr: -5.22252
+lqr: -5.11175
+lqr: -4.99676
+lqr: -4.8535
+lqr: -4.71421
+lqr: -4.53026
+lqr: -4.32566
+lqr: -4.11129
+lqr: -3.73754
+lqr: -3.60801
+lqr: -3.25021
+lqr: -3.01049
+lqr: -2.78414
+lqr: -2.55858
+lqr: -2.32805
+lqr: -2.10747
+lqr: -1.88663
+lqr: -1.69129
+lqr: -1.48848
+lqr: -1.33279
+lqr: -1.19885
+lqr: -1.19885
+lqr: -1.00912
+lqr: -0.905862
+lqr: -0.807634
+lqr: -0.702625
+lqr: -0.562895
+lqr: -0.524031
+lqr: -0.552874
+lqr: -0.627554
+lqr: -0.639616
+lqr: -0.750819
+lqr: -0.806395
+lqr: -0.954265
+lqr: -1.09062
+carx: 321.356
+cary: 250.604
+FrentPoint_.S: 121.183
+FrentPoint_.D: -1.37654
+closestIndex: 10
+index: 485
+local_start_s: 121
+local_start_l: -1.488
+dl: -3.18605e-05
+ddl: -3.95786e-05
+v: 3.01522
+a: -0.00213701
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000916507 秒
+qp_.Process
+Path Optimizer used time: 2.65512 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01522 init_a: -0.00213701
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0139661 秒
+lqr: -1.17226
+lqr: -1.33056
+lqr: -1.39641
+lqr: -1.50894
+lqr: -1.54942
+lqr: -1.64747
+lqr: -1.64747
+lqr: -1.71717
+lqr: -1.82266
+lqr: -1.9113
+lqr: -1.9113
+lqr: -1.99727
+lqr: -2.10238
+lqr: -2.17577
+lqr: -2.30771
+lqr: -2.38857
+lqr: -2.52562
+lqr: -2.62836
+lqr: -2.7631
+lqr: -2.84528
+lqr: -2.98497
+lqr: -3.06151
+lqr: -3.22485
+lqr: -3.35814
+lqr: -3.44545
+lqr: -3.58008
+lqr: -3.68407
+lqr: -3.83272
+lqr: -3.928
+lqr: -4.09014
+lqr: -4.15791
+lqr: -4.30322
+lqr: -4.3678
+lqr: -4.40198
+lqr: -4.40198
+lqr: -4.5069
+lqr: -4.57269
+lqr: -4.59811
+lqr: -4.65569
+lqr: -4.67651
+lqr: -4.78076
+lqr: -4.83997
+lqr: -5.41699
+lqr: -5.87632
+lqr: -6.46829
+lqr: -6.93497
+lqr: -7.75876
+lqr: -8.33073
+lqr: -8.7725
+lqr: -9.34539
+lqr: -9.78686
+lqr: -10.2486
+lqr: -10.8352
+lqr: -11.442
+lqr: -11.8663
+lqr: -12.4384
+lqr: -12.854
+lqr: -12.854
+lqr: -14.0182
+lqr: -14.0182
+lqr: -14.5579
+lqr: -14.975
+lqr: -15.5155
+lqr: -15.9205
+lqr: -16.459
+lqr: -16.8353
+lqr: -17.342
+lqr: -17.6998
+lqr: -18.1378
+lqr: -18.4241
+lqr: -18.8348
+lqr: -19.3412
+lqr: -19.5609
+lqr: -19.9269
+lqr: -20.1196
+lqr: -20.4552
+lqr: -20.6234
+lqr: -20.9257
+lqr: -21.0537
+lqr: -21.3125
+lqr: -21.4166
+lqr: -21.4166
+lqr: -21.7147
+lqr: -21.8199
+lqr: -22.0668
+carx: 316.246
+cary: 250.607
+FrentPoint_.S: 126.292
+FrentPoint_.D: -1.44379
+closestIndex: 11
+index: 505
+local_start_s: 126.5
+local_start_l: -1.48798
+dl: -5.225e-05
+ddl: -4.36467e-05
+v: 3.01484
+a: -0.00275473
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000678161 秒
+qp_.Process
+Path Optimizer used time: 0.87237 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01484 init_a: -0.00275473
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0139752 秒
+lqr: -22.1492
+lqr: -22.4047
+lqr: -22.4981
+lqr: -22.6799
+lqr: -22.6799
+lqr: -23.0362
+lqr: -23.1012
+lqr: -22.8669
+lqr: -22.3118
+lqr: -22.1274
+lqr: -21.555
+lqr: -21.1145
+lqr: -20.6314
+lqr: -20.1597
+lqr: -19.6386
+lqr: -19.1066
+lqr: -18.5343
+lqr: -17.9986
+lqr: -17.3997
+lqr: -16.851
+lqr: -16.2721
+lqr: -16.2721
+lqr: -15.4556
+lqr: -14.8934
+lqr: -14.339
+lqr: -13.7645
+lqr: -13.197
+lqr: -12.5918
+lqr: -11.9862
+lqr: -11.355
+lqr: -10.7301
+lqr: -10.0874
+lqr: -9.48368
+lqr: -8.5382
+lqr: -7.93401
+lqr: -7.31898
+lqr: -6.71195
+lqr: -6.15879
+lqr: -6.15879
+lqr: -5.07518
+lqr: -4.51332
+lqr: -4.00351
+lqr: -3.46123
+lqr: -2.93525
+lqr: -2.38322
+lqr: -2.38322
+lqr: -1.59715
+lqr: -1.05778
+lqr: -0.518833
+lqr: 0.0193675
+lqr: 0.514038
+lqr: 1.04915
+lqr: 1.53014
+lqr: 2.04614
+lqr: 2.50415
+lqr: 2.98708
+lqr: 3.42061
+lqr: 4.05311
+lqr: 4.48309
+lqr: 4.88519
+lqr: 5.29529
+lqr: 5.70691
+lqr: 6.11994
+lqr: 6.5356
+lqr: 6.96223
+lqr: 7.37276
+lqr: 7.75997
+lqr: 8.15481
+lqr: 8.51247
+lqr: 8.84328
+lqr: 8.84328
+lqr: 9.28036
+lqr: 9.53728
+lqr: 9.78734
+lqr: 10.0354
+lqr: 10.2987
+lqr: 10.5385
+lqr: 10.805
+lqr: 11.0587
+lqr: 11.3215
+lqr: 11.5731
+lqr: 11.9382
+lqr: 12.1773
+lqr: 12.3782
+lqr: 12.5986
+carx: 311.202
+cary: 250.467
+FrentPoint_.S: 131.338
+FrentPoint_.D: -1.36776
+closestIndex: 10
+index: 525
+local_start_s: 131.5
+local_start_l: -1.48801
+dl: -3.68891e-05
+ddl: -3.81239e-05
 v: 3.01518
 a: -0.0020126
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00113357 秒
+AllCosttime: 0.000753567 秒
 qp_.Process
-Path Optimizer used time: 2.1113 ms.
-qp_.Process over 
+Path Optimizer used time: 1.71779 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
  init_v; 3.01518 init_a: -0.0020126
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0261706 秒
-carx: 320.31
-cary: 248.023
-FrentPoint_.S: 88.0319
-FrentPoint_.D: -1.29546
+程序运行时间: 0.0130043 秒
+lqr: 12.7997
+lqr: 12.9847
+lqr: 13.1491
+lqr: 13.3177
+lqr: 13.4463
+lqr: 13.4463
+lqr: 13.6785
+lqr: 13.6785
+lqr: 13.8242
+lqr: 13.8242
+lqr: 13.927
+lqr: 13.9805
+lqr: 14.0568
+lqr: 14.0946
+lqr: 14.151
+lqr: 14.1795
+lqr: 14.1812
+lqr: 14.1846
+lqr: 14.1424
+lqr: 14.0843
+lqr: 14.0465
+lqr: 14.1557
+lqr: 14.2896
+lqr: 14.5335
+lqr: 14.7008
+lqr: 14.9737
+lqr: 15.168
+lqr: 15.168
+lqr: 15.6371
+lqr: 15.8808
+lqr: 16.0455
+lqr: 16.2324
+lqr: 16.2324
+lqr: 16.3962
+lqr: 16.538
+lqr: 16.5678
+lqr: 16.6643
+lqr: 16.6419
+lqr: 16.6911
+lqr: 16.6725
+lqr: 16.7098
+lqr: 16.6949
+lqr: 16.7774
+lqr: 16.77
+lqr: 16.855
+lqr: 16.9341
+lqr: 16.9308
+lqr: 16.9591
+lqr: 16.89
+lqr: 16.7922
+lqr: 16.7251
+lqr: 16.6417
+lqr: 16.474
+lqr: 16.382
+lqr: 16.198
+lqr: 16.04
+lqr: 16.04
+lqr: 15.8485
+lqr: 15.7611
+lqr: 15.6078
+lqr: 15.519
+lqr: 15.413
+lqr: 15.2933
+lqr: 15.1302
+lqr: 14.9795
+lqr: 14.7489
+lqr: 14.5578
+lqr: 14.2696
+lqr: 13.9133
+lqr: 13.7948
+lqr: 13.4336
+lqr: 13.1265
+lqr: 12.5674
+lqr: 11.9537
+lqr: 11.364
+lqr: 10.7093
+lqr: 10.0881
+lqr: 9.37202
+lqr: 8.70264
+lqr: 7.97839
+lqr: 7.97839
+lqr: 6.95568
+lqr: 6.25762
+lqr: 5.61213
+lqr: 4.91447
+carx: 306.134
+cary: 250.365
+FrentPoint_.S: 136.407
+FrentPoint_.D: -1.32985
 closestIndex: 10
-index: 352
-local_start_s: 88
-local_start_l: -1.4881
-dl: -2.53872e-05
-ddl: -3.8863e-05
+index: 546
+local_start_s: 136.5
+local_start_l: -1.48799
+dl: -3.17195e-05
+ddl: -3.98267e-05
 v: 3.01522
-a: -0.00213705
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00213707
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000649799 秒
+AllCosttime: 0.00103929 秒
 qp_.Process
-Path Optimizer used time: 5.45325 ms.
-qp_.Process over 
+Path Optimizer used time: 1.18445 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00213705
+ init_v; 3.01522 init_a: -0.00213707
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.027548 秒
-carx: 325.411
-cary: 247.965
-FrentPoint_.S: 93.1319
-FrentPoint_.D: -1.41813
+程序运行时间: 0.0108126 秒
+lqr: 4.27844
+lqr: 3.59081
+lqr: 2.96018
+lqr: 2.27518
+lqr: 1.62433
+lqr: 0.969844
+lqr: 0.355645
+lqr: -0.571977
+lqr: -0.571977
+lqr: -1.74307
+lqr: -2.31639
+lqr: -2.86995
+lqr: -3.4274
+lqr: -3.9767
+lqr: -4.49402
+lqr: -5.0736
+lqr: -5.66554
+lqr: -6.18904
+lqr: -6.74649
+lqr: -7.24505
+lqr: -7.24505
+lqr: -7.98692
+lqr: -8.46606
+lqr: -8.96578
+lqr: -9.4462
+lqr: -9.97503
+lqr: -10.4657
+lqr: -11.0262
+lqr: -11.5289
+lqr: -12.0896
+lqr: -12.5993
+lqr: -13.1334
+lqr: -13.8528
+lqr: -14.3177
+lqr: -14.7687
+lqr: -15.1228
+lqr: -15.1605
+lqr: -15.16
+lqr: -15.1552
+lqr: -15.0601
+lqr: -14.9334
+lqr: -14.8655
+lqr: -14.8655
+lqr: -14.6563
+lqr: -14.6563
+lqr: -14.4861
+lqr: -14.4372
+lqr: -14.3225
+lqr: -14.2861
+lqr: -14.2006
+lqr: -14.1584
+lqr: -14.048
+lqr: -13.9626
+lqr: -13.8004
+lqr: -13.664
+lqr: -13.4501
+lqr: -13.1178
+lqr: -12.9596
+lqr: -12.778
+lqr: -12.5628
+lqr: -12.3358
+lqr: -12.1734
+lqr: -11.9253
+lqr: -11.7174
+lqr: -11.5172
+lqr: -11.3203
+lqr: -10.8892
+lqr: -10.8892
+lqr: -10.587
+lqr: -10.3102
+lqr: -10.1283
+lqr: -9.90423
+lqr: -9.73776
+lqr: -9.50784
+lqr: -9.31634
+lqr: -9.04864
+lqr: -8.81246
+lqr: -8.50237
+lqr: -8.24449
+lqr: -7.91334
+lqr: -7.4198
+lqr: -7.1338
+lqr: -6.85251
+lqr: -6.49208
+lqr: -6.13606
+carx: 301.113
+cary: 250.348
+FrentPoint_.S: 141.428
+FrentPoint_.D: -1.37551
 closestIndex: 10
-index: 373
-local_start_s: 93
-local_start_l: -1.48803
-dl: -2.45868e-05
-ddl: -4.06267e-05
+index: 566
+local_start_s: 141.5
+local_start_l: -1.48795
+dl: -3.16612e-05
+ddl: -4.06449e-05
 v: 3.01523
-a: -0.00214977
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.0021498
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00066994 秒
+AllCosttime: 0.00131876 秒
 qp_.Process
-Path Optimizer used time: 1.02947 ms.
-qp_.Process over 
+Path Optimizer used time: 1.16644 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00214977
+ init_v; 3.01523 init_a: -0.0021498
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0138695 秒
-carx: 330.486
-cary: 248.097
-FrentPoint_.S: 98.2081
-FrentPoint_.D: -1.35017
+程序运行时间: 0.0114316 秒
+lqr: -5.84925
+lqr: -5.5868
+lqr: -5.59515
+lqr: -5.54899
+lqr: -5.61351
+lqr: -5.66454
+lqr: -5.66454
+lqr: -5.73096
+lqr: -5.83225
+lqr: -5.90458
+lqr: -6.04414
+lqr: -6.11028
+lqr: -6.24385
+lqr: -6.30553
+lqr: -6.38664
+lqr: -6.41998
+lqr: -6.46713
+lqr: -6.43033
+lqr: -6.40559
+lqr: -6.36898
+lqr: -6.29529
+lqr: -6.23848
+lqr: -6.15248
+lqr: -6.10981
+lqr: -6.02589
+lqr: -6.00729
+lqr: -5.98436
+lqr: -5.96351
+lqr: -5.95466
+lqr: -5.97003
+lqr: -5.97003
+lqr: -5.95951
+lqr: -5.96604
+lqr: -5.93999
+lqr: -5.96461
+lqr: -5.90008
+lqr: -5.91491
+lqr: -5.87464
+lqr: -5.82326
+lqr: -5.75757
+lqr: -5.70193
+lqr: -5.60333
+lqr: -5.53224
+lqr: -5.5178
+lqr: -5.49168
+lqr: -5.48197
+lqr: -5.51241
+lqr: -5.46626
+lqr: -5.49119
+lqr: -5.46469
+lqr: -5.3692
+lqr: -5.35448
+lqr: -5.36125
+lqr: -5.33463
+lqr: -5.3786
+lqr: -5.3786
+lqr: -5.40749
+lqr: -5.37665
+lqr: -5.43069
+lqr: -5.40482
+lqr: -5.43175
+lqr: -5.36961
+lqr: -5.38293
+lqr: -5.29933
+lqr: -5.30996
+lqr: -5.24241
+lqr: -5.24381
+lqr: -5.23591
+lqr: -5.21853
+lqr: -5.26218
+lqr: -5.24691
+lqr: -5.27174
+lqr: -5.34085
+lqr: -5.4167
+lqr: -5.43721
+lqr: -5.50936
+lqr: -5.49666
+lqr: -5.49666
+lqr: -5.57372
+lqr: -5.57372
+lqr: -5.6053
+lqr: -5.56608
+lqr: -5.5672
+lqr: -5.5125
+lqr: -5.46105
+carx: 296.006
+cary: 250.296
+FrentPoint_.S: 146.535
+FrentPoint_.D: -1.388
 closestIndex: 10
-index: 393
-local_start_s: 98
-local_start_l: -1.48796
-dl: -2.80224e-05
-ddl: -4.12552e-05
-v: 3.01523
-a: -0.00215105
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000706834 秒
-qp_.Process
-Path Optimizer used time: 1.03341 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215105
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0153204 秒
-carx: 335.487
-cary: 248.179
-FrentPoint_.S: 103.21
-FrentPoint_.D: -1.33203
-closestIndex: 10
-index: 413
-local_start_s: 103
+index: 586
+local_start_s: 146.5
 local_start_l: -1.48792
-dl: -3.21031e-05
-ddl: -4.13004e-05
+dl: -3.34952e-05
+ddl: -4.09214e-05
 v: 3.01523
-a: -0.00215118
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00215108
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0014221 秒
+AllCosttime: 0.00220561 秒
 qp_.Process
-Path Optimizer used time: 1.61902 ms.
-qp_.Process over 
+Path Optimizer used time: 1.04531 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215118
+ init_v; 3.01523 init_a: -0.00215108
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0227534 秒
-carx: 340.475
-cary: 248.209
-FrentPoint_.S: 108.198
-FrentPoint_.D: -1.36469
+程序运行时间: 0.0223467 秒
+lqr: -5.33579
+lqr: -5.28652
+lqr: -5.13314
+lqr: -5.04702
+lqr: -4.91776
+lqr: -4.8306
+lqr: -4.72596
+lqr: -4.61548
+lqr: -4.58679
+lqr: -4.53253
+lqr: -4.51942
+lqr: -4.44863
+lqr: -4.46415
+lqr: -4.40368
+lqr: -4.38049
+lqr: -4.31001
+lqr: -4.20165
+lqr: -4.20165
+lqr: -3.91436
+lqr: -3.81634
+lqr: -3.50508
+lqr: -3.33695
+lqr: -3.13569
+lqr: -2.96817
+lqr: -2.81133
+lqr: -2.65099
+lqr: -2.50535
+lqr: -2.38268
+lqr: -2.21138
+lqr: -2.08542
+lqr: -1.80353
+lqr: -1.63424
+lqr: -1.44336
+lqr: -1.22603
+lqr: -1.02601
+lqr: -0.779303
+lqr: -0.53116
+lqr: -0.53116
+lqr: -0.150459
+lqr: 0.208426
+lqr: 0.428955
+lqr: 0.428955
+lqr: 0.755168
+lqr: 0.922904
+lqr: 1.09523
+lqr: 1.25854
+lqr: 1.42053
+lqr: 1.5733
+lqr: 1.76991
+lqr: 1.93434
+lqr: 2.13715
+lqr: 2.28716
+lqr: 2.48382
+lqr: 2.7117
+lqr: 2.78724
+lqr: 2.99053
+lqr: 3.08104
+lqr: 3.22674
+lqr: 3.3184
+lqr: 3.44575
+lqr: 3.56636
+lqr: 3.68719
+lqr: 3.82156
+lqr: 3.82156
+lqr: 4.08458
+lqr: 4.24108
+lqr: 4.24108
+lqr: 4.72485
+lqr: 5.00374
+lqr: 5.29386
+lqr: 5.5507
+lqr: 5.85107
+lqr: 6.13057
+lqr: 6.42066
+lqr: 6.70154
+lqr: 7.00587
+lqr: 7.28248
+lqr: 7.7585
+lqr: 8.08101
+lqr: 8.3901
+lqr: 8.70952
+lqr: 9.02037
+lqr: 9.32428
+lqr: 9.55015
+lqr: 9.76629
+carx: 290.905
+cary: 250.191
+FrentPoint_.S: 151.637
+FrentPoint_.D: -1.3469
 closestIndex: 10
-index: 433
-local_start_s: 108
+index: 607
+local_start_s: 151.5
 local_start_l: -1.4879
-dl: -3.53398e-05
-ddl: -4.11195e-05
+dl: -3.55381e-05
+ddl: -4.09258e-05
 v: 3.01523
-a: -0.00215119
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00215121
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0108625 秒
+AllCosttime: 0.000649858 秒
 qp_.Process
-Path Optimizer used time: 1.18924 ms.
-qp_.Process over 
+Path Optimizer used time: 0.930422 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215119
+ init_v; 3.01523 init_a: -0.00215121
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0605769 秒
-carx: 345.596
-cary: 248.28
-FrentPoint_.S: 113.32
-FrentPoint_.D: -1.3586
+程序运行时间: 0.00942795 秒
+lqr: 9.90404
+lqr: 10.0146
+lqr: 10.1265
+lqr: 10.1265
+lqr: 10.327
+lqr: 10.327
+lqr: 10.4937
+lqr: 10.5968
+lqr: 10.7493
+lqr: 10.8953
+lqr: 11.0713
+lqr: 11.2286
+lqr: 11.4118
+lqr: 11.5351
+lqr: 11.7051
+lqr: 11.8084
+lqr: 11.9223
+lqr: 12.1109
+lqr: 12.1971
+lqr: 12.3037
+lqr: 12.3548
+lqr: 12.4206
+lqr: 12.4343
+lqr: 12.4642
+lqr: 12.4574
+lqr: 12.4411
+lqr: 12.4244
+lqr: 12.4244
+lqr: 12.4096
+lqr: 12.3676
+lqr: 12.3569
+lqr: 12.388
+lqr: 11.846
+lqr: 11.3763
+lqr: 10.7888
+lqr: 10.3101
+lqr: 9.69782
+lqr: 9.18956
+lqr: 8.56166
+lqr: 8.05114
+lqr: 7.4205
+lqr: 6.54046
+lqr: 6.02243
+lqr: 6.02243
+lqr: 6.02243
+lqr: 4.32718
+lqr: 3.83391
+lqr: 3.2005
+lqr: 2.66238
+lqr: 2.00581
+lqr: 1.46306
+lqr: 0.897474
+lqr: 0.897474
+lqr: -0.0285353
+lqr: -0.396393
+lqr: -1.18728
+lqr: -1.78178
+lqr: -2.24906
+lqr: -2.79092
+lqr: -3.22444
+lqr: -3.75082
+lqr: -4.19073
+lqr: -4.75658
+lqr: -5.21028
+lqr: -5.80191
+lqr: -6.26657
+lqr: -7.07177
+lqr: -7.63636
+lqr: -8.07556
+lqr: -8.53681
+lqr: -9.07314
+lqr: -9.60363
+lqr: -10.0259
+lqr: -10.503
+lqr: -10.8745
+lqr: -11.2067
+lqr: -11.2067
+lqr: -11.7643
+lqr: -12.1656
+lqr: -12.4299
+lqr: -12.795
+lqr: -12.9732
+lqr: -13.1716
+lqr: -13.3216
+lqr: -13.5093
+carx: 285.731
+cary: 250.166
+FrentPoint_.S: 156.81
+FrentPoint_.D: -1.38717
 closestIndex: 11
-index: 453
-local_start_s: 113.5
-local_start_l: -1.48791
-dl: -5.86219e-05
-ddl: -4.39477e-05
+index: 627
+local_start_s: 157
+local_start_l: -1.48792
+dl: -5.82936e-05
+ddl: -4.38794e-05
 v: 3.01484
-a: -0.00275597
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00268304
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00219925 秒
+AllCosttime: 0.000670621 秒
 qp_.Process
-Path Optimizer used time: 3.57334 ms.
-qp_.Process over 
+Path Optimizer used time: 1.27193 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01484 init_a: -0.00275597
+ init_v; 3.01484 init_a: -0.00268304
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0455527 秒
-carx: 350.72
-cary: 248.354
-FrentPoint_.S: 118.444
-FrentPoint_.D: -1.34926
+程序运行时间: 0.012674 秒
+lqr: -13.6332
+lqr: -13.8378
+lqr: -13.9573
+lqr: -14.1886
+lqr: -14.2301
+lqr: -14.4393
+lqr: -14.5922
+lqr: -14.6956
+lqr: -14.8574
+lqr: -14.9809
+lqr: -15.1474
+lqr: -15.261
+lqr: -15.4054
+lqr: -15.4907
+lqr: -15.592
+lqr: -15.6262
+lqr: -15.6262
+lqr: -15.6721
+lqr: -15.6471
+lqr: -15.6617
+lqr: -15.6173
+lqr: -15.5721
+lqr: -15.4783
+lqr: -15.4009
+lqr: -15.2746
+lqr: -15.177
+lqr: -15.0318
+lqr: -14.9292
+lqr: -14.7283
+lqr: -14.6426
+lqr: -14.5681
+lqr: -14.4308
+lqr: -14.3258
+lqr: -14.1626
+lqr: -13.9868
+lqr: -13.8395
+lqr: -13.6952
+lqr: -13.5065
+lqr: -13.5065
+lqr: -13.1882
+lqr: -13.1882
+lqr: -12.9575
+lqr: -12.7534
+lqr: -12.5769
+lqr: -12.3718
+lqr: -12.1714
+lqr: -11.9409
+lqr: -11.7307
+lqr: -11.4934
+lqr: -11.3042
+lqr: -11.0559
+lqr: -10.8379
+lqr: -10.4756
+lqr: -10.1908
+lqr: -9.92732
+lqr: -9.60185
+lqr: -9.29781
+lqr: -8.95514
+lqr: -8.63883
+lqr: -8.28713
+lqr: -7.97611
+lqr: -7.67488
+lqr: -7.40886
+lqr: -6.99845
+lqr: -6.99845
+lqr: -6.76455
+lqr: -6.49482
+lqr: -6.23642
+lqr: -5.91692
+lqr: -5.62174
+lqr: -5.27424
+lqr: -4.94675
+lqr: -4.60459
+lqr: -4.29491
+lqr: -3.97407
+lqr: -3.72629
+lqr: -3.37458
+lqr: -3.15287
+lqr: -2.94585
+lqr: -2.76236
+lqr: -2.66685
+lqr: -2.3602
+lqr: -2.16242
+lqr: -1.88581
+lqr: -1.58224
+carx: 280.601
+cary: 250.106
+FrentPoint_.S: 161.941
+FrentPoint_.D: -1.39154
 closestIndex: 10
-index: 474
-local_start_s: 118.5
+index: 648
+local_start_s: 162
 local_start_l: -1.48797
-dl: -4.23302e-05
-ddl: -3.78978e-05
-v: 3.01517
-a: -0.00193529
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000716178 秒
-qp_.Process
-Path Optimizer used time: 1.11072 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01517 init_a: -0.00193529
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0140971 秒
-carx: 355.856
-cary: 248.405
-FrentPoint_.S: 123.58
-FrentPoint_.D: -1.36304
-closestIndex: 10
-index: 494
-local_start_s: 123.5
-local_start_l: -1.48797
-dl: -3.53774e-05
-ddl: -3.94897e-05
-v: 3.01522
-a: -0.00213671
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00241997 秒
-qp_.Process
-Path Optimizer used time: 5.87987 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00213671
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.034417 秒
-carx: 361.039
-cary: 248.491
-FrentPoint_.S: 128.764
-FrentPoint_.D: -1.34361
-closestIndex: 11
-index: 515
-local_start_s: 129
-local_start_l: -1.48797
-dl: -5.46474e-05
-ddl: -4.34515e-05
-v: 3.01484
-a: -0.00268172
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00191688 秒
-qp_.Process
-Path Optimizer used time: 2.03083 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01484 init_a: -0.00268172
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0418813 秒
-carx: 366.107
-cary: 248.534
-FrentPoint_.S: 133.832
-FrentPoint_.D: -1.36452
-closestIndex: 10
-index: 535
-local_start_s: 134
-local_start_l: -1.48801
-dl: -3.82612e-05
-ddl: -3.79404e-05
+dl: -4.19345e-05
+ddl: -3.78926e-05
 v: 3.01518
-a: -0.00201253
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00201263
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00173725 秒
+AllCosttime: 0.000704148 秒
 qp_.Process
-Path Optimizer used time: 2.79369 ms.
-qp_.Process over 
+Path Optimizer used time: 1.76669 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01518 init_a: -0.00201253
+ init_v; 3.01518 init_a: -0.00201263
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0271133 秒
-carx: 371.242
-cary: 248.62
-FrentPoint_.S: 138.967
-FrentPoint_.D: -1.34376
+程序运行时间: 0.0143149 秒
+lqr: -1.28229
+lqr: -0.970738
+lqr: -0.970738
+lqr: -0.292599
+lqr: -0.292599
+lqr: 0.216457
+lqr: 0.498065
+lqr: 0.767621
+lqr: 1.00971
+lqr: 1.26732
+lqr: 1.44778
+lqr: 1.66176
+lqr: 1.56019
+lqr: 1.68292
+lqr: 1.79718
+lqr: 1.93573
+lqr: 2.14559
+lqr: 2.30813
+lqr: 2.40219
+lqr: 2.48699
+lqr: 2.59701
+lqr: 2.63139
+lqr: 2.71566
+lqr: 2.72039
+lqr: 2.78095
+lqr: 2.79897
+lqr: 2.79897
+lqr: 2.93197
+lqr: 2.98407
+lqr: 3.11592
+lqr: 3.20376
+lqr: 3.35126
+lqr: 3.46526
+lqr: 3.59794
+lqr: 3.7032
+lqr: 3.83887
+lqr: 3.9001
+lqr: 4.02019
+lqr: 4.09636
+lqr: 4.1367
+lqr: 4.20957
+lqr: 4.22323
+lqr: 4.29813
+lqr: 4.36674
+lqr: 4.38582
+lqr: 4.43167
+lqr: 4.51746
+lqr: 4.57216
+lqr: 4.68077
+lqr: 4.75309
+lqr: 4.77902
+lqr: 4.77902
+lqr: 4.78727
+lqr: 4.78723
+lqr: 4.73465
+lqr: 4.69459
+lqr: 4.63336
+lqr: 4.61864
+lqr: 4.58707
+lqr: 4.60897
+lqr: 4.60721
+lqr: 4.65827
+lqr: 4.77552
+lqr: 4.96707
+lqr: 5.08182
+lqr: 5.19791
+lqr: 5.31219
+lqr: 5.40568
+lqr: 5.50869
+lqr: 5.61341
+lqr: 5.70889
+lqr: 5.8135
+lqr: 5.90247
+lqr: 5.94547
+lqr: 6.01804
+lqr: 6.01804
+lqr: 6.03283
+lqr: 6.06259
+lqr: 6.05641
+lqr: 6.06968
+lqr: 6.11541
+lqr: 6.14601
+lqr: 6.22158
+lqr: 6.28711
+lqr: 6.32563
+carx: 275.397
+cary: 250.008
+FrentPoint_.S: 167.146
+FrentPoint_.D: -1.35954
 closestIndex: 10
-index: 556
-local_start_s: 139
-local_start_l: -1.48799
-dl: -3.23516e-05
-ddl: -3.96995e-05
+index: 669
+local_start_s: 167
+local_start_l: -1.48797
+dl: -3.50617e-05
+ddl: -3.9507e-05
 v: 3.01522
-a: -0.00205953
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00205957
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00119632 秒
+AllCosttime: 0.00137333 秒
 qp_.Process
-Path Optimizer used time: 1.64888 ms.
-qp_.Process over 
+Path Optimizer used time: 0.954658 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00205953
+ init_v; 3.01522 init_a: -0.00205957
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0210591 秒
-carx: 376.308
-cary: 248.686
-FrentPoint_.S: 144.035
-FrentPoint_.D: -1.34102
-closestIndex: 10
-index: 576
-local_start_s: 144
-local_start_l: -1.48796
-dl: -3.18542e-05
-ddl: -4.05719e-05
-v: 3.01522
-a: -0.00202586
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00241553 秒
-qp_.Process
-Path Optimizer used time: 4.30821 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00202586
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.032644 秒
-carx: 381.404
-cary: 248.72
-FrentPoint_.S: 149.13
-FrentPoint_.D: -1.37238
-closestIndex: 10
-index: 597
-local_start_s: 149
-local_start_l: -1.48793
-dl: -3.34758e-05
-ddl: -4.08877e-05
-v: 3.01523
-a: -0.00215015
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000687748 秒
-qp_.Process
-Path Optimizer used time: 1.12777 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215015
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.014758 秒
-carx: 386.497
-cary: 248.786
-FrentPoint_.S: 154.224
-FrentPoint_.D: -1.37029
-closestIndex: 10
-index: 617
-local_start_s: 154
-local_start_l: -1.4879
-dl: -3.54458e-05
-ddl: -4.09155e-05
-v: 3.01523
-a: -0.0021511
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00144433 秒
-qp_.Process
-Path Optimizer used time: 1.10183 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.0021511
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.021077 秒
-carx: 391.635
-cary: 248.872
-FrentPoint_.S: 159.362
-FrentPoint_.D: -1.34996
+程序运行时间: 0.0136179 秒
+lqr: 6.41014
+lqr: 6.4074
+lqr: 6.40729
+lqr: 6.41293
+lqr: 6.39008
+lqr: 6.40202
+lqr: 6.40423
+lqr: 6.41428
+lqr: 6.43303
+lqr: 6.43407
+lqr: 6.41582
+lqr: 6.40708
+lqr: 6.32521
+lqr: 6.27984
+lqr: 6.18478
+lqr: 6.18478
+lqr: 6.09057
+lqr: 6.05211
+lqr: 6.0236
+lqr: 6.01191
+lqr: 6.00284
+lqr: 6.00284
+lqr: 5.92982
+lqr: 5.88652
+lqr: 5.81887
+lqr: 5.74007
+lqr: 5.67225
+lqr: 5.66625
+lqr: 5.62511
+lqr: 5.5491
+lqr: 5.47484
+lqr: 5.37093
+lqr: 5.22743
+lqr: 5.08815
+lqr: 4.96404
+lqr: 4.79668
+lqr: 4.67847
+lqr: 4.67847
+lqr: 4.44287
+lqr: 4.44287
+lqr: 4.3718
+lqr: 4.36017
+lqr: 4.36886
+lqr: 4.40251
+lqr: 4.40564
+lqr: 4.45591
+lqr: 4.47469
+lqr: 4.52235
+lqr: 4.55979
+lqr: 4.5961
+lqr: 4.61643
+lqr: 4.6241
+lqr: 4.6027
+lqr: 4.52792
+lqr: 4.42408
+lqr: 4.29586
+lqr: 4.16796
+lqr: 3.99772
+lqr: 3.87887
+lqr: 3.7362
+lqr: 3.61843
+lqr: 3.61843
+lqr: 3.51163
+lqr: 3.36258
+lqr: 3.26706
+lqr: 3.16727
+lqr: 3.05472
+lqr: 2.96614
+lqr: 2.83471
+lqr: 2.77121
+lqr: 2.66654
+lqr: 2.61469
+lqr: 2.55589
+lqr: 2.48939
+lqr: 2.47007
+lqr: 2.38469
+lqr: 2.49716
+lqr: 2.49251
+lqr: 2.50033
+lqr: 2.46951
+lqr: 2.49303
+lqr: 2.47494
+lqr: 2.44849
+lqr: 2.49464
+lqr: 2.53407
+carx: 270.259
+cary: 249.937
+FrentPoint_.S: 172.284
+FrentPoint_.D: -1.35225
 closestIndex: 11
-index: 637
-local_start_s: 159.5
+index: 689
+local_start_s: 172.5
+local_start_l: -1.48797
+dl: -5.44551e-05
+ddl: -4.34718e-05
+v: 3.01484
+a: -0.00275444
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00104197 秒
+qp_.Process
+Path Optimizer used time: 0.890285 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01484 init_a: -0.00275444
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0158738 秒
+lqr: 2.53411
+lqr: 2.52663
+lqr: 2.56721
+lqr: 2.6017
+lqr: 2.65274
+lqr: 2.68006
+lqr: 2.75618
+lqr: 2.78687
+lqr: 2.84031
+lqr: 2.8661
+lqr: 2.9152
+lqr: 2.88536
+lqr: 2.91851
+lqr: 2.93743
+lqr: 2.92305
+lqr: 2.88203
+lqr: 2.89671
+lqr: 2.93452
+lqr: 2.93189
+lqr: 2.98991
+lqr: 3.00936
+lqr: 3.01928
+lqr: 3.05636
+lqr: 3.08777
+lqr: 3.08617
+lqr: 3.08617
+lqr: 3.08963
+lqr: 3.08233
+lqr: 3.13376
+lqr: 3.17603
+lqr: 3.26357
+lqr: 3.33104
+lqr: 3.4071
+lqr: 3.45242
+lqr: 3.50576
+lqr: 3.49622
+lqr: 3.51515
+lqr: 3.47523
+lqr: 3.40288
+lqr: 3.34338
+lqr: 3.28828
+lqr: 3.08362
+lqr: 3.08362
+lqr: 1.94468
+lqr: 1.4232
+lqr: 0.810495
+lqr: 0.313863
+lqr: 0.313863
+lqr: -0.708446
+lqr: -1.23836
+lqr: -1.23836
+lqr: -1.8604
+lqr: -2.40305
+lqr: -2.83848
+lqr: -3.39762
+lqr: -3.87971
+lqr: -4.45699
+lqr: -4.93765
+lqr: -5.52857
+lqr: -6.02532
+lqr: -6.62146
+lqr: -7.12051
+lqr: -7.9656
+lqr: -8.57363
+lqr: -9.03744
+lqr: -9.281
+lqr: -10.0254
+lqr: -10.5142
+lqr: -10.8662
+lqr: -11.288
+lqr: -11.5939
+lqr: -11.9773
+lqr: -11.9773
+lqr: -12.6978
+lqr: -12.6978
+lqr: -13.2072
+lqr: -13.6734
+lqr: -14.0416
+lqr: -14.5139
+lqr: -14.8818
+lqr: -15.3155
+lqr: -15.6423
+lqr: -16.0251
+lqr: -16.3065
+lqr: -16.6631
+carx: 265.171
+cary: 249.927
+FrentPoint_.S: 177.373
+FrentPoint_.D: -1.40652
+closestIndex: 10
+index: 709
+local_start_s: 177.5
+local_start_l: -1.48801
+dl: -3.7941e-05
+ddl: -3.7928e-05
+v: 3.01518
+a: -0.00201259
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00062149 秒
+qp_.Process
+Path Optimizer used time: 1.02494 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01518 init_a: -0.00201259
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0103469 秒
+lqr: -16.899
+lqr: -17.3123
+lqr: -17.594
+lqr: -17.7607
+lqr: -17.8568
+lqr: -18.0528
+lqr: -17.9442
+lqr: -17.6257
+lqr: -17.2498
+lqr: -16.9287
+lqr: -16.5559
+lqr: -16.2609
+lqr: -16.2609
+lqr: -15.7985
+lqr: -15.558
+lqr: -15.2389
+lqr: -14.9579
+lqr: -14.6335
+lqr: -14.3345
+lqr: -13.9709
+lqr: -13.6408
+lqr: -13.2592
+lqr: -12.913
+lqr: -12.5365
+lqr: -12.1509
+lqr: -11.5488
+lqr: -11.0841
+lqr: -10.6599
+lqr: -10.1579
+lqr: -9.68736
+lqr: -9.197
+lqr: -8.64598
+lqr: -8.0959
+lqr: -7.59829
+lqr: -7.05299
+lqr: -6.58402
+lqr: -6.58402
+lqr: -5.82654
+lqr: -5.38579
+lqr: -4.89925
+lqr: -4.45312
+lqr: -4.01276
+lqr: -3.56805
+lqr: -3.14728
+lqr: -2.75032
+lqr: -2.33158
+lqr: -1.95527
+lqr: -1.5052
+lqr: -0.819087
+lqr: -0.600483
+lqr: 0.151447
+lqr: 0.636768
+lqr: 1.14327
+lqr: 1.59891
+lqr: 2.03714
+lqr: 2.28374
+lqr: 2.48558
+lqr: 2.97314
+lqr: 3.07347
+lqr: 3.16952
+lqr: 3.16952
+lqr: 3.26213
+lqr: 3.33639
+lqr: 3.37727
+lqr: 3.46176
+lqr: 3.53883
+lqr: 3.65879
+lqr: 3.77212
+lqr: 3.92779
+lqr: 4.04317
+lqr: 4.21409
+lqr: 4.30839
+lqr: 4.47996
+lqr: 4.57822
+lqr: 4.64519
+lqr: 4.71998
+lqr: 4.74794
+lqr: 4.82222
+lqr: 4.84658
+lqr: 4.89152
+lqr: 4.95965
+lqr: 4.99435
+lqr: 5.029
+lqr: 5.029
+lqr: 5.029
+carx: 260.285
+cary: 249.831
+FrentPoint_.S: 182.259
+FrentPoint_.D: -1.37173
+closestIndex: 10
+index: 729
+local_start_s: 182.5
+local_start_l: -1.48799
+dl: -3.20919e-05
+ddl: -3.97159e-05
+v: 3.01522
+a: -0.00213707
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000557798 秒
+qp_.Process
+Path Optimizer used time: 0.900434 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01522 init_a: -0.00213707
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.00842344 秒
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 5.02417
+lqr: 4.5927
+lqr: 4.39988
+lqr: 4.25663
+lqr: 4.05006
+lqr: 3.89076
+lqr: 3.65238
+lqr: 3.46205
+lqr: 3.18278
+lqr: 2.92689
+lqr: 2.62825
+lqr: 2.35607
+lqr: 1.89032
+lqr: 1.56532
+lqr: 1.29555
+lqr: 1.00495
+lqr: 0.764908
+lqr: 0.565024
+lqr: 0.333115
+lqr: 0.250076
+lqr: -0.0187082
+lqr: -0.160213
+lqr: -0.358929
+lqr: -0.358929
+lqr: -0.778516
+lqr: -0.778516
+lqr: -0.994756
+lqr: -1.16327
+lqr: -1.36875
+lqr: -1.52356
+lqr: -1.73142
+lqr: -1.89225
+lqr: -2.1198
+lqr: -2.29325
+lqr: -2.54749
+lqr: -2.73686
+lqr: -3.05076
+lqr: -3.25497
+lqr: -3.39504
+lqr: -3.53383
+lqr: -3.70984
+lqr: -3.88915
+lqr: -4.03159
+lqr: -4.2314
+lqr: -4.37752
+lqr: -4.53517
+lqr: -4.73779
+lqr: -4.73779
+lqr: -4.74787
+lqr: -4.64986
+lqr: -4.53303
+lqr: -4.41796
+lqr: -4.27445
+lqr: -4.13976
+lqr: -3.98254
+lqr: -3.83748
+lqr: -3.68678
+lqr: -3.53954
+lqr: -3.3862
+lqr: -3.12778
+lqr: -3.03901
+carx: 255.124
+cary: 249.779
+FrentPoint_.S: 187.42
+FrentPoint_.D: -1.38477
+closestIndex: 10
+index: 750
+local_start_s: 187.5
+local_start_l: -1.48795
+dl: -3.17055e-05
+ddl: -4.05945e-05
+v: 3.01523
+a: -0.0021498
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00127065 秒
+qp_.Process
+Path Optimizer used time: 1.52598 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01523 init_a: -0.0021498
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0126965 秒
+lqr: -2.73414
+lqr: -2.56033
+lqr: -2.31924
+lqr: -2.07717
+lqr: -1.83893
+lqr: -1.63279
+lqr: -1.41094
+lqr: -1.2465
+lqr: -1.2465
+lqr: -0.948922
+lqr: -0.798938
+lqr: -0.798938
+lqr: -0.645423
+lqr: -0.501562
+lqr: -0.378931
+lqr: -0.239921
+lqr: -0.103317
+lqr: 0.0410949
+lqr: 0.167266
+lqr: 0.322767
+lqr: 0.460719
+lqr: 0.634401
+lqr: 0.90976
+lqr: 1.08768
+lqr: 1.32656
+lqr: 1.52444
+lqr: 1.76598
+lqr: 1.99512
+lqr: 2.24541
+lqr: 2.45264
+lqr: 2.6976
+lqr: 2.89563
+lqr: 3.10937
+lqr: 3.10937
+lqr: 3.44377
+lqr: 3.44377
+lqr: 3.66992
+lqr: 3.84074
+lqr: 3.95496
+lqr: 4.06134
+lqr: 4.15348
+lqr: 4.26891
+lqr: 4.36765
+lqr: 4.47853
+lqr: 4.58169
+lqr: 4.70709
+lqr: 4.80189
+lqr: 4.95708
+lqr: 5.04452
+lqr: 5.13151
+lqr: 5.2259
+lqr: 5.28351
+lqr: 5.37504
+lqr: 5.37504
+lqr: 5.53647
+lqr: 5.62603
+lqr: 5.7067
+lqr: 5.86228
+lqr: 5.86228
+lqr: 5.97945
+lqr: 6.18845
+lqr: 6.33336
+lqr: 6.44608
+lqr: 6.59728
+lqr: 6.70642
+lqr: 6.83083
+lqr: 6.91441
+lqr: 7.00709
+lqr: 7.05393
+lqr: 7.08898
+lqr: 7.09671
+lqr: 7.07009
+lqr: 7.05301
+lqr: 7.03842
+lqr: 7.06063
+lqr: 7.08284
+lqr: 7.14159
+lqr: 7.20751
+lqr: 7.26299
+lqr: 7.29635
+lqr: 7.30008
+lqr: 7.2794
+lqr: 7.2794
+lqr: 7.21089
+lqr: 7.18371
+carx: 250.127
+cary: 249.682
+FrentPoint_.S: 192.418
+FrentPoint_.D: -1.35115
+closestIndex: 10
+index: 770
+local_start_s: 192.5
 local_start_l: -1.48792
-dl: -5.81997e-05
-ddl: -4.38807e-05
-v: 3.01483
-a: -0.00263808
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0178951 秒
-qp_.Process
-Path Optimizer used time: 2.10123 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01483 init_a: -0.00263808
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0581576 秒
-carx: 396.675
-cary: 248.923
-FrentPoint_.S: 164.402
-FrentPoint_.D: -1.36222
-closestIndex: 10
-index: 658
-local_start_s: 164.5
-local_start_l: -1.48797
-dl: -4.18667e-05
-ddl: -3.78978e-05
-v: 3.01517
-a: -0.0019347
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00120724 秒
-qp_.Process
-Path Optimizer used time: 1.5431 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.01517 init_a: -0.0019347
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0167069 秒
-carx: 401.77
-cary: 248.987
-FrentPoint_.S: 169.498
-FrentPoint_.D: -1.3631
-closestIndex: 10
-index: 678
-local_start_s: 169.5
-local_start_l: -1.48797
-dl: -3.50216e-05
-ddl: -3.9512e-05
+dl: -3.34248e-05
+ddl: -4.09066e-05
 v: 3.01522
-a: -0.00213642
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00207359
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000898918 秒
+AllCosttime: 0.00113011 秒
 qp_.Process
-Path Optimizer used time: 1.20191 ms.
-qp_.Process over 
+Path Optimizer used time: 1.05009 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+lqr: 7.11056
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01522 init_a: -0.00213642
+ init_v; 3.01522 init_a: -0.00207359
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0156295 秒
-carx: 406.923
-cary: 249.031
-FrentPoint_.S: 174.651
-FrentPoint_.D: -1.3841
+程序运行时间: 0.0209219 秒
+lqr: 7.01556
+lqr: 6.90174
+lqr: 6.73014
+lqr: 6.56845
+lqr: 6.43502
+lqr: 6.3069
+lqr: 6.18218
+lqr: 6.06288
+lqr: 5.94206
+lqr: 5.80026
+lqr: 5.6384
+lqr: 5.49929
+lqr: 5.37038
+lqr: 5.24933
+lqr: 5.10537
+lqr: 4.99101
+lqr: 4.8161
+lqr: 4.64241
+lqr: 4.41226
+lqr: 4.22342
+lqr: 4.22342
+lqr: 3.89879
+lqr: 3.66483
+lqr: 3.42677
+lqr: 3.18755
+lqr: 2.92444
+lqr: 2.6523
+lqr: 2.36851
+lqr: 2.09331
+lqr: 1.79062
+lqr: 1.55518
+lqr: 1.26258
+lqr: 0.913584
+lqr: 0.811299
+lqr: 0.549672
+lqr: 0.405213
+lqr: 0.277567
+lqr: 0.175877
+lqr: 0.0606306
+lqr: -0.0443073
+lqr: -0.14549
+lqr: -0.225866
+lqr: -0.322655
+lqr: -0.389756
+lqr: -0.469979
+lqr: -0.469979
+lqr: -0.603983
+lqr: -0.718972
+lqr: -0.836977
+lqr: -0.998101
+lqr: -1.16232
+lqr: -1.32508
+lqr: -1.43256
+lqr: -1.56813
+lqr: -1.68776
+lqr: -1.78777
+lqr: -1.88438
+lqr: -2.01711
+lqr: -2.09774
+lqr: -2.17925
+lqr: -2.27259
+lqr: -2.34128
+lqr: -2.42508
+lqr: -2.50106
+lqr: -2.53802
+lqr: -2.56341
+lqr: -2.55999
+lqr: -2.52354
+lqr: -2.49264
+lqr: -2.49264
+lqr: -2.42286
+lqr: -2.38546
+lqr: -2.37172
+lqr: -2.38466
+lqr: -2.41224
+lqr: -2.4543
+lqr: -2.49623
+lqr: -2.5304
+lqr: -2.56763
+lqr: -2.55996
+lqr: -2.54499
+lqr: -2.5275
+lqr: -2.5275
+lqr: -2.52172
+carx: 244.988
+cary: 249.636
+FrentPoint_.S: 197.557
+FrentPoint_.D: -1.36966
 closestIndex: 10
-index: 699
-local_start_s: 174.5
-local_start_l: -1.48795
-dl: -3.34734e-05
-ddl: -4.03809e-05
+index: 790
+local_start_s: 197.5
+local_start_l: -1.4879
+dl: -3.54598e-05
+ddl: -4.09279e-05
 v: 3.01523
-a: -0.00215156
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+a: -0.00215088
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00075426 秒
+AllCosttime: 0.000534799 秒
 qp_.Process
-Path Optimizer used time: 8.08505 ms.
-qp_.Process over 
+Path Optimizer used time: 0.926358 ms.
+slqp_.flag1
+lqr: -2.45331
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01523 init_a: -0.00215156
+ init_v; 3.01523 init_a: -0.00215088
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0340761 秒
-carx: 412.062
-cary: 249.147
-FrentPoint_.S: 179.791
-FrentPoint_.D: -1.33282
+程序运行时间: 0.0216515 秒
+lqr: -2.44542
+lqr: -2.41024
+lqr: -2.39961
+lqr: -2.32793
+lqr: -2.29188
+lqr: -2.25696
+lqr: -2.24252
+lqr: -2.2554
+lqr: -2.2554
+lqr: -2.31175
+lqr: -2.38501
+lqr: -2.43542
+lqr: -2.47003
+lqr: -2.46477
+lqr: -2.40291
+lqr: -2.34426
+lqr: -2.17297
+lqr: -2.08712
+lqr: -2.05356
+lqr: -1.99691
+lqr: -1.97527
+lqr: -1.93806
+lqr: -1.88919
+lqr: -1.8081
+lqr: -1.67996
+lqr: -1.56274
+lqr: -1.40363
+lqr: -1.27676
+lqr: -1.1581
+lqr: -1.02559
+lqr: -0.952044
+lqr: -0.952044
+lqr: -0.794555
+lqr: -0.794555
+lqr: -0.737388
+lqr: -0.687678
+lqr: -0.675551
+lqr: -0.66412
+lqr: -0.63725
+lqr: -0.608205
+lqr: -0.581029
+lqr: -0.530147
+lqr: -0.454857
+lqr: -0.398139
+lqr: -0.289616
+lqr: -0.140599
+lqr: -0.0308983
+lqr: -0.0308983
+lqr: 0.205241
+lqr: 0.317431
+lqr: 0.423505
+lqr: 0.525784
+lqr: 0.607514
+lqr: 0.691755
+lqr: 0.725068
+lqr: 0.75265
+lqr: 0.846184
+lqr: 0.939546
+lqr: 1.00957
+lqr: 1.11724
+lqr: 1.20737
+lqr: 1.34872
+lqr: 1.42327
+lqr: 1.53478
+lqr: 1.61617
+lqr: 1.71608
+lqr: 1.55042
+lqr: 1.38917
+lqr: 1.35272
+lqr: 1.19079
+lqr: 1.09947
+lqr: 0.937703
+lqr: 0.825928
+lqr: 0.643979
+lqr: 0.526689
+lqr: 0.34083
+lqr: 0.221533
+lqr: 0.221533
+lqr: -0.0379389
+lqr: -0.116144
+lqr: -0.116144
+lqr: -0.308225
+lqr: -0.438891
+lqr: -0.535831
+carx: 239.865
+cary: 249.571
+FrentPoint_.S: 202.68
+FrentPoint_.D: -1.36888
+closestIndex: 10
+index: 811
+local_start_s: 202.5
+local_start_l: -1.48789
+dl: -3.70699e-05
+ddl: -4.08369e-05
+v: 3.01523
+a: -0.00215109
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000871765 秒
+qp_.Process
+Path Optimizer used time: 0.890536 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01523 init_a: -0.00215109
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0105817 秒
+lqr: -0.697358
+lqr: -0.813999
+lqr: -0.988565
+lqr: -1.09924
+lqr: -1.25611
+lqr: -1.33884
+lqr: -1.48042
+lqr: -1.56626
+lqr: -1.75021
+lqr: -1.85711
+lqr: -1.96724
+lqr: -2.11653
+lqr: -2.20948
+lqr: -2.31844
+lqr: -2.42693
+lqr: -2.47927
+lqr: -2.62732
+lqr: -2.77334
+lqr: -2.93406
+lqr: -3.05541
+lqr: -3.05541
+lqr: -3.26164
+lqr: -3.4626
+lqr: -3.61925
+lqr: -3.79516
+lqr: -3.9165
+lqr: -4.06707
+lqr: -4.14108
+lqr: -4.25505
+lqr: -4.28386
+lqr: -4.34426
+lqr: -4.36081
+lqr: -4.71392
+lqr: -4.75949
+lqr: -4.85633
+lqr: -4.95651
+lqr: -5.0249
+lqr: -5.12523
+lqr: -5.21994
+lqr: -5.35388
+lqr: -5.46559
+lqr: -5.63922
+lqr: -5.7614
+lqr: -5.91915
+lqr: -6.03216
+lqr: -6.03216
+lqr: -6.21394
+lqr: -6.27875
+lqr: -6.38524
+lqr: -6.42233
+lqr: -6.52426
+lqr: -6.56261
+lqr: -6.63021
+lqr: -6.6599
+lqr: -6.73365
+lqr: -6.7608
+lqr: -6.83668
+lqr: -6.9213
+lqr: -6.95193
+lqr: -6.95193
+lqr: -7.05348
+lqr: -7.10847
+lqr: -7.11732
+lqr: -7.17115
+lqr: -7.14547
+lqr: -7.10552
+lqr: -7.09632
+lqr: -7.09632
+lqr: -6.99418
+lqr: -6.99418
+lqr: -6.90495
+lqr: -6.83796
+lqr: -6.81423
+lqr: -6.74473
+lqr: -6.74924
+lqr: -6.70913
+lqr: -6.69497
+lqr: -6.6549
+lqr: -6.64108
+lqr: -6.56467
+lqr: -6.55499
+lqr: -6.35538
+lqr: -6.18307
+lqr: -6.02026
+lqr: -5.87769
+carx: 234.794
+cary: 249.532
+FrentPoint_.S: 207.752
+FrentPoint_.D: -1.39385
 closestIndex: 11
-index: 719
-local_start_s: 180
+index: 831
+local_start_s: 208
+local_start_l: -1.48791
+dl: -5.92237e-05
+ddl: -4.37824e-05
+v: 3.01484
+a: -0.00275678
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00060069 秒
+qp_.Process
+Path Optimizer used time: 1.00601 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01484 init_a: -0.00275678
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0114583 秒
+lqr: -5.74858
+lqr: -5.60856
+lqr: -5.47202
+lqr: -5.30651
+lqr: -5.10883
+lqr: -4.84694
+lqr: -4.54983
+lqr: -4.54983
+lqr: -4.08422
+lqr: -3.72835
+lqr: -3.39636
+lqr: -3.05515
+lqr: -2.74737
+lqr: -2.43169
+lqr: -2.14572
+lqr: -1.84904
+lqr: -1.55926
+lqr: -1.26056
+lqr: -0.818492
+lqr: -0.672364
+lqr: -0.232981
+lqr: 0.0441677
+lqr: 0.331276
+lqr: 0.598521
+lqr: 0.860064
+lqr: 1.11901
+lqr: 1.37178
+lqr: 1.59541
+lqr: 1.83214
+lqr: 2.03304
+lqr: 2.22501
+lqr: 2.22501
+lqr: 2.50469
+lqr: 2.68826
+lqr: 2.8641
+lqr: 3.05367
+lqr: 3.23503
+lqr: 3.44172
+lqr: 3.64894
+lqr: 3.86203
+lqr: 4.06225
+lqr: 4.27557
+lqr: 4.48184
+lqr: 4.78167
+lqr: 4.88698
+lqr: 5.21763
+lqr: 5.3861
+lqr: 5.36917
+lqr: 5.3926
+lqr: 5.33618
+lqr: 5.27186
+lqr: 5.22175
+lqr: 5.11511
+lqr: 5.03248
+lqr: 4.95365
+lqr: 4.95365
+lqr: 4.76967
+lqr: 4.62425
+lqr: 4.5669
+lqr: 4.46113
+lqr: 4.43841
+lqr: 4.43841
+lqr: 4.26903
+lqr: 4.13872
+lqr: 4.07332
+lqr: 3.90545
+lqr: 3.82684
+lqr: 3.64735
+lqr: 3.51647
+lqr: 3.46432
+lqr: 3.36492
+lqr: 3.33584
+lqr: 3.2423
+lqr: 3.202
+lqr: 3.08852
+lqr: 3.08852
+lqr: 2.87687
+lqr: 2.76863
+lqr: 2.61089
+lqr: 2.50523
+lqr: 2.50523
+lqr: 2.29022
+lqr: 2.19169
+lqr: 2.02149
+lqr: 1.92899
+carx: 229.674
+cary: 249.446
+FrentPoint_.S: 212.872
+FrentPoint_.D: -1.37169
+closestIndex: 10
+index: 851
+local_start_s: 213
+local_start_l: -1.48797
+dl: -4.24267e-05
+ddl: -3.78173e-05
+v: 3.01518
+a: -0.00192919
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00198247 秒
+qp_.Process
+Path Optimizer used time: 0.922079 ms.
+slqp_.flag1
+getspeeduseST
+lqr: 1.76226
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01518 init_a: -0.00192919
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0202089 秒
+lqr: 1.63781
+lqr: 1.48513
+lqr: 1.38264
+lqr: 1.23632
+lqr: 1.14156
+lqr: 1.0005
+lqr: 0.79214
+lqr: 0.691049
+lqr: 0.592253
+lqr: 0.380162
+lqr: 0.351284
+lqr: 0.273027
+lqr: 0.16831
+lqr: 0.0639291
+lqr: -0.0183827
+lqr: -0.0749732
+lqr: -0.0749732
+lqr: -0.128841
+lqr: -0.128841
+lqr: -0.0959393
+lqr: -0.0810503
+lqr: -0.058895
+lqr: -0.0442066
+lqr: -0.0681017
+lqr: -0.0532993
+lqr: -0.076253
+lqr: -0.0781787
+lqr: -0.0912056
+lqr: -0.0952583
+lqr: -0.127457
+lqr: -0.154771
+lqr: -0.229567
+lqr: -0.297598
+lqr: -0.355466
+lqr: -0.431239
+lqr: -0.476273
+lqr: -0.493367
+lqr: -0.556013
+lqr: -0.585005
+lqr: -0.618788
+lqr: -0.671529
+lqr: -0.671529
+lqr: -0.724249
+lqr: -0.803279
+lqr: -0.870534
+lqr: -0.914635
+lqr: -0.963245
+lqr: -1.0298
+lqr: -1.05331
+lqr: -1.11682
+lqr: -1.14556
+lqr: -1.19868
+lqr: -1.20647
+lqr: -1.23694
+lqr: -1.26427
+lqr: -1.27351
+lqr: -1.29789
+lqr: -1.30899
+lqr: -1.32164
+lqr: -1.33447
+lqr: -1.24151
+lqr: -1.18647
+lqr: -1.13493
+lqr: -1.10075
+lqr: -1.03477
+lqr: -1.03477
+lqr: -0.976733
+lqr: -0.933055
+lqr: -0.849959
+lqr: -0.797174
+lqr: -0.74529
+lqr: -0.678694
+lqr: -0.648731
+lqr: -0.621166
+lqr: -0.620154
+lqr: -0.608255
+lqr: -0.626949
+lqr: -0.611989
+lqr: -0.604119
+lqr: -0.554988
+lqr: -0.499686
+lqr: -0.431365
+lqr: -0.347101
+lqr: -0.256715
+carx: 224.612
+cary: 249.386
+FrentPoint_.S: 217.934
+FrentPoint_.D: -1.37605
+closestIndex: 10
+index: 872
+local_start_s: 218
+local_start_l: -1.48797
+dl: -3.52724e-05
+ddl: -3.94606e-05
+v: 3.01513
+a: -0.0021922
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000925404 秒
+qp_.Process
+Path Optimizer used time: 2.00552 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:10
+speed_dp_flag: 1
+ init_v; 3.01513 init_a: -0.0021922
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0144757 秒
+lqr: -0.159322
+lqr: -0.060772
+lqr: 0.0396263
+lqr: 0.141401
+lqr: 0.239094
+lqr: 0.239094
+lqr: 0.359603
+lqr: 0.445676
+lqr: 0.481081
+lqr: 0.534248
+lqr: 0.591912
+lqr: 0.622942
+lqr: 0.669501
+lqr: 0.73901
+lqr: 0.798789
+lqr: 0.899418
+lqr: 1.00106
+lqr: 1.1711
+lqr: 1.27902
+lqr: 1.38029
+lqr: 1.45877
+lqr: 1.51653
+lqr: 1.56389
+lqr: 1.59402
+lqr: 1.61648
+lqr: 1.64291
+lqr: 1.64291
+lqr: 1.58916
+lqr: 1.44165
+lqr: 1.34212
+lqr: 1.34212
+lqr: 1.17231
+lqr: 1.09147
+lqr: 0.985338
+lqr: 0.91172
+lqr: 0.820945
+lqr: 0.77046
+lqr: 0.657703
+lqr: 0.589204
+lqr: 0.489741
+lqr: 0.410041
+lqr: 0.320438
+lqr: 0.213561
+lqr: 0.153357
+lqr: 0.0948201
+lqr: 0.0607703
+lqr: 0.0162268
+lqr: -0.0625495
+lqr: -0.176965
+lqr: -0.220381
+lqr: -0.412049
+lqr: -0.51933
+lqr: -0.51933
+lqr: -0.829892
+lqr: -0.829892
+lqr: -1.0591
+lqr: -1.17282
+lqr: -1.34579
+lqr: -1.45745
+lqr: -1.59804
+lqr: -1.70985
+lqr: -1.81679
+lqr: -1.89327
+lqr: -1.98608
+lqr: -2.04902
+lqr: -2.14989
+lqr: -2.27069
+lqr: -2.33389
+lqr: -2.41139
+lqr: -2.49772
+lqr: -2.58218
+lqr: -2.61361
+lqr: -2.73908
+lqr: -2.75808
+lqr: -2.93231
+lqr: -3.04955
+lqr: -2.93298
+lqr: -2.93298
+lqr: -2.53093
+lqr: -2.53093
+lqr: -2.26181
+lqr: -2.03677
+lqr: -1.82884
+lqr: -1.5955
+lqr: -1.41973
+carx: 219.469
+cary: 249.327
+FrentPoint_.S: 223.078
+FrentPoint_.D: -1.38123
+closestIndex: 10
+index: 892
+local_start_s: 223
 local_start_l: -1.48795
-dl: -5.51958e-05
-ddl: -4.3789e-05
-v: 3.01487
-a: -0.00274042
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+dl: -3.3553e-05
+ddl: -4.03538e-05
+v: 3.01583
+a: -0.00177443
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000746334 秒
+AllCosttime: 0.000584503 秒
 qp_.Process
-Path Optimizer used time: 2.78339 ms.
-qp_.Process over 
+Path Optimizer used time: 0.986418 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01487 init_a: -0.00274042
+ init_v; 3.01583 init_a: -0.00177443
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0351974 秒
-carx: 417.161
-cary: 249.186
-FrentPoint_.S: 184.89
-FrentPoint_.D: -1.3587
+程序运行时间: 0.0115676 秒
+lqr: -1.19407
+lqr: -1.06838
+lqr: -0.881614
+lqr: -0.744021
+lqr: -0.557278
+lqr: -0.296127
+lqr: -0.098593
+lqr: 0.142822
+lqr: 0.338585
+lqr: 0.591611
+lqr: 0.805622
+lqr: 1.03365
+lqr: 1.03365
+lqr: 1.57386
+lqr: 1.80902
+lqr: 2.08568
+lqr: 2.08568
+lqr: 2.41245
+lqr: 2.68057
+lqr: 2.88561
+lqr: 3.11852
+lqr: 3.32787
+lqr: 3.56107
+lqr: 3.76479
+lqr: 4.0439
+lqr: 4.28737
+lqr: 4.5654
+lqr: 4.80663
+lqr: 5.16289
+lqr: 5.25084
+lqr: 5.50354
+lqr: 5.65044
+lqr: 5.72876
+lqr: 5.84024
+lqr: 5.92284
+lqr: 6.02782
+lqr: 6.11611
+lqr: 6.16637
+lqr: 6.16637
+lqr: 6.16637
+lqr: 6.66393
+lqr: 6.66393
+lqr: 6.77541
+lqr: 6.77164
+lqr: 6.72269
+lqr: 6.70498
+lqr: 6.63537
+lqr: 6.57383
+lqr: 6.47035
+lqr: 6.37084
+lqr: 6.24169
+lqr: 6.11837
+lqr: 5.90249
+lqr: 5.76364
+lqr: 5.63908
+lqr: 5.50873
+lqr: 5.40283
+lqr: 5.2789
+lqr: 5.19011
+lqr: 5.08266
+lqr: 4.9929
+lqr: 4.88421
+lqr: 4.73979
+lqr: 4.67802
+lqr: 4.40682
+lqr: 4.40682
+lqr: 4.11694
+lqr: 3.92725
+lqr: 3.71803
+lqr: 3.53276
+lqr: 3.33644
+lqr: 3.16182
+lqr: 2.96852
+lqr: 2.80504
+lqr: 2.59145
+lqr: 2.41322
+lqr: 2.2116
+lqr: 1.93871
+lqr: 1.77379
+lqr: 1.60517
+lqr: 1.42842
+lqr: 1.24867
+lqr: 1.11661
+lqr: 0.953588
+lqr: 0.846807
+carx: 214.387
+cary: 249.248
+FrentPoint_.S: 228.16
+FrentPoint_.D: -1.36632
 closestIndex: 10
-index: 740
-local_start_s: 185
-local_start_l: -1.48799
-dl: -3.94253e-05
-ddl: -3.80253e-05
-v: 3.01494
-a: -0.00215746
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
+index: 913
+local_start_s: 228
+local_start_l: -1.48792
+dl: -3.42837e-05
+ddl: -4.07351e-05
+v: 3.01331
+a: -0.00348479
 Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000992001 秒
+AllCosttime: 0.0011902 秒
 qp_.Process
-Path Optimizer used time: 1.68661 ms.
-qp_.Process over 
+Path Optimizer used time: 1.80855 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:10
 speed_dp_flag: 1
- init_v; 3.01494 init_a: -0.00215746
+ init_v; 3.01331 init_a: -0.00348479
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0263979 秒
-carx: 422.248
-cary: 249.215
-FrentPoint_.S: 189.977
-FrentPoint_.D: -1.39403
-closestIndex: 10
-index: 760
-local_start_s: 190
-local_start_l: -1.48798
-dl: -3.34521e-05
-ddl: -3.96763e-05
-v: 3.01689
-a: -0.000976826
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000741626 秒
-qp_.Process
-Path Optimizer used time: 3.85419 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:13
-speed_dp_flag: 1
- init_v; 3.01689 init_a: -0.000976826
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0599421 秒
-carx: 427.391
-cary: 249.303
-FrentPoint_.S: 195.12
-FrentPoint_.D: -1.37109
-closestIndex: 10
-index: 780
-local_start_s: 195
-local_start_l: -1.48795
-dl: -3.26562e-05
-ddl: -4.05152e-05
-v: 3.0609
-a: 0.00612971
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00617748 秒
-qp_.Process
-Path Optimizer used time: 16.9028 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:14
-speed_dp_flag: 1
- init_v; 3.0609 init_a: 0.00612971
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.09434 秒
-carx: 432.434
-cary: 249.438
-FrentPoint_.S: 200.166
-FrentPoint_.D: -1.30037
-closestIndex: 10
-index: 801
-local_start_s: 200
-local_start_l: -1.41982
-dl: 0.0259737
-ddl: 0.00376224
-v: 2.99068
-a: -0.0775087
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00107361 秒
-qp_.Process
-Path Optimizer used time: 1.21909 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:16
-speed_dp_flag: 1
- init_v; 2.99068 init_a: -0.0775087
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0200987 秒
-carx: 437.311
-cary: 249.587
-FrentPoint_.S: 205.043
-FrentPoint_.D: -1.21381
-closestIndex: 10
-index: 820
-local_start_s: 205
-local_start_l: -1.28146
-dl: 0.0286353
-ddl: -8.22319e-06
-v: 2.74616
-a: -0.184249
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.001173 秒
-qp_.Process
-Path Optimizer used time: 1.08672 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:18
-speed_dp_flag: 1
- init_v; 2.74616 init_a: -0.184249
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0276087 秒
-carx: 441.756
-cary: 249.67
-FrentPoint_.S: 209.491
-FrentPoint_.D: -1.1836
-closestIndex: 9
-index: 838
-local_start_s: 209.499
-local_start_l: -1.16515
-dl: 0.0227202
-ddl: -0.00139974
-v: 2.47075
-a: -0.244714
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00120063 秒
-qp_.Process
-Path Optimizer used time: 3.18899 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:19
-speed_dp_flag: 1
- init_v; 2.47075 init_a: -0.244714
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.140131 秒
-carx: 445.283
-cary: 249.733
-FrentPoint_.S: 213.013
-FrentPoint_.D: -1.16408
-closestIndex: 7
-index: 852
-local_start_s: 212.999
-local_start_l: -1.09528
-dl: 0.016918
-ddl: -0.00166787
-v: 2.09535
-a: -0.596248
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000685144 秒
-qp_.Process
-Path Optimizer used time: 1.10277 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:20
-speed_dp_flag: 1
- init_v; 2.09535 init_a: -0.596248
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.316227 秒
-carx: 447.674
-cary: 249.769
-FrentPoint_.S: 215.39
-FrentPoint_.D: -1.17796
-closestIndex: 5
-index: 862
-local_start_s: 215.499
-local_start_l: -1.05733
-dl: 0.013136
-ddl: -0.0015872
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000645371 秒
-qp_.Process
-Path Optimizer used time: 1.41358 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:19
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.0267738 秒
-carx: 449.504
-cary: 249.811
-FrentPoint_.S: 217.217
-FrentPoint_.D: -1.19128
-closestIndex: 3
-index: 869
-local_start_s: 216.999
-local_start_l: -1.03886
-dl: 0.0112206
-ddl: -0.00148422
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000689471 秒
-qp_.Process
-Path Optimizer used time: 4.71875 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:19
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.0564801 秒
-carx: 451.47
-cary: 249.894
-FrentPoint_.S: 219.21
-FrentPoint_.D: -1.15658
-closestIndex: 4
-index: 877
-local_start_s: 218.984
-local_start_l: -1.01876
-dl: 0.00877858
-ddl: -0.00134011
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000752727 秒
-qp_.Process
-Path Optimizer used time: 6.67988 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:18
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.0531096 秒
-carx: 453.543
-cary: 249.963
-FrentPoint_.S: 221.374
-FrentPoint_.D: -1.04572
-closestIndex: 5
-index: 886
-local_start_s: 221.434
-local_start_l: -1.00027
-dl: 0.00611549
-ddl: -0.001131
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00152824 秒
-qp_.Process
-Path Optimizer used time: 4.32869 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:17
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.054144 秒
-carx: 455.719
-cary: 249.928
-FrentPoint_.S: 223.675
-FrentPoint_.D: -0.776032
-closestIndex: 5
-index: 895
-local_start_s: 223.866
-local_start_l: -0.987788
-dl: 0.00399347
-ddl: -0.000907445
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00077339 秒
-qp_.Process
-Path Optimizer used time: 2.71007 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:17
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.187169 秒
-carx: 457.908
-cary: 249.506
-FrentPoint_.S: 226.023
-FrentPoint_.D: -0.45793
-closestIndex: 4
-index: 905
-local_start_s: 225.824
-local_start_l: -0.981117
-dl: 0.00268788
-ddl: -0.000726169
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00161344 秒
-qp_.Process
-Path Optimizer used time: 1.23619 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:16
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-Piecewise jerk speed optimizer failed!
-speed_qp_: 0
-getspeeduseST over
-程序运行时间: 0.0367605 秒
-carx: 459.788
-cary: 248.604
-FrentPoint_.S: 228.172
-FrentPoint_.D: -0.24418
-closestIndex: 5
-index: 914
-local_start_s: 228.285
-local_start_l: -0.976025
-dl: 0.00134954
-ddl: -0.00056429
-v: 1.4985
-a: 0
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000805912 秒
-qp_.Process
-Path Optimizer used time: 1.50705 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:15
-speed_dp_flag: 1
- init_v; 1.4985 init_a: 0
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.171439 秒
-carx: 461.107
-cary: 247.465
-FrentPoint_.S: 229.953
-FrentPoint_.D: -0.182704
-closestIndex: 3
-index: 921
-local_start_s: 229.75
-local_start_l: -0.974387
-dl: 0.000811213
-ddl: -0.000430094
-v: 1.57102
-a: 0.0882178
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000781313 秒
-qp_.Process
-Path Optimizer used time: 1.35802 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:15
-speed_dp_flag: 1
- init_v; 1.57102 init_a: 0.0882178
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0645951 秒
-carx: 462.287
-cary: 246.042
-FrentPoint_.S: 231.824
-FrentPoint_.D: -0.059151
-closestIndex: 4
-index: 929
-local_start_s: 231.67
-local_start_l: -0.973349
-dl: 0.000208012
-ddl: -0.000346587
-v: 1.65422
-a: 0.0427852
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000686623 秒
-qp_.Process
-Path Optimizer used time: 1.09103 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:14
-speed_dp_flag: 1
- init_v; 1.65422 init_a: 0.0427852
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0434679 秒
-carx: 463.534
-cary: 243.997
-FrentPoint_.S: 234.153
-FrentPoint_.D: 0.344744
-closestIndex: 5
-index: 938
-local_start_s: 234.295
-local_start_l: 0.340953
-dl: 0.14656
-ddl: -3.91943e-05
-v: 1.50066
-a: 0.0641184
-Trajectory_Splicing_Flag: 0
-Repeatpreviouspathflag: 0
-Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00247043 秒
-qp_.Process
-Path Optimizer used time: 1.45282 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:13
-speed_dp_flag: 1
- init_v; 1.50066 init_a: 0.0641184
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0526129 秒
-carx: 464.206
-cary: 241.301
-FrentPoint_.S: 236.839
-FrentPoint_.D: 0.603961
-closestIndex: 5
-index: 948
-local_start_s: 236.646
-local_start_l: 0.584912
-dl: 0.0551632
-ddl: -0.0393112
-v: 1.66474
-a: 0.100665
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000646864 秒
-qp_.Process
-Path Optimizer used time: 1.06101 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:12
-speed_dp_flag: 1
- init_v; 1.66474 init_a: 0.100665
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0144741 秒
-carx: 463.974
-cary: 237.978
-FrentPoint_.S: 240.124
-FrentPoint_.D: 0.261229
-closestIndex: 7
-index: 960
-local_start_s: 240.146
-local_start_l: 0.584595
-dl: -0.0570498
-ddl: -0.028431
-v: 1.85557
-a: 0.152268
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00236388 秒
-qp_.Process
-Path Optimizer used time: 1.24444 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:11
-speed_dp_flag: 1
- init_v; 1.85557 init_a: 0.152268
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0358826 秒
-carx: 463.208
-cary: 233.685
-FrentPoint_.S: 244.411
-FrentPoint_.D: -0.510373
-closestIndex: 9
-index: 977
-local_start_s: 244.699
-local_start_l: -0.545349
-dl: -0.204804
-ddl: 7.14056e-05
-v: 2.91326
-a: 0.265014
-Trajectory_Splicing_Flag: 0
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000706557 秒
-qp_.Process
-Path Optimizer used time: 1.7677 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 2.91326 init_a: 0.265014
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0260792 秒
-carx: 463.219
-cary: 228.469
-FrentPoint_.S: 249.622
-FrentPoint_.D: -0.607723
-closestIndex: 10
-index: 998
-local_start_s: 249.94
-local_start_l: -0.637575
-dl: -0.0134224
-ddl: 6.0754e-07
-v: 3.19582
-a: 0.255483
-Trajectory_Splicing_Flag: 0
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00074859 秒
-qp_.Process
-Path Optimizer used time: 1.96128 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.19582 init_a: 0.255483
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0257091 秒
-carx: 463.503
-cary: 222.916
-FrentPoint_.S: 255.18
-FrentPoint_.D: -0.438087
+程序运行时间: 0.0150791 秒
+lqr: 0.734204
+lqr: 0.59394
+lqr: 0.464247
+lqr: 0.464247
+lqr: 0.348105
+lqr: 0.115834
+lqr: -0.0385375
+lqr: -0.20879
+lqr: -0.402502
+lqr: -0.608322
+lqr: -0.819287
+lqr: -1.04608
+lqr: -1.25331
+lqr: -1.48954
+lqr: -1.68731
+lqr: -1.91565
+lqr: -2.19464
+lqr: -2.34838
+lqr: -2.47968
+lqr: -2.62658
+lqr: -2.74138
+lqr: -2.84421
+lqr: -2.95652
+lqr: -3.05266
+lqr: -3.15632
+lqr: -3.27236
+lqr: -3.40245
+lqr: -3.40245
+lqr: -3.68431
+lqr: -3.68431
+lqr: -3.9039
+lqr: -4.0921
+lqr: -4.26751
+lqr: -4.46424
+lqr: -4.63344
+lqr: -4.81723
+lqr: -4.9509
+lqr: -5.08036
+lqr: -5.20915
+lqr: -5.30015
+lqr: -5.38147
+lqr: -5.49355
+lqr: -5.57866
+lqr: -5.65197
+lqr: -5.72256
+lqr: -5.81449
+lqr: -5.93847
+lqr: -6.0578
+lqr: -6.18803
+lqr: -6.30674
+lqr: -6.41755
+lqr: -6.41755
+lqr: -6.55637
+lqr: -6.64745
+lqr: -6.6792
+lqr: -6.7358
+lqr: -6.78008
+lqr: -6.70418
+lqr: -6.60818
+lqr: -6.47859
+lqr: -6.3794
+lqr: -6.22449
+lqr: -6.10422
+lqr: -5.84296
+lqr: -5.77098
+lqr: -5.49746
+lqr: -5.32051
+lqr: -5.16788
+lqr: -4.99911
+lqr: -4.83416
+lqr: -4.68009
+lqr: -4.55007
+lqr: -4.55007
+lqr: -4.32271
+lqr: -4.242
+lqr: -4.242
+lqr: -4.14334
+lqr: -4.0139
+lqr: -3.93573
+lqr: -3.8245
+lqr: -3.70173
+lqr: -3.5572
+lqr: -3.39599
+lqr: -3.1847
+lqr: -3.00369
+carx: 209.25
+cary: 249.202
+FrentPoint_.S: 233.298
+FrentPoint_.D: -1.38544
 closestIndex: 11
-index: 1020
-local_start_s: 255.346
-local_start_l: -0.815241
-dl: -0.0496897
-ddl: -0.00445234
-v: 3.03264
-a: -0.0697501
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+index: 933
+local_start_s: 233.5
+local_start_l: -1.48793
+dl: -5.68972e-05
+ddl: -4.38835e-05
+v: 3.00642
+a: -0.00613884
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000907478 秒
+AllCosttime: 0.00237533 秒
 qp_.Process
-Path Optimizer used time: 1.56123 ms.
-qp_.Process over 
+Path Optimizer used time: 1.65824 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:13
 speed_dp_flag: 1
- init_v; 3.03264 init_a: -0.0697501
+ init_v; 3.00642 init_a: -0.00613884
+lqr: -2.74655
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0154887 秒
-carx: 463.278
-cary: 217.244
-FrentPoint_.S: 260.846
-FrentPoint_.D: -0.779296
-closestIndex: 11
-index: 1043
-local_start_s: 260.846
-local_start_l: -1.08306
-dl: -0.0466568
-ddl: 0.00113701
-v: 3.01578
-a: -0.00667128
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+程序运行时间: 0.0307713 秒
+lqr: -2.50269
+lqr: -2.59619
+lqr: -2.24507
+lqr: -2.03801
+lqr: -1.82705
+lqr: -1.63473
+lqr: -1.46017
+lqr: -2.63818
+lqr: -2.75276
+lqr: -2.82956
+lqr: -2.89796
+lqr: -2.99433
+lqr: -3.07916
+lqr: -3.18969
+lqr: -3.18969
+lqr: -3.26689
+lqr: -3.46703
+lqr: -3.62166
+lqr: -3.84726
+lqr: -4.00216
+lqr: -4.21147
+lqr: -4.42283
+lqr: -4.66684
+lqr: -4.938
+lqr: -5.27103
+lqr: -5.62786
+lqr: -6.14958
+lqr: -6.48689
+lqr: -6.82052
+lqr: -7.13472
+lqr: -7.43272
+lqr: -7.70212
+lqr: -8.02595
+lqr: -8.3424
+lqr: -8.68748
+lqr: -9.04346
+lqr: -9.38764
+lqr: -9.93914
+lqr: -9.93914
+lqr: -10.2915
+lqr: -10.6557
+lqr: -11.0749
+lqr: -11.4941
+lqr: -11.9196
+lqr: -12.3594
+lqr: -12.7998
+lqr: -13.276
+lqr: -13.7311
+lqr: -14.1961
+lqr: -14.6593
+lqr: -15.3681
+lqr: -15.8175
+lqr: -16.2907
+lqr: -16.7423
+lqr: -17.183
+lqr: -17.6538
+lqr: -18.1075
+lqr: -18.606
+lqr: -19.1274
+lqr: -19.6218
+lqr: -20.1368
+lqr: -20.1368
+lqr: -21.0806
+lqr: -21.0806
+lqr: -21.7656
+lqr: -22.1598
+lqr: -22.6195
+lqr: -23.0623
+lqr: -23.505
+lqr: -23.9529
+lqr: -24.39
+lqr: -24.9962
+lqr: -25.4978
+lqr: -25.9752
+lqr: -26.4407
+lqr: -27.1731
+lqr: -27.6804
+lqr: -28.194
+lqr: -28.7327
+lqr: -29.2618
+lqr: -29.7724
+lqr: -30.2809
+lqr: -30.7656
+lqr: -31.2605
+carx: 204.187
+cary: 249.116
+FrentPoint_.S: 238.362
+FrentPoint_.D: -1.36234
+closestIndex: 10
+index: 953
+local_start_s: 238.5
+local_start_l: -1.41988
+dl: 0.0259668
+ddl: 0.00376511
+v: 3.03734
+a: -0.00568419
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00232524 秒
+AllCosttime: 0.000659123 秒
 qp_.Process
-Path Optimizer used time: 7.40666 ms.
-qp_.Process over 
+Path Optimizer used time: 1.94453 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:15
 speed_dp_flag: 1
- init_v; 3.01578 init_a: -0.00667128
+ init_v; 3.03734 init_a: -0.00568419
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0465985 秒
-carx: 463.27
-cary: 213.071
-FrentPoint_.S: 265.018
-FrentPoint_.D: -0.871906
+程序运行时间: 0.0141759 秒
+lqr: -31.7557
+lqr: -31.2626
+lqr: -31.8042
+lqr: -32.1804
+lqr: -32.5519
+lqr: -32.9609
+lqr: -33.4706
+lqr: -33.8301
+lqr: -34.1682
+lqr: -34.4333
+lqr: -34.6744
+lqr: -34.8855
+lqr: -35.0892
+lqr: -35.3687
+lqr: -35.4508
+lqr: -35.4508
+lqr: -35.9054
+lqr: -36.0831
+lqr: -36.2435
+lqr: -36.4073
+lqr: -36.5569
+lqr: -36.7033
+lqr: -36.8295
+lqr: -36.979
+lqr: -37.1224
+lqr: -37.3092
+lqr: -37.3092
+lqr: -37.5308
+lqr: -37.6419
+lqr: -37.7671
+lqr: -37.8284
+lqr: -37.8729
+lqr: -37.8756
+lqr: -37.8649
+lqr: -37.85
+lqr: -37.7982
+lqr: -37.7957
+lqr: -37.6725
+lqr: -37.499
+lqr: -37.3936
+lqr: -37.3176
+lqr: -37.2409
+lqr: -37.1834
+lqr: -37.1137
+lqr: -37.0734
+lqr: -37.0015
+lqr: -36.9406
+lqr: -36.907
+lqr: -36.8795
+lqr: -36.8547
+lqr: -36.8547
+lqr: -36.8318
+lqr: -36.8383
+lqr: -36.7953
+lqr: -36.7733
+lqr: -36.7425
+lqr: -36.727
+lqr: -36.703
+lqr: -36.6997
+lqr: -36.6858
+lqr: -36.709
+lqr: -36.7282
+lqr: -36.8107
+lqr: -36.8947
+lqr: -36.9898
+lqr: -37.1185
+lqr: -37.2642
+lqr: -37.37
+lqr: -37.5233
+lqr: -37.6884
+lqr: -37.8226
+lqr: -37.9925
+lqr: -38.1419
+lqr: -38.2887
+lqr: -38.4169
+lqr: -38.4169
+lqr: -38.6081
+lqr: -38.712
+lqr: -38.8035
+lqr: -38.8655
+lqr: -38.9526
+lqr: -38.9909
+lqr: -39.0995
+lqr: -39.1951
+lqr: -39.3256
+carx: 199.094
+cary: 248.959
+FrentPoint_.S: 243.457
+FrentPoint_.D: -1.26977
+closestIndex: 10
+index: 974
+local_start_s: 243.5
+local_start_l: -1.28153
+dl: 0.0286366
+ddl: -6.95404e-06
+v: 2.89022
+a: -0.111686
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000572412 秒
+qp_.Process
+Path Optimizer used time: 0.864591 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:17
+speed_dp_flag: 1
+ init_v; 2.89022 init_a: -0.111686
+speed_qp_: 1
+getspeeduseST over
+lqr: -39.49
+程序运行时间: 0.0171525 秒
+lqr: -39.6922
+lqr: -40.0199
+lqr: -40.3678
+lqr: -40.6977
+lqr: -40.8401
+lqr: -41.1093
+lqr: -41.4116
+lqr: -41.6624
+lqr: -41.9433
+lqr: -42.1801
+lqr: -42.4483
+lqr: -42.4483
+lqr: -43.0123
+lqr: -43.0123
+lqr: -43.391
+lqr: -43.6738
+lqr: -43.9135
+lqr: -44.2189
+lqr: -44.4473
+lqr: -44.7533
+lqr: -45.0413
+lqr: -45.3646
+lqr: -45.6605
+lqr: -45.987
+lqr: -46.2762
+lqr: -46.7389
+lqr: -47.0364
+lqr: -47.2868
+lqr: -47.5233
+lqr: -47.7612
+lqr: -47.941
+lqr: -48.1246
+lqr: -48.3307
+lqr: -48.5415
+lqr: -48.7892
+lqr: -49.0341
+lqr: -49.0341
+lqr: -49.4284
+lqr: -49.7107
+lqr: -49.9739
+lqr: -50.2025
+lqr: -50.4699
+lqr: -50.7511
+lqr: -51.0972
+lqr: -51.4327
+lqr: -51.8698
+lqr: -52.2852
+lqr: -52.9896
+lqr: -53.2156
+lqr: -53.9136
+lqr: -54.3755
+lqr: -54.8054
+lqr: -55.246
+lqr: -55.6461
+lqr: -56.0579
+lqr: -56.4943
+lqr: -56.8909
+lqr: -57.2803
+lqr: -57.705
+lqr: -58.092
+lqr: -58.092
+lqr: -58.709
+lqr: -59.1303
+lqr: -59.5669
+lqr: -60.0187
+lqr: -60.4752
+lqr: -60.9334
+lqr: -61.4366
+lqr: -61.9313
+lqr: -62.4412
+lqr: -62.9511
+lqr: -63.4433
+lqr: -64.152
+lqr: -64.3553
+lqr: -65.0008
+lqr: -65.4341
+lqr: -65.8694
+lqr: -66.3106
+lqr: -66.8087
+lqr: -67.288
+lqr: -67.7871
+lqr: -68.2728
+lqr: -68.6999
+lqr: -69.1521
+carx: 194.233
+cary: 248.842
+FrentPoint_.S: 248.316
+FrentPoint_.D: -1.21576
+closestIndex: 10
+index: 993
+local_start_s: 248.5
+local_start_l: -1.15402
+dl: 0.0220245
+ddl: -0.00139728
+v: 2.54193
+a: -0.16962
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000530425 秒
+qp_.Process
+Path Optimizer used time: 0.912232 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:18
+speed_dp_flag: 1
+ init_v; 2.54193 init_a: -0.16962
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0107582 秒
+lqr: -69.1521
+lqr: -69.9167
+lqr: -70.3839
+lqr: -70.8523
+lqr: -71.3356
+lqr: -71.8063
+lqr: -72.2727
+lqr: -72.7543
+lqr: -72.7547
+lqr: -73.147
+lqr: -73.4935
+lqr: -73.8508
+lqr: -74.3535
+lqr: -74.6989
+lqr: -75.0134
+lqr: -75.3639
+lqr: -75.4767
+lqr: -75.6263
+lqr: -75.588
+lqr: -75.6938
+lqr: -75.7696
+lqr: -75.8755
+lqr: -75.9425
+lqr: -76.0362
+lqr: -76.0968
+lqr: -76.0968
+lqr: -76.176
+lqr: -76.1851
+lqr: -76.0437
+lqr: -75.997
+lqr: -75.9909
+lqr: -75.9726
+lqr: -76.0052
+lqr: -76.0112
+lqr: -76.0819
+lqr: -76.1295
+lqr: -76.2071
+lqr: -76.3058
+lqr: -76.3418
+lqr: -76.1147
+lqr: -76.0992
+lqr: -76.1009
+lqr: -76.0597
+lqr: -76.0621
+lqr: -76.0057
+lqr: -75.9975
+lqr: -75.9406
+lqr: -75.9406
+lqr: -75.9271
+lqr: -75.9271
+lqr: -75.6515
+lqr: -75.6263
+lqr: -75.6142
+lqr: -75.6036
+lqr: -75.6084
+lqr: -75.6259
+lqr: -75.6772
+lqr: -75.7136
+lqr: -75.7752
+lqr: -75.8447
+lqr: -75.9124
+lqr: -75.675
+lqr: -75.7054
+lqr: -75.7704
+lqr: -75.8679
+lqr: -75.883
+lqr: -75.972
+lqr: -76.018
+lqr: -76.0177
+lqr: -76.033
+lqr: -76.0204
+lqr: -76.0017
+lqr: -76.0017
+lqr: -75.6365
+lqr: -75.6116
+lqr: -75.6077
+lqr: -75.6077
+lqr: -75.6843
+lqr: -75.7704
+lqr: -75.8345
+lqr: -75.9429
+lqr: -76.0503
+lqr: -76.1392
+lqr: -76.2564
+lqr: -76.04
+carx: 190.303
+cary: 248.758
+FrentPoint_.S: 252.251
+FrentPoint_.D: -1.1861
 closestIndex: 8
-index: 1060
-local_start_s: 264.846
-local_start_l: -1.24756
-dl: -0.0351859
-ddl: 0.00281542
-v: 3.01606
-a: -0.00123468
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+index: 1009
+local_start_s: 252.5
+local_start_l: -1.0788
+dl: 0.0153443
+ddl: -0.00163229
+v: 2.36026
+a: -0.144752
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00827661 秒
+AllCosttime: 0.000750086 秒
 qp_.Process
-Path Optimizer used time: 5.55589 ms.
-qp_.Process over 
+Path Optimizer used time: 1.4008 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:19
 speed_dp_flag: 1
- init_v; 3.01606 init_a: -0.00123468
+ init_v; 2.36026 init_a: -0.144752
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0465537 秒
-carx: 463.37
-cary: 210.061
-FrentPoint_.S: 268.029
-FrentPoint_.D: -0.834369
+程序运行时间: 0.0135537 秒
+lqr: -76.0957
+lqr: -76.4746
+lqr: -76.4883
+lqr: -76.5216
+lqr: -76.503
+lqr: -76.4373
+lqr: -76.4049
+lqr: -76.3429
+lqr: -76.2877
+lqr: -76.2334
+lqr: -76.2106
+lqr: -76.2106
+lqr: -75.29
+lqr: -75.2085
+lqr: -75.1277
+lqr: -75.0975
+lqr: -75.0558
+lqr: -75.0562
+lqr: -75.0536
+lqr: -75.0765
+lqr: -75.0938
+lqr: -75.1296
+lqr: -75.1433
+lqr: -75.1668
+lqr: -75.1715
+lqr: -74.8518
+lqr: -74.7891
+lqr: -74.704
+lqr: -74.704
+lqr: -74.5058
+lqr: -74.391
+lqr: -74.0077
+lqr: -73.9791
+lqr: -73.9474
+lqr: -73.9346
+lqr: -73.9346
+lqr: -73.9428
+lqr: -73.9416
+lqr: -73.8049
+lqr: -73.8068
+lqr: -73.8311
+lqr: -73.8508
+lqr: -73.877
+lqr: -73.883
+lqr: -73.9101
+lqr: -73.9098
+lqr: -73.9426
+lqr: -73.9411
+lqr: -73.9598
+lqr: -73.9822
+lqr: -73.9858
+lqr: -73.9679
+lqr: -73.9675
+lqr: -73.9866
+lqr: -74.037
+lqr: -74.1023
+lqr: -74.161
+lqr: -74.2512
+lqr: -74.3377
+lqr: -74.4321
+lqr: -74.4321
+lqr: -74.5802
+lqr: -74.6492
+lqr: -74.7512
+lqr: -74.8299
+lqr: -74.8899
+lqr: -75.05
+lqr: -75.0568
+lqr: -75.0446
+lqr: -75.05
+lqr: -74.9609
+lqr: -74.9382
+lqr: -74.8254
+lqr: -74.8146
+lqr: -74.7799
+lqr: -74.8339
+lqr: -74.9419
+lqr: -75.1137
+lqr: -75.3666
+lqr: -75.66
+lqr: -76.2916
+lqr: -76.6697
+lqr: -76.6697
+lqr: -77.1588
+lqr: -77.1588
+carx: 187.166
+cary: 248.723
+FrentPoint_.S: 255.406
+FrentPoint_.D: -1.16397
 closestIndex: 6
-index: 1072
-local_start_s: 268.182
-local_start_l: -0.838293
-dl: -0.0613686
-ddl: 3.94335e-08
-v: 1.52418
-a: -0.285631
-Trajectory_Splicing_Flag: 0
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+index: 1022
+local_start_s: 255.5
+local_start_l: -1.03894
+dl: 0.0109714
+ddl: -0.00147267
+v: 2.2796
+a: -0.133672
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00499021 秒
+AllCosttime: 0.000542298 秒
 qp_.Process
-Path Optimizer used time: 3.15675 ms.
-qp_.Process over 
+Path Optimizer used time: 0.873433 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:11
+best_end_point—s: 30 best_end_point-t:20
 speed_dp_flag: 1
- init_v; 1.52418 init_a: -0.285631
+ init_v; 2.2796 init_a: -0.133672
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0955382 秒
-carx: 463.443
-cary: 207.443
-FrentPoint_.S: 270.649
-FrentPoint_.D: -0.814298
+程序运行时间: 0.013593 秒
+lqr: -77.5353
+lqr: -77.9266
+lqr: -78.1032
+lqr: -78.2162
+lqr: -78.3228
+lqr: -78.3617
+lqr: -78.4212
+lqr: -78.4414
+lqr: -78.4589
+lqr: -78.4937
+lqr: -78.5194
+lqr: -78.9492
+lqr: -79.0019
+lqr: -79.0487
+lqr: -79.1014
+lqr: -79.1644
+lqr: -79.2425
+lqr: -79.2917
+lqr: -79.3491
+lqr: -79.3796
+lqr: -79.4042
+lqr: -79.4331
+lqr: -79.4331
+lqr: -79.5047
+lqr: -79.5047
+lqr: -79.5669
+lqr: -79.6353
+lqr: -79.6819
+lqr: -80.4901
+lqr: -80.5959
+lqr: -80.7262
+lqr: -80.8275
+lqr: -80.9965
+lqr: -81.1779
+lqr: -81.3549
+lqr: -81.6465
+lqr: -81.8582
+lqr: -82.0112
+lqr: -82.1255
+lqr: -82.2322
+lqr: -82.2505
+lqr: -82.259
+lqr: -82.1769
+lqr: -82.1769
+lqr: -82.0342
+lqr: -82.9346
+lqr: -82.9346
+lqr: -82.7484
+lqr: -82.3432
+lqr: -81.8875
+lqr: -81.5347
+lqr: -81.1328
+lqr: -80.8457
+lqr: -80.4829
+lqr: -80.2301
+lqr: -79.9032
+lqr: -79.6752
+lqr: -79.3574
+lqr: -78.9228
+lqr: -78.8087
+lqr: -78.348
+lqr: -78.1005
+lqr: -77.8486
+lqr: -77.5299
+lqr: -78.6146
+lqr: -78.3533
+lqr: -78.1845
+lqr: -77.9242
+lqr: -77.7427
+lqr: -77.5748
+lqr: -77.2019
+lqr: -77.2019
+lqr: -76.9216
+lqr: -76.615
+lqr: -76.3964
+lqr: -76.0981
+lqr: -75.8767
+lqr: -75.6266
+lqr: -75.458
+lqr: -75.1415
+lqr: -74.9556
+lqr: -74.6407
+lqr: -74.1793
+lqr: -75.6077
+lqr: -75.3962
+carx: 184.792
+cary: 248.689
+FrentPoint_.S: 257.781
+FrentPoint_.D: -1.11346
 closestIndex: 5
-index: 1082
-local_start_s: 270.596
-local_start_l: -0.980156
-dl: -0.0556445
-ddl: 0.00264435
-v: 2.41792
-a: 0.771823
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+index: 1031
+local_start_s: 258
+local_start_l: -1.01499
+dl: 0.00795223
+ddl: -0.00125594
+v: 1.97309
+a: -0.248885
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000728525 秒
+AllCosttime: 0.000761718 秒
 qp_.Process
-Path Optimizer used time: 3.65308 ms.
-qp_.Process over 
+Path Optimizer used time: 1.24248 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:19
 speed_dp_flag: 1
- init_v; 2.41792 init_a: 0.771823
+ init_v; 1.97309 init_a: -0.248885
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0342937 秒
-carx: 463.558
-cary: 203.66
-FrentPoint_.S: 274.433
-FrentPoint_.D: -0.776915
-closestIndex: 8
-index: 1097
-local_start_s: 274.596
-local_start_l: -1.17859
-dl: -0.0430641
-ddl: 0.00313861
-v: 2.9175
-a: 0.203202
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00112873 秒
-qp_.Process
-Path Optimizer used time: 1.16196 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 2.9175 init_a: 0.203202
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0311571 秒
-carx: 463.479
-cary: 200.763
-FrentPoint_.S: 277.328
-FrentPoint_.D: -0.915216
-closestIndex: 5
-index: 1109
-local_start_s: 277.096
-local_start_l: -1.27654
-dl: -0.0346457
-ddl: 0.0034974
-v: 2.97511
-a: 0.0479023
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.002265 秒
-qp_.Process
-Path Optimizer used time: 3.58779 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 2.97511 init_a: 0.0479023
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0266862 秒
-carx: 463.313
-cary: 198.278
-FrentPoint_.S: 279.809
-FrentPoint_.D: -1.13193
-closestIndex: 5
-index: 1119
-local_start_s: 279.596
-local_start_l: -1.35405
-dl: -0.0267825
-ddl: 0.00323255
-v: 2.99821
-a: 0.0207143
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00069141 秒
-qp_.Process
-Path Optimizer used time: 1.14382 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 2.99821 init_a: 0.0207143
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0191173 秒
-carx: 463.212
-cary: 196.227
-FrentPoint_.S: 281.858
-FrentPoint_.D: -1.27445
-closestIndex: 5
-index: 1127
-local_start_s: 282.096
-local_start_l: -1.41295
-dl: -0.0198411
-ddl: 0.00282836
-v: 3.00843
-a: 0.00882946
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
-all_distances: 30one_distances: 10
-ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0111142 秒
-qp_.Process
-Path Optimizer used time: 1.15918 ms.
-qp_.Process over 
-getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
-speed_dp_flag: 1
- init_v; 3.00843 init_a: 0.00882946
-speed_qp_: 1
-getspeeduseST over
-程序运行时间: 0.0251445 秒
-carx: 463.193
-cary: 193.93
-FrentPoint_.S: 284.154
-FrentPoint_.D: -1.34081
+程序运行时间: 0.0155897 秒
+lqr: -75.3612
+lqr: -74.7517
+lqr: -74.7517
+lqr: -75.2049
+lqr: -75.7184
+lqr: -76.2928
+lqr: -76.9852
+lqr: -77.6095
+lqr: -77.6095
+lqr: -78.8814
+lqr: -78.8814
+lqr: -79.7441
+lqr: -80.2735
+lqr: -80.8967
+lqr: -81.4171
+lqr: -81.9659
+lqr: -82.3758
+lqr: -82.8149
+lqr: -83.2145
+lqr: -83.5682
+lqr: -86.7701
+lqr: -87.1659
+lqr: -87.6493
+lqr: -87.8911
+lqr: -88.0998
+lqr: -148.769
+lqr: -148.864
+lqr: -148.94
+lqr: -148.94
+lqr: -149.367
+lqr: -149.676
+lqr: -150.025
+lqr: -150.467
+lqr: -150.695
+lqr: -150.938
+lqr: -151.678
+lqr: -152.187
+lqr: -152.757
+lqr: -153.293
+lqr: -153.884
+lqr: -154.501
+lqr: -157.468
+lqr: -158.313
+lqr: -159.215
+lqr: -160.01
+lqr: -160.851
+lqr: -161.93
+lqr: -162.554
+lqr: -163.188
+lqr: -163.69
+lqr: -164.2
+lqr: -164.2
+lqr: -164.2
+lqr: -165.563
+lqr: -166.014
+lqr: -166.438
+lqr: -166.912
+lqr: -166.912
+lqr: -167.572
+lqr: -167.82
+lqr: -168.575
+lqr: -169.127
+lqr: -169.661
+lqr: -172.746
+lqr: -173.495
+lqr: -174.352
+lqr: -175.124
+lqr: -175.948
+lqr: -176.697
+lqr: -177.48
+lqr: -178.17
+lqr: -179.19
+lqr: -179.875
+lqr: -180.481
+lqr: -181.117
+lqr: -181.698
+lqr: -182.337
+lqr: -182.889
+lqr: -183.499
+lqr: -184.08
+lqr: -184.677
+lqr: -184.677
+lqr: -185.596
+lqr: -186.253
+lqr: -186.843
+carx: 182.79
+cary: 248.682
+FrentPoint_.S: 259.752
+FrentPoint_.D: -1.11247
 closestIndex: 4
-index: 1136
-local_start_s: 284.096
-local_start_l: -1.44845
-dl: -0.0151969
-ddl: 0.00246967
-v: 3.0123
-a: 0.00430748
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+index: 1039
+local_start_s: 259.997
+local_start_l: -1.00087
+dl: 0.00598395
+ddl: -0.00107021
+v: 1.85678
+a: -0.149547
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000709099 秒
+AllCosttime: 0.000659715 秒
 qp_.Process
-Path Optimizer used time: 1.13265 ms.
-qp_.Process over 
+Path Optimizer used time: 0.900988 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:19
 speed_dp_flag: 1
- init_v; 3.0123 init_a: 0.00430748
+ init_v; 1.85678 init_a: -0.149547
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0589326 秒
-carx: 463.192
-cary: 193.747
-FrentPoint_.S: 284.337
-FrentPoint_.D: -1.34513
-closestIndex: 0
-index: 1137
-local_start_s: 284.096
-local_start_l: -1.44845
-dl: -0.0151969
-ddl: 4.64913e-310
-v: 3.01232
-a: 0.00430771
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+程序运行时间: 0.0139062 秒
+lqr: -190.201
+lqr: -186.98
+lqr: -188.042
+lqr: -189.019
+lqr: -190.051
+lqr: -191.002
+lqr: -192.01
+lqr: -192.927
+lqr: -194.314
+lqr: -194.779
+lqr: -196.196
+lqr: -197.049
+lqr: -197.88
+lqr: -198.772
+lqr: -199.58
+lqr: -200.437
+lqr: -201.23
+lqr: -202.038
+lqr: -202.766
+lqr: -203.151
+lqr: -204.224
+lqr: -204.224
+lqr: -211.675
+lqr: -212.66
+lqr: -213.594
+lqr: -214.592
+lqr: -215.492
+lqr: -216.371
+lqr: -217.421
+lqr: -218.499
+lqr: -219.598
+lqr: -220.687
+lqr: -221.871
+lqr: -223.596
+lqr: -224.781
+lqr: -226.048
+lqr: -227.315
+lqr: -228.596
+lqr: -229.819
+lqr: -231.123
+lqr: -231.123
+lqr: -233.398
+lqr: -234.504
+lqr: -235.547
+lqr: -239.704
+lqr: -239.704
+lqr: -241.757
+lqr: -243.084
+lqr: -244.301
+lqr: -245.502
+lqr: -246.632
+lqr: -247.771
+lqr: -248.846
+lqr: -249.972
+lqr: -251.072
+lqr: -252.233
+lqr: -253.398
+lqr: -255.21
+lqr: -256.439
+lqr: -257.709
+lqr: -259.003
+lqr: -260.293
+lqr: -261.626
+lqr: -262.938
+lqr: -264.229
+lqr: -265.49
+lqr: -269.769
+lqr: -271.388
+lqr: -272.968
+lqr: -272.968
+lqr: -275.234
+lqr: -276.691
+lqr: -278.101
+lqr: -279.461
+lqr: -280.846
+lqr: -282.151
+lqr: -283.468
+lqr: -285.001
+lqr: -286.476
+lqr: -288.044
+lqr: -289.537
+lqr: -291.815
+lqr: -293.354
+lqr: -294.818
+lqr: -296.275
+carx: 180.803
+cary: 248.651
+FrentPoint_.S: 261.653
+FrentPoint_.D: -1.17877
+closestIndex: 3
+index: 1047
+local_start_s: 261.487
+local_start_l: -0.992718
+dl: 0.00478368
+ddl: -0.000934851
+v: 1.77529
+a: -0.12767
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.0053093 秒
+AllCosttime: 0.000586921 秒
 qp_.Process
-Path Optimizer used time: 1.06411 ms.
-qp_.Process over 
+Path Optimizer used time: 0.861709 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:18
 speed_dp_flag: 1
- init_v; 3.01232 init_a: 0.00430771
+ init_v; 1.77529 init_a: -0.12767
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0224092 秒
-carx: 463.192
-cary: 193.747
-FrentPoint_.S: 284.337
-FrentPoint_.D: -1.34513
-closestIndex: 0
-index: 1137
-local_start_s: 284.096
-local_start_l: -1.44845
-dl: -0.0151969
-ddl: 4.64913e-310
-v: 3.01233
-a: 0.00430793
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+程序运行时间: 0.0125944 秒
+lqr: -297.081
+lqr: -294.628
+lqr: -296.164
+lqr: -305.24
+lqr: -307.213
+lqr: -309.162
+lqr: -311.06
+lqr: -311.06
+lqr: -314.791
+lqr: -314.791
+lqr: -317.522
+lqr: -319.285
+lqr: -321.062
+lqr: -322.795
+lqr: -324.514
+lqr: -326.157
+lqr: -327.853
+lqr: -329.442
+lqr: -331.072
+lqr: -332.643
+lqr: -334.193
+lqr: -336.533
+lqr: -338.054
+lqr: -339.606
+lqr: -341.093
+lqr: -345.725
+lqr: -347.853
+lqr: -350
+lqr: -352.074
+lqr: -354.154
+lqr: -356.2
+lqr: -356.2
+lqr: -359.237
+lqr: -361.186
+lqr: -363.187
+lqr: -365.076
+lqr: -367.004
+lqr: -368.801
+lqr: -370.651
+lqr: -372.367
+lqr: -374.114
+lqr: -375.769
+lqr: -378.722
+lqr: -381.821
+lqr: -382.951
+lqr: -388.372
+lqr: -391.048
+lqr: -393.779
+lqr: -396.359
+lqr: -398.899
+lqr: -401.527
+lqr: -404.151
+lqr: -406.613
+lqr: -409.146
+lqr: -410.353
+lqr: -413.878
+lqr: -413.878
+lqr: -417.484
+lqr: -419.857
+lqr: -422.02
+lqr: -424.328
+lqr: -426.366
+lqr: -428.535
+lqr: -430.55
+lqr: -432.573
+lqr: -434.454
+lqr: -436.426
+lqr: -438.183
+lqr: -443.862
+lqr: -446.414
+lqr: -448.739
+lqr: -451.212
+lqr: -453.492
+lqr: -455.866
+lqr: -458.086
+lqr: -460.383
+lqr: -462.51
+lqr: -464.718
+lqr: -467.775
+lqr: -468.764
+lqr: -468.764
+lqr: -471.836
+lqr: -473.908
+lqr: -475.772
+lqr: -477.769
+carx: 178.705
+cary: 248.534
+FrentPoint_.S: 263.584
+FrentPoint_.D: -1.36088
+closestIndex: 4
+index: 1055
+local_start_s: 263.465
+local_start_l: -0.98455
+dl: 0.00332713
+ddl: -0.000800361
+v: 1.64641
+a: -0.120797
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00470522 秒
+AllCosttime: 0.000784919 秒
 qp_.Process
-Path Optimizer used time: 4.33482 ms.
-qp_.Process over 
+Path Optimizer used time: 1.16283 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:17
 speed_dp_flag: 1
- init_v; 3.01233 init_a: 0.00430793
+ init_v; 1.64641 init_a: -0.120797
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0454998 秒
-carx: 463.192
-cary: 193.747
-FrentPoint_.S: 284.337
-FrentPoint_.D: -1.34513
-closestIndex: 0
-index: 1137
-local_start_s: 284.096
-local_start_l: -1.44845
-dl: -0.0151969
-ddl: 4.64913e-310
-v: 3.01235
-a: 0.00430816
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+程序运行时间: 0.0134119 秒
+lqr: -479.543
+lqr: -475.142
+lqr: -477.027
+lqr: -479.037
+lqr: -480.848
+lqr: -482.712
+lqr: -491.692
+lqr: -493.682
+lqr: -495.218
+lqr: -496.586
+lqr: -497.964
+lqr: -499.377
+lqr: -500.682
+lqr: -502.046
+lqr: -503.358
+lqr: -504.555
+lqr: -505.774
+lqr: -506.987
+lqr: -508.13
+lqr: -509.289
+lqr: -509.289
+lqr: -510.874
+lqr: -511.969
+lqr: -512.897
+lqr: -513.869
+lqr: -514.765
+lqr: -515.621
+lqr: -516.433
+lqr: -517.259
+lqr: -517.259
+lqr: -518.712
+lqr: -521.739
+lqr: -523.024
+lqr: -524.355
+lqr: -525.52
+lqr: -526.814
+lqr: -527.963
+lqr: -529.182
+lqr: -530.387
+lqr: -531.59
+lqr: -532.785
+lqr: -534.028
+lqr: -534.028
+lqr: -536.408
+lqr: -536.408
+lqr: -538.162
+lqr: -539.349
+lqr: -540.549
+lqr: -541.765
+lqr: -542.975
+lqr: -544.249
+lqr: -545.434
+lqr: -546.703
+lqr: -547.871
+lqr: -549.07
+lqr: -550.199
+lqr: -551.928
+lqr: -554.721
+lqr: -556.743
+lqr: -558.709
+lqr: -560.622
+lqr: -562.577
+lqr: -564.497
+lqr: -566.333
+lqr: -568.163
+lqr: -569.998
+lqr: -571.789
+lqr: -571.789
+lqr: -574.492
+lqr: -576.277
+lqr: -578.048
+lqr: -579.835
+lqr: -581.579
+lqr: -583.287
+lqr: -584.944
+lqr: -586.553
+lqr: -588.116
+lqr: -589.623
+lqr: -591.838
+lqr: -592.552
+lqr: -594.678
+lqr: -596.072
+lqr: -597.46
+lqr: -598.775
+lqr: -601.83
+carx: 176.946
+cary: 248.198
+FrentPoint_.S: 265.196
+FrentPoint_.D: -1.50502
+closestIndex: 4
+index: 1061
+local_start_s: 265.433
+local_start_l: -0.979041
+dl: 0.00214907
+ddl: -0.000651267
+v: 1.54289
+a: -0.0807736
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00134635 秒
+AllCosttime: 0.000940081 秒
 qp_.Process
-Path Optimizer used time: 1.29712 ms.
-qp_.Process over 
+Path Optimizer used time: 1.45901 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:17
 speed_dp_flag: 1
- init_v; 3.01235 init_a: 0.00430816
+ init_v; 1.54289 init_a: -0.0807736
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0218077 秒
-carx: 463.192
-cary: 193.747
-FrentPoint_.S: 284.337
-FrentPoint_.D: -1.34513
-closestIndex: 0
-index: 1137
-local_start_s: 284.096
-local_start_l: -1.44845
-dl: -0.0151969
-ddl: 4.64913e-310
-v: 3.01235
-a: 0.00430816
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+程序运行时间: 0.0136257 秒
+lqr: -603.881
+lqr: -592.934
+lqr: -595.233
+lqr: -597.494
+lqr: -599.681
+lqr: -601.891
+lqr: -601.891
+lqr: -605.05
+lqr: -607.158
+lqr: -609.201
+lqr: -611.189
+lqr: -613.145
+lqr: -615.083
+lqr: -616.932
+lqr: -618.812
+lqr: -620.563
+lqr: -622.377
+lqr: -624.111
+lqr: -626.626
+lqr: -627.467
+lqr: -629.911
+lqr: -631.492
+lqr: -633.289
+lqr: -634.904
+lqr: -636.454
+lqr: -644.391
+lqr: -646.303
+lqr: -648.221
+lqr: -649.14
+lqr: -651.897
+lqr: -651.897
+lqr: -654.484
+lqr: -656.235
+lqr: -657.921
+lqr: -659.508
+lqr: -661.106
+lqr: -662.654
+lqr: -664.15
+lqr: -665.655
+lqr: -667.06
+lqr: -668.46
+lqr: -669.815
+lqr: -671.733
+lqr: -673.016
+lqr: -674.215
+lqr: -675.388
+lqr: -676.543
+lqr: -677.639
+lqr: -678.651
+lqr: -681.037
+lqr: -682.896
+lqr: -684.805
+lqr: -686.6
+lqr: -688.338
+lqr: -690.097
+lqr: -690.097
+lqr: -692.552
+lqr: -694.14
+lqr: -695.709
+lqr: -697.182
+lqr: -698.69
+lqr: -700.088
+lqr: -701.496
+lqr: -702.845
+lqr: -704.124
+lqr: -705.37
+lqr: -706.59
+lqr: -708.296
+lqr: -709.374
+lqr: -710.38
+lqr: -711.368
+lqr: -712.244
+lqr: -714.778
+lqr: -717.059
+lqr: -719.179
+lqr: -721.375
+lqr: -723.409
+lqr: -723.409
+lqr: -728.34
+lqr: -728.34
+lqr: -730.282
+lqr: -732.02
+lqr: -733.836
+lqr: -735.443
+lqr: -737.076
+carx: 175.075
+cary: 247.565
+FrentPoint_.S: 266.91
+FrentPoint_.D: -1.67681
+closestIndex: 3
+index: 1068
+local_start_s: 266.905
+local_start_l: -0.976304
+dl: 0.00147641
+ddl: -0.000533381
+v: 1.48052
+a: -0.0647513
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.00074931 秒
+AllCosttime: 0.00058908 秒
 qp_.Process
-Path Optimizer used time: 1.24838 ms.
-qp_.Process over 
+Path Optimizer used time: 1.02405 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:16
 speed_dp_flag: 1
- init_v; 3.01235 init_a: 0.00430816
+ init_v; 1.48052 init_a: -0.0647513
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0125931 秒
-carx: 463.192
-cary: 193.747
-FrentPoint_.S: 284.337
-FrentPoint_.D: -1.34513
-closestIndex: 0
-index: 1137
-local_start_s: 284.096
-local_start_l: -1.44845
-dl: -0.0151969
-ddl: 4.64913e-310
-v: 3.01237
-a: 0.00430838
-Trajectory_Splicing_Flag: 1
-Repeatpreviouspathflag: 0
-Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+程序运行时间: 0.0126059 秒
+lqr: -738.567
+lqr: -731.258
+lqr: -733.135
+lqr: -735.072
+lqr: -736.841
+lqr: -738.677
+lqr: -741.24
+lqr: -742.991
+lqr: -744.726
+lqr: -752.053
+lqr: -754.182
+lqr: -756.144
+lqr: -758.006
+lqr: -759.915
+lqr: -761.727
+lqr: -763.379
+lqr: -765.048
+lqr: -765.048
+lqr: -767.254
+lqr: -768.774
+lqr: -770.077
+lqr: -771.451
+lqr: -772.587
+lqr: -773.729
+lqr: -774.765
+lqr: -775.715
+lqr: -776.563
+lqr: -777.401
+lqr: -778.116
+lqr: -778.856
+lqr: -779.725
+lqr: -782.503
+lqr: -784.151
+lqr: -785.693
+lqr: -787.185
+lqr: -788.57
+lqr: -789.86
+lqr: -790.827
+lqr: -791.782
+lqr: -792.633
+lqr: -793.429
+lqr: -793.429
+lqr: -794.49
+lqr: -795.111
+lqr: -795.602
+lqr: -796.096
+lqr: -796.477
+lqr: -796.749
+lqr: -797.031
+lqr: -797.128
+lqr: -797.282
+lqr: -797.271
+lqr: -797.274
+lqr: -799.405
+lqr: -799.875
+lqr: -801.253
+lqr: -802.079
+lqr: -802.832
+lqr: -803.493
+lqr: -804.071
+lqr: -804.591
+lqr: -805.014
+lqr: -805.384
+lqr: -805.667
+lqr: -805.907
+lqr: -805.907
+lqr: -806.049
+lqr: -806.076
+lqr: -805.997
+lqr: -805.922
+lqr: -805.647
+lqr: -805.378
+lqr: -804.99
+lqr: -804.524
+lqr: -804.083
+lqr: -806.23
+lqr: -806.884
+lqr: -807.726
+lqr: -808.198
+lqr: -808.621
+lqr: -808.901
+lqr: -809.134
+lqr: -809.281
+lqr: -809.342
+lqr: -809.3
+carx: 173.095
+cary: 246.41
+FrentPoint_.S: 268.854
+FrentPoint_.D: -1.81992
+closestIndex: 4
+index: 1076
+local_start_s: 268.857
+local_start_l: -0.974103
+dl: 0.000698327
+ddl: -0.000436101
+v: 1.37297
+a: -0.0750651
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
 all_distances: 30one_distances: 10
 ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
-AllCosttime: 0.000682586 秒
+AllCosttime: 0.000550354 秒
 qp_.Process
-Path Optimizer used time: 1.24337 ms.
-qp_.Process over 
+Path Optimizer used time: 1.55785 ms.
+slqp_.flag1
 getspeeduseST
-GetSpeedLimit
-GetSpeedLimit over
-speed.Search
-best_end_points: 30 best_end_pointt:10
+best_end_point—s: 30 best_end_point-t:17
+lqr: -809.23
 speed_dp_flag: 1
- init_v; 3.01237 init_a: 0.00430838
+ init_v; 1.37297 init_a: -0.0750651
 speed_qp_: 1
 getspeeduseST over
-程序运行时间: 0.0292153 秒
+程序运行时间: 0.0220897 秒
+lqr: -799.772
+lqr: -800.647
+lqr: -801.527
+lqr: -802.153
+lqr: -802.153
+lqr: -802.854
+lqr: -802.854
+lqr: -804.137
+lqr: -804.482
+lqr: -811.373
+lqr: -812.153
+lqr: -813.035
+lqr: -813.731
+lqr: -814.408
+lqr: -815.011
+lqr: -815.478
+lqr: -816.145
+lqr: -816.293
+lqr: -816.487
+lqr: -816.466
+lqr: -816.323
+lqr: -816.033
+lqr: -815.702
+lqr: -815.178
+lqr: -814.749
+lqr: -814.054
+lqr: -814.054
+lqr: -814.638
+lqr: -814.638
+lqr: -815.537
+lqr: -816.016
+lqr: -816.443
+lqr: -816.807
+lqr: -817.091
+lqr: -817.213
+lqr: -817.403
+lqr: -817.342
+lqr: -817.289
+lqr: -817.113
+lqr: -816.834
+lqr: -816.266
+lqr: -815.678
+lqr: -815.105
+lqr: -814.369
+lqr: -813.573
+lqr: -812.749
+lqr: -814.035
+lqr: -814.382
+lqr: -814.662
+lqr: -814.933
+lqr: -815.134
+lqr: -815.134
+lqr: -815.18
+lqr: -815.18
+lqr: -814.875
+lqr: -814.573
+lqr: -814.158
+lqr: -813.751
+lqr: -813.164
+lqr: -812.663
+lqr: -811.932
+lqr: -811.312
+lqr: -810.567
+lqr: -809.786
+lqr: -808.737
+lqr: -807.884
+lqr: -810.363
+lqr: -810.924
+lqr: -811.408
+lqr: -811.805
+lqr: -812.115
+lqr: -812.131
+lqr: -812.103
+lqr: -811.89
+lqr: -811.516
+lqr: -811.516
+lqr: -810.742
+lqr: -810.12
+lqr: -809.391
+lqr: -808.748
+lqr: -807.865
+lqr: -807.082
+lqr: -806.118
+lqr: -805.142
+carx: 171.286
+cary: 244.583
+FrentPoint_.S: 270.981
+FrentPoint_.D: -1.8639
+closestIndex: 4
+index: 1085
+local_start_s: 270.788
+local_start_l: -0.973256
+dl: 0.000119704
+ddl: -0.000330555
+v: 1.25973
+a: -0.0490657
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.00059698 秒
+qp_.Process
+Path Optimizer used time: 0.998552 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:15
+speed_dp_flag: 1
+ init_v; 1.25973 init_a: -0.0490657
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0124953 秒
+lqr: -804.116
+lqr: -804.497
+lqr: -804.706
+lqr: -805.103
+lqr: -805.152
+lqr: -805.506
+lqr: -805.66
+lqr: -805.708
+lqr: -805.837
+lqr: -805.686
+lqr: -805.449
+lqr: -805.178
+lqr: -804.696
+lqr: -804.696
+lqr: -803.306
+lqr: -802.366
+lqr: -802.366
+lqr: -800.596
+lqr: -799.496
+lqr: -798.318
+lqr: -797.094
+lqr: -795.855
+lqr: -796.935
+lqr: -796.955
+lqr: -796.945
+lqr: -796.84
+lqr: -796.781
+lqr: -796.554
+lqr: -796.358
+lqr: -796.182
+lqr: -795.885
+lqr: -795.523
+lqr: -795.075
+lqr: -794.457
+lqr: -793.879
+lqr: -793.065
+lqr: -792.25
+lqr: -791.279
+lqr: -790.214
+lqr: -789.042
+lqr: -789.042
+lqr: -787.204
+lqr: -785.922
+lqr: -786.467
+lqr: -786.388
+lqr: -786.258
+lqr: -786.129
+lqr: -785.928
+lqr: -785.708
+lqr: -785.429
+lqr: -785.117
+lqr: -784.746
+lqr: -784.057
+lqr: -783.496
+lqr: -782.888
+lqr: -782.182
+lqr: -781.431
+lqr: -780.575
+lqr: -779.627
+lqr: -778.692
+lqr: -777.598
+lqr: -776.48
+lqr: -775.305
+lqr: -775.305
+lqr: -774.064
+lqr: -773.87
+lqr: -773.73
+lqr: -773.877
+lqr: -773.285
+lqr: -772.511
+lqr: -771.776
+lqr: -770.937
+lqr: -770.079
+lqr: -769.146
+lqr: -768.221
+lqr: -767.127
+lqr: -765.515
+lqr: -764.416
+lqr: -763.237
+lqr: -761.968
+lqr: -760.552
+lqr: -759.202
+lqr: -757.738
+lqr: -756.238
+lqr: -754.739
+carx: 170.131
+cary: 242.534
+FrentPoint_.S: 272.919
+FrentPoint_.D: -1.8319
+closestIndex: 4
+index: 1093
+local_start_s: 272.711
+local_start_l: -0.973385
+dl: -0.00029861
+ddl: -0.000242196
+v: 1.17755
+a: 0.0255301
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000624125 秒
+qp_.Process
+Path Optimizer used time: 0.846248 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:14
+speed_dp_flag: 1
+ init_v; 1.17755 init_a: 0.0255301
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0109154 秒
+lqr: -753.212
+lqr: -752.818
+lqr: -752.818
+lqr: -751.708
+lqr: -751.708
+lqr: -750.78
+lqr: -750.007
+lqr: -749.178
+lqr: -748.306
+lqr: -747.427
+lqr: -746.381
+lqr: -745.452
+lqr: -744.34
+lqr: -743.256
+lqr: -742.096
+lqr: -740.957
+lqr: -739.11
+lqr: -737.742
+lqr: -736.48
+lqr: -735.08
+lqr: -733.705
+lqr: -732.218
+lqr: -731.231
+lqr: -730.746
+lqr: -730.306
+lqr: -729.663
+lqr: -729.663
+lqr: -728.788
+lqr: -728.069
+lqr: -727.36
+lqr: -726.544
+lqr: -725.692
+lqr: -725.058
+lqr: -723.954
+lqr: -722.747
+lqr: -721.56
+lqr: -720.233
+lqr: -718.935
+lqr: -716.831
+lqr: -716.137
+lqr: -713.914
+lqr: -712.403
+lqr: -710.904
+lqr: -709.356
+lqr: -707.813
+lqr: -707.088
+lqr: -706.428
+lqr: -705.665
+lqr: -704.865
+lqr: -703.999
+lqr: -703.118
+lqr: -703.118
+lqr: -701.603
+lqr: -700.654
+lqr: -699.533
+lqr: -698.461
+lqr: -697.32
+lqr: -696.166
+lqr: -694.934
+lqr: -693.717
+lqr: -692.39
+lqr: -691.118
+lqr: -689.696
+lqr: -687.58
+lqr: -686.184
+lqr: -684.661
+lqr: -681.529
+lqr: -680.805
+lqr: -680.459
+lqr: -680.459
+lqr: -680.459
+lqr: -677.605
+lqr: -676.779
+lqr: -675.776
+lqr: -674.861
+lqr: -674.861
+lqr: -673.29
+lqr: -672.217
+lqr: -671.085
+lqr: -669.916
+lqr: -668.686
+lqr: -667.473
+lqr: -666.251
+lqr: -666.251
+lqr: -663.029
+carx: 169.523
+cary: 240.338
+FrentPoint_.S: 274.837
+FrentPoint_.D: -1.73681
+closestIndex: 4
+index: 1101
+local_start_s: 274.696
+local_start_l: -0.97424
+dl: -0.000596624
+ddl: -0.000169005
+v: 1.22352
+a: 0.137515
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000581788 秒
+qp_.Process
+Path Optimizer used time: 0.908547 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:14
+speed_dp_flag: 1
+ init_v; 1.22352 init_a: 0.137515
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0105481 秒
+lqr: -661.399
+lqr: -656.304
+lqr: -654.538
+lqr: -653.352
+lqr: -649.361
+lqr: -648.07
+lqr: -646.747
+lqr: -645.518
+lqr: -644.097
+lqr: -642.797
+lqr: -641.414
+lqr: -639.91
+lqr: -638.374
+lqr: -638.374
+lqr: -636.881
+lqr: -634.576
+lqr: -633.028
+lqr: -631.415
+lqr: -629.816
+lqr: -628.142
+lqr: -626.528
+lqr: -624.767
+lqr: -623.126
+lqr: -621.317
+lqr: -619.63
+lqr: -617.805
+lqr: -615.041
+lqr: -613.808
+lqr: -612.543
+lqr: -611.256
+lqr: -609.825
+lqr: -608.525
+lqr: -607.135
+lqr: -605.673
+lqr: -604.173
+lqr: -602.697
+lqr: -601.088
+lqr: -601.088
+lqr: -597.89
+lqr: -597.89
+lqr: -595.461
+lqr: -593.721
+lqr: -592.056
+lqr: -590.273
+lqr: -588.596
+lqr: -580.154
+lqr: -579.036
+lqr: -578.007
+lqr: -576.937
+lqr: -575.712
+lqr: -574.734
+lqr: -573.334
+lqr: -572.485
+lqr: -571.679
+lqr: -570.766
+lqr: -569.92
+lqr: -568.94
+lqr: -567.918
+lqr: -566.79
+lqr: -565.582
+lqr: -564.298
+lqr: -564.298
+lqr: -562.242
+lqr: -560.779
+lqr: -559.279
+lqr: -557.722
+lqr: -556.167
+lqr: -551.628
+lqr: -550.087
+lqr: -548.799
+lqr: -547.507
+lqr: -546.253
+lqr: -545.101
+lqr: -543.182
+lqr: -542.547
+lqr: -541.221
+lqr: -539.103
+lqr: -537.544
+lqr: -535.887
+lqr: -534.268
+lqr: -532.663
+lqr: -531.02
+lqr: -529.337
+lqr: -527.73
+lqr: -526.065
+carx: 169.337
+cary: 238.231
+FrentPoint_.S: 276.762
+FrentPoint_.D: -1.62035
+closestIndex: 4
+index: 1107
+local_start_s: 276.646
+local_start_l: -0.975558
+dl: -0.000777067
+ddl: -0.000108185
+v: 1.31475
+a: 0.145661
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000628349 秒
+qp_.Process
+Path Optimizer used time: 1.22945 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:13
+speed_dp_flag: 1
+ init_v; 1.31475 init_a: 0.145661
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0123452 秒
+lqr: -526.065
+lqr: -524.972
+lqr: -523.027
+lqr: -521.653
+lqr: -520.283
+lqr: -518.847
+lqr: -509.803
+lqr: -508.273
+lqr: -506.709
+lqr: -505.213
+lqr: -503.679
+lqr: -502.227
+lqr: -500.449
+lqr: -497.46
+lqr: -497.46
+lqr: -493.596
+lqr: -491.484
+lqr: -489.376
+lqr: -487.402
+lqr: -485.247
+lqr: -483.196
+lqr: -481.09
+lqr: -478.869
+lqr: -476.599
+lqr: -474.474
+lqr: -474.474
+lqr: -470.091
+lqr: -468.241
+lqr: -466.266
+lqr: -464.331
+lqr: -462.251
+lqr: -460.221
+lqr: -458.07
+lqr: -456.002
+lqr: -453.839
+lqr: -451.788
+lqr: -449.661
+lqr: -446.619
+lqr: -444.71
+lqr: -442.755
+lqr: -440.95
+lqr: -439.077
+lqr: -437.368
+lqr: -435.618
+lqr: -434.001
+lqr: -433.8
+lqr: -432.512
+lqr: -431.266
+lqr: -431.266
+lqr: -428.71
+lqr: -428.71
+lqr: -427.115
+lqr: -425.919
+lqr: -424.907
+lqr: -423.79
+lqr: -422.824
+lqr: -421.689
+lqr: -420.686
+lqr: -419.576
+lqr: -418.547
+lqr: -417.406
+lqr: -415.866
+lqr: -415.006
+lqr: -414.361
+lqr: -413.634
+lqr: -412.916
+lqr: -410.82
+lqr: -410.392
+lqr: -409.771
+lqr: -409.278
+lqr: -408.753
+lqr: -408.13
+lqr: -408.13
+lqr: -406.995
+lqr: -406.995
+lqr: -406.384
+lqr: -406.066
+lqr: -405.773
+lqr: -405.791
+lqr: -405.958
+lqr: -406.273
+lqr: -406.65
+lqr: -407.185
+lqr: -407.855
+lqr: -408.444
+carx: 169.39
+cary: 236.02
+FrentPoint_.S: 278.849
+FrentPoint_.D: -1.46283
+closestIndex: 4
+index: 1115
+local_start_s: 278.644
+local_start_l: -0.977193
+dl: -0.000874894
+ddl: -6.19203e-05
+v: 1.40839
+a: 0.16006
+Start_l: -1End_l: -1Delta_l: 0.5Target_v: 5 traget_l: -1
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+AllCosttime: 0.000617987 秒
+qp_.Process
+Path Optimizer used time: 1.04689 ms.
+slqp_.flag1
+getspeeduseST
+best_end_point—s: 30 best_end_point-t:12
+speed_dp_flag: 1
+ init_v; 1.40839 init_a: 0.16006
+speed_qp_: 1
+getspeeduseST over
+程序运行时间: 0.0116454 秒
+lqr: -408.982
+lqr: -409.448
+lqr: -410.076
+lqr: -410.082
+lqr: -409.809
+lqr: -409.655
+lqr: -409.231
+lqr: -408.655
+lqr: -408.337
+lqr: -407.739
+lqr: -198.725
+lqr: -198.412
+lqr: -198.412
+lqr: -198.054
+lqr: -197.824
+lqr: -197.709
+lqr: -197.622
+lqr: -197.673
+lqr: -195.781
+lqr: -196.071
+lqr: -196.447
+lqr: -196.823
+lqr: -197.289
+lqr: -197.972
+lqr: -198.209
+lqr: -198.797
+lqr: -199.188
+lqr: -199.227
+lqr: -199.354
+lqr: -199.499
+lqr: -199.626
+lqr: -199.747
+lqr: -199.872
+lqr: -198.573
+lqr: -198.648
+lqr: -198.726
+lqr: -198.726
+lqr: -198.715
+lqr: -198.688
+lqr: -198.545
+lqr: -198.439
+lqr: -198.249
+lqr: -198.128
+lqr: -197.99
+lqr: -197.926
+lqr: -197.878
+lqr: -197.887
+lqr: -197.93
+lqr: -198.062
+lqr: -198.126
+lqr: -196.087
+lqr: -196.268
+lqr: -196.426
+lqr: -196.598
+lqr: -196.786
+lqr: -196.909
+lqr: -196.995
+lqr: -197.125
+lqr: -197.161
+lqr: -197.218
+lqr: -197.218
+lqr: -197.232
+lqr: -197.241
+lqr: -197.229
+lqr: -197.23
+lqr: -197.243
+lqr: -195.137
+speedRef:0, gearsRef:11, flag:0

@@ -1,0 +1,26 @@
+[0.038s] Invoking command in '/home/mm/longshan12_2/build/can': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/can -- -j4 -l4
+[0.158s] [ 40%] Built target test1
+[0.180s] [100%] Built target can_node
+[0.218s] Invoked command in '/home/mm/longshan12_2/build/can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/can -- -j4 -l4
+[0.476s] Invoking command in '/home/mm/longshan12_2/build/can': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/can
+[0.569s] -- Install configuration: ""
+[0.570s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/ament_index/resource_index/package_run_dependencies/can
+[0.570s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/ament_index/resource_index/parent_prefix_path/can
+[0.570s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/ament_prefix_path.sh
+[0.570s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/ament_prefix_path.dsv
+[0.572s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/path.sh
+[0.586s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/path.dsv
+[0.587s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.bash
+[0.587s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.sh
+[0.587s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.zsh
+[0.587s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.dsv
+[0.587s] -- Installing: /home/mm/longshan12_2/install/can/share/can/package.dsv
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/ament_index/resource_index/packages/can
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/cmake/canConfig.cmake
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/cmake/canConfig-version.cmake
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/package.xml
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/lib/can/can_node
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/lib/can/test1
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/launch
+[0.588s] -- Up-to-date: /home/mm/longshan12_2/install/can/share/can/launch/can.launch.py
+[0.618s] Invoked command in '/home/mm/longshan12_2/build/can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/can

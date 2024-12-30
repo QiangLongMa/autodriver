@@ -1,0 +1,3 @@
+[console_scripts]
+real_time_plot = draw_messages.mymessages:main
+

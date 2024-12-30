@@ -1,0 +1,438 @@
+[0.081s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.346s] [35m[1mScanning dependencies of target control_node[0m
+[0.763s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[5.361s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:193:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[5.361s]   193 |             [01;31m[Kelse[m[K{
+[5.361s]       |             [01;31m[K^~~~[m[K
+[5.362s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:196:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[5.362s]   196 |         }
+[5.362s]       |          [01;31m[K^[m[K
+[5.362s]       |          [32m[K;[m[K
+[5.370s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In constructor ‘[01m[Kcontrol_node::control_node(std::string)[m[K’:
+[5.370s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:37:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_subscribe[m[K’ was not declared in this scope
+[5.370s]    37 |             [01;31m[Kgps_subscribe[m[K = this->create_subscription<std_msgs::msg::Float64MultiArray>("gps", 5, std::bind(&control_node::gps_callback, this, std::placeholders::_1));
+[5.370s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[5.400s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:39:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_subscribe[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_subscribers[m[K’?
+[5.400s]    39 |             [01;31m[Klocal_subscribe[m[K = this->create_subscription<std_msgs::msg::Float64MultiArray>("local_to_control_pub", 10, std::bind(&control_node::local_callback, this, std::placeholders::_1));
+[5.400s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.400s]       |             [32m[Kcount_subscribers[m[K
+[5.400s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:39:144:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_callback[m[K’ is not a member of ‘[01m[Kcontrol_node[m[K’
+[5.400s]    39 |        local_subscribe = this->create_subscription<std_msgs::msg::Float64MultiArray>("local_to_control_pub", 10, std::bind(&control_node::[01;31m[Klocal_callback[m[K, this, std::placeholders::_1));
+[5.400s]       |                                                                                                                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.400s] 
+[5.406s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:44:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_global[m[K’ was not declared in this scope
+[5.406s]    44 |             [01;31m[Ksub_global[m[K=this->create_subscription<std_msgs::msg::Float64MultiArray>("global_local_topic", 10, std::bind(&control_node::global_callback, this, std::placeholders::_1));
+[5.406s]       |             [01;31m[K^~~~~~~~~~[m[K
+[5.406s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:44:135:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_callback[m[K’ is not a member of ‘[01m[Kcontrol_node[m[K’
+[5.407s]    44 |             sub_global=this->create_subscription<std_msgs::msg::Float64MultiArray>("global_local_topic", 10, std::bind(&control_node::[01;31m[Kglobal_callback[m[K, this, std::placeholders::_1));
+[5.407s]       |                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.411s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:47:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_cam[m[K’ was not declared in this scope
+[5.411s]    47 |             [01;31m[Ksub_cam[m[K = this->create_subscription<std_msgs::msg::Float64MultiArray>("cam_pub", 10, std::bind(&control_node::cam_callback, this, std::placeholders::_1));
+[5.411s]       |             [01;31m[K^~~~~~~[m[K
+[5.411s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:47:123:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_callback[m[K’ is not a member of ‘[01m[Kcontrol_node[m[K’
+[5.411s]    47 |             sub_cam = this->create_subscription<std_msgs::msg::Float64MultiArray>("cam_pub", 10, std::bind(&control_node::[01;31m[Kcam_callback[m[K, this, std::placeholders::_1));
+[5.411s]       |                                                                                                                           [01;31m[K^~~~~~~~~~~~[m[K
+[5.414s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:50:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_lidar[m[K’ was not declared in this scope
+[5.415s]    50 |             [01;31m[Ksub_lidar[m[K = this->create_subscription<std_msgs::msg::Float64MultiArray>("pub_control_obses", 1, std::bind(&control_node::lidar_callback, this, std::placeholders::_1));
+[5.415s]       |             [01;31m[K^~~~~~~~~[m[K
+[5.415s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:50:134:[m[K [01;31m[Kerror: [m[K‘[01m[Klidar_callback[m[K’ is not a member of ‘[01m[Kcontrol_node[m[K’
+[5.415s]    50 |             sub_lidar = this->create_subscription<std_msgs::msg::Float64MultiArray>("pub_control_obses", 1, std::bind(&control_node::[01;31m[Klidar_callback[m[K, this, std::placeholders::_1));
+[5.415s]       |                                                                                                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.418s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:52:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_can[m[K’ was not declared in this scope
+[5.418s]    52 |             [01;31m[Kpub_can[m[K= this->create_publisher<std_msgs::msg::Float32MultiArray>("/control_pub",1);
+[5.418s]       |             [01;31m[K^~~~~~~[m[K
+[5.430s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:54:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_DecelerateFlag[m[K’ was not declared in this scope
+[5.430s]    54 |             [01;31m[Ksub_DecelerateFlag[m[K= this->create_subscription<std_msgs::msg::Int32>("pub_DecelerateFlag", 5, std::bind(&control_node::subDecelerateFlag, this, std::placeholders::_1));
+[5.430s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.430s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:54:131:[m[K [01;31m[Kerror: [m[K‘[01m[KsubDecelerateFlag[m[K’ is not a member of ‘[01m[Kcontrol_node[m[K’
+[5.430s]    54 |             sub_DecelerateFlag= this->create_subscription<std_msgs::msg::Int32>("pub_DecelerateFlag", 5, std::bind(&control_node::[01;31m[KsubDecelerateFlag[m[K, this, std::placeholders::_1));
+[5.430s]       |                                                                                                                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.436s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:57:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_speed[m[K’ was not declared in this scope
+[5.436s]    57 |             [01;31m[Kpub_speed[m[K = this->create_publisher<std_msgs::msg::Float32>("/speed_topic",1);
+[5.436s]       |             [01;31m[K^~~~~~~~~[m[K
+[5.443s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:58:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_error[m[K’ was not declared in this scope; did you mean ‘[01m[Kperror[m[K’?
+[5.443s]    58 |             [01;31m[Kpub_error[m[K = this->create_publisher<std_msgs::msg::Float32>("/error_topic",1);
+[5.443s]       |             [01;31m[K^~~~~~~~~[m[K
+[5.443s]       |             [32m[Kperror[m[K
+[5.447s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:59:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_steer_angle[m[K’ was not declared in this scope
+[5.447s]    59 |             [01;31m[Kpub_steer_angle[m[K = this->create_publisher<std_msgs::msg::Float32MultiArray>("/steer_angle_topic",1);
+[5.447s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.458s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:61:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_gears_subscribe[m[K’ was not declared in this scope
+[5.458s]    61 |             [01;31m[Kspeed_gears_subscribe[m[K = this->create_subscription<std_msgs::msg::Int64MultiArray>("speed_gears_pub", 10, std::bind(&control_node::speed_gears_callback, this, std::placeholders::_1));
+[5.458s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.458s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:61:143:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_gears_callback[m[K’ is not a member of ‘[01m[Kcontrol_node[m[K’
+[5.458s]    61 |         speed_gears_subscribe = this->create_subscription<std_msgs::msg::Int64MultiArray>("speed_gears_pub", 10, std::bind(&control_node::[01;31m[Kspeed_gears_callback[m[K, this, std::placeholders::_1));
+[5.458s]       |                                                                                                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[5.459s] 
+[5.462s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:65:13:[m[K [01;31m[Kerror: [m[K‘[01m[KoendTime[m[K’ was not declared in this scope
+[5.462s]    65 |             [01;31m[KoendTime[m[K = std::chrono::steady_clock::now();
+[5.462s]       |             [01;31m[K^~~~~~~~[m[K
+[5.465s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:66:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsTime[m[K’ was not declared in this scope
+[5.465s]    66 |             [01;31m[KsTime[m[K = std::chrono::steady_clock::now();
+[5.465s]       |             [01;31m[K^~~~~[m[K
+[5.467s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:68:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer0[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimegm[m[K’?
+[5.467s]    68 |             [01;31m[Ktimer0[m[K = this->create_wall_timer(std::chrono::milliseconds(20), std::bind(&control_node::timer_can_callback0, this));
+[5.467s]       |             [01;31m[K^~~~~~[m[K
+[5.467s]       |             [32m[Ktimegm[m[K
+[5.481s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:70:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kofs[m[K’ was not declared in this scope; did you mean ‘[01m[Kffs[m[K’?
+[5.481s]    70 |             [01;31m[Kofs[m[K.open(fileName);
+[5.481s]       |             [01;31m[K^~~[m[K
+[5.481s]       |             [32m[Kffs[m[K
+[5.484s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:70:22:[m[K [01;31m[Kerror: [m[K‘[01m[KfileName[m[K’ was not declared in this scope
+[5.484s]    70 |             ofs.open([01;31m[KfileName[m[K);
+[5.484s]       |                      [01;31m[K^~~~~~~~[m[K
+[5.490s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:72:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid[m[K’ was not declared in this scope
+[5.490s]    72 |             [01;31m[Kpid[m[K.setPID(kp,ki,kd);
+[5.490s]       |             [01;31m[K^~~[m[K
+[5.495s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:73:13:[m[K [01;31m[Kerror: [m[K‘[01m[KInitializeFilters[m[K’ was not declared in this scope
+[5.496s]    73 |             [01;31m[KInitializeFilters[m[K();
+[5.496s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.505s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::gps_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.505s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:80:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpsx[m[K’ was not declared in this scope
+[5.505s]    80 |                 [01;31m[Kgpsx[m[K = msg->data[0];
+[5.505s]       |                 [01;31m[K^~~~[m[K
+[5.508s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:81:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpsy[m[K’ was not declared in this scope
+[5.508s]    81 |                 [01;31m[Kgpsy[m[K = msg->data[1];
+[5.508s]       |                 [01;31m[K^~~~[m[K
+[5.510s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:82:17:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsD[m[K’ was not declared in this scope
+[5.510s]    82 |                 [01;31m[KgpsD[m[K = msg->data[2];
+[5.510s]       |                 [01;31m[K^~~~[m[K
+[5.512s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:83:17:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsS[m[K’ was not declared in this scope
+[5.512s]    83 |                 [01;31m[KgpsS[m[K = msg->data[3];
+[5.512s]       |                 [01;31m[K^~~~[m[K
+[5.514s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:84:17:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsA[m[K’ was not declared in this scope
+[5.514s]    84 |                 [01;31m[KgpsA[m[K = msg->data[7];
+[5.514s]       |                 [01;31m[K^~~~[m[K
+[5.517s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:85:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar[m[K’ was not declared in this scope; did you mean ‘[01m[Kchar[m[K’?
+[5.517s]    85 |                 [01;31m[Kcar[m[K.resize(5,1);
+[5.517s]       |                 [01;31m[K^~~[m[K
+[5.517s]       |                 [32m[Kchar[m[K
+[5.524s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::timer_can_callback0()[m[K’:
+[5.525s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:94:16:[m[K [01;31m[Kerror: [m[K‘[01m[Krun_stop_flag[m[K’ was not declared in this scope
+[5.525s]    94 |             if([01;31m[Krun_stop_flag[m[K){
+[5.525s]       |                [01;31m[K^~~~~~~~~~~~~[m[K
+[5.531s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:96:21:[m[K [01;31m[Kerror: [m[K‘[01m[KinterpolationoptTrajxy[m[K’ was not declared in this scope
+[5.532s]    96 |                 if(([01;31m[KinterpolationoptTrajxy[m[K.array() != 0.0).any() == 0||interpolationoptTrajxy.cols()== 1) {
+[5.532s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.536s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:98:21:[m[K [01;31m[Kerror: [m[K‘[01m[KnewSpeedRef[m[K’ was not declared in this scope
+[5.536s]    98 |                     [01;31m[KnewSpeedRef[m[K=0;
+[5.536s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[5.539s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:102:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_lidar[m[K’ was not declared in this scope
+[5.539s]   102 |                 if (([01;31m[Kobs_lidar[m[K.array()!=0.0).any()==0){
+[5.539s]       |                      [01;31m[K^~~~~~~~~[m[K
+[5.542s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:107:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_lidar[m[K’ was not declared in this scope
+[5.542s]   107 |                 double min_long_dis = [01;31m[Kobs_lidar[m[K.row(0).minCoeff(&minCol);
+[5.542s]       |                                       [01;31m[K^~~~~~~~~[m[K
+[5.544s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:111:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar[m[K’ was not declared in this scope; did you mean ‘[01m[Kchar[m[K’?
+[5.544s]   111 |                 if ([01;31m[Kcar[m[K.size()!=0){
+[5.544s]       |                     [01;31m[K^~~[m[K
+[5.544s]       |                     [32m[Kchar[m[K
+[5.548s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:112:45:[m[K [01;31m[Kerror: [m[K‘[01m[KglobalPath[m[K’ was not declared in this scope
+[5.548s]   112 |                     carfindClosestPoint(car,[01;31m[KglobalPath[m[K,mindex);
+[5.548s]       |                                             [01;31m[K^~~~~~~~~~[m[K
+[5.549s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:112:21:[m[K [01;31m[Kerror: [m[K‘[01m[KcarfindClosestPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Klocal::carfindClosestPoint[m[K’?
+[5.549s]   112 |                     [01;31m[KcarfindClosestPoint[m[K(car,globalPath,mindex);
+[5.549s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.549s]       |                     [32m[Klocal::carfindClosestPoint[m[K
+[5.549s] In file included from [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:13[m[K:
+[5.549s] [01m[K/home/mm/longshan12_2/src/control/./include/localFuns.h:14:10:[m[K [01;36m[Knote: [m[K‘[01m[Klocal::carfindClosestPoint[m[K’ declared here
+[5.549s]    14 |     void [01;36m[KcarfindClosestPoint[m[K(const Eigen::VectorXd& realPosition, const Eigen::MatrixXd& globalPath, int& minIndex);
+[5.549s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.549s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:114:28:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+[5.549s]   114 |                     index =[01;31m[Kmindex[m[K;
+[5.549s]       |                            [01;31m[K^~~~~~[m[K
+[5.557s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:120:70:[m[K [01;31m[Kerror: [m[K‘[01m[KinterpolationoptTrajxy[m[K’ was not declared in this scope
+[5.557s]   120 |                     int pre_closestIndex = std::min(static_cast<int>([01;31m[KinterpolationoptTrajxy[m[K.cols()-1), closestIndex+1);
+[5.557s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.561s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:120:104:[m[K [01;31m[Kerror: [m[K‘[01m[KclosestIndex[m[K’ was not declared in this scope; did you mean ‘[01m[Kpre_closestIndex[m[K’?
+[5.561s]   120 |                     int pre_closestIndex = std::min(static_cast<int>(interpolationoptTrajxy.cols()-1), [01;31m[KclosestIndex[m[K+1);
+[5.561s]       |                                                                                                        [01;31m[K^~~~~~~~~~~~[m[K
+[5.561s]       |                                                                                                        [32m[Kpre_closestIndex[m[K
+[5.566s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:126:25:[m[K [01;31m[Kerror: [m[K‘[01m[KnewSpeedRef[m[K’ was not declared in this scope
+[5.566s]   126 |                         [01;31m[KnewSpeedRef[m[K = std::abs(target_v) * 3.6;//按照局部路径里的速度进行行驶
+[5.566s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[5.570s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:128:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_v[m[K’ was not declared in this scope
+[5.570s]   128 |                         [01;31m[Kcurrent_v[m[K = current_v + a * 0.01;// v =v +at
+[5.570s]       |                         [01;31m[K^~~~~~~~~[m[K
+[5.576s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:136:29:[m[K [01;31m[Kerror: [m[K‘[01m[KnewSpeedRef[m[K’ was not declared in this scope
+[5.576s]   136 |                             [01;31m[KnewSpeedRef[m[K = std::ceil((current_v * 3.6));
+[5.576s]       |                             [01;31m[K^~~~~~~~~~~[m[K
+[5.581s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:142:29:[m[K [01;31m[Kerror: [m[K‘[01m[KnewSpeedRef[m[K’ was not declared in this scope
+[5.582s]   142 |                             [01;31m[KnewSpeedRef[m[K = std::ceil((current_v *3.6));//
+[5.582s]       |                             [01;31m[K^~~~~~~~~~~[m[K
+[5.588s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:151:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar[m[K’ was not declared in this scope; did you mean ‘[01m[Kchar[m[K’?
+[5.588s]   151 |                     vehicle_state = std::make_tuple([01;31m[Kcar[m[K(0), car(1), car(3), car(2), gpsA);
+[5.588s]       |                                                     [01;31m[K^~~[m[K
+[5.588s]       |                                                     [32m[Kchar[m[K
+[5.590s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:151:85:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsA[m[K’ was not declared in this scope
+[5.590s]   151 |                     vehicle_state = std::make_tuple(car(0), car(1), car(3), car(2), [01;31m[KgpsA[m[K);
+[5.591s]       |                                                                                     [01;31m[K^~~~[m[K
+[5.593s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:152:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kloncontroller_[m[K’ was not declared in this scope; did you mean ‘[01m[Kloncontroller[m[K’?
+[5.593s]   152 |                     [01;31m[Kloncontroller_[m[K.Init(closestIndex, vehicle_state, localpath_time);
+[5.593s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.593s]       |                     [32m[Kloncontroller[m[K
+[5.598s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:152:41:[m[K [01;31m[Kerror: [m[K‘[01m[KclosestIndex[m[K’ was not declared in this scope
+[5.598s]   152 |                     loncontroller_.Init([01;31m[KclosestIndex[m[K, vehicle_state, localpath_time);
+[5.598s]       |                                         [01;31m[K^~~~~~~~~~~~[m[K
+[5.604s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:152:70:[m[K [01;31m[Kerror: [m[K‘[01m[Klocalpath_time[m[K’ was not declared in this scope; did you mean ‘[01m[Klocaltime[m[K’?
+[5.604s]   152 |                     loncontroller_.Init(closestIndex, vehicle_state, [01;31m[Klocalpath_time[m[K);
+[5.604s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.604s]       |                                                                      [32m[Klocaltime[m[K
+[5.612s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:153:58:[m[K [01;31m[Kerror: [m[K‘[01m[KinterpolationoptTrajxy[m[K’ was not declared in this scope
+[5.612s]   153 |                     loncontroller_.ComputeControlCommand([01;31m[KinterpolationoptTrajxy[m[K, a);
+[5.612s]       |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.615s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:155:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_v[m[K’ was not declared in this scope
+[5.615s]   155 |                     [01;31m[Kcurrent_v[m[K = current_v + a * 0.01;
+[5.615s]       |                     [01;31m[K^~~~~~~~~[m[K
+[5.619s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:157:21:[m[K [01;31m[Kerror: [m[K‘[01m[KnewSpeedRef[m[K’ was not declared in this scope
+[5.619s]   157 |                     [01;31m[KnewSpeedRef[m[K = std::round(current_v * 3.6);
+[5.619s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[5.623s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:161:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_v[m[K’ was not declared in this scope
+[5.623s]   161 |                 speed_msg.data = [01;31m[Kcurrent_v[m[K;
+[5.623s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[5.630s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:162:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_speed[m[K’ was not declared in this scope
+[5.630s]   162 |                 [01;31m[Kpub_speed[m[K->publish(speed_msg);
+[5.630s]       |                 [01;31m[K^~~~~~~~~[m[K
+[5.630s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:164:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ksw[m[K’ was not declared in this scope
+[5.630s]   164 |                 [01;31m[Ksw[m[K = CalculateSteerAngle(index);
+[5.630s]       |                 [01;31m[K^~[m[K
+[5.639s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:164:22:[m[K [01;31m[Kerror: [m[K‘[01m[KCalculateSteerAngle[m[K’ was not declared in this scope
+[5.639s]   164 |                 sw = [01;31m[KCalculateSteerAngle[m[K(index);
+[5.639s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.639s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:166:30:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxIndex[m[K’ was not declared in this scope; did you mean ‘[01m[Kmindex[m[K’?
+[5.639s]   166 |                 if((index > ([01;31m[KmaxIndex[m[K - 40))){
+[5.639s]       |                              [01;31m[K^~~~~~~~[m[K
+[5.639s]       |                              [32m[Kmindex[m[K
+[5.641s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:168:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSendCan[m[K’ was not declared in this scope
+[5.641s]   168 |                     [01;31m[KSendCan[m[K(0,1,0,1,0);
+[5.641s]       |                     [01;31m[K^~~~~~~[m[K
+[5.644s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:170:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar[m[K’ was not declared in this scope; did you mean ‘[01m[Kchar[m[K’?
+[5.644s]   170 |                     std::cout << "car.v: " << [01;31m[Kcar[m[K(2) << std::endl;
+[5.644s]       |                                               [01;31m[K^~~[m[K
+[5.644s]       |                                               [32m[Kchar[m[K
+[5.646s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:171:24:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsS[m[K’ was not declared in this scope
+[5.646s]   171 |                     if([01;31m[KgpsS[m[K < 0.03){
+[5.646s]       |                        [01;31m[K^~~~[m[K
+[5.653s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:180:25:[m[K [01;31m[Kerror: [m[K‘[01m[KclosestIndex[m[K’ was not declared in this scope
+[5.653s]   180 |                     if ([01;31m[KclosestIndex[m[K > interpolationoptTrajxy.cols() - 2) { //也就是2m的距离
+[5.653s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[5.661s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:180:40:[m[K [01;31m[Kerror: [m[K‘[01m[KinterpolationoptTrajxy[m[K’ was not declared in this scope
+[5.661s]   180 |                     if (closestIndex > [01;31m[KinterpolationoptTrajxy[m[K.cols() - 2) { //也就是2m的距离
+[5.662s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.663s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:181:25:[m[K [01;31m[Kerror: [m[K‘[01m[KSendCan[m[K’ was not declared in this scope
+[5.663s]   181 |                         [01;31m[KSendCan[m[K(0,2,sw,1,1);
+[5.663s]       |                         [01;31m[K^~~~~~~[m[K
+[5.669s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:183:44:[m[K [01;31m[Kerror: [m[K‘[01m[KnewSpeedRef[m[K’ was not declared in this scope
+[5.669s]   183 |                         SendCan(std::round([01;31m[KnewSpeedRef[m[K),2,sw,0,1);
+[5.670s]       |                                            [01;31m[K^~~~~~~~~~~[m[K
+[5.673s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:183:25:[m[K [01;31m[Kerror: [m[K‘[01m[KSendCan[m[K’ was not declared in this scope
+[5.673s]   183 |                         [01;31m[KSendCan[m[K(std::round(newSpeedRef),2,sw,0,1);
+[5.673s]       |                         [01;31m[K^~~~~~~[m[K
+[5.673s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:107:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_long_dis[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.673s]   107 |                 double [01;35m[Kmin_long_dis[m[K = obs_lidar.row(0).minCoeff(&minCol);
+[5.673s]       |                        [01;35m[K^~~~~~~~~~~~[m[K
+[5.677s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid cam_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.677s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:204:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_cam[m[K’ was not declared in this scope
+[5.677s]   204 |                 [01;31m[Kobs_cam[m[K.setOnes(5, cols);
+[5.677s]       |                 [01;31m[K^~~~~~~[m[K
+[5.680s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:209:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_cam[m[K’ was not declared in this scope
+[5.680s]   209 |                 [01;31m[Kobs_cam[m[K.setZero(5, cols);
+[5.680s]       |                 [01;31m[K^~~~~~~[m[K
+[5.712s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid lidar_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.712s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:223:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_lidar[m[K’ was not declared in this scope
+[5.713s]   223 |                 [01;31m[Kobs_lidar[m[K.setOnes(2,1); //没有接收到消息 激光雷达的储存队列为1
+[5.713s]       |                 [01;31m[K^~~~~~~~~[m[K
+[5.715s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:228:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_lidar[m[K’ was not declared in this scope
+[5.715s]   228 |                 [01;31m[Kobs_lidar[m[K.resize(2,cols);
+[5.715s]       |                 [01;31m[K^~~~~~~~~[m[K
+[5.719s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid global_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.719s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:239:17:[m[K [01;31m[Kerror: [m[K‘[01m[KglobalPath[m[K’ was not declared in this scope
+[5.719s]   239 |                 [01;31m[KglobalPath[m[K.resize(7, cols);
+[5.719s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[5.721s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:241:17:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxIndex[m[K’ was not declared in this scope
+[5.721s]   241 |                 [01;31m[KmaxIndex[m[K = cols;
+[5.722s]       |                 [01;31m[K^~~~~~~~[m[K
+[5.725s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid local_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.725s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:251:17:[m[K [01;31m[Kerror: [m[K‘[01m[KoptTrajxy[m[K’ was not declared in this scope
+[5.725s]   251 |                 [01;31m[KoptTrajxy[m[K.resize(1,1);
+[5.725s]       |                 [01;31m[K^~~~~~~~~[m[K
+[5.728s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:256:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klocalpath_time[m[K’ was not declared in this scope; did you mean ‘[01m[Klocaltime[m[K’?
+[5.729s]   256 |                 [01;31m[Klocalpath_time[m[K = (int)msg->data.back();//获取车辆时间
+[5.729s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.729s]       |                 [32m[Klocaltime[m[K
+[5.732s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:261:17:[m[K [01;31m[Kerror: [m[K‘[01m[KoptTrajxy[m[K’ was not declared in this scope
+[5.732s]   261 |                 [01;31m[KoptTrajxy[m[K.resize(9, cols);
+[5.732s]       |                 [01;31m[K^~~~~~~~~[m[K
+[5.739s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:265:17:[m[K [01;31m[Kerror: [m[K‘[01m[KinterpolationoptTrajxy[m[K’ was not declared in this scope
+[5.739s]   265 |                 [01;31m[KinterpolationoptTrajxy[m[K = optTrajxy;
+[5.739s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.742s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid local_callback0(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.743s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:273:17:[m[K [01;31m[Kerror: [m[K‘[01m[KoptTrajxy0[m[K’ was not declared in this scope
+[5.743s]   273 |                 [01;31m[KoptTrajxy0[m[K.resize(1,1);
+[5.743s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[5.746s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:279:17:[m[K [01;31m[Kerror: [m[K‘[01m[KoptTrajxy0[m[K’ was not declared in this scope
+[5.747s]   279 |                 [01;31m[KoptTrajxy0[m[K.resize(9, cols);
+[5.747s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[5.754s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid speed_gears_callback(std_msgs::msg::Int64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.754s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:289:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krun_stop_flag[m[K’ was not declared in this scope
+[5.754s]   289 |             [01;31m[Krun_stop_flag[m[K = (bool)msg->data[2];
+[5.754s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[5.757s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:291:17:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedRef[m[K’ was not declared in this scope
+[5.757s]   291 |                 [01;31m[KspeedRef[m[K = msg->data[0];
+[5.758s]       |                 [01;31m[K^~~~~~~~[m[K
+[5.760s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:294:25:[m[K [01;31m[Kerror: [m[K‘[01m[KgearsRef[m[K’ was not declared in this scope
+[5.760s]   294 |                         [01;31m[KgearsRef[m[K = 0xB;
+[5.760s]       |                         [01;31m[K^~~~~~~~[m[K
+[5.764s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:298:25:[m[K [01;31m[Kerror: [m[K‘[01m[KgearsRef[m[K’ was not declared in this scope
+[5.765s]   298 |                         [01;31m[KgearsRef[m[K = 0xA;
+[5.765s]       |                         [01;31m[K^~~~~~~~[m[K
+[5.768s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:302:25:[m[K [01;31m[Kerror: [m[K‘[01m[KgearsRef[m[K’ was not declared in this scope
+[5.768s]   302 |                         [01;31m[KgearsRef[m[K = 0x1;
+[5.769s]       |                         [01;31m[K^~~~~~~~[m[K
+[5.771s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:306:25:[m[K [01;31m[Kerror: [m[K‘[01m[KgearsRef[m[K’ was not declared in this scope
+[5.771s]   306 |                         [01;31m[KgearsRef[m[K = 0x9;
+[5.771s]       |                         [01;31m[K^~~~~~~~[m[K
+[5.774s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:313:41:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedRef[m[K’ was not declared in this scope
+[5.774s]   313 |             std::cout << "speedRef:" << [01;31m[KspeedRef[m[K << ", "<< "gearsRef:" << gearsRef << ", "<< "flag:" << run_stop_flag << std::endl;
+[5.774s]       |                                         [01;31m[K^~~~~~~~[m[K
+[5.777s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:313:75:[m[K [01;31m[Kerror: [m[K‘[01m[KgearsRef[m[K’ was not declared in this scope
+[5.777s]   313 |             std::cout << "speedRef:" << speedRef << ", "<< "gearsRef:" << [01;31m[KgearsRef[m[K << ", "<< "flag:" << run_stop_flag << std::endl;
+[5.777s]       |                                                                           [01;31m[K^~~~~~~~[m[K
+[5.783s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid subDecelerateFlag(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.783s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:319:17:[m[K [01;31m[Kerror: [m[K‘[01m[KDecelerateFlag[m[K’ was not declared in this scope; did you mean ‘[01m[KsubDecelerateFlag[m[K’?
+[5.783s]   319 |                 [01;31m[KDecelerateFlag[m[K=false;
+[5.783s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.783s]       |                 [32m[KsubDecelerateFlag[m[K
+[5.787s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:321:17:[m[K [01;31m[Kerror: [m[K‘[01m[KDecelerateFlag[m[K’ was not declared in this scope; did you mean ‘[01m[KsubDecelerateFlag[m[K’?
+[5.787s]   321 |                 [01;31m[KDecelerateFlag[m[K=true;
+[5.787s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.787s]       |                 [32m[KsubDecelerateFlag[m[K
+[5.789s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid SendCan(double, int, double, int, int)[m[K’:
+[5.789s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:332:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_can[m[K’ was not declared in this scope
+[5.789s]   332 |             [01;31m[Kpub_can[m[K->publish(msg);
+[5.789s]       |             [01;31m[K^~~~~~~[m[K
+[5.794s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid InitializeFilters()[m[K’:
+[5.794s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:377:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdigital_filter_[m[K’ was not declared in this scope; did you mean ‘[01m[KDigitalFilter[m[K’?
+[5.794s]   377 |             [01;31m[Kdigital_filter_[m[K.set_coefficients(den, num);
+[5.794s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.794s]       |             [32m[KDigitalFilter[m[K
+[5.797s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In function ‘[01m[Kdouble CalculateSteerAngle(const int&)[m[K’:
+[5.797s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:381:47:[m[K [01;31m[Kerror: [m[K‘[01m[KglobalPath[m[K’ was not declared in this scope
+[5.797s]   381 |             int pre_index = (minindex + 8) > ([01;31m[KglobalPath[m[K.cols()-1) ?
+[5.797s]       |                                               [01;31m[K^~~~~~~~~~[m[K
+[5.799s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:383:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprepoint[m[K’ was not declared in this scope
+[5.799s]   383 |             [01;31m[Kprepoint[m[K = 0;//弯道时预瞄距离变短两个点的育苗 1m
+[5.799s]       |             [01;31m[K^~~~~~~~[m[K
+[5.800s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:385:17:[m[K [01;31m[Kerror: [m[K‘[01m[KQ[m[K’ was not declared in this scope
+[5.800s]   385 |                 [01;31m[KQ[m[K <<100,  0,  0,
+[5.800s]       |                 [01;31m[K^[m[K
+[5.803s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:388:17:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+[5.803s]   388 |                 [01;31m[KR[m[K << 0, 0, 0, 4;
+[5.803s]       |                 [01;31m[K^[m[K
+[5.805s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:390:17:[m[K [01;31m[Kerror: [m[K‘[01m[KQ[m[K’ was not declared in this scope
+[5.805s]   390 |                 [01;31m[KQ[m[K <<20,  0,  0,
+[5.805s]       |                 [01;31m[K^[m[K
+[5.807s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:393:17:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+[5.807s]   393 |                 [01;31m[KR[m[K << 0, 0, 0, 4;
+[5.807s]       |                 [01;31m[K^[m[K
+[5.809s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:396:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar[m[K’ was not declared in this scope; did you mean ‘[01m[Kchar[m[K’?
+[5.809s]   396 |             local::findClosestPoint([01;31m[Kcar[m[K, interpolationoptTrajxy, closestIndex);
+[5.809s]       |                                     [01;31m[K^~~[m[K
+[5.809s]       |                                     [32m[Kchar[m[K
+[5.825s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:396:42:[m[K [01;31m[Kerror: [m[K‘[01m[KinterpolationoptTrajxy[m[K’ was not declared in this scope
+[5.825s]   396 |             local::findClosestPoint(car, [01;31m[KinterpolationoptTrajxy[m[K, closestIndex);
+[5.825s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.826s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:396:66:[m[K [01;31m[Kerror: [m[K‘[01m[KclosestIndex[m[K’ was not declared in this scope
+[5.827s]   396 |             local::findClosestPoint(car, interpolationoptTrajxy, [01;31m[KclosestIndex[m[K);
+[5.827s]       |                                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[5.830s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:398:54:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsS[m[K’ was not declared in this scope
+[5.830s]   398 |             double preview_distance = preview_time * [01;31m[KgpsS[m[K;
+[5.830s]       |                                                      [01;31m[K^~~~[m[K
+[5.836s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:410:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_error[m[K’ was not declared in this scope; did you mean ‘[01m[Kperror[m[K’?
+[5.836s]   410 |             [01;31m[Kpub_error[m[K->publish(error_msg);
+[5.836s]       |             [01;31m[K^~~~~~~~~[m[K
+[5.837s]       |             [32m[Kperror[m[K
+[5.840s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:419:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kref_delta[m[K’ was not declared in this scope
+[5.841s]   419 |             [01;31m[Kref_delta[m[K = atan2(car(4) * interpolationoptTrajxy(4, pre_closestIndex), 1);
+[5.841s]       |             [01;31m[K^~~~~~~~~[m[K
+[5.847s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:419:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_closestIndex[m[K’ was not declared in this scope
+[5.847s]   419 |             ref_delta = atan2(car(4) * interpolationoptTrajxy(4, [01;31m[Kpre_closestIndex[m[K), 1);
+[5.847s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.851s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:13:[m[K [01;31m[Kerror: [m[K‘[01m[KLQR[m[K’ was not declared in this scope
+[5.851s]   420 |             [01;31m[KLQR[m[K.stateSpaceMatrix(A, B, car, cps, ref_delta, theta);
+[5.851s]       |             [01;31m[K^~~[m[K
+[5.857s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:34:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+[5.857s]   420 |             LQR.stateSpaceMatrix([01;31m[KA[m[K, B, car, cps, ref_delta, theta);
+[5.857s]       |                                  [01;31m[K^[m[K
+[5.860s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:37:[m[K [01;31m[Kerror: [m[K‘[01m[KB[m[K’ was not declared in this scope
+[5.860s]   420 |             LQR.stateSpaceMatrix(A, [01;31m[KB[m[K, car, cps, ref_delta, theta);
+[5.860s]       |                                     [01;31m[K^[m[K
+[5.861s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kcps[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+[5.862s]   420 |             LQR.stateSpaceMatrix(A, B, car, [01;31m[Kcps[m[K, ref_delta, theta);
+[5.862s]       |                                             [01;31m[K^~~[m[K
+[5.862s]       |                                             [32m[Kcos[m[K
+[5.863s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:422:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ku[m[K’ was not declared in this scope
+[5.863s]   422 |             [01;31m[Ku[m[K=LQR.calcU(car, interpolationoptTrajxy, Projection_point_message, A, B, Q, R)(1);
+[5.863s]       |             [01;31m[K^[m[K
+[5.865s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:422:86:[m[K [01;31m[Kerror: [m[K‘[01m[KQ[m[K’ was not declared in this scope
+[5.865s]   422 |             u=LQR.calcU(car, interpolationoptTrajxy, Projection_point_message, A, B, [01;31m[KQ[m[K, R)(1);
+[5.865s]       |                                                                                      [01;31m[K^[m[K
+[5.867s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:422:89:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+[5.868s]   422 |             u=LQR.calcU(car, interpolationoptTrajxy, Projection_point_message, A, B, Q, [01;31m[KR[m[K)(1);
+[5.868s]       |                                                                                         [01;31m[K^[m[K
+[5.872s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:430:35:[m[K [01;31m[Kerror: [m[K‘[01m[KK[m[K’ was not declared in this scope
+[5.872s]   430 |             std::cout<<"lqr: " << [01;31m[KK[m[K * u <<std::endl;
+[5.872s]       |                                   [01;31m[K^[m[K
+[5.874s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:452:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kswth[m[K’ was not declared in this scope
+[5.874s]   452 |             if (steerangle > [01;31m[Kswth[m[K) {
+[5.875s]       |                              [01;31m[K^~~~[m[K
+[5.877s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:457:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kdigital_filter_[m[K’ was not declared in this scope; did you mean ‘[01m[KDigitalFilter[m[K’?
+[5.877s]   457 |             double filter_steer_angle = [01;31m[Kdigital_filter_[m[K.Filter(steerangle);
+[5.878s]       |                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.878s]       |                                         [32m[KDigitalFilter[m[K
+[5.881s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:461:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_steer_angle[m[K’ was not declared in this scope; did you mean ‘[01m[Ksteerangle[m[K’?
+[5.881s]   461 |             [01;31m[Kpub_steer_angle[m[K->publish(steer_angle_msg);
+[5.881s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.881s]       |             [32m[Ksteerangle[m[K
+[5.881s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:398:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpreview_distance[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.881s]   398 |             double [01;35m[Kpreview_distance[m[K = preview_time * gpsS;
+[5.881s]       |                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[5.881s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:411:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.881s]   411 |             double [01;35m[KdeltaX[m[K =  dx;
+[5.881s]       |                    [01;35m[K^~~~~~[m[K
+[5.881s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:412:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.881s]   412 |             double [01;35m[KdeltaY[m[K =  dy;
+[5.882s]       |                    [01;35m[K^~~~~~[m[K
+[5.882s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:413:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.882s]   413 |             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+[5.882s]       |                    [01;35m[K^~~~~~~~[m[K
+[5.882s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K At global scope:
+[5.882s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:465:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[5.882s]   465 |     [01;31m[Kprivate[m[K:
+[5.882s]       |     [01;31m[K^~~~~~~[m[K
+[5.993s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:564:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kint index[m[K’ redeclared as different kind of entity
+[5.994s]   564 |         int [01;31m[Kindex[m[K = 0;
+[5.994s]       |             [01;31m[K^~~~~[m[K
+[5.994s] In file included from [01m[K/usr/include/string.h:432[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rcutils/error_handling.h:34[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rcutils/logging.h:23[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rmw/types.h:28[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rcl/types.h:18[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rcl/arguments.h:20[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rcl/context.h:26[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rcl/guard_condition.h:24[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:29[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[5.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.994s]                  from [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:1[m[K:
+[5.994s] [01m[K/usr/include/strings.h:50:20:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kconst char* index(const char*, int)[m[K’
+[5.994s]    50 | extern const char *[01;36m[Kindex[m[K (const char *__s, int __c)
+[5.995s]       |                    [01;36m[K^~~~~[m[K
+[5.997s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:594:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[5.997s]   594 | [01;31m[K}[m[K;
+[5.998s]       | [01;31m[K^[m[K
+[8.324s] make[2]: *** [CMakeFiles/control_node.dir/build.make:76：CMakeFiles/control_node.dir/src/control_node.cpp.o] 错误 1
+[8.325s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+[8.326s] make: *** [Makefile:141：all] 错误 2
+[8.331s] Invoked command in '/home/mm/longshan12_2/build/control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4

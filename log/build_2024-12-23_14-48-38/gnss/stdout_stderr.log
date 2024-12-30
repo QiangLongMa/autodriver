@@ -1,0 +1,17 @@
+[  8%] Built target gnss__rosidl_generator_c
+[ 10%] Built target gnss__cpp
+[ 19%] Built target gnss__rosidl_typesupport_introspection_c
+[ 28%] Built target gnss__rosidl_typesupport_introspection_cpp
+[ 39%] Built target gnss__rosidl_typesupport_cpp
+[ 46%] Built target gnss__rosidl_typesupport_c
+[ 55%] Built target gnss__rosidl_typesupport_fastrtps_cpp
+[ 64%] Built target gnss__rosidl_typesupport_fastrtps_c
+[ 64%] Built target gnss
+[ 66%] Built target gnss__py
+[ 73%] Built target gnss__python
+[ 76%] Built target gnss_sync_node
+[ 85%] Built target gnss_lib
+[ 89%] Built target gnss__rosidl_typesupport_fastrtps_c__pyext
+[ 92%] Built target gnss__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target gnss__rosidl_typesupport_c__pyext
+[100%] Built target gnss_node

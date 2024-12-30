@@ -1,0 +1,14 @@
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:[m[K In member function ‘[01m[Kvoid local_dp_qp::GetSpeedLimit(Eigen::MatrixXd&, std::vector<Eigen::Matrix<double, 4, 1> >&, std::vector<double, std::allocator<double> >&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:812:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+  812 |     }else{vehicle_position
+      |                           [01;31m[K^[m[K
+      |                           [32m[K;[m[K
+  813 |       [32m[Kdouble[m[K speed = speedlimit_.front();
+      |       [32m[K~~~~~~[m[K               
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:814:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope; did you mean ‘[01m[Kspeed_[m[K’?
+  814 |       double delta_speed = [01;31m[Kspeed[m[K / speedlimit_.size();//
+      |                            [01;31m[K^~~~~[m[K
+      |                            [32m[Kspeed_[m[K
+make[2]: *** [CMakeFiles/local_node4.dir/build.make:141：CMakeFiles/local_node4.dir/src/local_dp_qp.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/local_node4.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

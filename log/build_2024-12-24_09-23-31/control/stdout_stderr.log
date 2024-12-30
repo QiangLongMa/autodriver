@@ -1,0 +1,43 @@
+[35m[1mScanning dependencies of target control_node[0m
+[  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/controlmath.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:[m[K In function ‘[01m[Kint control_math::findcloseindex(const MatrixXd&, int&, const double&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:11:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+   11 |         for (size_t i = startindex; [01;35m[Ki < endindex[m[K; ++i) {
+      |                                     [01;35m[K~~^~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:[m[K In function ‘[01m[Kvoid control_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:50:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[KEigen::Index[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   50 |         for (size_t i = 0; [01;35m[Ki < localpath.cols()[m[K; ++i){
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kdouble control_node::CalculateSteerAngle(const int&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:418:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  418 |             double [01;35m[KdeltaX[m[K =  dx;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:419:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  419 |             double [01;35m[KdeltaY[m[K =  dy;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  420 |             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+      |                    [01;35m[K^~~~~~~~[m[K
+[ 21%] [32m[1mLinking CXX executable control_node[0m
+[100%] Built target control_node
+-- Install configuration: ""
+-- Installing: /home/mm/longshan12_2/install/control/lib/control/control_node
+-- Set runtime path of "/home/mm/longshan12_2/install/control/lib/control/control_node" to ""
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch/control.launch.py
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/package_run_dependencies/control
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/parent_prefix_path/control
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.bash
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.sh
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.zsh
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.dsv
+-- Installing: /home/mm/longshan12_2/install/control/share/control/package.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/packages/control
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig-version.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/package.xml

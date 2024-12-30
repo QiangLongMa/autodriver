@@ -1,0 +1,17 @@
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::timer_can_callback0()[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:107:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_long_dis[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  107 |                 double [01;35m[Kmin_long_dis[m[K = obs_lidar.row(0).minCoeff(&minCol);
+      |                        [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kdouble control_node::CalculateSteerAngle(const int&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:398:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpreview_distance[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  398 |             double [01;35m[Kpreview_distance[m[K = preview_time * gpsS;
+      |                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:411:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  411 |             double [01;35m[KdeltaX[m[K =  dx;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:412:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  412 |             double [01;35m[KdeltaY[m[K =  dy;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:413:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  413 |             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+      |                    [01;35m[K^~~~~~~~[m[K

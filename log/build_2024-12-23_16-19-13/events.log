@@ -1,0 +1,955 @@
+[0.000000] (-) TimerEvent: {}
+[0.000815] (can) JobQueued: {'identifier': 'can', 'dependencies': OrderedDict()}
+[0.000905] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict()}
+[0.000962] (dipgseg) JobQueued: {'identifier': 'dipgseg', 'dependencies': OrderedDict()}
+[0.001025] (draw_messages) JobQueued: {'identifier': 'draw_messages', 'dependencies': OrderedDict()}
+[0.001075] (gnss) JobQueued: {'identifier': 'gnss', 'dependencies': OrderedDict()}
+[0.001120] (hmi) JobQueued: {'identifier': 'hmi', 'dependencies': OrderedDict()}
+[0.001164] (lidar_processing) JobQueued: {'identifier': 'lidar_processing', 'dependencies': OrderedDict()}
+[0.001207] (myrviz) JobQueued: {'identifier': 'myrviz', 'dependencies': OrderedDict()}
+[0.001250] (ros2_path_interfaces) JobQueued: {'identifier': 'ros2_path_interfaces', 'dependencies': OrderedDict()}
+[0.001301] (global) JobQueued: {'identifier': 'global', 'dependencies': OrderedDict([('ros2_path_interfaces', '/home/mm/longshan12_2/install/ros2_path_interfaces')])}
+[0.001368] (local) JobQueued: {'identifier': 'local', 'dependencies': OrderedDict([('ros2_path_interfaces', '/home/mm/longshan12_2/install/ros2_path_interfaces')])}
+[0.001424] (ros2_path_interfaces) JobStarted: {'identifier': 'ros2_path_interfaces'}
+[0.020231] (can) JobStarted: {'identifier': 'can'}
+[0.049122] (control) JobStarted: {'identifier': 'control'}
+[0.056197] (dipgseg) JobStarted: {'identifier': 'dipgseg'}
+[0.084713] (ros2_path_interfaces) JobProgress: {'identifier': 'ros2_path_interfaces', 'progress': 'cmake'}
+[0.087172] (ros2_path_interfaces) JobProgress: {'identifier': 'ros2_path_interfaces', 'progress': 'build'}
+[0.087293] (ros2_path_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/ros2_path_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/ros2_path_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/ros2_path_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.101759] (-) TimerEvent: {}
+[0.105947] (can) JobProgress: {'identifier': 'can', 'progress': 'cmake'}
+[0.108945] (can) JobProgress: {'identifier': 'can', 'progress': 'build'}
+[0.117635] (can) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/can', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/can', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/can'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.134502] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.149175] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.177242] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/control', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.201811] (-) TimerEvent: {}
+[0.258749] (dipgseg) JobProgress: {'identifier': 'dipgseg', 'progress': 'cmake'}
+[0.266917] (dipgseg) JobProgress: {'identifier': 'dipgseg', 'progress': 'build'}
+[0.272644] (dipgseg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/dipgseg', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/dipgseg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/dipgseg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.304189] (-) TimerEvent: {}
+[0.405188] (-) TimerEvent: {}
+[0.498891] (ros2_path_interfaces) StdoutLine: {'line': b'[  3%] Built target ros2_path_interfaces__cpp\n'}
+[0.509439] (-) TimerEvent: {}
+[0.547969] (ros2_path_interfaces) StdoutLine: {'line': b'[ 12%] Built target ros2_path_interfaces__rosidl_generator_c\n'}
+[0.614923] (-) TimerEvent: {}
+[0.632862] (can) StdoutLine: {'line': b'[ 40%] Built target test1\n'}
+[0.681203] (can) StdoutLine: {'line': b'[100%] Built target can_node\n'}
+[0.715467] (-) TimerEvent: {}
+[0.740393] (can) CommandEnded: {'returncode': 0}
+[0.742008] (ros2_path_interfaces) StdoutLine: {'line': b'[ 22%] Built target ros2_path_interfaces__rosidl_typesupport_cpp\n'}
+[0.787427] (ros2_path_interfaces) StdoutLine: {'line': b'[ 32%] Built target ros2_path_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.813419] (ros2_path_interfaces) StdoutLine: {'line': b'[ 41%] Built target ros2_path_interfaces__rosidl_typesupport_c\n'}
+[0.815752] (-) TimerEvent: {}
+[0.857053] (dipgseg) StdoutLine: {'line': b'[100%] Built target demo_node\n'}
+[0.868584] (ros2_path_interfaces) StdoutLine: {'line': b'[ 51%] Built target ros2_path_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.916282] (-) TimerEvent: {}
+[0.935473] (control) StdoutLine: {'line': b'[100%] Built target control_node\n'}
+[0.939846] (ros2_path_interfaces) StdoutLine: {'line': b'[ 61%] Built target ros2_path_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.950289] (dipgseg) CommandEnded: {'returncode': 0}
+[0.982158] (ros2_path_interfaces) StdoutLine: {'line': b'[ 70%] Built target ros2_path_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.005990] (control) CommandEnded: {'returncode': 0}
+[1.017261] (-) TimerEvent: {}
+[1.034425] (can) JobProgress: {'identifier': 'can', 'progress': 'install'}
+[1.076266] (ros2_path_interfaces) StdoutLine: {'line': b'[ 70%] Built target ros2_path_interfaces\n'}
+[1.090331] (can) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/can'], 'cwd': '/home/mm/longshan12_2/build/can', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/can'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.122414] (dipgseg) JobProgress: {'identifier': 'dipgseg', 'progress': 'install'}
+[1.123647] (-) TimerEvent: {}
+[1.137758] (dipgseg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/dipgseg'], 'cwd': '/home/mm/longshan12_2/build/dipgseg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/dipgseg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.157090] (can) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.157535] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/ament_index/resource_index/package_run_dependencies/can\n'}
+[1.157746] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/ament_index/resource_index/parent_prefix_path/can\n'}
+[1.158001] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/ament_prefix_path.sh\n'}
+[1.158376] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/ament_prefix_path.dsv\n'}
+[1.159222] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/path.sh\n'}
+[1.160153] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/environment/path.dsv\n'}
+[1.165268] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.bash\n'}
+[1.165619] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.sh\n'}
+[1.165761] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.zsh\n'}
+[1.165884] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/local_setup.dsv\n'}
+[1.165977] (can) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/can/share/can/package.dsv\n'}
+[1.166049] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/ament_index/resource_index/packages/can\n'}
+[1.166135] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/cmake/canConfig.cmake\n'}
+[1.166222] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/cmake/canConfig-version.cmake\n'}
+[1.166290] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/package.xml\n'}
+[1.166388] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/lib/can/can_node\n'}
+[1.166471] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/lib/can/test1\n'}
+[1.166536] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/launch\n'}
+[1.166639] (can) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/can/share/can/launch/can.launch.py\n'}
+[1.172744] (dipgseg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.173022] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/lib/dipgseg/demo_node\n'}
+[1.173230] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/launch\n'}
+[1.173365] (can) CommandEnded: {'returncode': 0}
+[1.186293] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/launch/run.launch.py\n'}
+[1.186868] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/package_run_dependencies/dipgseg\n'}
+[1.187124] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/parent_prefix_path/dipgseg\n'}
+[1.187503] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/ament_prefix_path.sh\n'}
+[1.188348] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/ament_prefix_path.dsv\n'}
+[1.188584] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/path.sh\n'}
+[1.188912] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/path.dsv\n'}
+[1.189087] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.bash\n'}
+[1.189628] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.sh\n'}
+[1.190351] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.zsh\n'}
+[1.213513] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.dsv\n'}
+[1.215189] (dipgseg) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.dsv\n'}
+[1.215557] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/packages/dipgseg\n'}
+[1.215717] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/cmake/dipgsegConfig.cmake\n'}
+[1.215838] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/cmake/dipgsegConfig-version.cmake\n'}
+[1.215905] (dipgseg) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.xml\n'}
+[1.216000] (ros2_path_interfaces) StdoutLine: {'line': b'[ 74%] Built target ros2_path_interfaces__py\n'}
+[1.225469] (-) TimerEvent: {}
+[1.304073] (dipgseg) CommandEnded: {'returncode': 0}
+[1.327617] (-) TimerEvent: {}
+[1.341187] (ros2_path_interfaces) StdoutLine: {'line': b'[ 80%] Built target ros2_path_interfaces__python\n'}
+[1.437614] (control) JobProgress: {'identifier': 'control', 'progress': 'install'}
+[1.438063] (-) TimerEvent: {}
+[1.439276] (control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/control'], 'cwd': '/home/mm/longshan12_2/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.538536] (-) TimerEvent: {}
+[1.539127] (ros2_path_interfaces) StdoutLine: {'line': b'[ 87%] Built target ros2_path_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.570586] (ros2_path_interfaces) StdoutLine: {'line': b'[ 93%] Built target ros2_path_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.602128] (control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.603222] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/lib/control/control_node\n'}
+[1.603445] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch\n'}
+[1.603530] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch/control.launch.py\n'}
+[1.603641] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/package_run_dependencies/control\n'}
+[1.603715] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/parent_prefix_path/control\n'}
+[1.603871] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.sh\n'}
+[1.603996] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.dsv\n'}
+[1.604106] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.sh\n'}
+[1.604180] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.dsv\n'}
+[1.604247] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.bash\n'}
+[1.604354] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.sh\n'}
+[1.604472] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.zsh\n'}
+[1.624293] (ros2_path_interfaces) StdoutLine: {'line': b'[100%] Built target ros2_path_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.628532] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.dsv\n'}
+[1.634551] (control) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/control/share/control/package.dsv\n'}
+[1.634907] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/packages/control\n'}
+[1.635133] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig.cmake\n'}
+[1.635491] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig-version.cmake\n'}
+[1.635798] (control) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/control/share/control/package.xml\n'}
+[1.638853] (-) TimerEvent: {}
+[1.673766] (dipgseg) JobEnded: {'identifier': 'dipgseg', 'rc': 0}
+[1.680841] (draw_messages) JobStarted: {'identifier': 'draw_messages'}
+[1.706515] (control) CommandEnded: {'returncode': 0}
+[1.754019] (-) TimerEvent: {}
+[1.788354] (ros2_path_interfaces) CommandEnded: {'returncode': 0}
+[1.841510] (can) JobEnded: {'identifier': 'can', 'rc': 0}
+[1.851262] (gnss) JobStarted: {'identifier': 'gnss'}
+[1.854494] (-) TimerEvent: {}
+[1.955148] (-) TimerEvent: {}
+[2.056332] (-) TimerEvent: {}
+[2.157535] (-) TimerEvent: {}
+[2.258496] (-) TimerEvent: {}
+[2.360433] (-) TimerEvent: {}
+[2.462243] (-) TimerEvent: {}
+[2.565582] (-) TimerEvent: {}
+[2.605531] (gnss) JobProgress: {'identifier': 'gnss', 'progress': 'cmake'}
+[2.607269] (gnss) JobProgress: {'identifier': 'gnss', 'progress': 'build'}
+[2.607821] (gnss) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/gnss', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/gnss', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/gnss'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.675179] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[2.678336] (-) TimerEvent: {}
+[2.690455] (ros2_path_interfaces) JobProgress: {'identifier': 'ros2_path_interfaces', 'progress': 'install'}
+[2.691111] (ros2_path_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/ros2_path_interfaces'], 'cwd': '/home/mm/longshan12_2/build/ros2_path_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/ros2_path_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.709096] (hmi) JobStarted: {'identifier': 'hmi'}
+[2.759437] (ros2_path_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.761816] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_path_interfaces\n'}
+[2.762773] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces\n'}
+[2.763708] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv\n'}
+[2.764230] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/path_interfaces.h\n'}
+[2.764697] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail\n'}
+[2.768374] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.h\n'}
+[2.768644] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__struct.h\n'}
+[2.768912] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__functions.h\n'}
+[2.771179] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__functions.c\n'}
+[2.771507] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg\n'}
+[2.771718] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.771927] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/library_path.sh\n'}
+[2.772101] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/library_path.dsv\n'}
+[2.772312] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_generator_c.so\n'}
+[2.772504] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces\n'}
+[2.772650] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv\n'}
+[2.772841] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail\n'}
+[2.774434] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_fastrtps_c.h\n'}
+[2.774649] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg\n'}
+[2.774799] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.774998] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.775128] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces\n'}
+[2.775246] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv\n'}
+[2.775395] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail\n'}
+[2.775524] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/dds_fastrtps\n'}
+[2.775683] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.779085] (-) TimerEvent: {}
+[2.834644] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg\n'}
+[2.855320] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.855582] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.855804] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces\n'}
+[2.855951] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv\n'}
+[2.856072] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail\n'}
+[2.856200] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_introspection_c.h\n'}
+[2.856371] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.c\n'}
+[2.856510] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg\n'}
+[2.856644] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.856801] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.856937] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_c.so\n'}
+[2.857070] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces\n'}
+[2.857355] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv\n'}
+[2.857641] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/path_interfaces.hpp\n'}
+[2.857840] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail\n'}
+[2.858137] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__traits.hpp\n'}
+[2.858312] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__struct.hpp\n'}
+[2.858431] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.hpp\n'}
+[2.858541] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__builder.hpp\n'}
+[2.858748] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg\n'}
+[2.858884] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.859266] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces\n'}
+[2.859606] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv\n'}
+[2.860452] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail\n'}
+[2.873108] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.873232] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/include/ros2_path_interfaces/srv/detail/path_interfaces__type_support.cpp\n'}
+[2.873321] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.873429] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.873530] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/pythonpath.sh\n'}
+[2.873650] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/pythonpath.dsv\n'}
+[2.873733] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/__init__.py\n'}
+[2.873821] (hmi) JobProgress: {'identifier': 'hmi', 'progress': 'cmake'}
+[2.873855] (hmi) JobProgress: {'identifier': 'hmi', 'progress': 'build'}
+[2.873890] (hmi) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/hmi', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/hmi', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/hmi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.885749] (-) TimerEvent: {}
+[2.986743] (-) TimerEvent: {}
+[3.068255] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv\n'}
+[3.068839] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv/__init__.py\n'}
+[3.069376] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv/_path_interfaces.py\n'}
+[3.069563] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/srv/_path_interfaces_s.c\n'}
+[3.069773] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/ros2_path_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.069972] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/ros2_path_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.070363] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages/ros2_path_interfaces/ros2_path_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.070526] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/lib/libros2_path_interfaces__python.so\n'}
+[3.070675] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces.idl\n'}
+[3.070797] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces.srv\n'}
+[3.070896] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces_Request.msg\n'}
+[3.071047] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/srv/PathInterfaces_Response.msg\n'}
+[3.071125] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_path_interfaces\n'}
+[3.072275] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_path_interfaces\n'}
+[3.072375] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/ament_prefix_path.sh\n'}
+[3.072555] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.072672] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/path.sh\n'}
+[3.072747] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/environment/path.dsv\n'}
+[3.072915] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.bash\n'}
+[3.073052] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.sh\n'}
+[3.073128] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.zsh\n'}
+[3.073218] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/local_setup.dsv\n'}
+[3.073348] (ros2_path_interfaces) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.dsv\n'}
+[3.073547] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ament_index/resource_index/packages/ros2_path_interfaces\n'}
+[3.073630] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.084139] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.084739] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.084977] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.085099] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.085316] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.085477] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.085576] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.085690] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.085781] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.085884] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.085962] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.086032] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.086104] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.086220] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.086292] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.086398] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.086474] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.086543] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfacesConfig.cmake\n'}
+[3.086651] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/cmake/ros2_path_interfacesConfig-version.cmake\n'}
+[3.086724] (-) TimerEvent: {}
+[3.087047] (ros2_path_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.xml\n'}
+[3.101016] (ros2_path_interfaces) CommandEnded: {'returncode': 0}
+[3.189708] (-) TimerEvent: {}
+[3.195336] (gnss) StdoutLine: {'line': b'[  8%] Built target gnss__rosidl_generator_c\n'}
+[3.210460] (gnss) StdoutLine: {'line': b'[ 10%] Built target gnss__cpp\n'}
+[3.289832] (-) TimerEvent: {}
+[3.398538] (-) TimerEvent: {}
+[3.431137] (gnss) StdoutLine: {'line': b'[ 19%] Built target gnss__rosidl_typesupport_introspection_c\n'}
+[3.445961] (gnss) StdoutLine: {'line': b'[ 28%] Built target gnss__rosidl_typesupport_c\n'}
+[3.499945] (-) TimerEvent: {}
+[3.603036] (-) TimerEvent: {}
+[3.621612] (gnss) StdoutLine: {'line': b'[ 37%] Built target gnss__rosidl_typesupport_cpp\n'}
+[3.638929] (gnss) StdoutLine: {'line': b'[ 46%] Built target gnss__rosidl_typesupport_introspection_cpp\n'}
+[3.705489] (-) TimerEvent: {}
+[3.715286] (gnss) StdoutLine: {'line': b'[ 55%] Built target gnss__rosidl_typesupport_fastrtps_cpp\n'}
+[3.809315] (-) TimerEvent: {}
+[3.832533] (hmi) StdoutLine: {'line': b'[100%] Built target hmi\n'}
+[3.925264] (-) TimerEvent: {}
+[3.942616] (ros2_path_interfaces) JobEnded: {'identifier': 'ros2_path_interfaces', 'rc': 0}
+[3.943740] (lidar_processing) JobStarted: {'identifier': 'lidar_processing'}
+[3.970106] (gnss) StdoutLine: {'line': b'[ 64%] Built target gnss__rosidl_typesupport_fastrtps_c\n'}
+[3.984663] (hmi) CommandEnded: {'returncode': 0}
+[4.006849] (lidar_processing) JobProgress: {'identifier': 'lidar_processing', 'progress': 'cmake'}
+[4.024988] (lidar_processing) JobProgress: {'identifier': 'lidar_processing', 'progress': 'build'}
+[4.025260] (lidar_processing) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/lidar_processing', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/lidar_processing', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/lidar_processing'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.027000] (-) TimerEvent: {}
+[4.130820] (-) TimerEvent: {}
+[4.169284] (gnss) StdoutLine: {'line': b'[ 64%] Built target gnss\n'}
+[4.234230] (-) TimerEvent: {}
+[4.337472] (-) TimerEvent: {}
+[4.370474] (gnss) StdoutLine: {'line': b'[ 66%] Built target gnss__py\n'}
+[4.439207] (-) TimerEvent: {}
+[4.444316] (gnss) StdoutLine: {'line': b'[ 69%] Built target gnss_sync_node\n'}
+[4.446307] (gnss) StdoutLine: {'line': b'[ 78%] Built target gnss_lib\n'}
+[4.513329] (gnss) StdoutLine: {'line': b'[ 85%] Built target gnss__python\n'}
+[4.542019] (lidar_processing) StdoutLine: {'line': b'[100%] Built target Lidar_Processing_node\n'}
+[4.542396] (-) TimerEvent: {}
+[4.640229] (lidar_processing) CommandEnded: {'returncode': 0}
+[4.643194] (-) TimerEvent: {}
+[4.650467] (gnss) StdoutLine: {'line': b'[ 89%] Built target gnss_node\n'}
+[4.743725] (-) TimerEvent: {}
+[4.776287] (gnss) StdoutLine: {'line': b'[ 92%] Built target gnss__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.824591] (gnss) StdoutLine: {'line': b'[ 96%] Built target gnss__rosidl_typesupport_introspection_c__pyext\n'}
+[4.840592] (gnss) StdoutLine: {'line': b'[100%] Built target gnss__rosidl_typesupport_c__pyext\n'}
+[4.844249] (-) TimerEvent: {}
+[4.870700] (lidar_processing) JobProgress: {'identifier': 'lidar_processing', 'progress': 'install'}
+[4.871666] (lidar_processing) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/lidar_processing'], 'cwd': '/home/mm/longshan12_2/build/lidar_processing', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/lidar_processing'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.902091] (gnss) CommandEnded: {'returncode': 0}
+[4.940438] (lidar_processing) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.941571] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/lib/lidar_processing/Lidar_Processing_node\n'}
+[4.942855] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/launch\n'}
+[4.943404] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/launch/lidar_Processing.launch.py\n'}
+[4.943772] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src\n'}
+[4.944144] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src/Processing_lidar.cpp\n'}
+[4.944364] (-) TimerEvent: {}
+[4.950932] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src/box.hpp\n'}
+[4.953871] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/src/obstacle_detector.hpp\n'}
+[4.954426] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/ament_index/resource_index/package_run_dependencies/lidar_processing\n'}
+[4.955090] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/ament_index/resource_index/parent_prefix_path/lidar_processing\n'}
+[4.955404] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.sh\n'}
+[4.955627] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/ament_prefix_path.dsv\n'}
+[4.955902] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/path.sh\n'}
+[4.956126] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/environment/path.dsv\n'}
+[4.956400] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.bash\n'}
+[4.956612] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.sh\n'}
+[4.956867] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.zsh\n'}
+[4.957118] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/local_setup.dsv\n'}
+[4.957429] (lidar_processing) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.dsv\n'}
+[4.957888] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/ament_index/resource_index/packages/lidar_processing\n'}
+[4.958500] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig.cmake\n'}
+[4.958804] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/cmake/lidar_processingConfig-version.cmake\n'}
+[4.959302] (lidar_processing) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.xml\n'}
+[4.972302] (lidar_processing) CommandEnded: {'returncode': 0}
+[5.019591] (hmi) JobProgress: {'identifier': 'hmi', 'progress': 'install'}
+[5.020270] (hmi) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/hmi'], 'cwd': '/home/mm/longshan12_2/build/hmi', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/hmi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.044538] (-) TimerEvent: {}
+[5.057059] (hmi) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.057286] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/lib/hmi/hmi\n'}
+[5.057396] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/launch\n'}
+[5.057495] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/launch/hmi.launch.py\n'}
+[5.057570] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/package_run_dependencies/hmi\n'}
+[5.057656] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/parent_prefix_path/hmi\n'}
+[5.067029] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/ament_prefix_path.sh\n'}
+[5.069090] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/ament_prefix_path.dsv\n'}
+[5.069396] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/path.sh\n'}
+[5.069533] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/path.dsv\n'}
+[5.069696] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.bash\n'}
+[5.069851] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.sh\n'}
+[5.069978] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.zsh\n'}
+[5.070139] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.dsv\n'}
+[5.070263] (hmi) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/package.dsv\n'}
+[5.070448] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/packages/hmi\n'}
+[5.070589] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/cmake/hmiConfig.cmake\n'}
+[5.070705] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/cmake/hmiConfig-version.cmake\n'}
+[5.071147] (hmi) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/package.xml\n'}
+[5.086702] (hmi) CommandEnded: {'returncode': 0}
+[5.142081] (lidar_processing) JobEnded: {'identifier': 'lidar_processing', 'rc': 0}
+[5.144565] (-) TimerEvent: {}
+[5.152662] (myrviz) JobStarted: {'identifier': 'myrviz'}
+[5.177259] (myrviz) JobProgress: {'identifier': 'myrviz', 'progress': 'cmake'}
+[5.177795] (myrviz) JobProgress: {'identifier': 'myrviz', 'progress': 'build'}
+[5.178729] (myrviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/myrviz', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/myrviz', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/myrviz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.249746] (-) TimerEvent: {}
+[5.355409] (-) TimerEvent: {}
+[5.453908] (draw_messages) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/draw_messages', 'build', '--build-base', '/home/mm/longshan12_2/build/draw_messages/build', 'install', '--record', '/home/mm/longshan12_2/build/draw_messages/install.log', '--install-scripts', '$base/lib/draw_messages', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mm/longshan12_2/src/draw_messages', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'mm', 'SSH_AGENT_PID': '1694', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:', 'HOME': '/home/mm', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.89.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1520', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2041', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'mm', 'JOURNAL_STREAM': '8:52010', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mm', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729', 'INVOCATION_ID': '493b984d9d1f43848476caf76a6791ab', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9b0190665b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mm/longshan12_2/build/draw_messages', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mm/longshan12_2/build/draw_messages/prefix_override:/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[5.455524] (-) TimerEvent: {}
+[5.511297] (myrviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target points_and_lines_publisher\x1b[0m\n'}
+[5.556061] (-) TimerEvent: {}
+[5.661234] (-) TimerEvent: {}
+[5.762064] (myrviz) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o\x1b[0m\n'}
+[5.763889] (-) TimerEvent: {}
+[5.865088] (-) TimerEvent: {}
+[5.969791] (hmi) JobEnded: {'identifier': 'hmi', 'rc': 0}
+[5.971654] (-) TimerEvent: {}
+[5.971831] (global) JobStarted: {'identifier': 'global'}
+[6.007177] (global) JobProgress: {'identifier': 'global', 'progress': 'cmake'}
+[6.008134] (global) JobProgress: {'identifier': 'global', 'progress': 'build'}
+[6.008507] (global) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/global', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/global', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/global'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy')]), 'shell': False}
+[6.070886] (gnss) JobProgress: {'identifier': 'gnss', 'progress': 'install'}
+[6.071930] (gnss) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/gnss'], 'cwd': '/home/mm/longshan12_2/build/gnss', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/gnss'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[6.073520] (-) TimerEvent: {}
+[6.139764] (gnss) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.140398] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/rosidl_interfaces/gnss\n'}
+[6.141949] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss\n'}
+[6.142293] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg\n'}
+[6.142578] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/ins.h\n'}
+[6.142903] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/message.h\n'}
+[6.143079] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/imu.h\n'}
+[6.143302] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.151230] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail\n'}
+[6.153133] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.h\n'}
+[6.153857] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__functions.c\n'}
+[6.155564] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.h\n'}
+[6.155972] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__functions.h\n'}
+[6.156455] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__functions.h\n'}
+[6.156739] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__functions.c\n'}
+[6.156972] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.h\n'}
+[6.157159] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__struct.h\n'}
+[6.157324] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__functions.h\n'}
+[6.157505] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__functions.c\n'}
+[6.161234] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__struct.h\n'}
+[6.161601] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__struct.h\n'}
+[6.162128] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/library_path.sh\n'}
+[6.162303] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/library_path.dsv\n'}
+[6.162930] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_generator_c.so\n'}
+[6.173135] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss\n'}
+[6.173700] (-) TimerEvent: {}
+[6.174324] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg\n'}
+[6.174552] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.174716] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail\n'}
+[6.175118] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_fastrtps_c.h\n'}
+[6.175527] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_fastrtps_c.h\n'}
+[6.175775] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_fastrtps_c.h\n'}
+[6.176025] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_c.so\n'}
+[6.176208] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss\n'}
+[6.176422] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg\n'}
+[6.176818] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.177384] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail\n'}
+[6.177587] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.177721] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.177915] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/dds_fastrtps\n'}
+[6.178096] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.181422] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.182766] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss\n'}
+[6.188024] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg\n'}
+[6.188642] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.189038] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail\n'}
+[6.189378] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.c\n'}
+[6.189587] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.c\n'}
+[6.189775] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.c\n'}
+[6.189953] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_introspection_c.h\n'}
+[6.190118] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_introspection_c.h\n'}
+[6.190322] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_introspection_c.h\n'}
+[6.190493] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_c.so\n'}
+[6.194500] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_c.so\n'}
+[6.194997] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss\n'}
+[6.195519] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg\n'}
+[6.195930] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.196629] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/ins.hpp\n'}
+[6.198021] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/message.hpp\n'}
+[6.198310] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/imu.hpp\n'}
+[6.198770] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail\n'}
+[6.199144] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.hpp\n'}
+[6.199626] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.hpp\n'}
+[6.200252] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__struct.hpp\n'}
+[6.200732] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__builder.hpp\n'}
+[6.202377] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__struct.hpp\n'}
+[6.202859] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__traits.hpp\n'}
+[6.203180] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__struct.hpp\n'}
+[6.203324] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__builder.hpp\n'}
+[6.203472] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__builder.hpp\n'}
+[6.203680] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__traits.hpp\n'}
+[6.203841] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__traits.hpp\n'}
+[6.207331] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.hpp\n'}
+[6.208257] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss\n'}
+[6.208506] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg\n'}
+[6.208830] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail\n'}
+[6.208983] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.cpp\n'}
+[6.209196] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.cpp\n'}
+[6.209449] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.cpp\n'}
+[6.209654] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.209867] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.210055] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.210262] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_cpp.so\n'}
+[6.211979] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_cpp.so\n'}
+[6.212582] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/pythonpath.sh\n'}
+[6.213403] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/pythonpath.dsv\n'}
+[6.218245] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/__init__.py\n'}
+[6.273875] (-) TimerEvent: {}
+[6.351875] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg\n'}
+[6.353921] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_message_s.c\n'}
+[6.354088] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/__init__.py\n'}
+[6.354215] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_ins_s.c\n'}
+[6.354340] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_message.py\n'}
+[6.354659] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_ins.py\n'}
+[6.354793] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_imu.py\n'}
+[6.354940] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_imu_s.c\n'}
+[6.355107] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[6.360473] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[6.365253] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[6.366220] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__python.so\n'}
+[6.371175] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Imu.idl\n'}
+[6.371692] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Ins.idl\n'}
+[6.372072] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Message.idl\n'}
+[6.372343] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Imu.msg\n'}
+[6.372594] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Ins.msg\n'}
+[6.372730] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Message.msg\n'}
+[6.373108] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss_lib.so\n'}
+[6.373307] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/gnss/gnss_node\n'}
+[6.373798] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/gnss/gnss_sync_node\n'}
+[6.373982] (-) TimerEvent: {}
+[6.386531] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/launch\n'}
+[6.387748] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/launch/gnss.launch.py\n'}
+[6.388047] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/package_run_dependencies/gnss\n'}
+[6.388203] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/parent_prefix_path/gnss\n'}
+[6.388394] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/ament_prefix_path.sh\n'}
+[6.389840] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/ament_prefix_path.dsv\n'}
+[6.390245] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/path.sh\n'}
+[6.390450] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/path.dsv\n'}
+[6.394645] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.bash\n'}
+[6.395091] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.sh\n'}
+[6.395404] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.zsh\n'}
+[6.395806] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.dsv\n'}
+[6.396242] (gnss) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/package.dsv\n'}
+[6.396808] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/packages/gnss\n'}
+[6.400997] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cExport.cmake\n'}
+[6.402965] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.403885] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.404388] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.404952] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cExport.cmake\n'}
+[6.405254] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.411547] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cppExport.cmake\n'}
+[6.411974] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.412192] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.412551] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cppExport.cmake\n'}
+[6.412899] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.413600] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake-extras.cmake\n'}
+[6.414564] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.419623] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.422031] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.422233] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.425091] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.425451] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.425806] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnssConfig.cmake\n'}
+[6.425963] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnssConfig-version.cmake\n'}
+[6.426049] (gnss) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/package.xml\n'}
+[6.445257] (gnss) CommandEnded: {'returncode': 0}
+[6.474338] (-) TimerEvent: {}
+[6.494343] (global) StdoutLine: {'line': b'[100%] Built target global_node\n'}
+[6.574986] (-) TimerEvent: {}
+[6.583980] (global) CommandEnded: {'returncode': 0}
+[6.673299] (draw_messages) StdoutLine: {'line': b'running egg_info\n'}
+[6.674324] (draw_messages) StdoutLine: {'line': b'writing ../../build/draw_messages/draw_messages.egg-info/PKG-INFO\n'}
+[6.674816] (draw_messages) StdoutLine: {'line': b'writing dependency_links to ../../build/draw_messages/draw_messages.egg-info/dependency_links.txt\n'}
+[6.675333] (-) TimerEvent: {}
+[6.677519] (draw_messages) StdoutLine: {'line': b'writing entry points to ../../build/draw_messages/draw_messages.egg-info/entry_points.txt\n'}
+[6.677810] (draw_messages) StdoutLine: {'line': b'writing requirements to ../../build/draw_messages/draw_messages.egg-info/requires.txt\n'}
+[6.677954] (draw_messages) StdoutLine: {'line': b'writing top-level names to ../../build/draw_messages/draw_messages.egg-info/top_level.txt\n'}
+[6.730195] (global) JobProgress: {'identifier': 'global', 'progress': 'install'}
+[6.741309] (global) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/global'], 'cwd': '/home/mm/longshan12_2/build/global', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/global'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy')]), 'shell': False}
+[6.775594] (-) TimerEvent: {}
+[6.776451] (global) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.777611] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/lib/global/global_node\n'}
+[6.779843] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/launch\n'}
+[6.795667] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/launch/global.launch.py\n'}
+[6.804882] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/ament_index/resource_index/package_run_dependencies/global\n'}
+[6.805138] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/ament_index/resource_index/parent_prefix_path/global\n'}
+[6.805294] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/environment/ament_prefix_path.sh\n'}
+[6.805656] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/environment/ament_prefix_path.dsv\n'}
+[6.805851] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/environment/path.sh\n'}
+[6.805994] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/environment/path.dsv\n'}
+[6.806118] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/local_setup.bash\n'}
+[6.806277] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/local_setup.sh\n'}
+[6.806419] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/local_setup.zsh\n'}
+[6.806544] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/local_setup.dsv\n'}
+[6.806668] (global) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/global/share/global/package.dsv\n'}
+[6.806830] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/ament_index/resource_index/packages/global\n'}
+[6.806962] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/cmake/globalConfig.cmake\n'}
+[6.807086] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/cmake/globalConfig-version.cmake\n'}
+[6.807399] (global) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/global/share/global/package.xml\n'}
+[6.807540] (draw_messages) StdoutLine: {'line': b"reading manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'\n"}
+[6.807710] (draw_messages) StdoutLine: {'line': b"writing manifest file '../../build/draw_messages/draw_messages.egg-info/SOURCES.txt'\n"}
+[6.807935] (draw_messages) StdoutLine: {'line': b'running build\n'}
+[6.808067] (draw_messages) StdoutLine: {'line': b'running build_py\n'}
+[6.808194] (draw_messages) StdoutLine: {'line': b'running install\n'}
+[6.808413] (draw_messages) StdoutLine: {'line': b'running install_lib\n'}
+[6.811441] (draw_messages) StdoutLine: {'line': b'running install_data\n'}
+[6.815240] (draw_messages) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.815937] (draw_messages) StdoutLine: {'line': b"removing '/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages/draw_messages-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[6.817755] (draw_messages) StdoutLine: {'line': b'Copying ../../build/draw_messages/draw_messages.egg-info to /home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages/draw_messages-0.0.0-py3.8.egg-info\n'}
+[6.818787] (draw_messages) StdoutLine: {'line': b'running install_scripts\n'}
+[6.822865] (global) CommandEnded: {'returncode': 0}
+[6.875971] (-) TimerEvent: {}
+[6.954632] (draw_messages) StdoutLine: {'line': b'Installing real_time_plot script to /home/mm/longshan12_2/install/draw_messages/lib/draw_messages\n'}
+[6.962212] (draw_messages) StdoutLine: {'line': b"writing list of installed files to '/home/mm/longshan12_2/build/draw_messages/install.log'\n"}
+[6.982875] (-) TimerEvent: {}
+[7.073071] (draw_messages) CommandEnded: {'returncode': 0}
+[7.083539] (-) TimerEvent: {}
+[7.093574] (draw_messages) JobEnded: {'identifier': 'draw_messages', 'rc': 0}
+[7.096659] (local) JobStarted: {'identifier': 'local'}
+[7.180374] (global) JobEnded: {'identifier': 'global', 'rc': 0}
+[7.189010] (-) TimerEvent: {}
+[7.209369] (gnss) JobEnded: {'identifier': 'gnss', 'rc': 0}
+[7.222574] (local) JobProgress: {'identifier': 'local', 'progress': 'cmake'}
+[7.223669] (local) JobProgress: {'identifier': 'local', 'progress': 'build'}
+[7.224041] (local) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mm/longshan12_2/build/local', '--', '-j4', '-l4'], 'cwd': '/home/mm/longshan12_2/build/local', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/local'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy')]), 'shell': False}
+[7.289584] (-) TimerEvent: {}
+[7.393154] (-) TimerEvent: {}
+[7.493670] (-) TimerEvent: {}
+[7.519280] (local) StdoutLine: {'line': b'[100%] Built target local_node4\n'}
+[7.563163] (local) CommandEnded: {'returncode': 0}
+[7.594057] (-) TimerEvent: {}
+[7.695004] (-) TimerEvent: {}
+[7.775982] (local) JobProgress: {'identifier': 'local', 'progress': 'install'}
+[7.780569] (local) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/local'], 'cwd': '/home/mm/longshan12_2/build/local', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/local'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy')]), 'shell': False}
+[7.795342] (-) TimerEvent: {}
+[7.808391] (local) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.809002] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/lib/local/local_node4\n'}
+[7.809376] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/launch\n'}
+[7.809854] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/launch/local.launch.py\n'}
+[7.810227] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/ament_index/resource_index/package_run_dependencies/local\n'}
+[7.810428] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/ament_index/resource_index/parent_prefix_path/local\n'}
+[7.810738] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/ament_prefix_path.sh\n'}
+[7.810908] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/ament_prefix_path.dsv\n'}
+[7.811080] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/path.sh\n'}
+[7.811319] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/path.dsv\n'}
+[7.811436] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.bash\n'}
+[7.811641] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.sh\n'}
+[7.811844] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.zsh\n'}
+[7.812018] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.dsv\n'}
+[7.812212] (local) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/local/share/local/package.dsv\n'}
+[7.812442] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/ament_index/resource_index/packages/local\n'}
+[7.812568] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/cmake/localConfig.cmake\n'}
+[7.812714] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/cmake/localConfig-version.cmake\n'}
+[7.812816] (local) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/package.xml\n'}
+[7.822144] (local) CommandEnded: {'returncode': 0}
+[7.895877] (-) TimerEvent: {}
+[7.997098] (-) TimerEvent: {}
+[8.059721] (local) JobEnded: {'identifier': 'local', 'rc': 0}
+[8.097664] (-) TimerEvent: {}
+[8.199690] (-) TimerEvent: {}
+[8.301791] (-) TimerEvent: {}
+[8.405373] (-) TimerEvent: {}
+[8.507062] (-) TimerEvent: {}
+[8.608159] (-) TimerEvent: {}
+[8.708991] (-) TimerEvent: {}
+[8.809658] (-) TimerEvent: {}
+[8.910336] (-) TimerEvent: {}
+[9.011056] (-) TimerEvent: {}
+[9.111776] (-) TimerEvent: {}
+[9.212373] (-) TimerEvent: {}
+[9.313781] (-) TimerEvent: {}
+[9.418094] (-) TimerEvent: {}
+[9.518917] (-) TimerEvent: {}
+[9.621514] (-) TimerEvent: {}
+[9.723793] (-) TimerEvent: {}
+[9.824507] (-) TimerEvent: {}
+[9.925761] (-) TimerEvent: {}
+[10.026772] (-) TimerEvent: {}
+[10.127450] (-) TimerEvent: {}
+[10.228260] (-) TimerEvent: {}
+[10.328910] (-) TimerEvent: {}
+[10.429678] (-) TimerEvent: {}
+[10.530259] (-) TimerEvent: {}
+[10.630900] (-) TimerEvent: {}
+[10.731606] (-) TimerEvent: {}
+[10.832309] (-) TimerEvent: {}
+[10.932766] (-) TimerEvent: {}
+[11.033581] (-) TimerEvent: {}
+[11.134914] (-) TimerEvent: {}
+[11.236753] (-) TimerEvent: {}
+[11.339633] (-) TimerEvent: {}
+[11.441507] (-) TimerEvent: {}
+[11.543049] (-) TimerEvent: {}
+[11.644184] (-) TimerEvent: {}
+[11.745814] (-) TimerEvent: {}
+[11.846522] (-) TimerEvent: {}
+[11.947046] (-) TimerEvent: {}
+[12.047831] (-) TimerEvent: {}
+[12.148407] (-) TimerEvent: {}
+[12.248856] (-) TimerEvent: {}
+[12.349260] (-) TimerEvent: {}
+[12.449709] (-) TimerEvent: {}
+[12.550372] (-) TimerEvent: {}
+[12.651120] (-) TimerEvent: {}
+[12.751755] (-) TimerEvent: {}
+[12.852523] (-) TimerEvent: {}
+[12.954527] (-) TimerEvent: {}
+[13.056469] (-) TimerEvent: {}
+[13.159233] (-) TimerEvent: {}
+[13.261399] (-) TimerEvent: {}
+[13.362827] (-) TimerEvent: {}
+[13.463543] (-) TimerEvent: {}
+[13.564211] (-) TimerEvent: {}
+[13.664978] (-) TimerEvent: {}
+[13.765585] (-) TimerEvent: {}
+[13.866308] (-) TimerEvent: {}
+[13.966972] (-) TimerEvent: {}
+[14.067643] (-) TimerEvent: {}
+[14.168350] (-) TimerEvent: {}
+[14.269049] (-) TimerEvent: {}
+[14.369751] (-) TimerEvent: {}
+[14.470446] (-) TimerEvent: {}
+[14.572252] (-) TimerEvent: {}
+[14.673795] (-) TimerEvent: {}
+[14.775119] (-) TimerEvent: {}
+[14.877658] (-) TimerEvent: {}
+[14.978766] (-) TimerEvent: {}
+[15.079458] (-) TimerEvent: {}
+[15.180168] (-) TimerEvent: {}
+[15.280930] (-) TimerEvent: {}
+[15.381523] (-) TimerEvent: {}
+[15.482207] (-) TimerEvent: {}
+[15.583053] (-) TimerEvent: {}
+[15.684087] (-) TimerEvent: {}
+[15.784785] (-) TimerEvent: {}
+[15.885497] (-) TimerEvent: {}
+[15.986170] (-) TimerEvent: {}
+[16.086820] (-) TimerEvent: {}
+[16.187547] (-) TimerEvent: {}
+[16.288316] (-) TimerEvent: {}
+[16.389747] (-) TimerEvent: {}
+[16.492805] (-) TimerEvent: {}
+[16.596195] (-) TimerEvent: {}
+[16.696963] (-) TimerEvent: {}
+[16.797582] (-) TimerEvent: {}
+[16.898297] (-) TimerEvent: {}
+[16.998935] (-) TimerEvent: {}
+[17.099681] (-) TimerEvent: {}
+[17.200317] (-) TimerEvent: {}
+[17.301051] (-) TimerEvent: {}
+[17.401785] (-) TimerEvent: {}
+[17.502381] (-) TimerEvent: {}
+[17.603094] (-) TimerEvent: {}
+[17.703830] (-) TimerEvent: {}
+[17.804464] (-) TimerEvent: {}
+[17.905163] (-) TimerEvent: {}
+[18.005840] (-) TimerEvent: {}
+[18.106552] (-) TimerEvent: {}
+[18.207205] (-) TimerEvent: {}
+[18.308298] (-) TimerEvent: {}
+[18.411564] (-) TimerEvent: {}
+[18.514650] (-) TimerEvent: {}
+[18.615999] (-) TimerEvent: {}
+[18.706161] (myrviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.706455] (myrviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:291:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klocalid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[18.706616] (myrviz) StderrLine: {'line': b'  291 |         static int \x1b[01;35m\x1b[Klocalid\x1b[m\x1b[K =0;\n'}
+[18.706709] (myrviz) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.716565] (-) TimerEvent: {}
+[18.817285] (-) TimerEvent: {}
+[18.917939] (-) TimerEvent: {}
+[19.018616] (-) TimerEvent: {}
+[19.119283] (-) TimerEvent: {}
+[19.219999] (-) TimerEvent: {}
+[19.320692] (-) TimerEvent: {}
+[19.421356] (-) TimerEvent: {}
+[19.522081] (-) TimerEvent: {}
+[19.622757] (-) TimerEvent: {}
+[19.723468] (-) TimerEvent: {}
+[19.824125] (-) TimerEvent: {}
+[19.924791] (-) TimerEvent: {}
+[20.025484] (-) TimerEvent: {}
+[20.126358] (-) TimerEvent: {}
+[20.229739] (-) TimerEvent: {}
+[20.333316] (-) TimerEvent: {}
+[20.435176] (-) TimerEvent: {}
+[20.535880] (-) TimerEvent: {}
+[20.636639] (-) TimerEvent: {}
+[20.737272] (-) TimerEvent: {}
+[20.837958] (-) TimerEvent: {}
+[20.938615] (-) TimerEvent: {}
+[21.049396] (-) TimerEvent: {}
+[21.150921] (-) TimerEvent: {}
+[21.251621] (-) TimerEvent: {}
+[21.352265] (-) TimerEvent: {}
+[21.452760] (-) TimerEvent: {}
+[21.553625] (-) TimerEvent: {}
+[21.654739] (-) TimerEvent: {}
+[21.755591] (-) TimerEvent: {}
+[21.857218] (-) TimerEvent: {}
+[21.957856] (-) TimerEvent: {}
+[22.059877] (-) TimerEvent: {}
+[22.161897] (-) TimerEvent: {}
+[22.264150] (-) TimerEvent: {}
+[22.366229] (-) TimerEvent: {}
+[22.468694] (-) TimerEvent: {}
+[22.569530] (-) TimerEvent: {}
+[22.670172] (-) TimerEvent: {}
+[22.770804] (-) TimerEvent: {}
+[22.871483] (-) TimerEvent: {}
+[22.972170] (-) TimerEvent: {}
+[23.072859] (-) TimerEvent: {}
+[23.173533] (-) TimerEvent: {}
+[23.274244] (-) TimerEvent: {}
+[23.374890] (-) TimerEvent: {}
+[23.475569] (-) TimerEvent: {}
+[23.576283] (-) TimerEvent: {}
+[23.676991] (-) TimerEvent: {}
+[23.777651] (-) TimerEvent: {}
+[23.883883] (-) TimerEvent: {}
+[23.984999] (-) TimerEvent: {}
+[24.086123] (-) TimerEvent: {}
+[24.187947] (-) TimerEvent: {}
+[24.289138] (-) TimerEvent: {}
+[24.389722] (-) TimerEvent: {}
+[24.490412] (-) TimerEvent: {}
+[24.591176] (-) TimerEvent: {}
+[24.691527] (-) TimerEvent: {}
+[24.792443] (-) TimerEvent: {}
+[24.893124] (-) TimerEvent: {}
+[24.993833] (-) TimerEvent: {}
+[25.094535] (-) TimerEvent: {}
+[25.195172] (-) TimerEvent: {}
+[25.295888] (-) TimerEvent: {}
+[25.396541] (-) TimerEvent: {}
+[25.497263] (-) TimerEvent: {}
+[25.598002] (-) TimerEvent: {}
+[25.699057] (-) TimerEvent: {}
+[25.800933] (-) TimerEvent: {}
+[25.902675] (-) TimerEvent: {}
+[26.005119] (-) TimerEvent: {}
+[26.105830] (-) TimerEvent: {}
+[26.207007] (-) TimerEvent: {}
+[26.308203] (-) TimerEvent: {}
+[26.408926] (-) TimerEvent: {}
+[26.509404] (-) TimerEvent: {}
+[26.610073] (-) TimerEvent: {}
+[26.711460] (-) TimerEvent: {}
+[26.812147] (-) TimerEvent: {}
+[26.912842] (-) TimerEvent: {}
+[27.013510] (-) TimerEvent: {}
+[27.114143] (-) TimerEvent: {}
+[27.214933] (-) TimerEvent: {}
+[27.315549] (-) TimerEvent: {}
+[27.416249] (-) TimerEvent: {}
+[27.517770] (-) TimerEvent: {}
+[27.619640] (-) TimerEvent: {}
+[27.721061] (-) TimerEvent: {}
+[27.824070] (-) TimerEvent: {}
+[27.925628] (-) TimerEvent: {}
+[28.026320] (-) TimerEvent: {}
+[28.126987] (-) TimerEvent: {}
+[28.227724] (-) TimerEvent: {}
+[28.328349] (-) TimerEvent: {}
+[28.429047] (-) TimerEvent: {}
+[28.529702] (-) TimerEvent: {}
+[28.630577] (-) TimerEvent: {}
+[28.731204] (-) TimerEvent: {}
+[28.831903] (-) TimerEvent: {}
+[28.932665] (-) TimerEvent: {}
+[29.033235] (-) TimerEvent: {}
+[29.133875] (-) TimerEvent: {}
+[29.234524] (-) TimerEvent: {}
+[29.335242] (-) TimerEvent: {}
+[29.437352] (-) TimerEvent: {}
+[29.538898] (-) TimerEvent: {}
+[29.642149] (-) TimerEvent: {}
+[29.743354] (-) TimerEvent: {}
+[29.844367] (-) TimerEvent: {}
+[29.945825] (-) TimerEvent: {}
+[30.046553] (-) TimerEvent: {}
+[30.147208] (-) TimerEvent: {}
+[30.247927] (-) TimerEvent: {}
+[30.348563] (-) TimerEvent: {}
+[30.449216] (-) TimerEvent: {}
+[30.549916] (-) TimerEvent: {}
+[30.651033] (-) TimerEvent: {}
+[30.752279] (-) TimerEvent: {}
+[30.852964] (-) TimerEvent: {}
+[30.953815] (-) TimerEvent: {}
+[31.055660] (-) TimerEvent: {}
+[31.157787] (-) TimerEvent: {}
+[31.261391] (-) TimerEvent: {}
+[31.362376] (-) TimerEvent: {}
+[31.463062] (-) TimerEvent: {}
+[31.563789] (-) TimerEvent: {}
+[31.664427] (-) TimerEvent: {}
+[31.765093] (-) TimerEvent: {}
+[31.865756] (-) TimerEvent: {}
+[31.967583] (-) TimerEvent: {}
+[32.077571] (-) TimerEvent: {}
+[32.178258] (-) TimerEvent: {}
+[32.278955] (-) TimerEvent: {}
+[32.379587] (-) TimerEvent: {}
+[32.636048] (-) TimerEvent: {}
+[32.737035] (-) TimerEvent: {}
+[32.837690] (-) TimerEvent: {}
+[32.938772] (-) TimerEvent: {}
+[33.039864] (-) TimerEvent: {}
+[33.141177] (-) TimerEvent: {}
+[33.241957] (-) TimerEvent: {}
+[33.342581] (-) TimerEvent: {}
+[33.443306] (-) TimerEvent: {}
+[33.543948] (-) TimerEvent: {}
+[33.644523] (-) TimerEvent: {}
+[33.745224] (-) TimerEvent: {}
+[33.845557] (-) TimerEvent: {}
+[33.946086] (-) TimerEvent: {}
+[34.046779] (-) TimerEvent: {}
+[34.147467] (-) TimerEvent: {}
+[34.248167] (-) TimerEvent: {}
+[34.349065] (-) TimerEvent: {}
+[34.449592] (-) TimerEvent: {}
+[34.550279] (-) TimerEvent: {}
+[34.650960] (-) TimerEvent: {}
+[34.751674] (-) TimerEvent: {}
+[34.852367] (-) TimerEvent: {}
+[34.953035] (-) TimerEvent: {}
+[35.053773] (-) TimerEvent: {}
+[35.154458] (-) TimerEvent: {}
+[35.255081] (-) TimerEvent: {}
+[35.355823] (-) TimerEvent: {}
+[35.456449] (-) TimerEvent: {}
+[35.557181] (-) TimerEvent: {}
+[35.657921] (-) TimerEvent: {}
+[35.758588] (-) TimerEvent: {}
+[35.859319] (-) TimerEvent: {}
+[35.959963] (-) TimerEvent: {}
+[36.060648] (-) TimerEvent: {}
+[36.161319] (-) TimerEvent: {}
+[36.261990] (-) TimerEvent: {}
+[36.362719] (-) TimerEvent: {}
+[36.463203] (-) TimerEvent: {}
+[36.571756] (-) TimerEvent: {}
+[36.690119] (-) TimerEvent: {}
+[36.791229] (-) TimerEvent: {}
+[36.891816] (-) TimerEvent: {}
+[36.992668] (-) TimerEvent: {}
+[37.093261] (-) TimerEvent: {}
+[37.193995] (-) TimerEvent: {}
+[37.295148] (-) TimerEvent: {}
+[37.336590] (myrviz) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable points_and_lines_publisher\x1b[0m\n'}
+[37.395652] (-) TimerEvent: {}
+[37.496602] (-) TimerEvent: {}
+[37.597265] (-) TimerEvent: {}
+[37.698388] (-) TimerEvent: {}
+[37.798924] (-) TimerEvent: {}
+[37.899524] (-) TimerEvent: {}
+[38.000413] (-) TimerEvent: {}
+[38.101136] (-) TimerEvent: {}
+[38.201785] (-) TimerEvent: {}
+[38.302491] (-) TimerEvent: {}
+[38.403146] (-) TimerEvent: {}
+[38.503873] (-) TimerEvent: {}
+[38.571760] (myrviz) StdoutLine: {'line': b'[100%] Built target points_and_lines_publisher\n'}
+[38.601300] (myrviz) CommandEnded: {'returncode': 0}
+[38.605089] (-) TimerEvent: {}
+[38.638783] (myrviz) JobProgress: {'identifier': 'myrviz', 'progress': 'install'}
+[38.641890] (myrviz) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mm/longshan12_2/build/myrviz'], 'cwd': '/home/mm/longshan12_2/build/myrviz', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mm'), ('SSH_AGENT_PID', '1694'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so:'), ('HOME', '/home/mm'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2041'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mm'), ('JOURNAL_STREAM', '8:52010'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/opt/ros/foxy/bin:/usr/local/share:/usr/local/lib:/home/mm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/mm-virtual-machine:@/tmp/.ICE-unix/1729,unix/mm-virtual-machine:/tmp/.ICE-unix/1729'), ('INVOCATION_ID', '493b984d9d1f43848476caf76a6791ab'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b0190665b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mm/longshan12_2/build/myrviz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[38.654506] (myrviz) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.655076] (myrviz) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher\n'}
+[38.662219] (myrviz) StdoutLine: {'line': b'-- Set runtime path of "/home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher" to ""\n'}
+[38.662677] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz\n'}
+[38.663056] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz\n'}
+[38.663385] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.sh\n'}
+[38.663790] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv\n'}
+[38.664019] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.sh\n'}
+[38.664259] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.dsv\n'}
+[38.664469] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.bash\n'}
+[38.664716] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.sh\n'}
+[38.665099] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.zsh\n'}
+[38.665299] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.dsv\n'}
+[38.665465] (myrviz) StdoutLine: {'line': b'-- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv\n'}
+[38.665582] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/packages/myrviz\n'}
+[38.665812] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake\n'}
+[38.666138] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake\n'}
+[38.666235] (myrviz) StdoutLine: {'line': b'-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.xml\n'}
+[38.669317] (myrviz) CommandEnded: {'returncode': 0}
+[38.705223] (-) TimerEvent: {}
+[38.719890] (myrviz) JobEnded: {'identifier': 'myrviz', 'rc': 0}
+[38.721192] (-) EventReactorShutdown: {}

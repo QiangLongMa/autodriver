@@ -1,0 +1,4 @@
+Invoking command in '/home/mm/longshan12_2/build/can': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/can -- -j4 -l4
+Invoked command in '/home/mm/longshan12_2/build/can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/can -- -j4 -l4
+Invoking command in '/home/mm/longshan12_2/build/can': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/can
+Invoked command in '/home/mm/longshan12_2/build/can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/can

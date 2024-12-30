@@ -1,0 +1,860 @@
+[0.234s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.234s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8e8a80f1f0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8e8a80f1f0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8e8a67dcd0>)
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.409s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mm/longshan12_2'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/can) by extension 'ros'
+[0.428s] DEBUG:colcon.colcon_core.package_identification:Package 'src/can' with type 'ros.ament_cmake' and name 'can'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore_ament_install'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_pkg']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ros'
+[0.430s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control' with type 'ros.ament_cmake' and name 'control'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extension 'ignore_ament_install'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extensions ['colcon_pkg']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extension 'colcon_pkg'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extensions ['colcon_meta']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extension 'colcon_meta'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extensions ['ros']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/draw_messages) by extension 'ros'
+[0.431s] DEBUG:colcon.colcon_core.package_identification:Package 'src/draw_messages' with type 'ros.ament_python' and name 'draw_messages'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/global) by extension 'ros'
+[0.432s] DEBUG:colcon.colcon_core.package_identification:Package 'src/global' with type 'ros.ament_cmake' and name 'global'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/gnss) by extension 'ros'
+[0.434s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gnss' with type 'ros.ament_cmake' and name 'gnss'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extension 'ignore'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extension 'colcon_meta'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extensions ['ros']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/hmi) by extension 'ros'
+[0.436s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hmi' with type 'ros.ament_cmake' and name 'hmi'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extensions ['ignore', 'ignore_ament_install']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extension 'ignore'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extension 'ignore_ament_install'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extensions ['ros']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processing) by extension 'ros'
+[0.438s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_processing' with type 'ros.ament_cmake' and name 'lidar_processing'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extension 'ignore_ament_install'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extensions ['colcon_pkg']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extensions ['colcon_meta']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extension 'colcon_meta'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extensions ['ros']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/local) by extension 'ros'
+[0.439s] DEBUG:colcon.colcon_core.package_identification:Package 'src/local' with type 'ros.ament_cmake' and name 'local'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'ros'
+[0.441s] DEBUG:colcon.colcon_core.package_identification:Package 'src/model' with type 'ros.ament_cmake' and name 'model'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extension 'ignore_ament_install'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extensions ['colcon_pkg']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extension 'colcon_pkg'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extensions ['colcon_meta']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extension 'colcon_meta'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extensions ['ros']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/myrviz) by extension 'ros'
+[0.442s] DEBUG:colcon.colcon_core.package_identification:Package 'src/myrviz' with type 'ros.ament_cmake' and name 'myrviz'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_path_interfaces) by extension 'ros'
+[0.444s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_path_interfaces' with type 'ros.ament_cmake' and name 'ros2_path_interfaces'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/voxel_dipgseg) by extension 'ros'
+[0.445s] DEBUG:colcon.colcon_core.package_identification:Package 'src/voxel_dipgseg' with type 'ros.ament_cmake' and name 'dipgseg'
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.468s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 267 installed packages in /opt/ros/foxy
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'cmake_target' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'cmake_clean_cache' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'cmake_clean_first' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'cmake_force_configure' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'ament_cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'catkin_cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.555s] DEBUG:colcon.colcon_core.verb:Building package 'can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/can', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/can', 'symlink_install': False, 'test_result_base': None}
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.556s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/control', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/control', 'symlink_install': False, 'test_result_base': None}
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'cmake_target' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'cmake_clean_first' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'cmake_force_configure' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'ament_cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'dipgseg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.557s] DEBUG:colcon.colcon_core.verb:Building package 'dipgseg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/dipgseg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/dipgseg', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/voxel_dipgseg', 'symlink_install': False, 'test_result_base': None}
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'cmake_target' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'cmake_clean_cache' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'cmake_clean_first' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'cmake_force_configure' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'ament_cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'catkin_cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'draw_messages' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.558s] DEBUG:colcon.colcon_core.verb:Building package 'draw_messages' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/draw_messages', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/draw_messages', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/draw_messages', 'symlink_install': False, 'test_result_base': None}
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'cmake_target' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'cmake_clean_cache' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'cmake_clean_first' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'cmake_force_configure' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'ament_cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'catkin_cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'gnss' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.559s] DEBUG:colcon.colcon_core.verb:Building package 'gnss' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/gnss', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/gnss', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/gnss', 'symlink_install': False, 'test_result_base': None}
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'cmake_target' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'cmake_clean_cache' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'cmake_clean_first' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'cmake_force_configure' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'ament_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'catkin_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'hmi' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.560s] DEBUG:colcon.colcon_core.verb:Building package 'hmi' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/hmi', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/hmi', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/hmi', 'symlink_install': False, 'test_result_base': None}
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'cmake_target' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'cmake_clean_first' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'cmake_force_configure' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'ament_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'lidar_processing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.560s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_processing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/lidar_processing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/lidar_processing', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/lidar_processing', 'symlink_install': False, 'test_result_base': None}
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_clean_first' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_force_configure' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'ament_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'catkin_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.561s] DEBUG:colcon.colcon_core.verb:Building package 'model' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/model', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/model', 'symlink_install': False, 'test_result_base': None}
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'cmake_clean_first' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'cmake_force_configure' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'ament_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'myrviz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'myrviz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/myrviz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/myrviz', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/myrviz', 'symlink_install': False, 'test_result_base': None}
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'ros2_path_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_path_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/ros2_path_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/ros2_path_interfaces', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/ros2_path_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'cmake_target' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'cmake_clean_cache' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'cmake_clean_first' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'cmake_force_configure' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'ament_cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'catkin_cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'global' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.563s] DEBUG:colcon.colcon_core.verb:Building package 'global' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/global', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/global', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/global', 'symlink_install': False, 'test_result_base': None}
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'cmake_target' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'cmake_clean_cache' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'cmake_clean_first' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'cmake_force_configure' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'ament_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'catkin_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'local' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.564s] DEBUG:colcon.colcon_core.verb:Building package 'local' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mm/longshan12_2/build/local', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mm/longshan12_2/install/local', 'merge_install': False, 'path': '/home/mm/longshan12_2/src/local', 'symlink_install': False, 'test_result_base': None}
+[0.564s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.566s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.566s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/ros2_path_interfaces' with build type 'ament_cmake'
+[0.566s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/ros2_path_interfaces'
+[0.570s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.570s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.578s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/can' with build type 'ament_cmake'
+[0.579s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/can'
+[0.580s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.580s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.588s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/control' with build type 'ament_cmake'
+[0.588s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/control'
+[0.589s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.589s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.596s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/voxel_dipgseg' with build type 'ament_cmake'
+[0.597s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/voxel_dipgseg'
+[0.598s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/ros2_path_interfaces -- -j4 -l4
+[0.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/can': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/can -- -j4 -l4
+[0.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/dipgseg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/dipgseg -- -j4 -l4
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/can -- -j4 -l4
+[0.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/dipgseg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/dipgseg -- -j4 -l4
+[1.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/can': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/can
+[1.137s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/dipgseg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/dipgseg
+[1.154s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can)
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can' for CMake module files
+[1.158s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can' for CMake config files
+[1.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('can', 'cmake_prefix_path')
+[1.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/can/share/can/hook/cmake_prefix_path.ps1'
+[1.159s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/can/share/can/hook/cmake_prefix_path.dsv'
+[1.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/can/share/can/hook/cmake_prefix_path.sh'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/lib'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/bin'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/lib/pkgconfig/can.pc'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/lib/python3.8/site-packages'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/bin'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.ps1'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/can/share/can/package.dsv'
+[1.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.sh'
+[1.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.bash'
+[1.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.zsh'
+[1.177s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/can/share/colcon-core/packages/can)
+[1.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/can
+[1.192s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dipgseg)
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg' for CMake module files
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg' for CMake config files
+[1.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('dipgseg', 'cmake_prefix_path')
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/hook/cmake_prefix_path.ps1'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/hook/cmake_prefix_path.dsv'
+[1.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/hook/cmake_prefix_path.sh'
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/lib'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/bin'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/lib/pkgconfig/dipgseg.pc'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/lib/python3.8/site-packages'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/bin'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.ps1'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.dsv'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.sh'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.bash'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.zsh'
+[1.199s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/dipgseg/share/colcon-core/packages/dipgseg)
+[1.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/dipgseg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/dipgseg
+[1.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dipgseg)
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg' for CMake module files
+[1.282s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg' for CMake config files
+[1.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('dipgseg', 'cmake_prefix_path')
+[1.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/hook/cmake_prefix_path.ps1'
+[1.284s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/hook/cmake_prefix_path.dsv'
+[1.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/hook/cmake_prefix_path.sh'
+[1.285s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/lib'
+[1.285s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/bin'
+[1.285s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/lib/pkgconfig/dipgseg.pc'
+[1.285s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/lib/python3.8/site-packages'
+[1.285s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/dipgseg/bin'
+[1.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.ps1'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.dsv'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.sh'
+[1.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.bash'
+[1.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.zsh'
+[1.289s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/dipgseg/share/colcon-core/packages/dipgseg)
+[1.289s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mm/longshan12_2/src/draw_messages' with build type 'ament_python'
+[1.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('draw_messages', 'ament_prefix_path')
+[1.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/hook/ament_prefix_path.ps1'
+[1.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/hook/ament_prefix_path.dsv'
+[1.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/hook/ament_prefix_path.sh'
+[1.293s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.293s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.670s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mm/longshan12_2/src/draw_messages'
+[1.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.677s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can)
+[1.678s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can' for CMake module files
+[1.678s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can' for CMake config files
+[1.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('can', 'cmake_prefix_path')
+[1.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/can/share/can/hook/cmake_prefix_path.ps1'
+[1.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/can/share/can/hook/cmake_prefix_path.dsv'
+[1.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/can/share/can/hook/cmake_prefix_path.sh'
+[1.681s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/lib'
+[1.681s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/bin'
+[1.681s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/lib/pkgconfig/can.pc'
+[1.682s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/lib/python3.8/site-packages'
+[1.682s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/can/bin'
+[1.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.ps1'
+[1.683s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/can/share/can/package.dsv'
+[1.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.sh'
+[1.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.bash'
+[1.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/can/share/can/package.zsh'
+[1.685s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/can/share/colcon-core/packages/can)
+[1.687s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/gnss' with build type 'ament_cmake'
+[1.687s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/gnss'
+[1.687s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.687s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/ros2_path_interfaces -- -j4 -l4
+[1.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[1.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/ros2_path_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/ros2_path_interfaces
+[2.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_path_interfaces)
+[2.083s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces' for CMake module files
+[2.084s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces' for CMake config files
+[2.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_path_interfaces', 'cmake_prefix_path')
+[2.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/cmake_prefix_path.ps1'
+[2.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/cmake_prefix_path.dsv'
+[2.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/cmake_prefix_path.sh'
+[2.087s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/lib'
+[2.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_path_interfaces', 'ld_library_path_lib')
+[2.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/ld_library_path_lib.ps1'
+[2.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/ld_library_path_lib.dsv'
+[2.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/ld_library_path_lib.sh'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/bin'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/pkgconfig/ros2_path_interfaces.pc'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages'
+[2.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_path_interfaces', 'pythonpath')
+[2.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/pythonpath.ps1'
+[2.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/pythonpath.dsv'
+[2.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/pythonpath.sh'
+[2.091s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/bin'
+[2.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.ps1'
+[2.092s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.dsv'
+[2.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.sh'
+[2.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.bash'
+[2.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.zsh'
+[2.094s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/ros2_path_interfaces/share/colcon-core/packages/ros2_path_interfaces)
+[2.099s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/ros2_path_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/ros2_path_interfaces
+[2.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/src/draw_messages': PYTHONPATH=/home/mm/longshan12_2/build/draw_messages/prefix_override:/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/draw_messages build --build-base /home/mm/longshan12_2/build/draw_messages/build install --record /home/mm/longshan12_2/build/draw_messages/install.log --install-scripts $base/lib/draw_messages --single-version-externally-managed install_data
+[2.430s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_path_interfaces)
+[2.431s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces' for CMake module files
+[2.432s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces' for CMake config files
+[2.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_path_interfaces', 'cmake_prefix_path')
+[2.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/cmake_prefix_path.ps1'
+[2.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/cmake_prefix_path.dsv'
+[2.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/cmake_prefix_path.sh'
+[2.436s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/lib'
+[2.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_path_interfaces', 'ld_library_path_lib')
+[2.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/ld_library_path_lib.ps1'
+[2.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/ld_library_path_lib.dsv'
+[2.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/ld_library_path_lib.sh'
+[2.437s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/bin'
+[2.437s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/pkgconfig/ros2_path_interfaces.pc'
+[2.438s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages'
+[2.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_path_interfaces', 'pythonpath')
+[2.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/pythonpath.ps1'
+[2.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/pythonpath.dsv'
+[2.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/hook/pythonpath.sh'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/ros2_path_interfaces/bin'
+[2.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.ps1'
+[2.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.dsv'
+[2.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.sh'
+[2.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.bash'
+[2.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/ros2_path_interfaces/share/ros2_path_interfaces/package.zsh'
+[2.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/ros2_path_interfaces/share/colcon-core/packages/ros2_path_interfaces)
+[2.452s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/hmi' with build type 'ament_cmake'
+[2.453s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/hmi'
+[2.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.453s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[2.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/hmi -- -j4 -l4
+[2.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/hmi -- -j4 -l4
+[2.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/gnss
+[2.848s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages' for CMake module files
+[2.849s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages' for CMake config files
+[2.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/src/draw_messages' returned '0': PYTHONPATH=/home/mm/longshan12_2/build/draw_messages/prefix_override:/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/draw_messages build --build-base /home/mm/longshan12_2/build/draw_messages/build install --record /home/mm/longshan12_2/build/draw_messages/install.log --install-scripts $base/lib/draw_messages --single-version-externally-managed install_data
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages/lib'
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages/bin'
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages/lib/pkgconfig/draw_messages.pc'
+[2.851s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages/lib/python3.8/site-packages'
+[2.851s] Level 1:colcon.colcon_core.shell:create_environment_hook('draw_messages', 'pythonpath')
+[2.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/hook/pythonpath.ps1'
+[2.852s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/hook/pythonpath.dsv'
+[2.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/hook/pythonpath.sh'
+[2.854s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/draw_messages/bin'
+[2.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(draw_messages)
+[2.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/package.ps1'
+[2.855s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/package.dsv'
+[2.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/package.sh'
+[2.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/package.bash'
+[2.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/draw_messages/share/draw_messages/package.zsh'
+[2.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/draw_messages/share/colcon-core/packages/draw_messages)
+[2.860s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/lidar_processing' with build type 'ament_cmake'
+[2.861s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/lidar_processing'
+[2.865s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.865s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gnss)
+[2.897s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss' for CMake module files
+[2.900s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss' for CMake config files
+[2.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('gnss', 'cmake_prefix_path')
+[2.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/cmake_prefix_path.ps1'
+[2.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/hook/cmake_prefix_path.dsv'
+[2.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/cmake_prefix_path.sh'
+[2.907s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/lib'
+[2.907s] Level 1:colcon.colcon_core.shell:create_environment_hook('gnss', 'ld_library_path_lib')
+[2.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/ld_library_path_lib.ps1'
+[2.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/hook/ld_library_path_lib.dsv'
+[2.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/ld_library_path_lib.sh'
+[2.913s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/bin'
+[2.913s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/lib/pkgconfig/gnss.pc'
+[2.914s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages'
+[2.914s] Level 1:colcon.colcon_core.shell:create_environment_hook('gnss', 'pythonpath')
+[2.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/pythonpath.ps1'
+[2.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/hook/pythonpath.dsv'
+[2.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/gnss
+[2.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/pythonpath.sh'
+[2.920s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/bin'
+[2.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.ps1'
+[2.921s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/package.dsv'
+[2.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.sh'
+[2.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.bash'
+[2.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.zsh'
+[2.925s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/gnss/share/colcon-core/packages/gnss)
+[2.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/lidar_processing -- -j4 -l4
+[2.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/hmi
+[3.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hmi)
+[3.017s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi' for CMake module files
+[3.018s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi' for CMake config files
+[3.018s] Level 1:colcon.colcon_core.shell:create_environment_hook('hmi', 'cmake_prefix_path')
+[3.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/hmi/share/hmi/hook/cmake_prefix_path.ps1'
+[3.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/hmi/share/hmi/hook/cmake_prefix_path.dsv'
+[3.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/hmi/share/hmi/hook/cmake_prefix_path.sh'
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/lib'
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/bin'
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/lib/pkgconfig/hmi.pc'
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/lib/python3.8/site-packages'
+[3.023s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/bin'
+[3.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.ps1'
+[3.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/hmi/share/hmi/package.dsv'
+[3.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.sh'
+[3.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.bash'
+[3.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.zsh'
+[3.025s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/hmi/share/colcon-core/packages/hmi)
+[3.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/hmi
+[3.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/lidar_processing -- -j4 -l4
+[3.157s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/lidar_processing
+[3.186s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_processing)
+[3.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/lidar_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/lidar_processing
+[3.188s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing' for CMake module files
+[3.189s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing' for CMake config files
+[3.190s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_processing', 'cmake_prefix_path')
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/hook/cmake_prefix_path.ps1'
+[3.191s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/hook/cmake_prefix_path.dsv'
+[3.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/hook/cmake_prefix_path.sh'
+[3.192s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/lib'
+[3.192s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/bin'
+[3.192s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/lib/pkgconfig/lidar_processing.pc'
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/lib/python3.8/site-packages'
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/bin'
+[3.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.ps1'
+[3.196s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.dsv'
+[3.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.sh'
+[3.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.bash'
+[3.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.zsh'
+[3.203s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/lidar_processing/share/colcon-core/packages/lidar_processing)
+[3.253s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gnss)
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss' for CMake module files
+[3.254s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss' for CMake config files
+[3.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('gnss', 'cmake_prefix_path')
+[3.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/cmake_prefix_path.ps1'
+[3.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/hook/cmake_prefix_path.dsv'
+[3.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/cmake_prefix_path.sh'
+[3.262s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/lib'
+[3.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('gnss', 'ld_library_path_lib')
+[3.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/ld_library_path_lib.ps1'
+[3.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/hook/ld_library_path_lib.dsv'
+[3.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/ld_library_path_lib.sh'
+[3.265s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/bin'
+[3.265s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/lib/pkgconfig/gnss.pc'
+[3.266s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages'
+[3.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('gnss', 'pythonpath')
+[3.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/pythonpath.ps1'
+[3.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/hook/pythonpath.dsv'
+[3.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/gnss/share/gnss/hook/pythonpath.sh'
+[3.269s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/gnss/bin'
+[3.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.ps1'
+[3.272s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/gnss/share/gnss/package.dsv'
+[3.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.sh'
+[3.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.bash'
+[3.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/gnss/share/gnss/package.zsh'
+[3.276s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/gnss/share/colcon-core/packages/gnss)
+[3.278s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/model' with build type 'ament_cmake'
+[3.279s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/model'
+[3.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_processing)
+[3.300s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing' for CMake module files
+[3.300s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing' for CMake config files
+[3.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_processing', 'cmake_prefix_path')
+[3.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/hook/cmake_prefix_path.ps1'
+[3.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/hook/cmake_prefix_path.dsv'
+[3.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/hook/cmake_prefix_path.sh'
+[3.308s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/lib'
+[3.310s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/bin'
+[3.311s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/lib/pkgconfig/lidar_processing.pc'
+[3.311s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/lib/python3.8/site-packages'
+[3.312s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/lidar_processing/bin'
+[3.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.ps1'
+[3.314s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.dsv'
+[3.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.sh'
+[3.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.bash'
+[3.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/lidar_processing/share/lidar_processing/package.zsh'
+[3.317s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/lidar_processing/share/colcon-core/packages/lidar_processing)
+[3.318s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hmi)
+[3.319s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi' for CMake module files
+[3.320s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi' for CMake config files
+[3.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('hmi', 'cmake_prefix_path')
+[3.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/hmi/share/hmi/hook/cmake_prefix_path.ps1'
+[3.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/hmi/share/hmi/hook/cmake_prefix_path.dsv'
+[3.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/hmi/share/hmi/hook/cmake_prefix_path.sh'
+[3.329s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/lib'
+[3.329s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/bin'
+[3.329s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/lib/pkgconfig/hmi.pc'
+[3.334s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/lib/python3.8/site-packages'
+[3.334s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/hmi/bin'
+[3.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.ps1'
+[3.336s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/hmi/share/hmi/package.dsv'
+[3.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.sh'
+[3.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.bash'
+[3.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/hmi/share/hmi/package.zsh'
+[3.338s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/hmi/share/colcon-core/packages/hmi)
+[3.339s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/myrviz' with build type 'ament_cmake'
+[3.340s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/myrviz'
+[3.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.340s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.345s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/global' with build type 'ament_cmake'
+[3.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/global'
+[3.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/model': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/model -- -j4 -l4
+[3.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[3.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/global': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan12_2/build/global -- -j4 -l4
+[3.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/model -- -j4 -l4
+[3.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/model': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/model
+[3.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model)
+[3.541s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model' for CMake module files
+[3.542s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model' for CMake config files
+[3.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('model', 'cmake_prefix_path')
+[3.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/model/share/model/hook/cmake_prefix_path.ps1'
+[3.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/model/share/model/hook/cmake_prefix_path.dsv'
+[3.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/model/share/model/hook/cmake_prefix_path.sh'
+[3.546s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/bin'
+[3.546s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/lib/pkgconfig/model.pc'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/lib/python3.8/site-packages'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/bin'
+[3.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.ps1'
+[3.548s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/model
+[3.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/model/share/model/package.dsv'
+[3.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.sh'
+[3.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.bash'
+[3.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.zsh'
+[3.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/model/share/colcon-core/packages/model)
+[3.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[3.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model)
+[3.579s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model' for CMake module files
+[3.580s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model' for CMake config files
+[3.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('model', 'cmake_prefix_path')
+[3.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/model/share/model/hook/cmake_prefix_path.ps1'
+[3.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/model/share/model/hook/cmake_prefix_path.dsv'
+[3.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/model/share/model/hook/cmake_prefix_path.sh'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/bin'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/lib/pkgconfig/model.pc'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/lib/python3.8/site-packages'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/model/bin'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.ps1'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/model/share/model/package.dsv'
+[3.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.sh'
+[3.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.bash'
+[3.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/model/share/model/package.zsh'
+[3.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/model/share/colcon-core/packages/model)
+[3.588s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mm/longshan12_2/src/local' with build type 'ament_cmake'
+[3.588s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mm/longshan12_2/src/local'
+[3.589s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.589s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz
+[3.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/local': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan12_2/build/local -- -j4 -l4
+[3.634s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myrviz)
+[3.634s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz' for CMake module files
+[3.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz
+[3.635s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz' for CMake config files
+[3.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('myrviz', 'cmake_prefix_path')
+[3.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/myrviz/share/myrviz/hook/cmake_prefix_path.ps1'
+[3.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/myrviz/share/myrviz/hook/cmake_prefix_path.dsv'
+[3.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/myrviz/share/myrviz/hook/cmake_prefix_path.sh'
+[3.639s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/lib'
+[3.640s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/bin'
+[3.640s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/lib/pkgconfig/myrviz.pc'
+[3.640s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/lib/python3.8/site-packages'
+[3.640s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/bin'
+[3.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.ps1'
+[3.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv'
+[3.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.sh'
+[3.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.bash'
+[3.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.zsh'
+[3.649s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/myrviz/share/colcon-core/packages/myrviz)
+[3.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/global' returned '0': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan12_2/build/global -- -j4 -l4
+[3.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/global': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mm/longshan12_2/build/global
+[3.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myrviz)
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz' for CMake module files
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz' for CMake config files
+[3.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('myrviz', 'cmake_prefix_path')
+[3.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/myrviz/share/myrviz/hook/cmake_prefix_path.ps1'
+[3.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/myrviz/share/myrviz/hook/cmake_prefix_path.dsv'
+[3.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/myrviz/share/myrviz/hook/cmake_prefix_path.sh'
+[3.753s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/lib'
+[3.753s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/bin'
+[3.753s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/lib/pkgconfig/myrviz.pc'
+[3.754s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/lib/python3.8/site-packages'
+[3.754s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/myrviz/bin'
+[3.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.ps1'
+[3.758s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv'
+[3.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.sh'
+[3.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.bash'
+[3.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/myrviz/share/myrviz/package.zsh'
+[3.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/myrviz/share/colcon-core/packages/myrviz)
+[3.773s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(global)
+[3.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/global' returned '0': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mm/longshan12_2/build/global
+[3.774s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global' for CMake module files
+[3.774s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global' for CMake config files
+[3.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('global', 'cmake_prefix_path')
+[3.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/global/share/global/hook/cmake_prefix_path.ps1'
+[3.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/global/share/global/hook/cmake_prefix_path.dsv'
+[3.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/global/share/global/hook/cmake_prefix_path.sh'
+[3.777s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/lib'
+[3.777s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/bin'
+[3.777s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/lib/pkgconfig/global.pc'
+[3.777s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/lib/python3.8/site-packages'
+[3.778s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/bin'
+[3.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.ps1'
+[3.779s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/global/share/global/package.dsv'
+[3.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.sh'
+[3.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.bash'
+[3.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.zsh'
+[3.781s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/global/share/colcon-core/packages/global)
+[3.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/local' returned '0': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan12_2/build/local -- -j4 -l4
+[3.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(global)
+[3.842s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global' for CMake module files
+[3.842s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global' for CMake config files
+[3.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('global', 'cmake_prefix_path')
+[3.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/global/share/global/hook/cmake_prefix_path.ps1'
+[3.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/global/share/global/hook/cmake_prefix_path.dsv'
+[3.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/global/share/global/hook/cmake_prefix_path.sh'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/lib'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/bin'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/lib/pkgconfig/global.pc'
+[3.846s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/lib/python3.8/site-packages'
+[3.846s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/global/bin'
+[3.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.ps1'
+[3.849s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/global/share/global/package.dsv'
+[3.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.sh'
+[3.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.bash'
+[3.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/global/share/global/package.zsh'
+[3.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/global/share/colcon-core/packages/global)
+[3.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/local': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mm/longshan12_2/build/local
+[3.917s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(local)
+[3.917s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local' for CMake module files
+[3.918s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local' for CMake config files
+[3.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('local', 'cmake_prefix_path')
+[3.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/local/share/local/hook/cmake_prefix_path.ps1'
+[3.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/local/share/local/hook/cmake_prefix_path.dsv'
+[3.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/local/share/local/hook/cmake_prefix_path.sh'
+[3.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/local' returned '0': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mm/longshan12_2/build/local
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/lib'
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/bin'
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/lib/pkgconfig/local.pc'
+[3.923s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/lib/python3.8/site-packages'
+[3.923s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/bin'
+[3.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.ps1'
+[3.925s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/local/share/local/package.dsv'
+[3.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.sh'
+[3.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.bash'
+[3.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.zsh'
+[3.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/local/share/colcon-core/packages/local)
+[3.998s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(local)
+[3.999s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local' for CMake module files
+[3.999s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local' for CMake config files
+[4.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('local', 'cmake_prefix_path')
+[4.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/local/share/local/hook/cmake_prefix_path.ps1'
+[4.001s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/local/share/local/hook/cmake_prefix_path.dsv'
+[4.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/local/share/local/hook/cmake_prefix_path.sh'
+[4.004s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/lib'
+[4.005s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/bin'
+[4.005s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/lib/pkgconfig/local.pc'
+[4.005s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/lib/python3.8/site-packages'
+[4.005s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/local/bin'
+[4.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.ps1'
+[4.007s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/local/share/local/package.dsv'
+[4.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.sh'
+[4.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.bash'
+[4.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/local/share/local/package.zsh'
+[4.010s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/local/share/colcon-core/packages/local)
+[15.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[15.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/control
+[15.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[15.375s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control' for CMake module files
+[15.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mm/longshan12_2/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/control
+[15.377s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control' for CMake config files
+[15.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'cmake_prefix_path')
+[15.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/control/share/control/hook/cmake_prefix_path.ps1'
+[15.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/control/share/control/hook/cmake_prefix_path.dsv'
+[15.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/control/share/control/hook/cmake_prefix_path.sh'
+[15.380s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/lib'
+[15.380s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/bin'
+[15.380s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/lib/pkgconfig/control.pc'
+[15.380s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/lib/python3.8/site-packages'
+[15.381s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/bin'
+[15.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.ps1'
+[15.382s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/control/share/control/package.dsv'
+[15.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.sh'
+[15.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.bash'
+[15.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.zsh'
+[15.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/control/share/colcon-core/packages/control)
+[15.429s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[15.429s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control' for CMake module files
+[15.430s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control' for CMake config files
+[15.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'cmake_prefix_path')
+[15.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/control/share/control/hook/cmake_prefix_path.ps1'
+[15.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mm/longshan12_2/install/control/share/control/hook/cmake_prefix_path.dsv'
+[15.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mm/longshan12_2/install/control/share/control/hook/cmake_prefix_path.sh'
+[15.432s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/lib'
+[15.432s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/bin'
+[15.432s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/lib/pkgconfig/control.pc'
+[15.432s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/lib/python3.8/site-packages'
+[15.433s] Level 1:colcon.colcon_core.environment:checking '/home/mm/longshan12_2/install/control/bin'
+[15.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.ps1'
+[15.433s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mm/longshan12_2/install/control/share/control/package.dsv'
+[15.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.sh'
+[15.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.bash'
+[15.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/mm/longshan12_2/install/control/share/control/package.zsh'
+[15.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mm/longshan12_2/install/control/share/colcon-core/packages/control)
+[15.436s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.436s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.437s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.437s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.450s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.450s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.450s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.479s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.480s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mm/longshan12_2/install/local_setup.ps1'
+[15.481s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mm/longshan12_2/install/_local_setup_util_ps1.py'
+[15.482s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mm/longshan12_2/install/setup.ps1'
+[15.483s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mm/longshan12_2/install/local_setup.sh'
+[15.484s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mm/longshan12_2/install/_local_setup_util_sh.py'
+[15.485s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mm/longshan12_2/install/setup.sh'
+[15.486s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mm/longshan12_2/install/local_setup.bash'
+[15.487s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mm/longshan12_2/install/setup.bash'
+[15.487s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mm/longshan12_2/install/local_setup.zsh'
+[15.489s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mm/longshan12_2/install/setup.zsh'

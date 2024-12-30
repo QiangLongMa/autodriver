@@ -1,0 +1,39 @@
+[0.055s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.137s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.213s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.521s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.630s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.638s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.811s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.898s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.901s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.202s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.348s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.362s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.371s] -- Configured cppcheck include dirs: /home/mm/longshan12_2/src/control/./include;/home/mm/longshan12_2/src/control/extern/matplotlib-cpp;$<BUILD_INTERFACE:/home/mm/longshan12_2/src/control/include>
+[1.371s] -- Configured cppcheck exclude dirs and/or files: 
+[1.411s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.412s] -- Configured cpplint exclude dirs and/or files: 
+[1.418s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.438s] -- Added test 'lint_cmake' to check CMake code style
+[1.439s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.467s] -- Added test 'uncrustify' to check C / C++ code style
+[1.467s] -- Configured uncrustify additional arguments: 
+[1.470s] -- Added test 'xmllint' to check XML markup files
+[1.486s] -- Configuring done
+[1.494s] CMake Error at CMakeLists.txt:49 (add_executable):
+[1.494s]   Cannot find source file:
+[1.494s] 
+[1.494s]     ./src/controlmath.h
+[1.494s] 
+[1.497s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[1.498s]   .hpp .hxx .in .txx
+[1.498s] 
+[1.498s] 
+[1.504s] CMake Error at CMakeLists.txt:49 (add_executable):
+[1.504s]   No SOURCES given to target: control_node
+[1.504s] 
+[1.504s] 
+[1.504s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[1.519s] make: *** [Makefile:596：cmake_check_build_system] 错误 1
+[1.524s] Invoked command in '/home/mm/longshan12_2/build/control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4

@@ -1,0 +1,6 @@
+Invoking command in '/home/mm/longshan12_2/build/vehicle_urdf': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/vehicle_urdf -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/vehicle_urdf
+Invoked command in '/home/mm/longshan12_2/build/vehicle_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/vehicle_urdf -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/vehicle_urdf
+Invoking command in '/home/mm/longshan12_2/build/vehicle_urdf': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/vehicle_urdf -- -j4 -l4
+Invoked command in '/home/mm/longshan12_2/build/vehicle_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/vehicle_urdf -- -j4 -l4
+Invoking command in '/home/mm/longshan12_2/build/vehicle_urdf': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/vehicle_urdf
+Invoked command in '/home/mm/longshan12_2/build/vehicle_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/vehicle_urdf

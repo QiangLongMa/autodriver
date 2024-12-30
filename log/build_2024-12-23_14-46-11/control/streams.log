@@ -1,0 +1,31 @@
+[0.055s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.352s] [35m[1mScanning dependencies of target control_node[0m
+[0.492s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[5.079s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::gps_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.079s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:130:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.079s]   130 |                             double [01;35m[KdeltaX[m[K =  dx;
+[5.079s]       |                                    [01;35m[K^~~~~~[m[K
+[5.079s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:131:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.079s]   131 |                             double [01;35m[KdeltaY[m[K =  dy;
+[5.079s]       |                                    [01;35m[K^~~~~~[m[K
+[5.079s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:132:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.079s]   132 |                             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+[5.079s]       |                                    [01;35m[K^~~~~~~~[m[K
+[5.124s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::local_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.125s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:376:67:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KEigen::MatrixXd[m[K’ {aka ‘[01m[KEigen::Matrix<double, -1, -1>[m[K’} to ‘[01m[Kdouble[m[K’
+[5.125s]   376 |                 control_math::InterpolateUsingLinearApproximation([01;31m[KoptTrajxy[m[K, interpolationoptTrajxy);
+[5.125s]       |                                                                   [01;31m[K^~~~~~~~~[m[K
+[5.125s]       |                                                                   [01;31m[K|[m[K
+[5.125s]       |                                                                   [01;31m[KEigen::MatrixXd {aka Eigen::Matrix<double, -1, -1>}[m[K
+[5.125s] In file included from [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:28[m[K:
+[5.125s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:16:62:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kdouble control_math::InterpolateUsingLinearApproximation(double, double, double, double, double)[m[K’
+[5.125s]    16 |     inline double InterpolateUsingLinearApproximation([01;36m[Kdouble s0[m[K,double s1,double s,double param0,double param1);
+[5.125s]       |                                                       [01;36m[K~~~~~~~^~[m[K
+[8.497s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:[m[K At global scope:
+[8.497s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:16:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble control_math::InterpolateUsingLinearApproximation(double, double, double, double, double)[m[K’ used but never defined
+[8.497s]    16 |     inline double [01;35m[KInterpolateUsingLinearApproximation[m[K(double s0,double s1,double s,double param0,double param1);
+[8.497s]       |                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.075s] make[2]: *** [CMakeFiles/control_node.dir/build.make:76：CMakeFiles/control_node.dir/src/control_node.cpp.o] 错误 1
+[9.076s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+[9.076s] make: *** [Makefile:141：all] 错误 2
+[9.084s] Invoked command in '/home/mm/longshan12_2/build/control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4

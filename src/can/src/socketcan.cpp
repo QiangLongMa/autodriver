@@ -178,6 +178,7 @@ void socketcan::open_socketcan(){
         perror("Error in socket bind");
         return;
     }
+    startsocketcanflag = true;
     std::cout<<"open socketcan succesed"<<std::endl;
 }
 int socketcan::send_init(unsigned int frame_ID, unsigned char* data)
@@ -201,8 +202,11 @@ int socketcan::send_init(unsigned int frame_ID, unsigned char* data)
 void socketcan::send_data()
 {  
     std::cout<<"running"<<std::endl;
-    while (running)
-    { 
+    while (running) { 
+        if (!startsocketcanflag) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            continue;
+        }
         auto startTime = std::chrono::high_resolution_clock::now();
         frame.can_id = 0x20;  // 设置CAN ID
         frame.can_dlc = 8;     // 设置数据长度
@@ -215,8 +219,8 @@ void socketcan::send_data()
         frame.data[0] = brake;   // 数据字节1
         frame.data[1] = 0x0;   // 数据字节2
         frame.data[1]|= 0x09;//0x1<<3; 
-        frame.data[2] =0;
-        frame.data[3] =0;
+        frame.data[2] = 0;
+        frame.data[3] = 0;
         frame.data[4]= (sw_angle >> 8)&0xFF;
         frame.data[5]= sw_angle & 0xFF;
         frame.data[6]= 0x64; 
@@ -240,14 +244,13 @@ void socketcan::send_data()
         frame.data[0] = gear_ask_;   // 数据字节1
         frame.data[1] = (speed_ask>>3)&0xFF;   //数据字节
         frame.data[2] = (speed_ask<<5)&0xFF; 
-        //frame.data[2] |= 0x0B<<8;
         frame.data[3] =0xB8;
         frame.data[4]= 0x2A;
         frame.data[5]= 0x30;
         frame.data[6]= 0x68;
         // frame.data[6] =0x1<<5;
         // frame.data[6]|=0x1<<6;//车辆控制模式请求  ; 
-        frame.data[7]= 0;
+        frame.data[7] = 0;
         // printf("十六进制  %X %X %X %X %X %X %X %X\n",(int)(frame.data[0]&0xff),(int)(frame.data[1]&0xff),
         //                 (int)(frame.data[2]&0xff),(int)(frame.data[3]&0xff),(int)(frame.data[4]&0xff),
         //                (int)(frame.data[5]&0xff),(int)(frame.data[6]&0xff),(int)(frame.data[7]&0xff));
@@ -284,7 +287,7 @@ void socketcan::start_thread()
     // 创建线程
     running =true;
     send_thread=std::thread(&socketcan::send_data,this);
-    send_thread.detach();  // 将线程放到后台执行，此处不阻塞 or can0read_thread.join(); 
+    send_thread.join();  // 将线程放到后台执行，此处不阻塞 or can0read_thread.join(); 
 }
 
 

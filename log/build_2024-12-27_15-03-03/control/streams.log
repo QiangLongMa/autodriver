@@ -1,0 +1,28 @@
+[0.061s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.232s] [35m[1mScanning dependencies of target control_node[0m
+[0.409s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[4.501s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::timer_can_callback0()[m[K’:
+[4.501s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:107:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_long_dis[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.501s]   107 |                 double [01;35m[Kmin_long_dis[m[K = obs_lidar.row(0).minCoeff(&minCol);
+[4.501s]       |                        [01;35m[K^~~~~~~~~~~~[m[K
+[4.569s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kdouble control_node::CalculateSteerAngle(const int&)[m[K’:
+[4.570s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:419:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_closestIndex[m[K’ was not declared in this scope; did you mean ‘[01m[KclosestIndex[m[K’?
+[4.570s]   419 |             ref_delta = atan2(car(4) * interpolationoptTrajxy(4, [01;31m[Kpre_closestIndex[m[K), 1);
+[4.570s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.570s]       |                                                                  [32m[KclosestIndex[m[K
+[4.589s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:398:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpreview_distance[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.589s]   398 |             double [01;35m[Kpreview_distance[m[K = preview_time * gpsS;
+[4.589s]       |                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[4.589s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:411:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.589s]   411 |             double [01;35m[KdeltaX[m[K =  dx;
+[4.589s]       |                    [01;35m[K^~~~~~[m[K
+[4.589s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:412:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.589s]   412 |             double [01;35m[KdeltaY[m[K =  dy;
+[4.589s]       |                    [01;35m[K^~~~~~[m[K
+[4.590s] [01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:413:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.590s]   413 |             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+[4.590s]       |                    [01;35m[K^~~~~~~~[m[K
+[7.930s] make[2]: *** [CMakeFiles/control_node.dir/build.make:76：CMakeFiles/control_node.dir/src/control_node.cpp.o] 错误 1
+[7.931s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+[7.931s] make: *** [Makefile:141：all] 错误 2
+[7.935s] Invoked command in '/home/mm/longshan12_2/build/control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4

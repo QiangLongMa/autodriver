@@ -22,6 +22,7 @@ public:
 
     PointsAndLinesPublisher(std::string name)
         : Node(name) {
+        
         RCLCPP_INFO(this->get_logger(), "%s start!", name.c_str());
         publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("globallines", 1);
         publisherlocal_ = this->create_publisher<visualization_msgs::msg::Marker>("locallines", 1);
@@ -32,7 +33,7 @@ public:
         publisherbox_ =  this->create_publisher<visualization_msgs::msg::MarkerArray>("pubbox", 2);
         publishercarpath_ = this->create_publisher<nav_msgs::msg::Path>("pubcarpath",2);
         publisherglobalbox_ =  this->create_publisher<visualization_msgs::msg::MarkerArray>("pubglobalbox", 1);
-
+        publisherspeed_ = this->create_publisher<visualization_msgs::msg::Marker>("pubspeed", 10);
         tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
         gps_subscriber_ = this->create_subscription<std_msgs::msg::Float64MultiArray>("gps", 1, std::bind(&PointsAndLinesPublisher::gps_callback, this, std::placeholders::_1));
         subglobal_ = this->create_subscription<std_msgs::msg::Float64MultiArray>("global_local_topic",1,std::bind(&PointsAndLinesPublisher::pubglobal,this, std::placeholders::_1));
@@ -147,8 +148,7 @@ public:
                 points.y = input_cloud->points[i].x*sinthea + input_cloud->points[i].y*costhea + term1;
                 points.z = input_cloud->points[i].z;
                 points.intensity =  input_cloud->points[i].intensity; 
-                out_cloud->points.push_back(points);
-                
+                out_cloud->points.push_back(points);           
             }
             sensor_msgs::msg::PointCloud2 cloud_msg;
             pcl::toROSMsg(*out_cloud,cloud_msg);
@@ -159,7 +159,6 @@ public:
             
         }
     }
-
     void gps_callback(std_msgs::msg::Float64MultiArray::SharedPtr msg){
         //std::cout<<"rviz receive gps"<<std::endl;
         static int id =0;
@@ -262,8 +261,28 @@ public:
         //Broadcast the transform
         tf_broadcaster_->sendTransform(transformStamped);
         // id ++;
-    }
+        //发布车辆速度信息 
+        visualization_msgs::msg::Marker marker_; // 用于显示速度的 Marker
+         // 初始化 Marker
+        marker_.header.frame_id = "map"; // 参考坐标系
+         marker_.header.stamp = rclcpp::Clock().now();
+        marker_.ns = "speed_marker";
+        marker_.id = 0;  // Marker 的唯一 ID
+        marker_.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING; // 文本类型
+        marker_.action = visualization_msgs::msg::Marker::ADD;
+        marker_.pose.position.x = 100; // 位置（可以根据需要调整）
+        marker_.pose.position.y = 100;
+        marker_.pose.position.z = 1; // 高度
+        // 设置文本样式
+        marker_.scale.z = 4;  // 设置文本大小
+        marker_.color.a = 1.0;  // 不透明
+        marker_.color.r = 1.0;  // 红色（可以根据需要修改颜色）
 
+        // std::stringstream speed_text;
+        // speed_text << "Speed: " << gpsS * 3.6 << "km/h";
+        // marker_.text = speed_text.str();
+        // publisherspeed_->publish(marker_);
+    }
     void publocal(std_msgs::msg::Float64MultiArray::SharedPtr msg){
         if(msg->data.size()==1){
             return;
@@ -294,7 +313,6 @@ public:
         publisherlocal_->publish(marker_msg);
         //localid++;
     }
-
     void pubglobal(std_msgs::msg::Float64MultiArray::SharedPtr msg){
         //std::cout<<"rviz receive global"<<std::endl;
         auto marker_msg = visualization_msgs::msg::Marker();
@@ -373,7 +391,6 @@ public:
 			angle += 2 * M_PI;
 		return angle;
     }
-
 private:
     // 实施发布gps的位置 
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_;
@@ -385,6 +402,7 @@ private:
     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr   publisherbox_;
     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr   publisherglobalbox_;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr   publishercarpath_;
+    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisherspeed_; // Marker 发布器
     std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subglobal_;

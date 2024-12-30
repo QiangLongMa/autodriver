@@ -21,6 +21,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(osqp REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIRS})
 include_directories(${OPENCV_INCLUDE_DIRS})
 include_directories(./include)
@@ -40,7 +41,8 @@ endif()
 include_directories(extern/matplotlib-cpp)
 
 aux_source_directory(./src SRC_LIST)
-list(APPEND SRC_LIST ./src/pure_pursuit.cpp ./src/digital_filter_coefficients.cpp ./src/digital_filter.cpp ./src/lon_controller.cpp)
+list(APPEND SRC_LIST ./src/pure_pursuit.cpp ./src/digital_filter_coefficients.cpp ./src/digital_filter.cpp ./src/lon_controller.cpp 
+        ./src/KineMPCControler.cpp ./src/controlmath.cpp)
 
 
 # # add_executable(path_planning_pub ${SRC_LIST})
@@ -51,6 +53,7 @@ target_include_directories(control_node PUBLIC
  $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(control_node ${OpenCV_LIBS})
+target_link_libraries(control_node  osqp::osqp)
 #target_link_libraries(control_node ${OpenCV_LIBS} usbcan-4e)
 ament_target_dependencies(control_node rclcpp std_msgs)
 #ament_target_dependencies(control_node rclcpp std_msgs ros2_path_interfaces)

@@ -1,0 +1,49 @@
+[0.137s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.573s] [35m[1mScanning dependencies of target control_node[0m
+[0.827s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/KineMPCControler.cpp.o[0m
+[5.508s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:[m[K In constructor ‘[01m[KKineMPCController::KineMPCController()[m[K’:
+[5.509s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:11:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthetar[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.509s]    11 |     double [01;35m[Kthetar[m[K = 0;
+[5.513s]       |            [01;35m[K^~~~~~[m[K
+[5.514s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:12:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.514s]    12 |     double [01;35m[Kvr[m[K = 0;
+[5.514s]       |            [01;35m[K^~[m[K
+[5.514s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:13:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdeltar[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.514s]    13 |     double [01;35m[Kdeltar[m[K = 0;
+[5.514s]       |            [01;35m[K^~~~~~[m[K
+[5.546s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:[m[K In member function ‘[01m[Kvoid KineMPCController::UpdateMatrix(std::tuple<double, double, double, double>&, std::tuple<double, double, double, double>&)[m[K’:
+[5.546s] [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:65:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.546s]    65 | roller::UpdateMatrix([01;35m[Kstd::tuple<double,double,double,double> &state[m[K,
+[5.546s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[5.546s] 
+[5.752s] In file included from [01m[K/home/mm/longshan12_2/src/control/./include/KineMPCControler.h:10[m[K,
+[5.753s]                  from [01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:4[m[K:
+[5.753s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:[m[K At global scope:
+[5.753s] [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:10:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble control_math::NormalizeAngle(double)[m[K’ used but never defined
+[5.763s]    10 |     inline double [01;35m[KNormalizeAngle[m[K(double angle) ;
+[5.763s]       |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.693s] [ 14%] [32m[1mLinking CXX executable control_node[0m
+[10.785s] [100%] Built target control_node
+[10.814s] Invoked command in '/home/mm/longshan12_2/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[10.911s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/control
+[10.934s] -- Install configuration: ""
+[10.935s] -- Installing: /home/mm/longshan12_2/install/control/lib/control/control_node
+[10.962s] -- Set runtime path of "/home/mm/longshan12_2/install/control/lib/control/control_node" to ""
+[10.962s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch
+[10.963s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch/control.launch.py
+[10.963s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[10.964s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[10.964s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.sh
+[10.965s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.dsv
+[10.965s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.sh
+[10.966s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.dsv
+[10.966s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.bash
+[10.966s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.sh
+[10.966s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.zsh
+[10.967s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.dsv
+[10.967s] -- Installing: /home/mm/longshan12_2/install/control/share/control/package.dsv
+[10.967s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/packages/control
+[10.968s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig.cmake
+[10.968s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig-version.cmake
+[10.968s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/package.xml
+[10.968s] Invoked command in '/home/mm/longshan12_2/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/control

@@ -1,0 +1,24 @@
+[0.124s] Invoking command in '/home/mm/longshan12_2/build/dipgseg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/dipgseg -- -j4 -l4
+[0.479s] [100%] Built target demo_node
+[0.518s] Invoked command in '/home/mm/longshan12_2/build/dipgseg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/dipgseg -- -j4 -l4
+[0.607s] Invoking command in '/home/mm/longshan12_2/build/dipgseg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/dipgseg
+[0.626s] -- Install configuration: ""
+[0.626s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/lib/dipgseg/demo_node
+[0.626s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/launch
+[0.626s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/launch/run.launch.py
+[0.626s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/package_run_dependencies/dipgseg
+[0.627s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/parent_prefix_path/dipgseg
+[0.627s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/ament_prefix_path.sh
+[0.627s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/ament_prefix_path.dsv
+[0.627s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/path.sh
+[0.627s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/environment/path.dsv
+[0.628s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.bash
+[0.628s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.sh
+[0.628s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.zsh
+[0.630s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/local_setup.dsv
+[0.631s] -- Installing: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.dsv
+[0.631s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/ament_index/resource_index/packages/dipgseg
+[0.631s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/cmake/dipgsegConfig.cmake
+[0.631s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/cmake/dipgsegConfig-version.cmake
+[0.631s] -- Up-to-date: /home/mm/longshan12_2/install/dipgseg/share/dipgseg/package.xml
+[0.653s] Invoked command in '/home/mm/longshan12_2/build/dipgseg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/dipgseg

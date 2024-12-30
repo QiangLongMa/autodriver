@@ -1,0 +1,10 @@
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kdouble control_node::CalculateSteerAngle(const int&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:418:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  418 |             double [01;35m[KdeltaX[m[K =  dx;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:419:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  419 |             double [01;35m[KdeltaY[m[K =  dy;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:420:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  420 |             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+      |                    [01;35m[K^~~~~~~~[m[K

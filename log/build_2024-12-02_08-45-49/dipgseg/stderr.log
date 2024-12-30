@@ -1,0 +1,13 @@
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+[01m[K/home/mm/longshan12_2/src/voxel_dipgseg/src/demo.cpp:48:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   48 |     void callback(const sensor_msgs::msg::PointCloud2::ConstPtr cloud_msg[01;35m[K)[m[K{
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/point_cloud2.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/pcl_conversions/pcl_conversions.h:58[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/voxel_dipgseg/src/utils/evaluate.h:2[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/voxel_dipgseg/src/demo.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/point_cloud2__struct.hpp:193:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  193 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K

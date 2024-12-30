@@ -1,0 +1,19 @@
+[0.360s] Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[0.466s] [  8%] Built target gnss__rosidl_generator_c
+[0.468s] [ 10%] Built target gnss__cpp
+[0.526s] [ 19%] Built target gnss__rosidl_typesupport_introspection_c
+[0.544s] [ 28%] Built target gnss__rosidl_typesupport_introspection_cpp
+[0.557s] [ 39%] Built target gnss__rosidl_typesupport_cpp
+[0.565s] [ 46%] Built target gnss__rosidl_typesupport_c
+[0.624s] [ 55%] Built target gnss__rosidl_typesupport_fastrtps_cpp
+[0.693s] [ 64%] Built target gnss__rosidl_typesupport_fastrtps_c
+[0.756s] [ 64%] Built target gnss
+[0.811s] [ 66%] Built target gnss__py
+[0.896s] [ 73%] Built target gnss__python
+[0.899s] [ 76%] Built target gnss_sync_node
+[0.929s] [ 85%] Built target gnss_lib
+[1.002s] [ 89%] Built target gnss__rosidl_typesupport_fastrtps_c__pyext
+[1.003s] [ 92%] Built target gnss__rosidl_typesupport_introspection_c__pyext
+[1.016s] [ 96%] Built target gnss__rosidl_typesupport_c__pyext
+[1.053s] [100%] Built target gnss_node
+[1.097s] Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4

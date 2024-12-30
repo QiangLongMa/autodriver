@@ -1,0 +1,14 @@
+source;share/gnss/hook/cmake_prefix_path.ps1
+source;share/gnss/hook/cmake_prefix_path.dsv
+source;share/gnss/hook/cmake_prefix_path.sh
+source;share/gnss/hook/ld_library_path_lib.ps1
+source;share/gnss/hook/ld_library_path_lib.dsv
+source;share/gnss/hook/ld_library_path_lib.sh
+source;share/gnss/hook/pythonpath.ps1
+source;share/gnss/hook/pythonpath.dsv
+source;share/gnss/hook/pythonpath.sh
+source;share/gnss/local_setup.bash
+source;share/gnss/local_setup.dsv
+source;share/gnss/local_setup.ps1
+source;share/gnss/local_setup.sh
+source;share/gnss/local_setup.zsh

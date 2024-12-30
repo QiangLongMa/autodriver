@@ -1,0 +1,2 @@
+Invoking command in '/home/mm/longshan12_2/build/vehicle_urdf': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/vehicle_urdf -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/vehicle_urdf
+Invoked command in '/home/mm/longshan12_2/build/vehicle_urdf' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mm/longshan12_2/src/vehicle_urdf -DCMAKE_INSTALL_PREFIX=/home/mm/longshan12_2/install/vehicle_urdf

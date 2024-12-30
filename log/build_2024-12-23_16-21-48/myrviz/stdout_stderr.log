@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target points_and_lines_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
+[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::gps_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:271:57:[m[K [01;31m[Kerror: [m[K‘[01m[KTEXT[m[K’ is not a member of ‘[01m[Kvisualization_msgs::msg::Marker[m[K’ {aka ‘[01m[Kvisualization_msgs::msg::Marker_<std::allocator<void> >[m[K’}
+  271 |         marker_.type = visualization_msgs::msg::Marker::[01;31m[KTEXT[m[K; // 文本类型
+      |                                                         [01;31m[K^~~~[m[K
+[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:291:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocalid[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  291 |         static int [01;35m[Klocalid[m[K =0;
+      |                    [01;35m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/points_and_lines_publisher.dir/build.make:63：CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/points_and_lines_publisher.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

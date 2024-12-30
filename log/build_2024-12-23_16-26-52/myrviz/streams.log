@@ -1,0 +1,30 @@
+[0.043s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[0.135s] [35m[1mScanning dependencies of target points_and_lines_publisher[0m
+[0.315s] [ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
+[6.683s] [01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.683s] [01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:291:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocalid[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.683s]   291 |         static int [01;35m[Klocalid[m[K =0;
+[6.683s]       |                    [01;35m[K^~~~~~~[m[K
+[17.947s] [100%] [32m[1mLinking CXX executable points_and_lines_publisher[0m
+[19.432s] [100%] Built target points_and_lines_publisher
+[19.460s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[19.494s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz
+[19.504s] -- Install configuration: ""
+[19.506s] -- Installing: /home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher
+[19.513s] -- Set runtime path of "/home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher" to ""
+[19.513s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz
+[19.513s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz
+[19.514s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.sh
+[19.514s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv
+[19.514s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.sh
+[19.515s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.dsv
+[19.515s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.bash
+[19.515s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.sh
+[19.515s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.zsh
+[19.515s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.dsv
+[19.515s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv
+[19.515s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/packages/myrviz
+[19.516s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake
+[19.516s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake
+[19.516s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.xml
+[19.519s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz

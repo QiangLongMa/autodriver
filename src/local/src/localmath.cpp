@@ -48,7 +48,6 @@ double lerp_v(double s0 ,double s1, double s, double v0, double v1){
   double weigth = (s - s0) / (s1 - s0);
   double v = (1- weigth)*v0 + weigth*v1;
   return v;
-
 }
 
 

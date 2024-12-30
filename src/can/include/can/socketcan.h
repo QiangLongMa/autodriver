@@ -49,13 +49,13 @@ private:
 public:
     struct can_frame frame;
 	std::thread  send_thread;
-
+	bool startsocketcanflag = false;
 	// init data 
-	unsigned int frame_ID_=0x20; 
-	int brake_=0;
-	int sw_angle_=0; 
-	unsigned char gear_ask_=0xA;
-	int speed_ask_=0;
+	unsigned int frame_ID_ = 0x20; 
+	int brake_ = 0;
+	int sw_angle_= 0; 
+	unsigned char gear_ask_ = 0xA;
+	int speed_ask_ = 0;
     int send_init(unsigned int frame_ID, unsigned char* data);
     void send_data();
 	void message_0x20(int brake,int sw_angle);

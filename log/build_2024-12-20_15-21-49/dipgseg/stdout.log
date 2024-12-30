@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target demo_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/demo_node.dir/src/demo.cpp.o[0m
+[100%] [32m[1mLinking CXX executable demo_node[0m
+[100%] Built target demo_node

@@ -14,7 +14,7 @@ double dp_st_cost_::GetSpeedCost(const STPoint& first, const STPoint& second,
                               const double cruise_speed) const{
     double cost = 0;
     const double speed = (second.s - first.s) / unit_t_;
-    if (speed<0){
+    if (speed < 0){
         return kInf;//速度小于0时，返回较大的值 
     }
     double dex_speed = (speed-speed_limit)/speed_limit;//速度比率 

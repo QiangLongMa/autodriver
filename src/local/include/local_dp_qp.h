@@ -36,15 +36,15 @@ struct Decisionflags{
 class local_dp_qp
 {
 private:
-  std::vector<std::vector<Node>> cost_table_;
+  std::vector<std::vector<std::vector<Node>>> cost_table_;
+  std::vector<std::vector<std::vector<SlPoint>>> sample_points_;
   Eigen::MatrixXd obstacles_;
   SlPoint vehicle_position;
-  std::vector<std::vector<SlPoint>> sample_points_;
   static constexpr double vehicle_length_ = 4.532;
   static constexpr double vehicle_width_ = 1.814;
   int all_distance;
   int one_distance;
-  double first_dl =0.0;
+  double first_dl = 0.0;
   double first_dll = 0.0;
   Eigen::MatrixXd path_param;//路径参数 a b c d  a+b*s+c*s*s + d*s*s*s
   int SIZE_; //起点和终点之间点的数量 
@@ -88,19 +88,28 @@ private:
   std::string yamllocate="src/local/src/param.yaml";
   std::vector<int> optinglobalindex;//局部路径在全局路径中的编号 
   YAML::Node config;
+
+  bool ReducedDistanceFlag = false;//缩减距离的标志
+  double Reducedistanceeachtime = 0.0; // 每次缩减的距离
+  size_t Reducedistancesize = 0; //缩减几次
+
+
+
 public:
+  local_dp_qp();
   void loadyaml();
   void setPatam(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
                           int one_distances,int car_index,std::vector<obses_sd> obses_limit_SD, 
                           std::vector<Eigen::VectorXd> GlobalcoordinatesystemObsesLimit,double start_l,double end_l,
-                          double delta_l,double target_v,double traget_l,Decisionflags Decisionflags_,double obsmins,bool firstrunflag);
-  void Setpraents(const std::vector<std::vector<SlPoint>>& sample_points);
+                          double delta_l,double target_v,double traget_l,Decisionflags Decisionflags_,double obsmins,bool firstrunflag,
+                          bool ReducedDistanceFlag_,  double Reducedistanceeachtime_,  size_t Reducedistancesize_ );
+  void Setpraents(const std::vector<std::vector<std::vector<SlPoint>>>& sample_points);
   void sdtofrenet(const SlPoint SL,int &index,Eigen::Vector3d &tesianXY);
   void sdtofrenet(const SlPoint SL,int &index,Eigen::Vector2d &tesianXY);
   inline double Sigmoid(const double x);
   //计算代价 
   void CalculateCostTable();
-  void CalculateCostAt(const int32_t s, const int32_t l);
+  void CalculateCostAt(const int32_t s, const int32_t l,  std::vector<std::vector<Node>> &single_cost);
   double CalculateAllObstacleCost(quintic_polynomial_curve5d curver,SlPoint pre_point, SlPoint cur_point);
   double CalculateReferenceLineCost(quintic_polynomial_curve5d curver,SlPoint pre_point, SlPoint cur_point);
   int FinalPath(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Vector4d> &frenet_path);

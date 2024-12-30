@@ -1,0 +1,17 @@
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::gps_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:124:44:[m[K [01;31m[Kerror: [m[K‘[01m[KoProjection_point_message[m[K’ was not declared in this scope; did you mean ‘[01m[KProjection_point_message[m[K’?
+  124 |                             double theta = [01;31m[KoProjection_point_message[m[K[3];
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                            [32m[KProjection_point_message[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:129:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  129 |                             double [01;35m[KdeltaX[m[K =  dx;
+      |                                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:130:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  130 |                             double [01;35m[KdeltaY[m[K =  dy;
+      |                                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:131:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  131 |                             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+      |                                    [01;35m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/control_node.dir/build.make:76：CMakeFiles/control_node.dir/src/control_node.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

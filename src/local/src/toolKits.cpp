@@ -416,6 +416,144 @@ namespace tool{
 		car_Fpoint(1,3) = (length/2)*sin_thea+(-wigth/2)*cos_thea+term1;
 	}
 
+	void get_car_fourpoint_sl(Eigen::MatrixXd& car_Fpoint, int index, std::vector<std::pair<double, double>> &car_Fpoint_sl, Eigen::MatrixXd& globalpath){
+		size_t start_index = std::max(index - 40, 0);
+        size_t ebd_index = std::min(index+ 200,static_cast<int>(globalpath.cols()));
+		for (size_t i = 0; i < 4; i++) { //每一个顶点寻找最小的编号 
+			double x = car_Fpoint(0, i);
+			double y = car_Fpoint(1, i);
+			double x_diff, y_diff;
+			double mindistance, d_min = std::numeric_limits<double>::max();
+			size_t minindex;
+			for (size_t j = start_index; j < ebd_index; ++j){
+				x_diff = x - globalpath(0, j);
+				y_diff = y - globalpath(1, j);
+				mindistance = x_diff * x_diff + y_diff * y_diff;
+				if (mindistance < d_min) {
+					d_min = mindistance;
+					minindex= j;
+				}
+			}
+			// sl 
+			std::pair<double, double> sl;
+			double dx = x - globalpath(0, minindex);
+			double dy = y - globalpath(1, minindex);
+			double cos_theta_r = std::cos(globalpath(3,minindex));
+			double sin_theta_r = std::sin(globalpath(3,minindex));
+			double ref_s = globalpath(6, minindex);
+			double path_s = dx * cos_theta_r + dy * sin_theta_r + ref_s;
+			double cross_rd_nd = cos_theta_r * dy - sin_theta_r * dx;
+			sl.second = std::copysign(cross_rd_nd, cross_rd_nd);
+			sl.first = std::abs(path_s);
+			car_Fpoint_sl.push_back(sl);
+		}
+	}
+
+	bool IsPointInRect(std::vector<std::pair<double, double>> &car_Fpoint_sl, const  std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> &obstacle) {
+		if (obstacle.empty()) return false;
+		double car_max_s = std::max({car_Fpoint_sl[0].first, car_Fpoint_sl[1].first,car_Fpoint_sl[2].first,car_Fpoint_sl[3].first});
+		double car_min_s = std::min({car_Fpoint_sl[0].first, car_Fpoint_sl[1].first,car_Fpoint_sl[2].first,car_Fpoint_sl[3].first}); 
+		double car_max_l = std::max({car_Fpoint_sl[0].second, car_Fpoint_sl[1].second, car_Fpoint_sl[2].second, car_Fpoint_sl[3].second});
+    	double car_min_l = std::min({car_Fpoint_sl[0].second, car_Fpoint_sl[1].second, car_Fpoint_sl[2].second, car_Fpoint_sl[3].second});
+		for (const auto &p : car_Fpoint_sl) {
+			double path_s = p.first;
+			double path_l = p.second;
+			for (const auto &obs : obstacle) {
+				double obs_max_s = std::max({std::get<0>(obs).first,std::get<1>(obs).first,std::get<2>(obs).first,std::get<3>(obs).first});
+				double obs_min_s = std::min({std::get<0>(obs).first,std::get<1>(obs).first,std::get<2>(obs).first,std::get<3>(obs).first});
+				double obs_max_l = std::max({std::get<0>(obs).second, std::get<1>(obs).second, std::get<2>(obs).second, std::get<3>(obs).second});
+        		double obs_min_l = std::min({std::get<0>(obs).second, std::get<1>(obs).second, std::get<2>(obs).second, std::get<3>(obs).second});
+				   // 如果车辆的包围框和障碍物的包围框没有交集，跳过
+				if (car_max_s < obs_min_s || car_min_s > obs_max_s || car_max_l < obs_min_l || car_min_l > obs_max_l) {
+					continue;
+				}
+ 				Eigen::Vector2d vec1_p1(path_s - std::get<0>(obs).first, path_l - std::get<0>(obs).second);
+				Eigen::Vector2d vec1_p2(path_s - std::get<1>(obs).first, path_l - std::get<1>(obs).second);
+				Eigen::Vector2d vec1_p3(path_s - std::get<2>(obs).first, path_l - std::get<2>(obs).second);
+				Eigen::Vector2d vec1_p4(path_s - std::get<3>(obs).first, path_l - std::get<3>(obs).second);
+
+				Eigen::Vector2d vec12(std::get<1>(obs).first - std::get<0>(obs).first, std::get<1>(obs).second - std::get<0>(obs).second);
+				Eigen::Vector2d vec23(std::get<2>(obs).first - std::get<1>(obs).first, std::get<2>(obs).second - std::get<1>(obs).second);
+				Eigen::Vector2d vec34(std::get<3>(obs).first - std::get<2>(obs).first, std::get<3>(obs).second - std::get<2>(obs).second);
+				Eigen::Vector2d vec41(std::get<0>(obs).first - std::get<3>(obs).first, std::get<0>(obs).second - std::get<3>(obs).second);
+
+				if (PointInRect(vec12, vec23, vec34, vec41, vec1_p1, vec1_p2, vec1_p3, vec1_p4)) {
+					return true;
+				}
+			}
+		}
+		for (const auto &obs : obstacle) { //总的障碍物的个数
+			double obs_max_s = std::max({std::get<0>(obs).first,std::get<1>(obs).first,std::get<2>(obs).first,std::get<3>(obs).first});
+			double obs_min_s = std::min({std::get<0>(obs).first,std::get<1>(obs).first,std::get<2>(obs).first,std::get<3>(obs).first});
+			double obs_max_l = std::max({std::get<0>(obs).second, std::get<1>(obs).second, std::get<2>(obs).second, std::get<3>(obs).second});
+			double obs_min_l = std::min({std::get<0>(obs).second, std::get<1>(obs).second, std::get<2>(obs).second, std::get<3>(obs).second});
+				// 如果车辆的包围框和障碍物的包围框没有交集，跳过
+			if (car_max_s < obs_min_s || car_min_s > obs_max_s || car_max_l < obs_min_l || car_min_l > obs_max_l) {
+				continue;
+			}
+			for (size_t i = 0; i < 4; i++){ //每个障碍物的四个顶点 
+				double obs_s ; //障碍物的S
+				double obs_l ;//障碍物的L
+				switch (i){
+					case 0:
+						obs_s = std::get<0>(obs).first; //障碍物的S
+						obs_l = std::get<0>(obs).second;//障碍物的L
+						break;
+					case 1:
+						obs_s = std::get<1>(obs).first; //障碍物的S
+						obs_l = std::get<1>(obs).second;//障碍物的L
+						break;
+					case 2:
+						obs_s = std::get<2>(obs).first; //障碍物的S
+						obs_l = std::get<2>(obs).second;//障碍物的L
+						break;
+					case 3:
+						obs_s = std::get<3>(obs).first; //障碍物的S
+						obs_l = std::get<3>(obs).second;//障碍物的L
+						break;
+					default:
+						break;
+				}
+				Eigen::Vector2d vec1_p1(obs_s - car_Fpoint_sl[0].first, obs_l - car_Fpoint_sl[0].second);
+				Eigen::Vector2d vec1_p2(obs_s - car_Fpoint_sl[1].first, obs_l - car_Fpoint_sl[1].second);
+				Eigen::Vector2d vec1_p3(obs_s - car_Fpoint_sl[2].first, obs_l - car_Fpoint_sl[2].second);
+				Eigen::Vector2d vec1_p4(obs_s - car_Fpoint_sl[3].first, obs_l - car_Fpoint_sl[3].second);
+
+				Eigen::Vector2d vec12(car_Fpoint_sl[1].first - car_Fpoint_sl[0].first, car_Fpoint_sl[1].second - car_Fpoint_sl[0].second);
+				Eigen::Vector2d vec23(car_Fpoint_sl[2].first - car_Fpoint_sl[1].first, car_Fpoint_sl[2].second - car_Fpoint_sl[1].second);
+				Eigen::Vector2d vec34(car_Fpoint_sl[3].first - car_Fpoint_sl[2].first, car_Fpoint_sl[3].second - car_Fpoint_sl[2].second);
+				Eigen::Vector2d vec41(car_Fpoint_sl[0].first - car_Fpoint_sl[3].first, car_Fpoint_sl[0].second - car_Fpoint_sl[3].second);
+				if (PointInRect(vec12, vec23, vec34, vec41, vec1_p1, vec1_p2, vec1_p3, vec1_p4)) {
+					return true;
+				}
+			}
+			
+		}
+		return false;
+	}
+
+	//判断点是否在多边形的内部 ，如果在内部的 叉乘应该全小于0 
+	bool PointInRect(Eigen::Vector2d &vec12, Eigen::Vector2d &vec23, Eigen::Vector2d &vec34, Eigen::Vector2d &vec41
+					,Eigen::Vector2d &vec1_p1, Eigen::Vector2d &vec1_p2, Eigen::Vector2d &vec1_p3, Eigen::Vector2d &vec1_p4){
+		// p1 
+		double o1 = vec12.x() * vec1_p1.y() - vec12.y() * vec1_p1.x();
+		double o2 = vec23.x() * vec1_p2.y() - vec23.y() * vec1_p2.x();
+		double o3 = vec34.x() * vec1_p3.y() - vec34.y() * vec1_p3.x();
+		double o4 = vec41.x() * vec1_p4.y() - vec41.y() * vec1_p4.x();
+		if(o1 < 0 && o2 < 0 && o3 < 0 && o4 < 0){
+			return true;
+		} else {
+			return false;
+		}
+	}
+	bool HasOverlapUseSl(std::vector<std::pair<double, double>> &car_Fpoint_sl, std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> obstaclelist) {
+		return IsPointInRect(car_Fpoint_sl, obstaclelist);
+	}
+
+
+
 	//每一个点与所有障碍物进行比较 这样如果有碰撞 速度会加快 
     bool HasOverlap(Eigen::MatrixXd &car_point,Eigen::VectorXd &obs, double thea){
         if(obs.size() == 0){

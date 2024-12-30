@@ -36,7 +36,7 @@ ros2 run hmi hmi ->log1.txt &
 PID1=$!
 
 
-rviz2 -d ~/longshan11_6/src/myrviz/default.rviz >/dev/null 2>&1  &
+rviz2 -d ~/longshan12_2/src/myrviz/default.rviz >/dev/null 2>&1  &
 PID2=$!
 
 # Optionally, you can wait for both commands to finish
@@ -93,6 +93,18 @@ kill_ros2_processes() {
     else
         echo "real_time_plot process not found."
     fi
+
+    pidlocal=$(pgrep -f local_node4)
+    if [ -n "$pidlocal" ]; then
+        echo "Killing local_node4 process with PID $pidlocal"
+        kill $pidlocal
+    else
+        echo "local_node4 process not found."
+    fi
+
+
+
+
 }
 
 

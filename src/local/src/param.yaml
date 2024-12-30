@@ -32,7 +32,7 @@ piecewise_speed:
   longitudinal_jerk_lower_bound: -2.0 #加加速度speed_qp_: 0
   longitudinal_jerk_upper_bound: 2.0
   ref_v_weight:  20
-  kappa_penalty_weight: 1000
+  kappa_penalty_weight: 3000
   ref_s_weight: 50
 
 

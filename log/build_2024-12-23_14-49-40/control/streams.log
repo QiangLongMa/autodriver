@@ -1,0 +1,42 @@
+[0.069s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.266s] [35m[1mScanning dependencies of target control_node[0m
+[0.378s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/controlmath.cpp.o[0m
+[2.575s] [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:[m[K In function ‘[01m[Kvoid control_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)[m[K’:
+[2.575s] [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:34:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[KEigen::Index[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.575s]    34 |         for (size_t i = 0; [01;35m[Ki < localpath.cols()[m[K; ++i){
+[2.575s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[2.693s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:71[m[K,
+[2.693s]                  from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+[2.694s]                  from [01m[K/usr/include/c++/9/ios:40[m[K,
+[2.694s]                  from [01m[K/usr/include/c++/9/istream:38[m[K,
+[2.694s]                  from [01m[K/usr/include/c++/9/fstream:38[m[K,
+[2.694s]                  from [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:1[m[K,
+[2.694s]                  from [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:1[m[K:
+[2.694s] /usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘[01m[Kbool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<std::vector<double>*, std::vector<std::vector<double> > >; _Value = const double; _Compare = control_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)::<lambda(std::vector<double>&, double&)>][m[K’:
+[2.694s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:979:14:[m[K   required from ‘[01m[K_ForwardIterator std::__lower_bound(_ForwardIterator, _ForwardIterator, const _Tp&, _Compare) [with _ForwardIterator = __gnu_cxx::__normal_iterator<std::vector<double>*, std::vector<std::vector<double> > >; _Tp = double; _Compare = __gnu_cxx::__ops::_Iter_comp_val<control_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)::<lambda(std::vector<double>&, double&)> >][m[K’
+[2.694s] [01m[K/usr/include/c++/9/bits/stl_algo.h:2038:32:[m[K   required from ‘[01m[K_FIter std::lower_bound(_FIter, _FIter, const _Tp&, _Compare) [with _FIter = __gnu_cxx::__normal_iterator<std::vector<double>*, std::vector<std::vector<double> > >; _Tp = double; _Compare = control_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)::<lambda(std::vector<double>&, double&)>][m[K’
+[2.694s] [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:43:85:[m[K   required from here
+[2.694s] [01m[K/usr/include/c++/9/bits/predefined_ops.h:177:11:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(control_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)::<lambda(std::vector<double>&, double&)>) (std::vector<double>&, const double&)[m[K’
+[2.694s]   177 |  { return [01;31m[Kbool(_M_comp(*__it, __val))[m[K; }
+[2.694s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.695s] [01m[K/usr/include/c++/9/bits/predefined_ops.h:177:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool (*)(std::vector<double>&, double&)[m[K’ <conversion>
+[2.695s] [01m[K/usr/include/c++/9/bits/predefined_ops.h:177:11:[m[K [01;36m[Knote: [m[K  conversion of argument 3 would be ill-formed:
+[2.695s] [01m[K/usr/include/c++/9/bits/predefined_ops.h:177:11:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Kdouble&[m[K’ to ‘[01m[Kconst double[m[K’ discards qualifiers
+[2.695s] [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:37:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcontrol_math::InterpolateUsingS(Eigen::MatrixXd&, Eigen::MatrixXd&)::<lambda(std::vector<double>&, double&)>[m[K’ <near match>
+[2.695s]    37 |         auto comp = [01;36m[K[[m[K](std::vector<double> & point, double & s){
+[2.695s]       |                     [01;36m[K^[m[K
+[2.695s] [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:37:21:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[2.695s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:71[m[K,
+[2.695s]                  from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+[2.695s]                  from [01m[K/usr/include/c++/9/ios:40[m[K,
+[2.695s]                  from [01m[K/usr/include/c++/9/istream:38[m[K,
+[2.695s]                  from [01m[K/usr/include/c++/9/fstream:38[m[K,
+[2.695s]                  from [01m[K/home/mm/longshan12_2/src/control/./include/controlmath.h:1[m[K,
+[2.695s]                  from [01m[K/home/mm/longshan12_2/src/control/src/controlmath.cpp:1[m[K:
+[2.695s] [01m[K/usr/include/c++/9/bits/predefined_ops.h:177:11:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Kdouble&[m[K’ to ‘[01m[Kconst double[m[K’ discards qualifiers
+[2.696s]   177 |  { return [01;31m[Kbool(_M_comp(*__it, __val))[m[K; }
+[2.696s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.777s] make[2]: *** [CMakeFiles/control_node.dir/build.make:89：CMakeFiles/control_node.dir/src/controlmath.cpp.o] 错误 1
+[2.779s] make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+[2.779s] make: *** [Makefile:141：all] 错误 2
+[2.800s] Invoked command in '/home/mm/longshan12_2/build/control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4

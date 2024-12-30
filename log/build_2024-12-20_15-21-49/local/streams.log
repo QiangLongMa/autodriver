@@ -1,0 +1,9 @@
+[0.072s] Invoking command in '/home/mm/longshan12_2/build/local': AMENT_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib:/usr/local/lib/libosqp.so:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib/libosqp.so PYTHONPATH=/home/mm/longshan12_2/install/ros2_path_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mm/longshan12_2/build/local -- -j4 -l4
+[0.345s] [  5%] [32mBuilding CXX object CMakeFiles/local_node4.dir/src/local_node4.cpp.o[0m
+[13.436s] In file included from [01m[K/home/mm/longshan12_2/src/local/./include/localFuns.h:5[m[K,
+[13.437s]                  from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:17[m[K:
+[13.437s] [01m[K/home/mm/longshan12_2/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+[13.437s]    64 |     inline double [01;35m[Kd2r[m[K(double theta);
+[13.437s]       |                   [01;35m[K^~~[m[K
+[22.508s] [ 10%] [32m[1mLinking CXX executable local_node4[0m
+[24.145s] [100%] Built target local_node4

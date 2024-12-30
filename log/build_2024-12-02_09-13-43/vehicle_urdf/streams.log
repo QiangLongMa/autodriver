@@ -1,0 +1,38 @@
+[0.012s] Invoking command in '/home/mm/longshan12_2/build/vehicle_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/vehicle_urdf -- -j4 -l4
+[0.084s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.128s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.328s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.361s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.364s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.444s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.493s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.495s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.628s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.734s] -- Found robot_state_publisher: 2.4.5 (/opt/ros/foxy/share/robot_state_publisher/cmake)
+[0.735s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.166s] -- Configuring done
+[1.169s] -- Generating done
+[1.171s] -- Build files have been written to: /home/mm/longshan12_2/build/vehicle_urdf
+[1.201s] Invoked command in '/home/mm/longshan12_2/build/vehicle_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/vehicle_urdf -- -j4 -l4
+[1.227s] Invoking command in '/home/mm/longshan12_2/build/vehicle_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/vehicle_urdf
+[1.236s] -- Install configuration: ""
+[1.237s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf//urdf
+[1.237s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf//urdf/vehicle.urdf
+[1.237s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf//launch
+[1.237s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf//launch/display_vehicle.launch.py
+[1.238s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/ament_index/resource_index/package_run_dependencies/vehicle_urdf
+[1.238s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/ament_index/resource_index/parent_prefix_path/vehicle_urdf
+[1.238s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/environment/ament_prefix_path.sh
+[1.238s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/environment/ament_prefix_path.dsv
+[1.239s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/environment/path.sh
+[1.239s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/environment/path.dsv
+[1.239s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/local_setup.bash
+[1.239s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/local_setup.sh
+[1.239s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/local_setup.zsh
+[1.240s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/local_setup.dsv
+[1.240s] -- Installing: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/package.dsv
+[1.240s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/ament_index/resource_index/packages/vehicle_urdf
+[1.241s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/cmake/vehicle_urdfConfig.cmake
+[1.241s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/cmake/vehicle_urdfConfig-version.cmake
+[1.241s] -- Up-to-date: /home/mm/longshan12_2/install/vehicle_urdf/share/vehicle_urdf/package.xml
+[1.244s] Invoked command in '/home/mm/longshan12_2/build/vehicle_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mm/longshan12_2/install/draw_messages:/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/vehicle_urdf

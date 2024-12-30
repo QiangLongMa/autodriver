@@ -1,0 +1,8 @@
+-- Install configuration: ""
+-- Up-to-date: /home/mm/longshan12_2/install/model/share/model//launch
+-- Installing: /home/mm/longshan12_2/install/model/share/model//launch/load_launch.py
+CMake Error at cmake_install.cmake:45 (file):
+  file INSTALL cannot find "/home/mm/longshan12_2/src/model/urdf": No such
+  file or directory.
+
+

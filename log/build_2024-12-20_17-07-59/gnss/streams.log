@@ -1,0 +1,163 @@
+[0.058s] Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[0.180s] [  1%] Built target gnss__cpp
+[0.220s] [ 10%] Built target gnss__rosidl_generator_c
+[0.316s] [ 19%] Built target gnss__rosidl_typesupport_cpp
+[0.323s] [ 28%] Built target gnss__rosidl_typesupport_fastrtps_cpp
+[0.333s] [ 37%] Built target gnss__rosidl_typesupport_introspection_cpp
+[0.360s] [ 46%] Built target gnss__rosidl_typesupport_introspection_c
+[0.385s] [ 55%] Built target gnss__rosidl_typesupport_c
+[0.410s] [ 64%] Built target gnss__rosidl_typesupport_fastrtps_c
+[0.478s] [ 64%] Built target gnss
+[0.573s] [ 66%] Built target gnss__py
+[0.589s] [ 69%] Built target gnss_sync_node
+[0.605s] [ 78%] Built target gnss_lib
+[0.649s] [ 85%] Built target gnss__python
+[0.651s] [ 89%] Built target gnss_node
+[0.709s] [ 92%] Built target gnss__rosidl_typesupport_fastrtps_c__pyext
+[0.710s] [ 96%] Built target gnss__rosidl_typesupport_introspection_c__pyext
+[0.719s] [100%] Built target gnss__rosidl_typesupport_c__pyext
+[0.743s] Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/gnss -- -j4 -l4
+[0.914s] Invoking command in '/home/mm/longshan12_2/build/gnss': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/gnss
+[0.926s] -- Install configuration: ""
+[0.926s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/rosidl_interfaces/gnss
+[0.927s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[0.928s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[0.928s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/ins.h
+[0.928s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/message.h
+[0.929s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/imu.h
+[0.929s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_generator_c__visibility_control.h
+[0.930s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[0.930s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.h
+[0.930s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__functions.c
+[0.931s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.h
+[0.931s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__functions.h
+[0.932s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__functions.h
+[0.933s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__functions.c
+[0.933s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.h
+[0.933s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__struct.h
+[0.933s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__functions.h
+[0.933s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__functions.c
+[0.934s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__struct.h
+[0.934s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__struct.h
+[0.935s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/library_path.sh
+[0.936s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/library_path.dsv
+[0.936s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_generator_c.so
+[0.937s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[0.937s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[0.938s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.938s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[0.939s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_fastrtps_c.h
+[0.939s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_fastrtps_c.h
+[0.940s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_fastrtps_c.h
+[0.940s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_c.so
+[0.941s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[0.942s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[0.942s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.942s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[0.943s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp
+[0.944s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_fastrtps_cpp.hpp
+[0.944s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/dds_fastrtps
+[0.944s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp
+[0.945s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_fastrtps_cpp.so
+[0.946s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[0.946s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[0.946s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.947s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[0.947s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.c
+[0.948s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.c
+[0.948s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.c
+[0.948s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_introspection_c.h
+[0.948s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_introspection_c.h
+[0.949s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_introspection_c.h
+[0.950s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_c.so
+[0.950s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_c.so
+[0.951s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[0.951s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[0.952s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.952s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/ins.hpp
+[0.952s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/message.hpp
+[0.952s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/imu.hpp
+[0.953s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[0.953s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.hpp
+[0.954s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.hpp
+[0.954s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__struct.hpp
+[0.954s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__builder.hpp
+[0.954s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__struct.hpp
+[0.954s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__traits.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__struct.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__builder.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__builder.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__traits.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__traits.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.hpp
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg
+[0.955s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail
+[0.956s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__type_support.cpp
+[0.958s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__type_support.cpp
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__type_support.cpp
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/include/gnss/msg/detail/ins__rosidl_typesupport_introspection_cpp.hpp
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_introspection_cpp.so
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__rosidl_typesupport_cpp.so
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/pythonpath.sh
+[0.959s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/pythonpath.dsv
+[0.960s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/__init__.py
+[1.009s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_message_s.c
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/__init__.py
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_ins_s.c
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_message.py
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_ins.py
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_imu.py
+[1.021s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/msg/_imu_s.c
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/python3.8/site-packages/gnss/gnss_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss__python.so
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Imu.idl
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Ins.idl
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Message.idl
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Imu.msg
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Ins.msg
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/msg/Message.msg
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/libgnss_lib.so
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/gnss/gnss_node
+[1.022s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/lib/gnss/gnss_sync_node
+[1.035s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/launch
+[1.037s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/launch/gnss.launch.py
+[1.038s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/package_run_dependencies/gnss
+[1.038s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/parent_prefix_path/gnss
+[1.038s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/ament_prefix_path.sh
+[1.038s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/ament_prefix_path.dsv
+[1.039s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/path.sh
+[1.039s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/environment/path.dsv
+[1.042s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.bash
+[1.042s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.sh
+[1.043s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.zsh
+[1.043s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/local_setup.dsv
+[1.043s] -- Installing: /home/mm/longshan12_2/install/gnss/share/gnss/package.dsv
+[1.044s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/ament_index/resource_index/packages/gnss
+[1.045s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cExport.cmake
+[1.045s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cExport-noconfig.cmake
+[1.045s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cExport.cmake
+[1.046s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.046s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cExport.cmake
+[1.047s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cExport-noconfig.cmake
+[1.047s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_generator_cppExport.cmake
+[1.048s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cppExport.cmake
+[1.048s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.049s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cppExport.cmake
+[1.049s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnss__rosidl_typesupport_cppExport-noconfig.cmake
+[1.050s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake-extras.cmake
+[1.050s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.051s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_libraries-extras.cmake
+[1.051s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_targets-extras.cmake
+[1.052s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.052s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.052s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.053s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnssConfig.cmake
+[1.053s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/cmake/gnssConfig-version.cmake
+[1.053s] -- Up-to-date: /home/mm/longshan12_2/install/gnss/share/gnss/package.xml
+[1.058s] Invoked command in '/home/mm/longshan12_2/build/gnss' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/gnss

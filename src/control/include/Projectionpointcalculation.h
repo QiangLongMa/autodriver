@@ -2,9 +2,6 @@
 #include <Eigen/Eigen>
 #include <cmath>
 #include <iostream>
-
-
-
 namespace Projectionpoint{
     double normalizeAngle(double angle) {
     angle = std::fmod(angle, 2 * M_PI);
@@ -71,7 +68,7 @@ namespace Projectionpoint{
         
     }
     std::array<double, 5> GetProjectionpoint(int &closestIndex,const Eigen::MatrixXd &optTrajxy,double x,double y){
-        if (closestIndex==0||closestIndex==optTrajxy.cols()){
+        if (closestIndex==0 || closestIndex == optTrajxy.cols() - 1){
             std::array<double,5>result{optTrajxy(0,closestIndex),optTrajxy(1,closestIndex),
                             optTrajxy(2,closestIndex),optTrajxy(3,closestIndex),optTrajxy(4,closestIndex)};
             return result;
@@ -80,6 +77,6 @@ namespace Projectionpoint{
         std::size_t index_start = closestIndex-1;
         std::size_t index_end = closestIndex+1;
         // 做投影,向量A(index_start -> traj上的车辆当前位置) 点乘 向量B(index_start -> index_end)
-        return FindProjectionPoint(optTrajxy.col(index_start),optTrajxy.col(index_end),x,y);
+        return FindProjectionPoint(optTrajxy.col(index_start), optTrajxy.col(index_end), x,  y);
     }  
 }

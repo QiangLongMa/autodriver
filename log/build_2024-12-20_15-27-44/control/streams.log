@@ -1,0 +1,36 @@
+[0.049s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[0.193s] [35m[1mScanning dependencies of target control_node[0m
+[0.346s] [  7%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/mpc_osqp.cpp.o[0m
+[0.396s] [ 15%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/pid_controller.cpp.o[0m
+[0.396s] [ 23%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/pure_pursuit.cpp.o[0m
+[0.397s] [ 30%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/stanley.cpp.o[0m
+[4.070s] [ 38%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/toolKits.cpp.o[0m
+[4.412s] [01m[K/home/mm/longshan12_2/src/control/src/pure_pursuit.cpp:[m[K In member function ‘[01m[Kvoid pure_pursuit::getPreviewpoint(Eigen::VectorXd, Eigen::MatrixXd&, int)[m[K’:
+[4.413s] [01m[K/home/mm/longshan12_2/src/control/src/pure_pursuit.cpp:18:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksum_distance[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.413s]    18 |     double [01;35m[Ksum_distance[m[K;
+[4.414s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[7.086s] [ 46%] [32m[1mLinking CXX executable control_node[0m
+[8.891s] [100%] Built target control_node
+[8.905s] Invoked command in '/home/mm/longshan12_2/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/control -- -j4 -l4
+[8.951s] Invoking command in '/home/mm/longshan12_2/build/control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/control
+[8.960s] -- Install configuration: ""
+[8.962s] -- Installing: /home/mm/longshan12_2/install/control/lib/control/control_node
+[8.971s] -- Set runtime path of "/home/mm/longshan12_2/install/control/lib/control/control_node" to ""
+[8.971s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch
+[8.971s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/launch/control.launch.py
+[8.971s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[8.971s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[8.971s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.sh
+[8.971s] -- Installing: /home/mm/longshan12_2/install/control/share/control/environment/ament_prefix_path.dsv
+[8.972s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/environment/path.sh
+[8.972s] -- Installing: /home/mm/longshan12_2/install/control/share/control/environment/path.dsv
+[8.973s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.bash
+[8.973s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.sh
+[8.973s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/local_setup.zsh
+[8.973s] -- Installing: /home/mm/longshan12_2/install/control/share/control/local_setup.dsv
+[8.974s] -- Installing: /home/mm/longshan12_2/install/control/share/control/package.dsv
+[8.975s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/ament_index/resource_index/packages/control
+[8.975s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig.cmake
+[8.975s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/cmake/controlConfig-version.cmake
+[8.975s] -- Up-to-date: /home/mm/longshan12_2/install/control/share/control/package.xml
+[8.978s] Invoked command in '/home/mm/longshan12_2/build/control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/control

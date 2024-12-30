@@ -1,0 +1,29 @@
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:[m[K In member function ‘[01m[Kvoid local_dp_qp::CalculateCostTable()[m[K’:
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:90:18:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNode::cost[m[K’ in read-only object
+   90 |     p[0][0].cost = 0.0;
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:91:16:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNode::dl[m[K’ in read-only object
+   91 |     p[0][0].dl = first_dl;
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:92:17:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNode::ddl[m[K’ in read-only object
+   92 |     p[0][0].ddl = first_dll;
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:[m[K In member function ‘[01m[Kvoid local_dp_qp::CalculateCostAt(int32_t, int32_t, const std::vector<std::vector<Node> >&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:129:34:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNode::pre_node[m[K’ in read-only object
+  129 |       single_cost[s][l].pre_node = &pre_point;
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:130:33:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst quintic_polynomial_curve5d[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+  130 |       single_cost[s][l].curve = [01;31m[Kcurve[m[K;
+      |                                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:7[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:1[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/quintic_polynomial_curve1d.h:18:7:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kquintic_polynomial_curve5d& quintic_polynomial_curve5d::operator=(const quintic_polynomial_curve5d&)[m[K’
+   18 | class [01;36m[Kquintic_polynomial_curve5d[m[K{
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:131:30:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNode::cost[m[K’ in read-only object
+  131 |       single_cost[s][l].cost = min_cost;
+make[2]: *** [CMakeFiles/local_node4.dir/build.make:141：CMakeFiles/local_node4.dir/src/local_dp_qp.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/mm/longshan12_2/src/local/./include/localFuns.h:5[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:17[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+   64 |     inline double [01;35m[Kd2r[m[K(double theta);
+      |                   [01;35m[K^~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/local_node4.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

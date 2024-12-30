@@ -25,6 +25,10 @@ struct  obses_sd :SlPoint
   SlPoint point3;
   SlPoint point4;
   SlPoint centre_points;
+  double min_s;
+  double max_s;
+  double length;
+  double wigth;
 };
 struct FrenetFramePoint{
   double s;

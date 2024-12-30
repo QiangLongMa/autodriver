@@ -1,10 +1,6 @@
 {
     "files.associations": {
-        "hash_map": "cpp",
-        "hash_set": "cpp",
-        "bitset": "cpp",
         "chrono": "cpp",
-        "algorithm": "cpp",
         "cctype": "cpp",
         "clocale": "cpp",
         "cmath": "cpp",
@@ -19,8 +15,11 @@
         "cwctype": "cpp",
         "array": "cpp",
         "atomic": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
         "strstream": "cpp",
         "*.tcc": "cpp",
+        "bitset": "cpp",
         "codecvt": "cpp",
         "complex": "cpp",
         "condition_variable": "cpp",
@@ -31,6 +30,7 @@
         "unordered_set": "cpp",
         "vector": "cpp",
         "exception": "cpp",
+        "algorithm": "cpp",
         "functional": "cpp",
         "iterator": "cpp",
         "map": "cpp",
@@ -70,10 +70,10 @@
         "variant": "cpp",
         "bit": "cpp",
         "*.ipp": "cpp",
-        "core": "cpp",
-        "numericaldiff": "cpp",
         "any": "cpp",
         "regex": "cpp",
-        "shared_mutex": "cpp"
-    }
+        "shared_mutex": "cpp",
+        "filesystem": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/mm/longshan12_2/build/gnss/gnss__py"
 }

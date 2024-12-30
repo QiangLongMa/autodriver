@@ -1,0 +1,24 @@
+[0.041s] Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/hmi -- -j4 -l4
+[0.327s] [100%] Built target hmi
+[0.341s] Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/hmi -- -j4 -l4
+[0.712s] Invoking command in '/home/mm/longshan12_2/build/hmi': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/hmi
+[0.730s] -- Install configuration: ""
+[0.730s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/lib/hmi/hmi
+[0.732s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/launch
+[0.732s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/launch/hmi.launch.py
+[0.732s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/package_run_dependencies/hmi
+[0.732s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/parent_prefix_path/hmi
+[0.732s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/ament_prefix_path.sh
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/ament_prefix_path.dsv
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/path.sh
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/environment/path.dsv
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.bash
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.sh
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.zsh
+[0.733s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/local_setup.dsv
+[0.733s] -- Installing: /home/mm/longshan12_2/install/hmi/share/hmi/package.dsv
+[0.734s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/ament_index/resource_index/packages/hmi
+[0.734s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/cmake/hmiConfig.cmake
+[0.734s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/cmake/hmiConfig-version.cmake
+[0.734s] -- Up-to-date: /home/mm/longshan12_2/install/hmi/share/hmi/package.xml
+[0.737s] Invoked command in '/home/mm/longshan12_2/build/hmi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/hmi

@@ -1,0 +1,266 @@
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:[m[K In member function ‘[01m[Kvoid local_trajs_node::GetLocalPath()[m[K’:
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:253:96:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  253 |                                     start_l,end_l,delta_l,target_v, -1.5, Decisionflags_,0,true[01;31m[K)[m[K;//最后一位时最近障碍物的位置
+      |                                                                                                [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:379:129:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  379 |                                                                 start_l,end_l,delta_l,target_v,target_l,Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                 [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:398:133:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  398 |                                                                     start_l,end_l,delta_l,target_v,target_l,Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                     [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:416:125:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  416 |                                                                 start_l,end_l,delta_l,target_v,-1.5,Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:439:132:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  439 |                                                                 start_l,end_l,delta_l, target_v, target_l, Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:444:132:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  444 |                                                                 start_l,end_l,delta_l, target_v, target_l, Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:459:132:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  459 |                                                                 start_l,end_l,delta_l, target_v, target_l, Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:470:133:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  470 |                                                                     start_l,end_l,delta_l,target_v,target_l,Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                     [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:475:133:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  475 |                                                                     start_l,end_l,delta_l,target_v,target_l,Decisionflags_, 0, false[01;31m[K)[m[K;
+      |                                                                                                                                     [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:526:120:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  526 |                                                         start_l,end_l,delta_l,target_v,target_l, Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                        [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:543:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  543 |                                                         start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:550:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  550 |                                                         start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:555:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  555 |                                                         start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:574:131:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  574 |                                                                     start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:624:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  624 |                                                         start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:641:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  641 |                                                         start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:650:123:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  650 |                                                             start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                           [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:655:123:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  655 |                                                             start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                           [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:663:123:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  663 |                                                             start_l,end_l,delta_l,target_v,target_l,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                           [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:717:114:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double&, Decisionflags&, int, bool)[m[K’
+  717 |                                                     start_l,end_l,delta_l,target_v,targetl,Decisionflags_,0,false[01;31m[K)[m[K;//里面进行了碰撞检测 外面无需再进行了
+      |                                                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:730:110:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  730 |                                                     start_l,end_l,delta_l,target_v,1.5,Decisionflags_,0,false[01;31m[K)[m[K;//里面进行了碰撞检测 外面无需再进行了
+      |                                                                                                              [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:736:114:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  736 |                                                         start_l,end_l,delta_l,target_v,1.5,Decisionflags_,0,false[01;31m[K)[m[K;//里面进行了碰撞检测 外面无需再进行了
+      |                                                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:741:118:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int, int, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  741 |                                                             start_l,end_l,delta_l,target_v,1.5,Decisionflags_,0,false[01;31m[K)[m[K;//里面进行了碰撞检测 外面无需再进行了
+      |                                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:790:115:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  790 |                                                         start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:804:116:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  804 |                                                         start_l, end_l, delta_l,target_v,1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:825:115:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int&, int&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  825 |                                                         start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:887:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, int, Decisionflags&, double&, bool)[m[K’
+  887 |                                                         start_l,end_l,delta_l,target_v,-1,Decisionflags_,obsmins,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:901:118:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  901 |                                                             start_l,end_l,delta_l,target_v,1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:920:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int&, int&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+  920 |                                                             start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:1007:131:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, double&, double&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+ 1007 |                                 GlobalcoordinatesystemObsesLimitinlocal,start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:1014:131:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int&, int&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+ 1014 |                                 GlobalcoordinatesystemObsesLimitinlocal,start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+[01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:1019:131:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klocal_dp_qp::setPatam(double&, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>::Scalar&, double&, double&, double&, double&, Eigen::MatrixXd&, int&, int&, int&, std::vector<obses_sd>&, std::vector<Eigen::Matrix<double, -1, 1> >&, double&, double&, double&, double&, double, Decisionflags&, int, bool)[m[K’
+ 1019 |                                 GlobalcoordinatesystemObsesLimitinlocal,start_l,end_l,delta_l,target_v,-1.5,Decisionflags_,0,false[01;31m[K)[m[K;
+      |                                                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:20[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid local_dp_qp::setPatam(double, double, double, double, double, double, const MatrixXd&, int, int, int, std::vector<obses_sd>, std::vector<Eigen::Matrix<double, -1, 1> >, double, double, double, double, double, Decisionflags, double, bool, bool, double, size_t)[m[K’
+  101 |   void [01;36m[KsetPatam[m[K(double car_a , double car_v,double car_s,double car_l,double dl,double dll, const Eigen::MatrixXd& globalPath,int all_distances ,
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/local/./include/local_dp_qp.h:101:8:[m[K [01;36m[Knote: [m[K  candidate expects 23 arguments, 20 provided
+In file included from [01m[K/home/mm/longshan12_2/src/local/./include/localFuns.h:5[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/local/src/local_node4.cpp:17[m[K:
+[01m[K/home/mm/longshan12_2/src/local/./include/toolKits.h:[m[K At global scope:
+[01m[K/home/mm/longshan12_2/src/local/./include/toolKits.h:64:19:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kdouble tool::d2r(double)[m[K’ used but never defined
+   64 |     inline double [01;35m[Kd2r[m[K(double theta);
+      |                   [01;35m[K^~~[m[K
+make[2]: *** [CMakeFiles/local_node4.dir/build.make:167：CMakeFiles/local_node4.dir/src/local_node4.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/local_node4.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

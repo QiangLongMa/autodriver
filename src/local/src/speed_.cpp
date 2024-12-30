@@ -16,11 +16,11 @@ bool speed_::Search(double total_length_s_,std::vector<SpeedPoint> &speed_data,d
   speed_limit_list = std::move(speed_limit_list_);
   speed_dkppa = std::move(speed_dkppa_);//速度曲率
   dp_st_cost.loadyaml(config_);
-  //std::cout<<"InitCostTable"<<std::endl;
+  // std::cout<<"InitCostTable"<<std::endl;
   InitCostTable(total_length_s_);
-  //std::cout<<"InitSpeedLimitLookUp"<<std::endl;
+  // std::cout<<"InitSpeedLimitLookUp"<<std::endl;
   InitSpeedLimitLookUp();
-  //std::cout<<"CalculateTotalCost"<<std::endl;
+  ////std::cout<<"CalculateTotalCost"<<std::endl;
   CalculateTotalCost();
   //std::cout<<"RetrieveSpeedProfile"<<std::endl;
   if(!RetrieveSpeedProfile(speed_data)){
@@ -38,6 +38,7 @@ bool speed_::Search(double total_length_s_,std::vector<SpeedPoint> &speed_data,d
 
 void speed_::InitCostTable(double total_length_s_){
      // t方向的离散化，dimension_t_ = total_length_t_ 除以 unit_t_（时间分辨率）。
+    //std::cout<<"total_length_s_: "<<total_length_s_<<std::endl; 
     int dimension_t_ = static_cast<int>(std::ceil(
                  total_length_t_ / static_cast<double>(unit_t_))) + 1;//
     total_s_ = total_length_s_;
@@ -105,30 +106,29 @@ void speed_::CalculateTotalCost(){
     size_t lowest_row  = cost_table_.back().size() - 1;//行数-1 
     //cout为每一列的点数 
     //std::cout<<"next_lowest_row: "<<next_lowest_row<<" next_highest_row: "<<next_highest_row<<std::endl;
-    int count = static_cast<int>(next_highest_row) - static_cast<int>(next_lowest_row) + 1;
-    if (count>0){//count 确保 next_highest_row>=next_lowest_row
+    //int count = static_cast<int>(next_highest_row) - static_cast<int>(next_lowest_row) + 1;
+    if (true){//count 确保 next_highest_row>=next_lowest_row
       // 内循环，每行的index，即每一个s /**********暂时先使用所有行进行处理 *********/
-      for (size_t r = next_lowest_row; r <= next_highest_row; ++r) { 
-        auto msg = std::make_shared<StGraphMessage>(c, r);//首先先计算首列的cost 0列 0行 
-        
+      for (size_t r = 0; r <= cost_table_.back().size() - 1; ++r) { 
+        auto msg = std::make_shared<StGraphMessage>(c,r);//首先先计算首列的cost 0列 0行 
         CalculateCostAt(msg);
       }
     }
     // 下一轮循环的准备工作，更新范围 [next_lowest_row, next_highest_row]
-    for (size_t r = next_lowest_row; r <= next_highest_row; ++r) {
-      const auto& cost_cr = cost_table_[c][r]; //首先是0行0列 就是车辆起始的位置
-      if (cost_cr.total_cost() < std::numeric_limits<double>::infinity()) {
-        size_t h_r = 0;
-        size_t l_r = 0;
-        GetRowRange(cost_cr, &h_r, &l_r);
-        //由第c列、第 next_lowest_row~next_highest_row 行的节点可到达的最远的s
-        highest_row = std::max(highest_row, h_r);
-        //可到达的最近的s
-        lowest_row  = std::min(lowest_row, l_r);
-      }
-    }
-    next_highest_row = highest_row;
-    next_lowest_row  = lowest_row;
+    // for (size_t r = next_lowest_row; r <= next_highest_row; ++r) {
+    //   const auto& cost_cr = cost_table_[c][r]; //首先是0行0列 就是车辆起始的位置
+    //   if (cost_cr.total_cost() < std::numeric_limits<double>::infinity()) {
+    //     size_t h_r = 0;
+    //     size_t l_r = 0;
+    //     GetRowRange(cost_cr, &h_r, &l_r);
+    //     //由第c列、第 next_lowest_row~next_highest_row 行的节点可到达的最远的s
+    //     highest_row = std::max(highest_row, h_r);
+    //     //可到达的最近的s
+    //     lowest_row  = std::min(lowest_row, l_r);
+    //   }
+    // }
+    // next_highest_row = highest_row;
+    // next_lowest_row  = lowest_row;
   }
 }
 
@@ -186,8 +186,6 @@ double speed_::GetPatialPotentialCost (const StGraphPoint const_cr){
 }
 
 
-
-
 void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
 
   const uint32_t c = msg->c;
@@ -220,21 +218,24 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
   if(c==1){
     //当前的的加速度 
     // v1 = v0 + a * t, v1^2 - v0^2 = 2 * a * s => a = 2 * (s/t - v)/t
+    //std::cout<<"init_point_v: "<<init_point_v<<std::endl;
     const double acc = 2*(cost_cr.point().s/unit_t_-init_point_v)/unit_t_;
+    //std::cout<<"acc: "<<acc<<std::endl;
+
     //std::cout<<"c: "<<c<<" r: "<<r<<"acc: "<<acc<<std::endl;
     //加速度、减速度超出范围，返回
-    if (acc<max_deceleration_||acc>max_acceleration_){
+    if (acc < max_deceleration_ ||acc > max_acceleration_){
       return;
     }
      // 若v1小于0，但s却大于min_s_consider_speed，倒车，返回
      /*******************????????????????????????????????????????****************/
-    // if(init_point_v+acc*unit_t_<-kDoubleEpsilon&&cost_cr.point().s>min_s_consider_speed){
-    //   return;
-    // }
+    //std::cout<<"cost_cr.point().s: "<<cost_cr.point().s<<std::endl;
+    if(init_point_v + acc*unit_t_<-kDoubleEpsilon){
+      return;
+    }
     // 当前点与起始点的连线与stboundary有重叠，返回 这个是和障碍物进行判断的，现阶段不进行处理 
     /********************************************************
      ******************************************/
-    
     // 计算当前点的total_cost     //点间cost，从起点到[c=1,r]的各项cost，即[t0,s0]->[t1,sn]的cost
     cost_cr.SetTotalCost(
       cost_cr.obstacle_cost()+cost_cr.spatial_potential_cost()+
@@ -258,24 +259,24 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
                        spatial_distance_by_index_.end(), pre_lowest_s);
   uint32_t r_low = 0;   
   // 计算 pre_lowest_s 的 index
+  //std::cout<<"44444444444"<<std::endl;
   if (pre_lowest_itr == spatial_distance_by_index_.end()) {   
     r_low = dimension_s_ - 1;
   } else {
     r_low = static_cast<uint32_t>(
         std::distance(spatial_distance_by_index_.begin(), pre_lowest_itr));
   }
+
   //std::cout<<"r_row "<<r_low<<std::endl;
   //std::cout<<"r "<<r<<std::endl;
-
-  const uint32_t r_pre_size = r - r_low + 1;//在范围内点的个数 
+  const uint32_t r_pre_size = r ;//在范围内点的个数 
   //std::cout<<"r_pre_size "<<r_pre_size<<std::endl;
   const auto& pre_col = cost_table_[c - 1];
-  double curr_speed_limit = speed_limit;//需要后面计算得到 
+  double curr_speed_limit = speed_limit;//需要后面计算得到
   if (c==2){
-
     // 对于前一列，遍历从r->r_low的点， 
     // 依据重新算得的cost，当前点的pre_point，也就是DP过程的状态转移方程
-    for (uint32_t i = 0; i < r_pre_size; ++i){
+    for (uint32_t i = 0; i <= r_pre_size; ++i){
       uint32_t r_pre = r-i;
       //std::cout<<"r_pre "<<r_pre<<std::endl;
       //跳过无穷大和为空的点 说明没有计算 此路不通 
@@ -291,11 +292,11 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
         continue;
       }
       //倒车 不进行计算 
-      // if (pre_col[r_pre].GetOptimalSpeed() + curr_a * unit_t_ <
-      //         -kDoubleEpsilon &&
-      //     cost_cr.point().s > min_s_consider_speed) {
-      //   continue;
-      // }
+      if (pre_col[r_pre].GetOptimalSpeed() + curr_a * unit_t_ <
+              -kDoubleEpsilon ||
+          cost_cr.point().s < pre_col[r_pre].point().s) {
+        continue;
+      }
       curr_speed_limit = std::fmin(curr_speed_limit, speed_limit_by_index_[r_pre]);
       cruise_speed = std::fmin(speed_limit_by_index_[r_pre],cruise_speed);
       const double cost = cost_cr.obstacle_cost() +
@@ -314,11 +315,14 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
     }
     return;
   }
-  
   // 第3列，及以后列的处理
   // 依据重新算得的cost，当前点的pre_point，也就是DP过程的状态转移方程
-  for (uint32_t i = 0; i < r_pre_size; ++i) {
+  //std::cout<<"r_pre_size: "<<r_pre_size<<std::endl;
+  for (uint32_t i = 0; i <= r_pre_size; ++i) {
+    // std::cout<<"r: "<<r<<std::endl;
+    // std::cout<<"i: "<<i<<std::endl;
     uint32_t r_pre = r - i;
+    //std::cout<<"r_pre: "<<r_pre<<std::endl;
     if (std::isinf(pre_col[r_pre].total_cost()) ||
         pre_col[r_pre].pre_point() == nullptr) {
       continue;
@@ -333,10 +337,11 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
     if (curr_a > max_acceleration_ || curr_a < max_deceleration_) {
       continue;
     }
-    // if (pre_col[r_pre].GetOptimalSpeed() + curr_a * unit_t_ < -kDoubleEpsilon &&
-    //     cost_cr.point().s > min_s_consider_speed) {
-    //   continue;
-    // }
+    if (pre_col[r_pre].GetOptimalSpeed() + curr_a * unit_t_ < -kDoubleEpsilon ||
+        cost_cr.point().s < pre_col[r_pre].point().s) {
+     
+      continue;
+    }
     // if (CheckOverlapOnDpStGraph(st_graph_data_.st_boundaries(), cost_cr,
     //                             pre_col[r_pre])) {
     //   continue;
@@ -355,15 +360,19 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
     const STPoint& triple_pre_point = prepre_graph_point.pre_point()->point();  //上上上个点
     const STPoint& prepre_point = prepre_graph_point.point();                   //上上个点
     const STPoint& pre_point = pre_col[r_pre].point();                          //上个点
-    const STPoint& curr_point = cost_cr.point();                                //当前点
+    const STPoint& curr_point = cost_cr.point(); 
+    //std::cout<<"r_pre: "<<r_pre<<std::endl;                               //当前点
     curr_speed_limit =
         std::fmin(curr_speed_limit, speed_limit_by_index_[r_pre]);
+    //std::cout<<"curr_speed_limit: "<<curr_speed_limit<<std::endl;                               //当前点
     cruise_speed = std::fmin(speed_limit_by_index_[r_pre],cruise_speed);
+   // std::cout<<"cruise_speed: "<<cruise_speed<<std::endl;                               //当前点
 
     double cost = cost_cr.obstacle_cost() + cost_cr.spatial_potential_cost() +
                   pre_col[r_pre].total_cost() +
                   CalculateEdgeCost(triple_pre_point, prepre_point, pre_point,
                                     curr_point, curr_speed_limit, cruise_speed);
+    //std::cout<<"cost: "<<cost<<std::endl;                               //当前点  
     if (cost < cost_cr.total_cost()) {
       cost_cr.SetTotalCost(cost);
       cost_cr.SetPrePoint(pre_col[r_pre]);
@@ -380,66 +389,120 @@ void speed_::CalculateCostAt(const std::shared_ptr<StGraphMessage> &msg){
  * **********************************************************************************/
 bool speed_::RetrieveSpeedProfile(std::vector<SpeedPoint> &speed_data){
   
-  double min_cost = std::numeric_limits<double>::infinity();
-  const StGraphPoint * best_end_point = nullptr;
+  double min_cost = std::numeric_limits<double>::max();
+  StGraphPoint * best_end_pointss = nullptr;
   size_t minindex;
+  std::vector<StGraphPoint> last_data_list;
+  std::vector<StGraphPoint> sample_s;//相同的s
   // 从cost_table_最后一列找 min_cost
-  for (size_t i = 0; i < cost_table_.back().size(); i++){
-    if(!std::isinf(cost_table_.back()[i].total_cost())&&cost_table_.back()[i].total_cost()<min_cost){
-      best_end_point = &cost_table_.back()[i];
-      min_cost = cost_table_.back()[i].total_cost();
-      minindex=i;
-    }
-  }
-  
+  // for (size_t i = 0; i < cost_table_.back().size(); i++){
+  //   if(!std::isinf(cost_table_.back()[i].total_cost())&&cost_table_.back()[i].total_cost()<min_cost){
+  //     best_end_point = &cost_table_.back()[i];
+  //     min_cost = cost_table_.back()[i].total_cost();
+  //   }
+  // }
   // for(const auto & cur_point :cost_table_.back()){
   //   if(!std::isinf(cur_point.total_cost())&&cur_point.total_cost()<min_cost){
   //     best_end_point = &cur_point;
   //     min_cost = cur_point.total_cost();
   //   }
   // }
- 
   // 遍历每一列的最后一个点，找正在的best_end_point，并更新min_cost
   // 这里不直接将最后一列的min_cost点作为最佳终点呢？
   // 因为采样时间是一个预估时间，在此之前的各列最后一个点可能已经到达终点 找到每一列中 cost最小的值
   // 最后一列的最后一行 就是S的终点，寻找到达终点最小的cost 
-  if(std::isinf(cost_table_.back().back().total_cost())){ //最后一行为inf
-    for(const auto& row : cost_table_){
-    const StGraphPoint & cur_point = row[minindex];
-    if (!std::isinf(cur_point.total_cost())&&cur_point.total_cost()<=min_cost){
-      best_end_point = &cur_point;
-      min_cost = cur_point.total_cost();
-    }
-    }
-  }else{
-    for(const auto& row : cost_table_){
-      const StGraphPoint & cur_point = row.back();
-      // std::cout<<"cur_points: "<<cur_point.index_s() <<" cur_point:"<<cur_point.index_t()<<std::endl;
-      // std::cout<<"cur_points: "<<cur_point.point().s<<" cur_point:"<<cur_point.point().t<<std::endl;
-      // std::cout<<"total_cost: "<<cur_point.total_cost()<<" min_cost:"<<min_cost<<std::endl;
-      if (!std::isinf(cur_point.total_cost())&&cur_point.total_cost()<=min_cost){
-        best_end_point = &cur_point;
-        min_cost = cur_point.total_cost();
+  // for(const auto& row : cost_table_){
+  //     for(const auto& cur_point : row) 
+  //   std::cout<<"t: "<<cur_point.point().t<<" s: "<<cur_point.point().s<<" cost: "<<cur_point.total_cost()<<std::endl;
+  // }
+  
+  if(std::isinf(cost_table_.back().back().total_cost())){ //最后一行的最后一个为inf 没有到达终点 
+    //需要判别有没有全为inf的列
+    size_t IsNOInfNuM = 0;
+    while (IsNOInfNuM < cost_table_.size()){
+      size_t size = 0;
+      for (auto & cur_point :cost_table_[IsNOInfNuM]) {
+        if (std::isinf(cur_point.total_cost())) { //如果等于inf
+          size ++;
+        } 
       }
+      if (size == cost_table_[IsNOInfNuM].size()) { //一列中全为inf
+          break;
+      } else {
+        IsNOInfNuM ++;
+      }
+    }
+    //std::cout<<"IsNOInfNuM: "<<IsNOInfNuM<<std::endl;
+    size_t RealUsingCol = IsNOInfNuM - 1;
+    size_t max_index = 0;
+    for (size_t i = 0; i < cost_table_[RealUsingCol].size(); i++){
+      if(!std::isinf(cost_table_[RealUsingCol][i].total_cost()) ){
+        max_index = i ; //找到最大的index
+      }
+    }
+    //std::cout<<"max_index: "<<max_index<<std::endl;
+    for (size_t i = 0; i <= RealUsingCol;  i++) {
+      if(!std::isinf(cost_table_[i][max_index].total_cost()) && i != 0 ) {
+        sample_s.push_back(cost_table_[i][max_index]);
+      }
+    }
+    //std::cout<<"sample_s: "<<sample_s.size()<<std::endl;
+    if (!sample_s.empty()) {
+      //从小到大进行排序 
+      auto comp2 = [] (const StGraphPoint &p1, const StGraphPoint &p2){
+          return p1.total_cost() < p2.total_cost();
+      };
+      std::sort(sample_s.begin(), sample_s.end(), comp2);
+      // for (size_t i = 0; i < sample_s.size(); i++){
+      //       std::cout<<"sample_t: "<<sample_s[i].point().t<<" sample_s: "<<sample_s[i].point().s
+      //                 <<" sample_cost: "<<sample_s[i].total_cost()<<std::endl;
+      // }
+      best_end_pointss = &(sample_s.front());
+      //std::cout<<"best_end_points: " << (best_end_pointss)->point().s<<" best_end_pointt:"<<(best_end_pointss)->point().t<<std::endl;
+      //std::cout<<"sample_s—s: " << (sample_s.front()).point().s<<" sample_s-t:"<<(sample_s.front()).point().t<<std::endl;
+
+      // min_cost = sample_s.front().total_cost();
+    }
+  } else {
+    for(const auto& row : cost_table_){
+      const StGraphPoint &cur_point = row.back();
+      // std::cout<<"cur_points: "<<cur_point.point().s<<" cur_point:"<<cur_point.point().t<<std::endl;
+      // std::cout<<"total_cost: "<<cur_point.total_cost()<<std::endl;
+      if (!std::isinf(cur_point.total_cost()) && cur_point.total_cost() != 0){
+        last_data_list.push_back(cur_point);
+        // best_end_point = &cur_point;
+        // min_cost = cur_point.total_cost();
+      }
+    }
+    if (!last_data_list.empty()) {
+      auto comp = [] (const StGraphPoint &p1, const StGraphPoint &p2){
+          return p1.total_cost() < p2.total_cost();
+      };
+      std::sort(last_data_list.begin(), last_data_list.end(), comp);
+      best_end_pointss = &(last_data_list.front());
+      min_cost = last_data_list.front().total_cost();
     }
   }
   // std::cout<<"min_cost: "<<min_cost<<std::endl;
-  std::cout<<"best_end_points: "<<best_end_point->point().s<<" best_end_pointt:"<<best_end_point->point().t<<std::endl;
+    // }
+  if (best_end_pointss == nullptr){
+   std::cout<<"Fail to find the best feasible trajectory"<<std::endl;
+   return false;
+  }
+
+  std::cout<<"best_end_point—s: "<< (best_end_pointss)->point().s<<" best_end_point-t:"<<(best_end_pointss)->point().t<<std::endl;
+  // std::cout<<"last_data_list: "<<last_data_list.size()<<std::endl;
   // for (size_t i = 0; i < cost_table_.size(); i++){
 
   //   for (size_t j = 0; j < cost_table_[i].size(); j++){
   //     std::cout<<"t: "<<cost_table_[i][j].point().t<<" "<<"s: "<<cost_table_[i][j].point().s<<" "<<"cost: "<<cost_table_[i][j].total_cost();
   //   }
   //   std::cout<<std::endl;
-  // }
-  if (best_end_point==nullptr){
-   std::cout<<"Fail to find the best feasible trajectory"<<std::endl;
-   return false;
-  }
+
   
   // 回溯，得到最优的 speed_profile
   std::vector<SpeedPoint> speed_profile;
-  const StGraphPoint* cur_point = best_end_point;
+  const StGraphPoint* cur_point = best_end_pointss;
   while (cur_point!=nullptr){//
     SpeedPoint speed_point;
     speed_point.s = cur_point->point().s;
@@ -448,7 +511,10 @@ bool speed_::RetrieveSpeedProfile(std::vector<SpeedPoint> &speed_data){
     cur_point = cur_point->pre_point();
   }
   std::reverse(speed_profile.begin(), speed_profile.end());
-
+  // for (size_t i = 0; i < speed_profile.size(); i++){
+  //   std::cout<<"speed_profile_t: "<<speed_profile[i].t<<" speed_profile_s: "<<speed_profile[i].s<<std::endl;
+  // }
+  
   static double kEpsilon = std::numeric_limits<double>::epsilon();
   if (speed_profile.front().t > kEpsilon ||
       speed_profile.front().s > kEpsilon) {
@@ -484,13 +550,13 @@ bool speed_::RetrieveSpeedProfile(std::vector<SpeedPoint> &speed_data){
 
   //计算每个点曲率
  
-  for(size_t i=0;i<speed_profile.size(); ++i){
+  for(size_t i = 0; i < speed_profile.size(); ++i){
     double profile_s = speed_profile[i].s;
     double min_distance = std::numeric_limits<double>::max();
     size_t index;
     for (size_t j = 0; j < car_cruise_speed.size(); ++j)
     {
-      double distance = std::abs(profile_s-car_cruise_speed[j].s);
+      double distance = std::abs(profile_s - car_cruise_speed[j].s);
       if(distance<min_distance){
         min_distance = distance;
         index = j;

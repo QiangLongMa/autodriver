@@ -1,0 +1,84 @@
+[01m[K/home/mm/longshan12_2/src/control/src/digital_filter.cpp:28:34:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   28 | DigitalFilter ::DigitalFilter(){}[01;35m[K;[m[K
+      |                                  [01;35m[K^[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/digital_filter.cpp:29:34:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   29 | DigitalFilter::~DigitalFilter(){}[01;35m[K;[m[K
+      |                                  [01;35m[K^[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/digital_filter.cpp:[m[K In member function ‘[01m[Kdouble DigitalFilter::Compute(const std::deque<double>&, const std::vector<double>&, std::size_t, std::size_t)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/digital_filter.cpp:95:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcoeff_end[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   95 |                               [01;35m[Kconst std::size_t coeff_end[m[K) {
+      |                               [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:[m[K In member function ‘[01m[Kvoid KineMPCController::ComputeControlCommand(std::tuple<double, double, double, double>&, std::tuple<double, double, double, double>&, std::vector<double>&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:104:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksteer[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  104 |         double [01;35m[Ksteer[m[K = control[0](1, 0) + std::get<3>(reference_point) * wheelbase_;
+      |                [01;35m[K^~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:105:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kacc[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  105 |         double [01;35m[Kacc[m[K = 0;
+      |                [01;35m[K^~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/KineMPCControler.cpp:85:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_acceleration_[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   85 |     constexpr double [01;35m[Kmax_acceleration_[m[K = 3.0;
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:[m[K In member function ‘[01m[Kvoid loncontroller::ComputeLongitudinalErrors(const MatrixXd&, double, double)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:176:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klon_speed[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  176 |   double [01;35m[Klon_speed[m[K = std::get<3>(vehicle_state_) * std::cos(heading_error);
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:178:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klon_acceleration[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  178 |   double [01;35m[Klon_acceleration[m[K = std::get<4>(vehicle_state_) * std::cos(heading_error);
+      |          [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:180:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kone_minus_kappa_lat_error[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  180 |   double [01;35m[Kone_minus_kappa_lat_error[m[K = 1 -  matched_point.at(3) * std::get<3>(vehicle_state_) * std::sin(heading_error);
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:124:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kts[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  124 |                     const double preview_time, [01;35m[Kconst double ts[m[K){
+      |                                                [01;35m[K~~~~~~~~~~~~~^~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:[m[K In member function ‘[01m[Kbool loncontroller::ComputeControlCommand(const MatrixXd&, double&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/lon_controller.cpp:116:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  116 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/localFuns.cpp:[m[K In function ‘[01m[Kint local::frenet2Cartesian(const MatrixXd&, const double&, const double&, const int&, Eigen::Vector2d&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/localFuns.cpp:326:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ks[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  326 |     int frenet2Cartesian(const Eigen::MatrixXd& globalPath, [01;35m[Kconst double& s[m[K, const double& d, const int& minIndex, Eigen::Vector2d& cartesianXY){
+      |                                                             [01;35m[K~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/control/src/lqr.cpp:2[m[K:
+[01m[K/home/mm/longshan12_2/src/control/./include/RiccatiSolver.h:[m[K In function ‘[01m[Kbool solveRiccatiArimotoPotter(const MatrixXd&, const MatrixXd&, const MatrixXd&, const MatrixXd&, Eigen::MatrixXd&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/./include/RiccatiSolver.h:76:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdim_u[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   76 |  const unsigned int [01;35m[Kdim_u[m[K = B.cols();
+      |                     [01;35m[K^~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lqr.cpp:[m[K In member function ‘[01m[Kint lqr::stateSpaceMatrix(Eigen::Matrix<double, 3, 3>&, Eigen::Matrix<double, 3, 2>&, const VectorXd&, tool::controlParams, double, double)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/lqr.cpp:4:140:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcps[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    4 | ix<double, 3, 2>& B, const Eigen::VectorXd& car,  [01;35m[Ktool::controlParams cps[m[K,
+      |                                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+[01m[K/home/mm/longshan12_2/src/control/src/mpc_osqp.cpp:[m[K In member function ‘[01m[Kvoid MpcOsqp::CalculateKernel(std::vector<double>*, std::vector<long long int>*, std::vector<long long int>*)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/mpc_osqp.cpp:75:3:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECK_EQ[m[K’ was not declared in this scope
+   75 |   [01;31m[KCHECK_EQ[m[K(value_index, num_param_);
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/mpc_osqp.cpp:[m[K In member function ‘[01m[Kbool MpcOsqp::Solve(std::vector<double>*)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/mpc_osqp.cpp:304:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KOSQPData*[m[K’ to ‘[01m[KOSQPWorkspace**[m[K’
+  304 |   osqp_workspace = osqp_setup([01;31m[Kdata[m[K, settings);
+      |                               [01;31m[K^~~~[m[K
+      |                               [01;31m[K|[m[K
+      |                               [01;31m[KOSQPData*[m[K
+In file included from [01m[K/home/mm/longshan12_2/src/control/./include/mpc_osqp.h:26[m[K,
+                 from [01m[K/home/mm/longshan12_2/src/control/src/mpc_osqp.cpp:17[m[K:
+[01m[K/usr/local/include/osqp/osqp.h:58:34:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kc_int osqp_setup(OSQPWorkspace**, const OSQPData*, const OSQPSettings*)[m[K’
+   58 | c_int osqp_setup([01;36m[KOSQPWorkspace** workp[m[K, const OSQPData* data, const OSQPSettings* settings);
+      |                  [01;36m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::gps_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:128:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaX[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  128 |                             double [01;35m[KdeltaX[m[K =  dx;
+      |                                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:129:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  129 |                             double [01;35m[KdeltaY[m[K =  dy;
+      |                                    [01;35m[K^~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/control_node.cpp:130:36:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaYAW[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  130 |                             double [01;35m[KdeltaYAW[m[K = tool::normalizeAngle(tool::d2r(car(3)) - theta);
+      |                                    [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/control/src/lqr.cpp:[m[K In member function ‘[01m[KEigen::Vector2d lqr::calcU(const VectorXd&, const MatrixXd&, std::array<double, 5>&, const Eigen::Matrix<double, 3, 3>&, const Eigen::Matrix<double, 3, 2>&, const Eigen::Matrix<double, 3, 3>&, const Eigen::Matrix<double, 2, 2>&)[m[K’:
+[01m[K/home/mm/longshan12_2/src/control/src/lqr.cpp:114:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  114 | Eigen::Vector2d lqr::calcU(const Eigen::VectorXd& car, [01;35m[Kconst Eigen::MatrixXd&  path[m[K,
+      |                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+make[2]: *** [CMakeFiles/control_node.dir/build.make:154：CMakeFiles/control_node.dir/src/mpc_osqp.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/control_node.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

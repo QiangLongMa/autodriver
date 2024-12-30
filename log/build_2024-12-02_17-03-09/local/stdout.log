@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target local_node4[0m
+[  5%] [32mBuilding CXX object CMakeFiles/local_node4.dir/src/local_dp_qp.cpp.o[0m
+[ 10%] [32m[1mLinking CXX executable local_node4[0m
+[100%] Built target local_node4
+-- Install configuration: ""
+-- Installing: /home/mm/longshan12_2/install/local/lib/local/local_node4
+-- Set runtime path of "/home/mm/longshan12_2/install/local/lib/local/local_node4" to ""
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/launch
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/launch/local.launch.py
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/ament_index/resource_index/package_run_dependencies/local
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/ament_index/resource_index/parent_prefix_path/local
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/environment/path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.bash
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.sh
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.zsh
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/local_setup.dsv
+-- Installing: /home/mm/longshan12_2/install/local/share/local/package.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/ament_index/resource_index/packages/local
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/cmake/localConfig.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/cmake/localConfig-version.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/local/share/local/package.xml

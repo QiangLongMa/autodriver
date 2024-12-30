@@ -1,0 +1,22 @@
+[0.064s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[0.614s] [100%] Built target points_and_lines_publisher
+[0.718s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/myrviz -- -j4 -l4
+[1.041s] Invoking command in '/home/mm/longshan12_2/build/myrviz': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz
+[1.093s] -- Install configuration: ""
+[1.107s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher
+[1.108s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz
+[1.108s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz
+[1.109s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.sh
+[1.109s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv
+[1.109s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.sh
+[1.109s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.dsv
+[1.109s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.bash
+[1.110s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.sh
+[1.110s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.zsh
+[1.110s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.dsv
+[1.110s] -- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv
+[1.110s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/packages/myrviz
+[1.111s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake
+[1.111s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake
+[1.111s] -- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.xml
+[1.115s] Invoked command in '/home/mm/longshan12_2/build/myrviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/myrviz

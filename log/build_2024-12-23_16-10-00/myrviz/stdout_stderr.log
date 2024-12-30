@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target points_and_lines_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
+[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:292:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocalid[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  292 |         static int [01;35m[Klocalid[m[K =0;
+      |                    [01;35m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable points_and_lines_publisher[0m
+[100%] Built target points_and_lines_publisher
+-- Install configuration: ""
+-- Installing: /home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher
+-- Set runtime path of "/home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher" to ""
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.sh
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.bash
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.sh
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.zsh
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.dsv
+-- Installing: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/packages/myrviz
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake
+-- Up-to-date: /home/mm/longshan12_2/install/myrviz/share/myrviz/package.xml

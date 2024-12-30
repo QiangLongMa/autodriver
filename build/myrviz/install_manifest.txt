@@ -1,0 +1,16 @@
+/home/mm/longshan12_2/install/myrviz/lib/myrviz/points_and_lines_publisher
+/home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/package_run_dependencies/myrviz
+/home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/parent_prefix_path/myrviz
+/home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.sh
+/home/mm/longshan12_2/install/myrviz/share/myrviz/environment/ament_prefix_path.dsv
+/home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.sh
+/home/mm/longshan12_2/install/myrviz/share/myrviz/environment/path.dsv
+/home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.bash
+/home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.sh
+/home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.zsh
+/home/mm/longshan12_2/install/myrviz/share/myrviz/local_setup.dsv
+/home/mm/longshan12_2/install/myrviz/share/myrviz/package.dsv
+/home/mm/longshan12_2/install/myrviz/share/ament_index/resource_index/packages/myrviz
+/home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig.cmake
+/home/mm/longshan12_2/install/myrviz/share/myrviz/cmake/myrvizConfig-version.cmake
+/home/mm/longshan12_2/install/myrviz/share/myrviz/package.xml

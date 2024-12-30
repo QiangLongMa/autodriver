@@ -1,0 +1,4 @@
+CMake Error at CMakeLists.txt:16 (install):
+  install TARGETS given target "vehicle_urdf" which does not exist.
+
+

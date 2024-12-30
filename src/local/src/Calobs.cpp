@@ -173,6 +173,7 @@ namespace obs{
         int obsIndex; //障碍物Frenet位置, 
         obses_sd sd_;
         double min_s;
+        double max_s;
         double min_l;
         for (size_t i = 0; i < obs.cols(); ++i){
             lidar_obs_Frenet(obs.col(i),globalPath_,sd_,carindex);
@@ -182,9 +183,14 @@ namespace obs{
              *    -2.9~2.9 对每一个点进行判断   
              * 
              * **/
-            min_s = std::min({sd_.point1.s, sd_.point2.s, sd_.point3.s, sd_.point4.s,});
+            min_s = std::min({sd_.point1.s, sd_.point2.s, sd_.point3.s, sd_.point4.s});
+            max_s = std::max({sd_.point1.s, sd_.point2.s, sd_.point3.s, sd_.point4.s});
+            double weigth = std::abs(sd_.point4.l - sd_.point1.l);
             if((min_s-vehicle_position.s) <= 30){
                 if(decide_obs_true_false(sd_,2.9,-2.9)){ //之前时 2.5 ～ -2.9
+                    sd_.min_s = min_s;
+                    sd_.max_s = max_s;
+                    sd_.wigth = weigth;
                     sd.emplace_back(sd_);
                     obses_limit.emplace_back(obses_base_lidar.col(i)); //这里的障碍物和sd里的是一一对应的  原始的障碍物 基于雷达坐标系的
                     obs_limits_distance.emplace_back(obs.col(i));//全局坐标系 
@@ -223,6 +229,9 @@ namespace obs{
                 //std::cout << "point" << i << " : " << l_value << std::endl;
                 return 1;  // Found a valid point, return true
             }
+        }
+        if (sd.centre_points.l <= left_bound && sd.centre_points.l >= right_bound ) {
+            return 1;
         }
         return 0;
     }

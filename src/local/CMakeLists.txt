@@ -58,27 +58,27 @@ list(APPEND SRC_LIST ./src/piecewise_jerk_speed_optimizer.cpp)
 
 
 # add_executable(path_planning_pub ${SRC_LIST})
-add_executable(local_node3 ${SRC_LIST})
+add_executable(local_node4 ${SRC_LIST})
 
-target_include_directories(local_node3 PUBLIC
+target_include_directories(local_node4 PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 
-target_link_libraries(local_node3 ${OpenCV_LIBS})
-target_link_libraries(local_node3  osqp::osqp)
-target_link_libraries(local_node3 yaml-cpp)
+target_link_libraries(local_node4 ${OpenCV_LIBS})
+target_link_libraries(local_node4  osqp::osqp)
+target_link_libraries(local_node4 yaml-cpp)
 
 if(OpenMP_CXX_FOUND)
 
-  target_compile_options(local_node3  PRIVATE ${OpenMP_CXX_FLAGS})
-  target_link_libraries(local_node3  ${OpenMP_CXX_LIBRARIES})
+  target_compile_options(local_node4  PRIVATE ${OpenMP_CXX_FLAGS})
+  target_link_libraries(local_node4  ${OpenMP_CXX_LIBRARIES})
 
 endif()
 
-ament_target_dependencies(local_node3 rclcpp std_msgs ros2_path_interfaces visualization_msgs)
+ament_target_dependencies(local_node4 rclcpp std_msgs ros2_path_interfaces visualization_msgs)
 
 install(TARGETS
-local_node3
+local_node4
 DESTINATION lib/${PROJECT_NAME}
 )
 

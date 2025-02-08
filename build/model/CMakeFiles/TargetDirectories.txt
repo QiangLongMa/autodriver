@@ -1,9 +1,0 @@
-/home/mm/longshan12_2/build/model/CMakeFiles/install/strip.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/install/local.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/install.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/list_install_components.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/rebuild_cache.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/edit_cache.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/test.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/model_uninstall.dir
-/home/mm/longshan12_2/build/model/CMakeFiles/uninstall.dir

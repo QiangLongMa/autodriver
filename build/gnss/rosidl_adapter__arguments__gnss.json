@@ -1,8 +1,0 @@
-{
-  "package_name": "gnss",
-  "non_idl_tuples": [
-    "/home/mm/longshan12_2/src/gnss:msg/Imu.msg",
-    "/home/mm/longshan12_2/src/gnss:msg/Ins.msg",
-    "/home/mm/longshan12_2/src/gnss:msg/Message.msg"
-  ]
-}

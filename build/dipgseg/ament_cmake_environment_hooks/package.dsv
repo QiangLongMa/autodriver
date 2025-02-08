@@ -1,4 +1,0 @@
-source;share/dipgseg/local_setup.bash
-source;share/dipgseg/local_setup.dsv
-source;share/dipgseg/local_setup.sh
-source;share/dipgseg/local_setup.zsh

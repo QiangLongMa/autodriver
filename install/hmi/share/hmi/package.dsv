@@ -1,8 +1,0 @@
-source;share/hmi/hook/cmake_prefix_path.ps1
-source;share/hmi/hook/cmake_prefix_path.dsv
-source;share/hmi/hook/cmake_prefix_path.sh
-source;share/hmi/local_setup.bash
-source;share/hmi/local_setup.dsv
-source;share/hmi/local_setup.ps1
-source;share/hmi/local_setup.sh
-source;share/hmi/local_setup.zsh

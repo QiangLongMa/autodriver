@@ -1,6 +1,0 @@
-source;share/draw_messages/hook/pythonpath.ps1
-source;share/draw_messages/hook/pythonpath.dsv
-source;share/draw_messages/hook/pythonpath.sh
-source;share/draw_messages/hook/ament_prefix_path.ps1
-source;share/draw_messages/hook/ament_prefix_path.dsv
-source;share/draw_messages/hook/ament_prefix_path.sh

@@ -1,7 +1,0 @@
--I/usr/include/eigen3
--I/usr/include/opencv4
--I/home/mm/longshan12_2/src/hmi
--I/home/mm/longshan12_2/build/hmi
--o
-/home/mm/longshan12_2/build/hmi/include/moc_runglobal.cpp
-/home/mm/longshan12_2/src/hmi/include/runglobal.h

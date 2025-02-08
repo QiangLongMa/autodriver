@@ -1,5 +1,0 @@
-CMake Error at cmake_install.cmake:45 (file):
-  file INSTALL cannot find "/home/mm/longshan12_2/src/model/urdf": No such
-  file or directory.
-
-

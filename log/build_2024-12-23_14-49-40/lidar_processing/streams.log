@@ -1,2 +1,0 @@
-[0.037s] Invoking command in '/home/mm/longshan12_2/build/lidar_processing': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/lidar_processing -- -j4 -l4
-[0.245s] [100%] Built target Lidar_Processing_node

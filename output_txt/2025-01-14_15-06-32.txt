@@ -1,0 +1,3194 @@
+open socketcan succesed
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+方向盘回正
+自动转向激活
+车速和档位进入自动驾驶模式
+running
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+Waiting global traj generates... 
+dest_point has been select!
+Successfully set initial key points on the map!
+Successfully set the initial connection relationship of the map!
+Optimal key point sequence:
+19->1->4->5->6->7->18
+Turn condition:
+dir2
+cond2
+dir8
+cond8
+dir3
+cond3
+全局路径优化成功
+control golbal size: 3107
+speedRef:0, gearsRef:11, flag:1
+optTrajxy in None!!!
+optTrajxy in None!!!
+global traj has been generated
+LiDAR node can't start, Danger!!
+Start_l: 1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+optTrajxy in None!!!
+Path Optimizer used time: 1.90463 ms.
+best_end_point—s: 30 best_end_point-t:11
+ init_v; 0.00138208 init_a: 0.0126764
+optTrajxy in None!!!
+当前路径是: /home/nvidia/2025/longshan1_14
+first run
+当前路径是: /home/nvidia/2025/longshan1_14
+current_v: 0.02 newSpeedRef: 0
+current_v: 0.04 newSpeedRef: 0
+current_v: 0.06 newSpeedRef: 0
+current_v: 0.08 newSpeedRef: 0
+current_v: 0.1 newSpeedRef: 0
+current_v: 0.12 newSpeedRef: 0
+current_v: 0.14 newSpeedRef: 1
+current_v: 0.16 newSpeedRef: 1
+current_v: 0.18 newSpeedRef: 1
+current_v: 0.2 newSpeedRef: 1
+current_v: 0.22 newSpeedRef: 1
+current_v: 0.24 newSpeedRef: 1
+current_v: 0.26 newSpeedRef: 1
+current_v: 0.28 newSpeedRef: 1
+current_v: 0.3 newSpeedRef: 1
+current_v: 0.32 newSpeedRef: 1
+current_v: 0.34 newSpeedRef: 1
+current_v: 0.36 newSpeedRef: 1
+current_v: 0.38 newSpeedRef: 1
+current_v: 0.4 newSpeedRef: 1
+current_v: 0.42 newSpeedRef: 2
+current_v: 0.44 newSpeedRef: 2
+current_v: 0.46 newSpeedRef: 2
+current_v: 0.48 newSpeedRef: 2
+current_v: 0.5 newSpeedRef: 2
+current_v: 0.52 newSpeedRef: 2
+current_v: 0.54 newSpeedRef: 2
+current_v: 0.56 newSpeedRef: 2
+current_v: 0.58 newSpeedRef: 2
+current_v: 0.6 newSpeedRef: 2
+current_v: 0.62 newSpeedRef: 2
+current_v: 0.64 newSpeedRef: 2
+current_v: 0.66 newSpeedRef: 2
+current_v: 0.68 newSpeedRef: 2
+current_v: 0.7 newSpeedRef: 3
+current_v: 0.72 newSpeedRef: 3
+current_v: 0.74 newSpeedRef: 3
+current_v: 0.76 newSpeedRef: 3
+current_v: 0.78 newSpeedRef: 3
+current_v: 0.8 newSpeedRef: 3
+current_v: 0.82 newSpeedRef: 3
+current_v: 0.84 newSpeedRef: 3
+current_v: 0.86 newSpeedRef: 3
+current_v: 0.88 newSpeedRef: 3
+current_v: 0.9 newSpeedRef: 3
+current_v: 0.92 newSpeedRef: 3
+current_v: 0.94 newSpeedRef: 3
+current_v: 0.96 newSpeedRef: 3
+current_v: 0.98 newSpeedRef: 4
+current_v: 1 newSpeedRef: 4
+current_v: 1.02 newSpeedRef: 4
+current_v: 1.04 newSpeedRef: 4
+current_v: 1.06 newSpeedRef: 4
+current_v: 1.08 newSpeedRef: 4
+current_v: 1.1 newSpeedRef: 4
+current_v: 1.12 newSpeedRef: 4
+current_v: 1.14 newSpeedRef: 4
+current_v: 1.16 newSpeedRef: 4
+current_v: 1.18 newSpeedRef: 4
+current_v: 1.2 newSpeedRef: 4
+current_v: 1.22 newSpeedRef: 4
+current_v: 1.24 newSpeedRef: 4
+current_v: 1.26 newSpeedRef: 5
+current_v: 1.28 newSpeedRef: 5
+current_v: 1.3 newSpeedRef: 5
+current_v: 1.32 newSpeedRef: 5
+current_v: 1.34 newSpeedRef: 5
+current_v: 1.36 newSpeedRef: 5
+current_v: 1.38 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.05936 replan_vehicle_start_flag: 0
+current_v: 1.40276 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.06089 replan_vehicle_start_flag: 0
+current_v: 1.42551 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.06542 replan_vehicle_start_flag: 0
+current_v: 1.44827 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.0682 replan_vehicle_start_flag: 0
+current_v: 1.47102 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.07139 replan_vehicle_start_flag: 0
+current_v: 1.49378 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.07559 replan_vehicle_start_flag: 0
+current_v: 1.51654 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.07492 replan_vehicle_start_flag: 0
+current_v: 1.53929 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.08077 replan_vehicle_start_flag: 0
+current_v: 1.56205 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.08563 replan_vehicle_start_flag: 0
+current_v: 1.5848 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.09376 replan_vehicle_start_flag: 0
+current_v: 1.60756 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.10142 replan_vehicle_start_flag: 0
+current_v: 1.63031 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.10692 replan_vehicle_start_flag: 0
+current_v: 1.65307 newSpeedRef: 6
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.22229 ms.
+best_end_point—s: 30 best_end_point-t:11
+ init_v; 1.70377 init_a: 1.30768
+程序运行时间: 0.00992085 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.10692 replan_vehicle_start_flag: 0
+current_v: 1.67583 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.11617 replan_vehicle_start_flag: 0
+current_v: 1.68828 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.11981 replan_vehicle_start_flag: 0
+current_v: 1.70437 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.12617 replan_vehicle_start_flag: 0
+current_v: 1.72047 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.12992 replan_vehicle_start_flag: 0
+current_v: 1.73657 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.13669 replan_vehicle_start_flag: 0
+current_v: 1.75041 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.14668 replan_vehicle_start_flag: 0
+current_v: 1.76424 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.15772 replan_vehicle_start_flag: 0
+current_v: 1.77808 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.16195 replan_vehicle_start_flag: 0
+current_v: 1.79191 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.16642 replan_vehicle_start_flag: 0
+current_v: 1.80575 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.18096 replan_vehicle_start_flag: 0
+current_v: 1.81959 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.19437 replan_vehicle_start_flag: 0
+current_v: 1.83342 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.20728 replan_vehicle_start_flag: 0
+current_v: 1.84726 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.21878 replan_vehicle_start_flag: 0
+current_v: 1.86109 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.23379 replan_vehicle_start_flag: 0
+current_v: 1.87493 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.24208 replan_vehicle_start_flag: 0
+current_v: 1.88877 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.25227 replan_vehicle_start_flag: 0
+current_v: 1.9026 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.26492 replan_vehicle_start_flag: 0
+current_v: 1.91644 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.27648 replan_vehicle_start_flag: 0
+current_v: 1.93027 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.27648 replan_vehicle_start_flag: 0
+current_v: 1.94411 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.2838 replan_vehicle_start_flag: 0
+current_v: 1.95795 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.31246 replan_vehicle_start_flag: 0
+current_v: 1.97178 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.31654 replan_vehicle_start_flag: 0
+current_v: 1.98562 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.33903 replan_vehicle_start_flag: 0
+current_v: 1.99945 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.3606 replan_vehicle_start_flag: 0
+current_v: 2.01329 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.36133 replan_vehicle_start_flag: 0
+current_v: 2.02574 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.36558 replan_vehicle_start_flag: 0
+current_v: 2.03819 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.37959 replan_vehicle_start_flag: 0
+current_v: 2.05064 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.38725 replan_vehicle_start_flag: 0
+current_v: 2.06309 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.4015 replan_vehicle_start_flag: 0
+current_v: 2.07554 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.43022 replan_vehicle_start_flag: 0
+current_v: 2.08799 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.43835 replan_vehicle_start_flag: 0
+current_v: 2.10045 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.44814 replan_vehicle_start_flag: 0
+current_v: 2.1129 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.48201 replan_vehicle_start_flag: 0
+current_v: 2.12535 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.50407 replan_vehicle_start_flag: 0
+current_v: 2.1378 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.51144 replan_vehicle_start_flag: 0
+current_v: 2.15025 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.53345 replan_vehicle_start_flag: 0
+current_v: 2.1627 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.54848 replan_vehicle_start_flag: 0
+current_v: 2.17515 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.56188 replan_vehicle_start_flag: 0
+current_v: 2.1876 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.5759 replan_vehicle_start_flag: 0
+current_v: 2.20005 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.5904 replan_vehicle_start_flag: 0
+current_v: 2.21124 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.60487 replan_vehicle_start_flag: 0
+current_v: 2.22244 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.61456 replan_vehicle_start_flag: 0
+current_v: 2.23363 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.64081 replan_vehicle_start_flag: 0
+current_v: 2.24483 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.66251 replan_vehicle_start_flag: 0
+current_v: 2.25602 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.68386 replan_vehicle_start_flag: 0
+current_v: 2.26722 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.69952 replan_vehicle_start_flag: 0
+current_v: 2.27841 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.71074 replan_vehicle_start_flag: 0
+current_v: 2.2896 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.75601 replan_vehicle_start_flag: 0
+current_v: 2.3008 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.75601 replan_vehicle_start_flag: 0
+current_v: 2.31199 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.77497 replan_vehicle_start_flag: 0
+current_v: 2.32319 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.80898 replan_vehicle_start_flag: 0
+current_v: 2.33438 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.80898 replan_vehicle_start_flag: 0
+current_v: 2.34442 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.82084 replan_vehicle_start_flag: 0
+current_v: 2.35447 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.83695 replan_vehicle_start_flag: 0
+current_v: 2.36451 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.8558 replan_vehicle_start_flag: 0
+current_v: 2.37455 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.86972 replan_vehicle_start_flag: 0
+current_v: 2.3846 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.88485 replan_vehicle_start_flag: 0
+current_v: 2.39464 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.89735 replan_vehicle_start_flag: 0
+current_v: 2.40468 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.91131 replan_vehicle_start_flag: 0
+current_v: 2.41473 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.92158 replan_vehicle_start_flag: 0
+current_v: 2.42477 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.92158 replan_vehicle_start_flag: 0
+current_v: 2.43481 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.93573 replan_vehicle_start_flag: 0
+current_v: 2.44486 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.94069 replan_vehicle_start_flag: 0
+current_v: 2.4549 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.94728 replan_vehicle_start_flag: 0
+current_v: 2.46494 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.97597 replan_vehicle_start_flag: 0
+current_v: 2.47499 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.98589 replan_vehicle_start_flag: 0
+current_v: 2.48397 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.99455 replan_vehicle_start_flag: 0
+current_v: 2.49295 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.00887 replan_vehicle_start_flag: 0
+current_v: 2.50194 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.01194 replan_vehicle_start_flag: 0
+current_v: 2.51092 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.01194 replan_vehicle_start_flag: 0
+current_v: 2.51991 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.02853 replan_vehicle_start_flag: 0
+current_v: 2.52889 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.02853 replan_vehicle_start_flag: 0
+current_v: 2.53787 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.03738 replan_vehicle_start_flag: 0
+current_v: 2.54686 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.04354 replan_vehicle_start_flag: 0
+current_v: 2.55584 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.05232 replan_vehicle_start_flag: 0
+current_v: 2.56482 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.06099 replan_vehicle_start_flag: 0
+current_v: 2.57381 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.07496 replan_vehicle_start_flag: 0
+current_v: 2.58279 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.08663 replan_vehicle_start_flag: 0
+current_v: 2.59079 newSpeedRef: 10
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.31279 ms.
+best_end_point—s: 30 best_end_point-t:10
+ init_v; 2.63164 init_a: 0.449171
+程序运行时间: 0.00994261 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.1124 replan_vehicle_start_flag: 0
+current_v: 2.5988 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.12684 replan_vehicle_start_flag: 0
+current_v: 2.60187 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.13915 replan_vehicle_start_flag: 0
+current_v: 2.60729 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.14904 replan_vehicle_start_flag: 0
+current_v: 2.61271 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.16149 replan_vehicle_start_flag: 0
+current_v: 2.61813 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.17273 replan_vehicle_start_flag: 0
+current_v: 2.62355 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.18324 replan_vehicle_start_flag: 0
+current_v: 2.62897 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.18324 replan_vehicle_start_flag: 0
+current_v: 2.63439 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.18878 replan_vehicle_start_flag: 0
+current_v: 2.6398 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.20785 replan_vehicle_start_flag: 0
+current_v: 2.64522 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.23047 replan_vehicle_start_flag: 0
+current_v: 2.65064 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.24499 replan_vehicle_start_flag: 0
+current_v: 2.65562 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.26514 replan_vehicle_start_flag: 0
+current_v: 2.66059 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.2707 replan_vehicle_start_flag: 0
+current_v: 2.66556 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.29141 replan_vehicle_start_flag: 0
+current_v: 2.67054 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.30856 replan_vehicle_start_flag: 0
+current_v: 2.67551 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.31669 replan_vehicle_start_flag: 0
+current_v: 2.68049 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.3245 replan_vehicle_start_flag: 0
+current_v: 2.68546 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.33096 replan_vehicle_start_flag: 0
+current_v: 2.69001 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.33823 replan_vehicle_start_flag: 0
+current_v: 2.69456 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.33823 replan_vehicle_start_flag: 0
+current_v: 2.69911 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.35559 replan_vehicle_start_flag: 0
+current_v: 2.70367 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.36755 replan_vehicle_start_flag: 0
+current_v: 2.70822 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.37209 replan_vehicle_start_flag: 0
+current_v: 2.71277 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.376 replan_vehicle_start_flag: 0
+current_v: 2.71732 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.37872 replan_vehicle_start_flag: 0
+current_v: 2.72187 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.38024 replan_vehicle_start_flag: 0
+current_v: 2.72642 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.39876 replan_vehicle_start_flag: 0
+current_v: 2.73098 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.40362 replan_vehicle_start_flag: 0
+current_v: 2.73513 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.41691 replan_vehicle_start_flag: 0
+current_v: 2.73928 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.41898 replan_vehicle_start_flag: 0
+current_v: 2.74343 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.42909 replan_vehicle_start_flag: 0
+current_v: 2.74758 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.43421 replan_vehicle_start_flag: 0
+current_v: 2.75173 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.4405 replan_vehicle_start_flag: 0
+current_v: 2.75588 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.44474 replan_vehicle_start_flag: 0
+current_v: 2.76003 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.44474 replan_vehicle_start_flag: 0
+current_v: 2.76418 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.45468 replan_vehicle_start_flag: 0
+current_v: 2.76833 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.45622 replan_vehicle_start_flag: 0
+current_v: 2.7721 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.46474 replan_vehicle_start_flag: 0
+current_v: 2.77588 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.46474 replan_vehicle_start_flag: 0
+current_v: 2.77965 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.4675 replan_vehicle_start_flag: 0
+current_v: 2.78342 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.47773 replan_vehicle_start_flag: 0
+current_v: 2.78719 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.48758 replan_vehicle_start_flag: 0
+current_v: 2.79096 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.49547 replan_vehicle_start_flag: 0
+current_v: 2.79473 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.50197 replan_vehicle_start_flag: 0
+current_v: 2.79851 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.50701 replan_vehicle_start_flag: 0
+current_v: 2.80228 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.51396 replan_vehicle_start_flag: 0
+current_v: 2.80569 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.51396 replan_vehicle_start_flag: 0
+current_v: 2.80911 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.53537 replan_vehicle_start_flag: 0
+current_v: 2.81252 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.54359 replan_vehicle_start_flag: 0
+current_v: 2.81593 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.55514 replan_vehicle_start_flag: 0
+current_v: 2.81935 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.55514 replan_vehicle_start_flag: 0
+current_v: 2.82276 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.5707 replan_vehicle_start_flag: 0
+current_v: 2.82618 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.5707 replan_vehicle_start_flag: 0
+current_v: 2.82959 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.58298 replan_vehicle_start_flag: 0
+current_v: 2.83301 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.61181 replan_vehicle_start_flag: 0
+current_v: 2.83642 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.61181 replan_vehicle_start_flag: 0
+current_v: 2.8395 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.62272 replan_vehicle_start_flag: 0
+current_v: 2.84258 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.63122 replan_vehicle_start_flag: 0
+current_v: 2.84565 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.63906 replan_vehicle_start_flag: 0
+current_v: 2.84873 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.647 replan_vehicle_start_flag: 0
+current_v: 2.85181 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.65634 replan_vehicle_start_flag: 0
+current_v: 2.85489 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.66158 replan_vehicle_start_flag: 0
+current_v: 2.85796 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.66951 replan_vehicle_start_flag: 0
+current_v: 2.86104 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.67257 replan_vehicle_start_flag: 0
+current_v: 2.86412 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.70032 replan_vehicle_start_flag: 0
+current_v: 2.86688 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.70516 replan_vehicle_start_flag: 0
+current_v: 2.86964 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.70516 replan_vehicle_start_flag: 0
+current_v: 2.8724 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.70934 replan_vehicle_start_flag: 0
+current_v: 2.87516 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.72822 replan_vehicle_start_flag: 0
+current_v: 2.87792 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.73404 replan_vehicle_start_flag: 0
+current_v: 2.88068 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.73404 replan_vehicle_start_flag: 0
+current_v: 2.88344 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.74443 replan_vehicle_start_flag: 0
+current_v: 2.8862 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.75012 replan_vehicle_start_flag: 0
+current_v: 2.88866 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.75057 replan_vehicle_start_flag: 0
+current_v: 2.89112 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.76173 replan_vehicle_start_flag: 0
+current_v: 2.89359 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.76173 replan_vehicle_start_flag: 0
+current_v: 2.89605 newSpeedRef: 11
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.19993 ms.
+best_end_point—s: 30 best_end_point-t:10
+ init_v; 2.94099 init_a: 0.13801
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.76394 replan_vehicle_start_flag: 0
+current_v: 2.89851 newSpeedRef: 11
+程序运行时间: 0.0266447 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.78491 replan_vehicle_start_flag: 0
+current_v: 2.90097 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.7944 replan_vehicle_start_flag: 0
+current_v: 2.90143 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.80339 replan_vehicle_start_flag: 0
+current_v: 2.90244 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.80867 replan_vehicle_start_flag: 0
+current_v: 2.90338 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.81348 replan_vehicle_start_flag: 0
+current_v: 2.90431 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.81348 replan_vehicle_start_flag: 0
+current_v: 2.90525 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.82127 replan_vehicle_start_flag: 0
+current_v: 2.90618 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.83218 replan_vehicle_start_flag: 0
+current_v: 2.90712 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.83218 replan_vehicle_start_flag: 0
+current_v: 2.90805 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.83624 replan_vehicle_start_flag: 0
+current_v: 2.90899 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.84212 replan_vehicle_start_flag: 0
+current_v: 2.90992 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.84541 replan_vehicle_start_flag: 0
+current_v: 2.91086 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.84541 replan_vehicle_start_flag: 0
+current_v: 2.91179 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.85219 replan_vehicle_start_flag: 0
+current_v: 2.91273 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.85512 replan_vehicle_start_flag: 0
+current_v: 2.91359 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.85512 replan_vehicle_start_flag: 0
+current_v: 2.91445 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86098 replan_vehicle_start_flag: 0
+current_v: 2.91531 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86174 replan_vehicle_start_flag: 0
+current_v: 2.91618 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.87504 replan_vehicle_start_flag: 0
+current_v: 2.91704 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.87687 replan_vehicle_start_flag: 0
+current_v: 2.9179 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.88093 replan_vehicle_start_flag: 0
+current_v: 2.91869 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.88596 replan_vehicle_start_flag: 0
+current_v: 2.91948 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.88722 replan_vehicle_start_flag: 0
+current_v: 2.92027 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.89241 replan_vehicle_start_flag: 0
+current_v: 2.92106 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.89377 replan_vehicle_start_flag: 0
+current_v: 2.92185 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.89579 replan_vehicle_start_flag: 0
+current_v: 2.92264 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.89902 replan_vehicle_start_flag: 0
+current_v: 2.92343 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.90274 replan_vehicle_start_flag: 0
+current_v: 2.92422 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.90282 replan_vehicle_start_flag: 0
+current_v: 2.92501 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.90212 replan_vehicle_start_flag: 0
+current_v: 2.92573 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.89731 replan_vehicle_start_flag: 0
+current_v: 2.92645 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.89104 replan_vehicle_start_flag: 0
+current_v: 2.92717 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.88068 replan_vehicle_start_flag: 0
+current_v: 2.92789 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86799 replan_vehicle_start_flag: 0
+current_v: 2.92861 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86634 replan_vehicle_start_flag: 0
+current_v: 2.92933 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86634 replan_vehicle_start_flag: 0
+current_v: 2.93005 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86137 replan_vehicle_start_flag: 0
+current_v: 2.93077 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.85973 replan_vehicle_start_flag: 0
+current_v: 2.93149 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.84016 replan_vehicle_start_flag: 0
+current_v: 2.93221 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.84016 replan_vehicle_start_flag: 0
+current_v: 2.93287 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.82735 replan_vehicle_start_flag: 0
+current_v: 2.93352 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.82168 replan_vehicle_start_flag: 0
+current_v: 2.93417 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.82168 replan_vehicle_start_flag: 0
+current_v: 2.93483 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.81822 replan_vehicle_start_flag: 0
+current_v: 2.93548 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.8135 replan_vehicle_start_flag: 0
+current_v: 2.93613 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.80402 replan_vehicle_start_flag: 0
+current_v: 2.93679 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.79638 replan_vehicle_start_flag: 0
+current_v: 2.93737 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.78923 replan_vehicle_start_flag: 0
+current_v: 2.93796 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.78189 replan_vehicle_start_flag: 0
+current_v: 2.93855 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.7716 replan_vehicle_start_flag: 0
+current_v: 2.93914 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.76669 replan_vehicle_start_flag: 0
+current_v: 2.93972 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.76386 replan_vehicle_start_flag: 0
+current_v: 2.94031 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.75771 replan_vehicle_start_flag: 0
+current_v: 2.9409 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.74945 replan_vehicle_start_flag: 0
+current_v: 2.94142 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.74668 replan_vehicle_start_flag: 0
+current_v: 2.94195 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.73437 replan_vehicle_start_flag: 0
+current_v: 2.94247 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.72462 replan_vehicle_start_flag: 0
+current_v: 2.943 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.71378 replan_vehicle_start_flag: 0
+current_v: 2.94352 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.7088 replan_vehicle_start_flag: 0
+current_v: 2.94404 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.7088 replan_vehicle_start_flag: 0
+current_v: 2.94457 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.70044 replan_vehicle_start_flag: 0
+current_v: 2.94509 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.69181 replan_vehicle_start_flag: 0
+current_v: 2.94562 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.66582 replan_vehicle_start_flag: 0
+current_v: 2.94614 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.65052 replan_vehicle_start_flag: 0
+current_v: 2.9466 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.63902 replan_vehicle_start_flag: 0
+current_v: 2.94707 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.61419 replan_vehicle_start_flag: 0
+current_v: 2.94753 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.59973 replan_vehicle_start_flag: 0
+current_v: 2.94799 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.58341 replan_vehicle_start_flag: 0
+current_v: 2.94846 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.56452 replan_vehicle_start_flag: 0
+current_v: 2.94892 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.54583 replan_vehicle_start_flag: 0
+current_v: 2.94938 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.52717 replan_vehicle_start_flag: 0
+current_v: 2.94984 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.51101 replan_vehicle_start_flag: 0
+current_v: 2.95025 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.51101 replan_vehicle_start_flag: 0
+current_v: 2.95065 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.49183 replan_vehicle_start_flag: 0
+current_v: 2.95105 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.47404 replan_vehicle_start_flag: 0
+current_v: 2.95145 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.45553 replan_vehicle_start_flag: 0
+current_v: 2.95186 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.43527 replan_vehicle_start_flag: 0
+current_v: 2.95226 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.41452 replan_vehicle_start_flag: 0
+current_v: 2.95266 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.40391 replan_vehicle_start_flag: 0
+current_v: 2.95306 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.39153 replan_vehicle_start_flag: 0
+current_v: 2.95347 newSpeedRef: 11
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.74043 ms.
+best_end_point—s: 30 best_end_point-t:10
+ init_v; 3.0031 init_a: 0.0231314
+Control: 
+程序运行时间: 0.0146576 秒
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.38011 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 11
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.29752 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8504
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.27166 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.23988 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.23988 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.22381 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.17793 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.14438 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.11185 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.05856 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.01839 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.93937 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8249
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.90404 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.8239 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.8239 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.80431 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.71047 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.71047 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.71047 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.67651 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.64133 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.59053 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.52509 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.50897 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.43415 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.40616 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8299
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.37646 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.34883 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.31994 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.29502 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.26805 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.24315 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.209 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.18373 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.16344 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.13939 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.11865 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.11865 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.07597 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.07597 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.0362 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.0362 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.01474 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.995893 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.964863 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.954478 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.921277 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8343
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.902527 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.880055 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.859607 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.837105 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.815951 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.815951 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.749543 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.716724 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.695503 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.671147 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.625299 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.578694 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.553581 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.553581 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.528885 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.505064 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.479024 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.479024 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.41714 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.390187 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.312582 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.312582 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.30219 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.269751 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.242308 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.214802 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.159206 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.155192 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.130311 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+未找到局部路径
+Start_l: 1.5End_l: 1.5Delta_l: 0.5Target_v: 10 traget_l: 1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 1 DecelerateFlag_: 0 DriveStraightLineFlag_: 0 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+未找到局部路径
+Start_l: 1.5End_l: 1.5Delta_l: 0.5Target_v: 0 traget_l: 1.5
+all_distances: 20one_distances: 10
+ObstacleAvoidanceFlag_: 1 DecelerateFlag_: 1 DriveStraightLineFlag_: 0 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Control: 
+多个路径均未找到
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.116348 replan_vehicle_start_flag: 0
+current_v: 2.95387 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0923166 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 10.8383
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 1 car_speed: 0.0866919 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.0825283 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.0908179 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.0990534 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.109113 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.107338 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.103958 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.0998872 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.0982324 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Start_l: -1.5End_l: -2Delta_l: 0.5Target_v: 15 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 1 DecelerateFlag_: 0 DriveStraightLineFlag_: 0 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.19173 ms.
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.094132 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+best_end_point—s: 30 best_end_point-t:18
+ init_v; 0.0982324 init_a: 0.660608
+Start_l: -1.5End_l: -2Delta_l: 0.5Target_v: 15 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 0 Overtakinginlaneflag_: 0 righttoleftlane_: 1
+Path Optimizer used time: 1.21231 ms.
+best_end_point—s: 30 best_end_point-t:18
+ init_v; 0.0982324 init_a: 0.660608
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.094132 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+程序运行时间: 0.0420752 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 1 car_speed: 0.0941327 replan_vehicle_start_flag: 0
+current_v: 0 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 1 DecelerateFlag: 0 car_speed: 0.0935855 replan_vehicle_start_flag: 0
+current_v: 0.02 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0814188 replan_vehicle_start_flag: 1
+current_v: 0.04 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0820709 replan_vehicle_start_flag: 1
+current_v: 0.06 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0820709 replan_vehicle_start_flag: 1
+current_v: 0.08 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0827261 replan_vehicle_start_flag: 1
+current_v: 0.1 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0909311 replan_vehicle_start_flag: 1
+current_v: 0.12 newSpeedRef: 0
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0928483 replan_vehicle_start_flag: 1
+current_v: 0.14 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0937367 replan_vehicle_start_flag: 1
+current_v: 0.16 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0937367 replan_vehicle_start_flag: 1
+current_v: 0.18 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0915756 replan_vehicle_start_flag: 1
+current_v: 0.2 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0902109 replan_vehicle_start_flag: 1
+current_v: 0.22 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.087106 replan_vehicle_start_flag: 1
+current_v: 0.24 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0839564 replan_vehicle_start_flag: 1
+current_v: 0.26 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0792765 replan_vehicle_start_flag: 1
+current_v: 0.28 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0779757 replan_vehicle_start_flag: 1
+current_v: 0.3 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0777986 replan_vehicle_start_flag: 1
+current_v: 0.32 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0778732 replan_vehicle_start_flag: 1
+current_v: 0.34 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0793693 replan_vehicle_start_flag: 1
+current_v: 0.36 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.081033 replan_vehicle_start_flag: 1
+current_v: 0.38 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0815956 replan_vehicle_start_flag: 1
+current_v: 0.4 newSpeedRef: 1
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0822616 replan_vehicle_start_flag: 1
+current_v: 0.42 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0808694 replan_vehicle_start_flag: 1
+current_v: 0.44 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0810553 replan_vehicle_start_flag: 1
+current_v: 0.46 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0794219 replan_vehicle_start_flag: 1
+current_v: 0.48 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0773385 replan_vehicle_start_flag: 1
+current_v: 0.5 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0760366 replan_vehicle_start_flag: 1
+current_v: 0.52 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0737402 replan_vehicle_start_flag: 1
+current_v: 0.54 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0737402 replan_vehicle_start_flag: 1
+current_v: 0.56 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.07344 replan_vehicle_start_flag: 1
+current_v: 0.58 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.071063 replan_vehicle_start_flag: 1
+current_v: 0.6 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0709792 replan_vehicle_start_flag: 1
+current_v: 0.62 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0709373 replan_vehicle_start_flag: 1
+current_v: 0.64 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0703337 replan_vehicle_start_flag: 1
+current_v: 0.66 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0686298 replan_vehicle_start_flag: 1
+current_v: 0.68 newSpeedRef: 2
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0678881 replan_vehicle_start_flag: 1
+current_v: 0.7 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0662452 replan_vehicle_start_flag: 1
+current_v: 0.72 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0661745 replan_vehicle_start_flag: 1
+current_v: 0.74 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0659861 replan_vehicle_start_flag: 1
+current_v: 0.76 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0648837 replan_vehicle_start_flag: 1
+current_v: 0.78 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0655407 replan_vehicle_start_flag: 1
+current_v: 0.8 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0630842 replan_vehicle_start_flag: 1
+current_v: 0.82 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0632515 replan_vehicle_start_flag: 1
+current_v: 0.84 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0614116 replan_vehicle_start_flag: 1
+current_v: 0.86 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0606444 replan_vehicle_start_flag: 1
+current_v: 0.88 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0575442 replan_vehicle_start_flag: 1
+current_v: 0.9 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0560821 replan_vehicle_start_flag: 1
+current_v: 0.92 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0537758 replan_vehicle_start_flag: 1
+current_v: 0.94 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0538375 replan_vehicle_start_flag: 1
+current_v: 0.96 newSpeedRef: 3
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0524028 replan_vehicle_start_flag: 1
+current_v: 0.98 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0514594 replan_vehicle_start_flag: 1
+current_v: 1 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0530058 replan_vehicle_start_flag: 1
+current_v: 1.02 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0524936 replan_vehicle_start_flag: 1
+current_v: 1.04 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0524936 replan_vehicle_start_flag: 1
+current_v: 1.06 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0525293 replan_vehicle_start_flag: 1
+current_v: 1.08 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.051341 replan_vehicle_start_flag: 1
+current_v: 1.1 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.051341 replan_vehicle_start_flag: 1
+current_v: 1.12 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.04917 replan_vehicle_start_flag: 1
+current_v: 1.14 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0455961 replan_vehicle_start_flag: 1
+current_v: 1.16 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0448126 replan_vehicle_start_flag: 1
+current_v: 1.18 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0430527 replan_vehicle_start_flag: 1
+current_v: 1.2 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0424583 replan_vehicle_start_flag: 1
+current_v: 1.22 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0406191 replan_vehicle_start_flag: 1
+current_v: 1.24 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0399578 replan_vehicle_start_flag: 1
+current_v: 1.26 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0389307 replan_vehicle_start_flag: 1
+current_v: 1.28 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0389307 replan_vehicle_start_flag: 1
+current_v: 1.3 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0383792 replan_vehicle_start_flag: 1
+current_v: 1.32 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0388501 replan_vehicle_start_flag: 1
+current_v: 1.34 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0365749 replan_vehicle_start_flag: 1
+current_v: 1.36 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0373293 replan_vehicle_start_flag: 1
+current_v: 1.38 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0355311 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0336116 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0337725 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0312324 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0302476 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0298732 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0282624 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0270539 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.027305 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0263701 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0254481 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0259831 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.25449 ms.
+best_end_point—s: 30 best_end_point-t:20
+ init_v; 0.0259831 init_a: -0.0562157
+程序运行时间: 0.0148608 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0259831 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0256631 replan_vehicle_start_flag: 0
+current_v: 1.11151 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0252435 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0231093 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0231093 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.021709 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0215285 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0215285 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0186732 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0182275 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0162813 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0163785 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0159185 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0145524 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0149491 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0147465 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0142257 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0130506 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0133129 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0111638 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0104137 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0092922 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00860318 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00817719 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00632199 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00629244 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00533005 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00514707 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00488981 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00488981 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00506365 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00496048 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00472521 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00398824 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00310234 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00241977 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00229764 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00357206 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00465483 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00539072 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00625273 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00726084 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00830924 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0085233 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00944137 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00958224 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00903983 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00899653 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00899653 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00877705 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00920343 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00902974 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00881579 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00881579 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00891449 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00908297 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00911715 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0087606 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00867001 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00867001 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00868085 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00838829 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00838829 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00883235 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00930293 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00931912 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00925382 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00894325 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00851037 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00816204 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00757939 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00771107 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00759695 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00790634 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00828182 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00828182 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0083434 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00838925 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00832813 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00840964 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00829617 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00806877 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00800652 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00792988 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00769204 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.20614 ms.
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00777275 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+best_end_point—s: 30 best_end_point-t:11
+ init_v; 0.00769204 init_a: -0.00723386
+程序运行时间: 0.0222911 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00783199 replan_vehicle_start_flag: 0
+current_v: 0.956052 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00750666 replan_vehicle_start_flag: 0
+current_v: 0.986928 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00720356 replan_vehicle_start_flag: 0
+current_v: 1.0178 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00714603 replan_vehicle_start_flag: 0
+current_v: 1.04868 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00739843 replan_vehicle_start_flag: 0
+current_v: 1.07956 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00714629 replan_vehicle_start_flag: 0
+current_v: 1.11043 newSpeedRef: 4
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00746408 replan_vehicle_start_flag: 0
+current_v: 1.14131 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0083711 replan_vehicle_start_flag: 0
+current_v: 1.17218 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0083711 replan_vehicle_start_flag: 0
+current_v: 1.20306 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0108215 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0121259 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0127683 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0127683 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0123121 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0113602 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00927739 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00812039 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00757081 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00730643 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00716853 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00756615 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00750668 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00825528 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00772785 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00772785 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00774429 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00640196 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00499176 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00506389 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0039891 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00437333 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00462199 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00519259 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0056731 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0061538 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00568354 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00546834 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00525424 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00496951 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00483221 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00436435 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00429329 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00411365 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00411365 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00419293 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00361062 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00319392 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00293629 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00300189 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00291743 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00319748 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00331247 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0033877 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00367939 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00379575 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00397819 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00388642 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00353903 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00319004 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0028929 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00279569 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00279569 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00273354 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00273354 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00244978 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00263445 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00300152 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00317571 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00349577 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00342307 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00356787 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00351251 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00339255 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00301823 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00252704 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00231316 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00211657 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00202565 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00193181 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00223691 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00223157 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00240577 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00243096 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00253812 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.4262 ms.
+best_end_point—s: 30 best_end_point-t:11
+ init_v; 0.00253812 init_a: 0.00238373
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00237996 replan_vehicle_start_flag: 0
+current_v: 1.21116 newSpeedRef: 5
+程序运行时间: 0.0137086 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00220897 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0018287 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00176656 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00186593 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0015484 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00124468 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00114231 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00134885 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00124946 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00147335 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00161181 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00162279 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00162569 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00212291 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00247121 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00247121 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00232435 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00244181 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00116799 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000700346 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000645148 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000818888 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00116656 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00128289 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00159445 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00200853 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00215944 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00215944 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00214215 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00221144 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00166231 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00150673 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00118237 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000809403 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0010237 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00105461 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00096882 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000859989 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00141923 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00141923 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00130821 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00121027 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00114276 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00129871 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00136063 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00106835 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00121961 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000990411 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.000990411 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00102659 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00105819 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00115068 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00115944 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00110885 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00127841 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00119739 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00133646 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0015011 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00181329 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00176255 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00176255 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00170819 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00154926 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00148707 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00160149 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00147873 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00166531 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00167375 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00159719 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0015585 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0016701 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00164211 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00178592 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00176941 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00176941 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00167056 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00183908 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00188996 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00197747 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00214191 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00242099 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00226062 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00254214 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00246447 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.25049 ms.
+best_end_point—s: 30 best_end_point-t:11
+ init_v; 0.00246447 init_a: 0.00660378
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00246887 replan_vehicle_start_flag: 0
+current_v: 1.21372 newSpeedRef: 5
+程序运行时间: 0.0160803 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00264111 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00251258 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00264184 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00245968 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00260342 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00253342 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00259073 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00259906 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00261155 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0025411 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00260799 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00260799 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0039805 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00497291 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0051714 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.00807211 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0116669 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0180503 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0283044 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0552744 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.0807292 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.109266 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.137987 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.166671 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.203052 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.243795 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.278673 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.31083 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.344287 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.344287 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.382091 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.400457 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.506348 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.540727 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.577321 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.577321 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.616649 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.6901 replan_vehicle_start_flag: 0
+current_v: 1.21338 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.6901 replan_vehicle_start_flag: 0
+current_v: 1.23956 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.721459 replan_vehicle_start_flag: 0
+current_v: 1.26575 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.757812 replan_vehicle_start_flag: 0
+current_v: 1.29194 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.790427 replan_vehicle_start_flag: 0
+current_v: 1.31812 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.82243 replan_vehicle_start_flag: 0
+current_v: 1.34431 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.870381 replan_vehicle_start_flag: 0
+current_v: 1.37049 newSpeedRef: 5
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.901076 replan_vehicle_start_flag: 0
+current_v: 1.39668 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.931767 replan_vehicle_start_flag: 0
+current_v: 1.42286 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.960061 replan_vehicle_start_flag: 0
+current_v: 1.44905 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 0.989142 replan_vehicle_start_flag: 0
+current_v: 1.47523 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.01705 replan_vehicle_start_flag: 0
+current_v: 1.50142 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.04192 replan_vehicle_start_flag: 0
+current_v: 1.5276 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.068 replan_vehicle_start_flag: 0
+current_v: 1.55379 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.09314 replan_vehicle_start_flag: 0
+current_v: 1.57997 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.12452 replan_vehicle_start_flag: 0
+current_v: 1.60616 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.15543 replan_vehicle_start_flag: 0
+current_v: 1.63234 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.17265 replan_vehicle_start_flag: 0
+current_v: 1.65853 newSpeedRef: 6
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.2388 replan_vehicle_start_flag: 0
+current_v: 1.68471 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.26511 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.29337 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.29337 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.34621 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.36887 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.36887 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.39737 replan_vehicle_start_flag: 0
+current_v: 1.70114 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.42279 replan_vehicle_start_flag: 0
+current_v: 1.72396 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.45508 replan_vehicle_start_flag: 0
+current_v: 1.74677 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.48622 replan_vehicle_start_flag: 0
+current_v: 1.76958 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.5168 replan_vehicle_start_flag: 0
+current_v: 1.79239 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.54187 replan_vehicle_start_flag: 0
+current_v: 1.8152 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.57637 replan_vehicle_start_flag: 0
+current_v: 1.83802 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.59941 replan_vehicle_start_flag: 0
+current_v: 1.86083 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.62241 replan_vehicle_start_flag: 0
+current_v: 1.88364 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.64575 replan_vehicle_start_flag: 0
+current_v: 1.90645 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.66656 replan_vehicle_start_flag: 0
+current_v: 1.92926 newSpeedRef: 7
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.69045 replan_vehicle_start_flag: 0
+current_v: 1.95207 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.71121 replan_vehicle_start_flag: 0
+current_v: 1.97489 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.73558 replan_vehicle_start_flag: 0
+current_v: 1.9977 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.758 replan_vehicle_start_flag: 0
+current_v: 2.02051 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.77731 replan_vehicle_start_flag: 0
+current_v: 2.02776 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.79997 replan_vehicle_start_flag: 0
+current_v: 2.04781 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.82905 replan_vehicle_start_flag: 0
+current_v: 2.06786 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.85148 replan_vehicle_start_flag: 0
+current_v: 2.08791 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.87605 replan_vehicle_start_flag: 0
+current_v: 2.10797 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.90252 replan_vehicle_start_flag: 0
+current_v: 2.12802 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.90252 replan_vehicle_start_flag: 0
+current_v: 2.14807 newSpeedRef: 8
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.2311 ms.
+best_end_point—s: 30 best_end_point-t:10
+ init_v; 2.02776 init_a: 1.14059
+程序运行时间: 0.00889469 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.94058 replan_vehicle_start_flag: 0
+current_v: 2.15785 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.94918 replan_vehicle_start_flag: 0
+current_v: 2.17201 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.98062 replan_vehicle_start_flag: 0
+current_v: 2.18618 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 1.99426 replan_vehicle_start_flag: 0
+current_v: 2.20034 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.01306 replan_vehicle_start_flag: 0
+current_v: 2.21451 newSpeedRef: 8
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.0386 replan_vehicle_start_flag: 0
+current_v: 2.22867 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.07243 replan_vehicle_start_flag: 0
+current_v: 2.23871 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.08197 replan_vehicle_start_flag: 0
+current_v: 2.2507 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.11463 replan_vehicle_start_flag: 0
+current_v: 2.26269 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.13449 replan_vehicle_start_flag: 0
+current_v: 2.27468 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.15519 replan_vehicle_start_flag: 0
+current_v: 2.28666 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.17944 replan_vehicle_start_flag: 0
+current_v: 2.29865 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.19962 replan_vehicle_start_flag: 0
+current_v: 2.31064 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.22751 replan_vehicle_start_flag: 0
+current_v: 2.32263 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.25168 replan_vehicle_start_flag: 0
+current_v: 2.33461 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.27267 replan_vehicle_start_flag: 0
+current_v: 2.3466 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.29398 replan_vehicle_start_flag: 0
+current_v: 2.35859 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.31688 replan_vehicle_start_flag: 0
+current_v: 2.37057 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.34181 replan_vehicle_start_flag: 0
+current_v: 2.37747 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.34181 replan_vehicle_start_flag: 0
+current_v: 2.3883 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.37584 replan_vehicle_start_flag: 0
+current_v: 2.39914 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.4204 replan_vehicle_start_flag: 0
+current_v: 2.40997 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.4204 replan_vehicle_start_flag: 0
+current_v: 2.42081 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.43823 replan_vehicle_start_flag: 0
+current_v: 2.43164 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.45208 replan_vehicle_start_flag: 0
+current_v: 2.44248 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.46412 replan_vehicle_start_flag: 0
+current_v: 2.45331 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.50578 replan_vehicle_start_flag: 0
+current_v: 2.46415 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.52495 replan_vehicle_start_flag: 0
+current_v: 2.47498 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.56652 replan_vehicle_start_flag: 0
+current_v: 2.48582 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.56652 replan_vehicle_start_flag: 0
+current_v: 2.4956 newSpeedRef: 9
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.58681 replan_vehicle_start_flag: 0
+current_v: 2.50537 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.61404 replan_vehicle_start_flag: 0
+current_v: 2.51515 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.62494 replan_vehicle_start_flag: 0
+current_v: 2.52493 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.65437 replan_vehicle_start_flag: 0
+current_v: 2.53471 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.67044 replan_vehicle_start_flag: 0
+current_v: 2.54448 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.69364 replan_vehicle_start_flag: 0
+current_v: 2.55426 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.70897 replan_vehicle_start_flag: 0
+current_v: 2.56404 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.73224 replan_vehicle_start_flag: 0
+current_v: 2.57382 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.75536 replan_vehicle_start_flag: 0
+current_v: 2.58359 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.7795 replan_vehicle_start_flag: 0
+current_v: 2.5924 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.7988 replan_vehicle_start_flag: 0
+current_v: 2.6012 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.8181 replan_vehicle_start_flag: 0
+current_v: 2.61 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.8411 replan_vehicle_start_flag: 0
+current_v: 2.6188 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86968 replan_vehicle_start_flag: 0
+current_v: 2.62761 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.86968 replan_vehicle_start_flag: 0
+current_v: 2.63641 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.87855 replan_vehicle_start_flag: 0
+current_v: 2.64521 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.8858 replan_vehicle_start_flag: 0
+current_v: 2.65402 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.94766 replan_vehicle_start_flag: 0
+current_v: 2.66282 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.96426 replan_vehicle_start_flag: 0
+current_v: 2.67072 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.97313 replan_vehicle_start_flag: 0
+current_v: 2.67862 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 2.984 replan_vehicle_start_flag: 0
+current_v: 2.68652 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.00095 replan_vehicle_start_flag: 0
+current_v: 2.69443 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.03873 replan_vehicle_start_flag: 0
+current_v: 2.70233 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.03873 replan_vehicle_start_flag: 0
+current_v: 2.71023 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.05548 replan_vehicle_start_flag: 0
+current_v: 2.71813 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.08207 replan_vehicle_start_flag: 0
+current_v: 2.72603 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.08207 replan_vehicle_start_flag: 0
+current_v: 2.7331 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.11782 replan_vehicle_start_flag: 0
+current_v: 2.74017 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.13155 replan_vehicle_start_flag: 0
+current_v: 2.74724 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.14824 replan_vehicle_start_flag: 0
+current_v: 2.75431 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.16109 replan_vehicle_start_flag: 0
+current_v: 2.76137 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.17845 replan_vehicle_start_flag: 0
+current_v: 2.76844 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.19019 replan_vehicle_start_flag: 0
+current_v: 2.77551 newSpeedRef: 10
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.21007 replan_vehicle_start_flag: 0
+current_v: 2.78258 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.22527 replan_vehicle_start_flag: 0
+current_v: 2.78888 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.24224 replan_vehicle_start_flag: 0
+current_v: 2.79518 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.24224 replan_vehicle_start_flag: 0
+current_v: 2.80148 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.27393 replan_vehicle_start_flag: 0
+current_v: 2.80778 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.29489 replan_vehicle_start_flag: 0
+current_v: 2.81407 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.30554 replan_vehicle_start_flag: 0
+current_v: 2.82037 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.30554 replan_vehicle_start_flag: 0
+current_v: 2.82667 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.32611 replan_vehicle_start_flag: 0
+current_v: 2.83297 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.35888 replan_vehicle_start_flag: 0
+current_v: 2.83856 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.37276 replan_vehicle_start_flag: 0
+current_v: 2.84415 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.37276 replan_vehicle_start_flag: 0
+current_v: 2.84973 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.38794 replan_vehicle_start_flag: 0
+current_v: 2.85532 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.4018 replan_vehicle_start_flag: 0
+current_v: 2.86091 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.41582 replan_vehicle_start_flag: 0
+current_v: 2.86649 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.43161 replan_vehicle_start_flag: 0
+current_v: 2.87208 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.44454 replan_vehicle_start_flag: 0
+current_v: 2.877 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.47243 replan_vehicle_start_flag: 0
+current_v: 2.88193 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.4884 replan_vehicle_start_flag: 0
+current_v: 2.88685 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.50219 replan_vehicle_start_flag: 0
+current_v: 2.89178 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.51449 replan_vehicle_start_flag: 0
+current_v: 2.8967 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.52601 replan_vehicle_start_flag: 0
+current_v: 2.90163 newSpeedRef: 11
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.23692 ms.
+best_end_point—s: 30 best_end_point-t:10
+ init_v; 2.93677 init_a: 0.279331
+程序运行时间: 0.00995308 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.53988 replan_vehicle_start_flag: 0
+current_v: 2.90655 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.5555 replan_vehicle_start_flag: 0
+current_v: 2.90686 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.56739 replan_vehicle_start_flag: 0
+current_v: 2.90775 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.5819 replan_vehicle_start_flag: 0
+current_v: 2.90863 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.59599 replan_vehicle_start_flag: 0
+current_v: 2.90952 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.6161 replan_vehicle_start_flag: 0
+current_v: 2.9104 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.62513 replan_vehicle_start_flag: 0
+current_v: 2.91129 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.63882 replan_vehicle_start_flag: 0
+current_v: 2.9121 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.64885 replan_vehicle_start_flag: 0
+current_v: 2.91291 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.64885 replan_vehicle_start_flag: 0
+current_v: 2.91373 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.66842 replan_vehicle_start_flag: 0
+current_v: 2.91454 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.68139 replan_vehicle_start_flag: 0
+current_v: 2.91536 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.69552 replan_vehicle_start_flag: 0
+current_v: 2.91617 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.71023 replan_vehicle_start_flag: 0
+current_v: 2.91698 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.71728 replan_vehicle_start_flag: 0
+current_v: 2.9178 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.72714 replan_vehicle_start_flag: 0
+current_v: 2.91854 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.73567 replan_vehicle_start_flag: 0
+current_v: 2.91928 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.7479 replan_vehicle_start_flag: 0
+current_v: 2.92003 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.75613 replan_vehicle_start_flag: 0
+current_v: 2.92077 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.77297 replan_vehicle_start_flag: 0
+current_v: 2.92152 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.77883 replan_vehicle_start_flag: 0
+current_v: 2.92226 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.79056 replan_vehicle_start_flag: 0
+current_v: 2.92294 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.79914 replan_vehicle_start_flag: 0
+current_v: 2.92361 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.80712 replan_vehicle_start_flag: 0
+current_v: 2.92429 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.81426 replan_vehicle_start_flag: 0
+current_v: 2.92496 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8243 replan_vehicle_start_flag: 0
+current_v: 2.92564 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83122 replan_vehicle_start_flag: 0
+current_v: 2.92632 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83825 replan_vehicle_start_flag: 0
+current_v: 2.92699 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.84737 replan_vehicle_start_flag: 0
+current_v: 2.9276 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.84988 replan_vehicle_start_flag: 0
+current_v: 2.92821 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.86093 replan_vehicle_start_flag: 0
+current_v: 2.92882 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.86667 replan_vehicle_start_flag: 0
+current_v: 2.92943 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.87241 replan_vehicle_start_flag: 0
+current_v: 2.93004 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.87567 replan_vehicle_start_flag: 0
+current_v: 2.93065 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8789 replan_vehicle_start_flag: 0
+current_v: 2.9312 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.88151 replan_vehicle_start_flag: 0
+current_v: 2.93174 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.88378 replan_vehicle_start_flag: 0
+current_v: 2.93229 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.88786 replan_vehicle_start_flag: 0
+current_v: 2.93283 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.88789 replan_vehicle_start_flag: 0
+current_v: 2.93338 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89159 replan_vehicle_start_flag: 0
+current_v: 2.93392 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89552 replan_vehicle_start_flag: 0
+current_v: 2.93447 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89675 replan_vehicle_start_flag: 0
+current_v: 2.93495 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8998 replan_vehicle_start_flag: 0
+current_v: 2.93544 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90662 replan_vehicle_start_flag: 0
+current_v: 2.93592 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90125 replan_vehicle_start_flag: 0
+current_v: 2.9364 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90382 replan_vehicle_start_flag: 0
+current_v: 2.93689 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90423 replan_vehicle_start_flag: 0
+current_v: 2.93737 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90252 replan_vehicle_start_flag: 0
+current_v: 2.93779 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90674 replan_vehicle_start_flag: 0
+current_v: 2.93822 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90417 replan_vehicle_start_flag: 0
+current_v: 2.93864 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90567 replan_vehicle_start_flag: 0
+current_v: 2.93906 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89673 replan_vehicle_start_flag: 0
+current_v: 2.93948 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90417 replan_vehicle_start_flag: 0
+current_v: 2.93991 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89997 replan_vehicle_start_flag: 0
+current_v: 2.94033 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90276 replan_vehicle_start_flag: 0
+current_v: 2.94069 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90178 replan_vehicle_start_flag: 0
+current_v: 2.94106 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.90022 replan_vehicle_start_flag: 0
+current_v: 2.94142 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89903 replan_vehicle_start_flag: 0
+current_v: 2.94179 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89232 replan_vehicle_start_flag: 0
+current_v: 2.94215 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8935 replan_vehicle_start_flag: 0
+current_v: 2.94251 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8935 replan_vehicle_start_flag: 0
+current_v: 2.94282 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.89047 replan_vehicle_start_flag: 0
+current_v: 2.94313 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.88617 replan_vehicle_start_flag: 0
+current_v: 2.94344 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8865 replan_vehicle_start_flag: 0
+current_v: 2.94374 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.88293 replan_vehicle_start_flag: 0
+current_v: 2.94405 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.87928 replan_vehicle_start_flag: 0
+current_v: 2.94436 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.87578 replan_vehicle_start_flag: 0
+current_v: 2.94466 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.87064 replan_vehicle_start_flag: 0
+current_v: 2.94491 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.86976 replan_vehicle_start_flag: 0
+current_v: 2.94516 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.85903 replan_vehicle_start_flag: 0
+current_v: 2.94542 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.86394 replan_vehicle_start_flag: 0
+current_v: 2.94567 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.85726 replan_vehicle_start_flag: 0
+current_v: 2.94592 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.85681 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 11
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.8523 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.85091 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.84684 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.84358 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.84601 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83827 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83898 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8557
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83323 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8607
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83159 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8607
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.83159 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8607
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.82373 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8607
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.82025 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8607
+Start_l: -1.5End_l: -1.5Delta_l: 0.5Target_v: 10 traget_l: -1.5
+all_distances: 30one_distances: 10
+ObstacleAvoidanceFlag_: 0 DecelerateFlag_: 0 DriveStraightLineFlag_: 1 Overtakinginlaneflag_: 0 righttoleftlane_: 0
+Path Optimizer used time: 1.22325 ms.
+best_end_point—s: 30 best_end_point-t:10
+ init_v; 3.01546 init_a: 0.00983113
+程序运行时间: 0.00882185 秒
+当前路径是: /home/nvidia/2025/longshan1_14
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.81821 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8607
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.81857 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8469
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.79948 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8585
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.78839 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8585
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.79104 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8585
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.77961 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8585
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.79332 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8585
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.77865 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8585
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.78431 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.78027 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.77817 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.76905 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.76114 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.7627 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.75425 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.75572 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.74756 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.74971 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.73967 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.73621 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.73621 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.72609 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.71897 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.71897 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.71614 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.71269 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.70471 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.69541 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.859
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.6939 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.68437 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.68223 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.67578 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.67252 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+Control: 
+previous_DecelerateFlag: 0 DecelerateFlag: 0 car_speed: 3.6683 replan_vehicle_start_flag: 0
+current_v: 2.94617 newSpeedRef: 10.8588
+speedRef:0, gearsRef:11, flag:0
+can_node exit
+running: 0 startsocketcanflag: 1
+方向盘回正
+功能关闭，回到人工驾驶状态
+自动驾驶模式退出
+退出socketcan
+running: 0 startsocketcanflag: 1
+退出socketcan
+running: 0 startsocketcanflag: 1
+退出socketcan
+running: 0 startsocketcanflag: 1

@@ -1,4 +1,0 @@
-Invoking command in '/home/mm/longshan12_2/build/model': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/model -- -j4 -l4
-Invoked command in '/home/mm/longshan12_2/build/model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mm/longshan12_2/build/model -- -j4 -l4
-Invoking command in '/home/mm/longshan12_2/build/model': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/model
-Invoked command in '/home/mm/longshan12_2/build/model' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mm/longshan12_2/build/model

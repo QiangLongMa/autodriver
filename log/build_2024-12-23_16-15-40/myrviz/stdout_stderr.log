@@ -1,5 +1,0 @@
-[35m[1mScanning dependencies of target points_and_lines_publisher[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o[0m
-make[2]: *** [CMakeFiles/points_and_lines_publisher.dir/build.make:63: CMakeFiles/points_and_lines_publisher.dir/src/pubrviz.cpp.o] 中断
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/points_and_lines_publisher.dir/all] 中断
-make: *** [Makefile:141: all] 中断

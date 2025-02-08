@@ -1,7 +1,0 @@
-** WARNING ** io features related to pcap will be disabled
-** WARNING ** io features related to png will be disabled
-** WARNING ** io features related to libusb-1.0 will be disabled
-[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:[m[K In member function ‘[01m[Kvoid PointsAndLinesPublisher::publocal(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/mm/longshan12_2/src/myrviz/src/pubrviz.cpp:272:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocalid[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  272 |         static int [01;35m[Klocalid[m[K =0;
-      |                    [01;35m[K^~~~~~~[m[K

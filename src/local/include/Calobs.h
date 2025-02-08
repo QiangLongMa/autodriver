@@ -34,7 +34,20 @@ namespace obs{
     bool HasOverlap(std::vector<Eigen::MatrixXd> &carpoint_points,std::vector<Eigen::VectorXd> &obses,Eigen::MatrixXd &opty);
     bool HasOverlap(Eigen::MatrixXd &car_point,std::vector<Eigen::VectorXd> &obses, double thea);
     
-   bool HasOverlap(std::vector<Eigen::MatrixXd> &carpoint_points,Eigen::VectorXd &obs,Eigen::MatrixXd &opty, size_t &index);
+    bool HasOverlap(std::vector<Eigen::MatrixXd> &carpoint_points,Eigen::VectorXd &obs,Eigen::MatrixXd &opty, size_t &index);
+
+    void get_car_fourpoint_sl(Eigen::MatrixXd& car_Fpoint, int index, std::vector<std::pair<double, double>> &car_Fpoint_sl,
+                                 Eigen::MatrixXd& globalpath);
+    bool IsPointInRect(std::vector<std::pair<double, double>> &car_Fpoint_sl, const  std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> &obstacle);
+
+    bool PointInRect(Eigen::Vector2d &vec12, Eigen::Vector2d &vec23, Eigen::Vector2d &vec34, Eigen::Vector2d &vec41
+					,Eigen::Vector2d &vec1_p1, Eigen::Vector2d &vec1_p2, Eigen::Vector2d &vec1_p3, Eigen::Vector2d &vec1_p4);
+                    
+    bool HasOverlapUseSl(std::vector<std::pair<double, double>> &car_Fpoint_sl, std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> obstaclelist);
+		
+	
 }
 
 

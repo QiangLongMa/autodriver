@@ -14,6 +14,9 @@
 #include <sys/socket.h>
 #include <linux/can.h>
 #include <linux/can/raw.h>
+#include <fcntl.h>
+#include <cstring>
+#include <cerrno>
 #include <unistd.h>  // 包含close函数
 #include<thread>
 struct ControlQuantity
@@ -40,7 +43,7 @@ struct Car_Light_Control{
 class socketcan
 {
 private:
-    int s;
+    int s = -1;
     struct sockaddr_can addr;
     struct ifreq ifr;
 	const double targetFrameRate = 200.0;                      // 目标帧率（帧/秒）
@@ -49,7 +52,9 @@ private:
 public:
     struct can_frame frame;
 	std::thread  send_thread;
+	std::thread  recv_thread;
 	bool startsocketcanflag = false;
+	int brake_flag = 0;
 	// init data 
 	unsigned int frame_ID_ = 0x20; 
 	int brake_ = 0;
@@ -63,7 +68,10 @@ public:
 	void meeeage_all(int brake,int sw_angle,unsigned char gear_ask,int speed_ask);
     void open_socketcan();
 	void start_thread();
+	void receive_data();
 	void exit_socketcan();
+	int getbrakeflag();
+	void send_data_nobusy(int socket_fd, struct can_frame *fram);
     socketcan();
     ~socketcan();
 };

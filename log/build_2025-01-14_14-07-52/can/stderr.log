@@ -1,0 +1,26 @@
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:[m[K In constructor ‘[01m[Ksocketcan::socketcan()[m[K’:
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:27:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KactualFrameRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   27 |         double [01;35m[KactualFrameRate[m[K = 1.0 / frameDuration.count();
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:[m[K In destructor ‘[01m[Ksocketcan::~socketcan()[m[K’:
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:77:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KactualFrameRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   77 |         double [01;35m[KactualFrameRate[m[K = 1.0 / frameDuration.count();
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:102:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  102 |  int [01;35m[Kreturn_code2[m[K = send_init(0x1C5, data1); //0x1C5
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:[m[K In member function ‘[01m[Kvoid socketcan::exit_socketcan()[m[K’:
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:129:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KactualFrameRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  129 |         double [01;35m[KactualFrameRate[m[K = 1.0 / frameDuration.count();
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:155:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreturn_code2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  155 |  int [01;35m[Kreturn_code2[m[K = send_init(0x1C5, data1); //0x1C5
+      |      [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:[m[K In member function ‘[01m[Kvoid socketcan::send_data_nobusy(int, can_frame*)[m[K’:
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:350:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksocket_fd[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  350 | void socketcan::send_data_nobusy([01;35m[Kint socket_fd[m[K, struct can_frame *frame) {
+      |                                  [01;35m[K~~~~^~~~~~~~~[m[K
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:[m[K In member function ‘[01m[Kint socketcan::send_init(unsigned int, unsigned char*)[m[K’:
+[01m[K/home/mm/longshan12_2/src/can/src/socketcan.cpp:203:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  203 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

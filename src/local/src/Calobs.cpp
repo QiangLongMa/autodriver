@@ -175,6 +175,7 @@ namespace obs{
         double min_s;
         double max_s;
         double min_l;
+        double max_l;
         for (size_t i = 0; i < obs.cols(); ++i){
             lidar_obs_Frenet(obs.col(i),globalPath_,sd_,carindex);
             //将符合距离的障碍物加入到其中 
@@ -183,13 +184,18 @@ namespace obs{
              *    -2.9~2.9 对每一个点进行判断   
              * 
              * **/
+
             min_s = std::min({sd_.point1.s, sd_.point2.s, sd_.point3.s, sd_.point4.s});
             max_s = std::max({sd_.point1.s, sd_.point2.s, sd_.point3.s, sd_.point4.s});
+            min_l = std::min({sd_.point1.l, sd_.point2.l, sd_.point3.l, sd_.point4.l});
+            max_l = std::max({sd_.point1.l, sd_.point2.l, sd_.point3.l, sd_.point4.l});
             double weigth = std::abs(sd_.point4.l - sd_.point1.l);
             if((min_s-vehicle_position.s) <= 30){
                 if(decide_obs_true_false(sd_,2.9,-2.9)){ //之前时 2.5 ～ -2.9
                     sd_.min_s = min_s;
                     sd_.max_s = max_s;
+                    sd_.min_l = min_l;
+                    sd_.max_l = max_l;
                     sd_.wigth = weigth;
                     sd.emplace_back(sd_);
                     obses_limit.emplace_back(obses_base_lidar.col(i)); //这里的障碍物和sd里的是一一对应的  原始的障碍物 基于雷达坐标系的
@@ -594,6 +600,165 @@ namespace obs{
 		}
         return 0;
     }
+
+
+	void get_car_fourpoint_sl(Eigen::MatrixXd& car_Fpoint, int index, std::vector<std::pair<double, double>> &car_Fpoint_sl, Eigen::MatrixXd& globalpath){
+		size_t start_index = std::max(index - 40, 0);
+        size_t end_index = std::min(index+ 80,static_cast<int>(globalpath.cols()));
+		for (size_t i = 0; i < 4; i++) { //每一个顶点寻找最小的编号 
+			double x = car_Fpoint(0, i);
+			double y = car_Fpoint(1, i);
+			double x_diff, y_diff;
+			double mindistance, d_min = std::numeric_limits<double>::max();
+			size_t minindex;
+			for (size_t j = start_index; j < end_index; ++j){
+				x_diff = x - globalpath(0, j);
+				y_diff = y - globalpath(1, j);
+				mindistance = x_diff * x_diff + y_diff * y_diff;
+				if (mindistance < d_min) {
+					d_min = mindistance;
+					minindex= j;
+				}
+			}
+			// sl 
+			std::pair<double, double> sl;
+			double dx = x - globalpath(0, minindex);
+			double dy = y - globalpath(1, minindex);
+			double cos_theta_r = std::cos(globalpath(3,minindex));
+			double sin_theta_r = std::sin(globalpath(3,minindex));
+			double ref_s = globalpath(6, minindex);
+			double path_s = dx * cos_theta_r + dy * sin_theta_r + ref_s;
+			double cross_rd_nd = cos_theta_r * dy - sin_theta_r * dx;
+			sl.second = std::copysign(cross_rd_nd, cross_rd_nd);
+			sl.first = std::abs(path_s);
+			car_Fpoint_sl.push_back(sl);
+		}
+	}
+    /*
+    @param car_Fpoint_sl 车辆的四个顶点坐标
+    @param obstacle 障碍物的四个低昂点坐标 
+    */
+	bool IsPointInRect(std::vector<std::pair<double, double>> &car_Fpoint_sl, const  std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> &obstacle) {
+		if (obstacle.empty()) return false;
+		// 提取 car_Fpoint_sl 的四个点
+        auto& p0 = car_Fpoint_sl[0];
+        auto& p1 = car_Fpoint_sl[1];
+        auto& p2 = car_Fpoint_sl[2];
+        auto& p3 = car_Fpoint_sl[3];
+
+        // 计算 max 和 min 值
+        double car_max_s = std::max({p0.first, p1.first, p2.first, p3.first});
+        double car_min_s = std::min({p0.first, p1.first, p2.first, p3.first}); 
+        double car_max_l = std::max({p0.second, p1.second, p2.second, p3.second});
+        double car_min_l = std::min({p0.second, p1.second, p2.second, p3.second});
+		for (const auto &p : car_Fpoint_sl) {
+			double path_s = p.first;
+			double path_l = p.second;
+			for (const auto &obs : obstacle) {
+                auto &obs_p0 = std::get<0>(obs);
+                auto &obs_p1 = std::get<1>(obs);
+                auto &obs_p2 = std::get<2>(obs);
+                auto &obs_p3 = std::get<3>(obs);
+				double obs_max_s = std::max({obs_p0.first, obs_p1.first, obs_p2.first, obs_p3.first});
+				double obs_min_s = std::min({obs_p0.first, obs_p1.first, obs_p2.first, obs_p3.first});
+				double obs_max_l = std::max({obs_p0.second, obs_p1.second, obs_p2.second, obs_p3.second});
+        		double obs_min_l = std::min({obs_p0.second, obs_p1.second, obs_p2.second, obs_p3.second});
+				   // 如果车辆的包围框和障碍物的包围框没有交集，跳过
+				if (car_max_s < obs_min_s || car_min_s > obs_max_s || car_max_l < obs_min_l || car_min_l > obs_max_l) {
+					continue;
+				}
+ 				Eigen::Vector2d vec1_p1(path_s - obs_p0.first, path_l - obs_p0.second);
+				Eigen::Vector2d vec1_p2(path_s - obs_p1.first, path_l - obs_p1.second);
+				Eigen::Vector2d vec1_p3(path_s - obs_p2.first, path_l - obs_p2.second);
+				Eigen::Vector2d vec1_p4(path_s - obs_p3.first, path_l - obs_p3.second);
+
+				Eigen::Vector2d vec12(obs_p1.first - obs_p0.first, obs_p1.second - obs_p0.second);
+				Eigen::Vector2d vec23(obs_p2.first - obs_p1.first, obs_p2.second - obs_p1.second);
+				Eigen::Vector2d vec34(obs_p3.first - obs_p2.first, obs_p3.second - obs_p2.second);
+				Eigen::Vector2d vec41(obs_p0.first - obs_p3.first, obs_p0.second - obs_p3.second);
+
+				if (PointInRect(vec12, vec23, vec34, vec41, vec1_p1, vec1_p2, vec1_p3, vec1_p4)) {
+					return true;
+				}
+			}
+		}
+		for (const auto &obs : obstacle) { //总的障碍物的个数
+			auto &obs_p0 = std::get<0>(obs);
+            auto &obs_p1 = std::get<1>(obs);
+            auto &obs_p2 = std::get<2>(obs);
+            auto &obs_p3 = std::get<3>(obs);
+            double obs_max_s = std::max({obs_p0.first, obs_p1.first, obs_p2.first, obs_p3.first});
+            double obs_min_s = std::min({obs_p0.first, obs_p1.first, obs_p2.first, obs_p3.first});
+            double obs_max_l = std::max({obs_p0.second, obs_p1.second, obs_p2.second, obs_p3.second});
+            double obs_min_l = std::min({obs_p0.second, obs_p1.second, obs_p2.second, obs_p3.second});
+				// 如果车辆的包围框和障碍物的包围框没有交集，跳过
+			if (car_max_s < obs_min_s || car_min_s > obs_max_s || car_max_l < obs_min_l || car_min_l > obs_max_l) {
+				continue;
+			}
+			for (size_t i = 0; i < 4; i++){ //每个障碍物的四个顶点 
+				double obs_s ; //障碍物的S
+				double obs_l ;//障碍物的L
+				switch (i){
+					case 0:
+						obs_s = std::get<0>(obs).first; //障碍物的S
+						obs_l = std::get<0>(obs).second;//障碍物的L
+						break;
+					case 1:
+						obs_s = std::get<1>(obs).first; //障碍物的S
+						obs_l = std::get<1>(obs).second;//障碍物的L
+						break;
+					case 2:
+						obs_s = std::get<2>(obs).first; //障碍物的S
+						obs_l = std::get<2>(obs).second;//障碍物的L
+						break;
+					case 3:
+						obs_s = std::get<3>(obs).first; //障碍物的S
+						obs_l = std::get<3>(obs).second;//障碍物的L
+						break;
+					default:
+						break;
+				}
+				Eigen::Vector2d vec1_p1(obs_s - p0.first, obs_l - p0.second);
+				Eigen::Vector2d vec1_p2(obs_s - p1.first, obs_l - p1.second);
+				Eigen::Vector2d vec1_p3(obs_s - p2.first, obs_l - p2.second);
+				Eigen::Vector2d vec1_p4(obs_s - p3.first, obs_l - p3.second);
+
+				Eigen::Vector2d vec12(p1.first - p0.first, p1.second - p0.second);
+				Eigen::Vector2d vec23(p2.first - p1.first, p2.second - p1.second);
+				Eigen::Vector2d vec34(p3.first - p2.first, p3.second - p2second);
+				Eigen::Vector2d vec41(p0.first - p3.first, p0.second - p3.second);
+				if (PointInRect(vec12, vec23, vec34, vec41, vec1_p1, vec1_p2, vec1_p3, vec1_p4)) {
+					return true;
+				}
+			}		
+		}
+		return false;
+	}
+
+	//判断点是否在多边形的内部 ，如果在内部的 叉乘应该全小于0 
+	bool PointInRect(Eigen::Vector2d &vec12, Eigen::Vector2d &vec23, Eigen::Vector2d &vec34, Eigen::Vector2d &vec41
+					,Eigen::Vector2d &vec1_p1, Eigen::Vector2d &vec1_p2, Eigen::Vector2d &vec1_p3, Eigen::Vector2d &vec1_p4){
+		// p1 
+		double o1 = vec12.x() * vec1_p1.y() - vec12.y() * vec1_p1.x();
+		double o2 = vec23.x() * vec1_p2.y() - vec23.y() * vec1_p2.x();
+		double o3 = vec34.x() * vec1_p3.y() - vec34.y() * vec1_p3.x();
+		double o4 = vec41.x() * vec1_p4.y() - vec41.y() * vec1_p4.x();
+		if(o1 < 0 && o2 < 0 && o3 < 0 && o4 < 0){
+			return true;
+		} else {
+			return false;
+		}
+	}
+	bool HasOverlapUseSl(std::vector<std::pair<double, double>> &car_Fpoint_sl, std::vector<std::tuple<std::pair<double, double>,
+					std::pair<double, double>, std::pair<double, double>, std::pair<double, double>>> obstaclelist) {
+		return IsPointInRect(car_Fpoint_sl, obstaclelist);
+	}
+
+
+
+
+
 
 
 }

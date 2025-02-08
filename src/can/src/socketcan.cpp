@@ -18,7 +18,7 @@ socketcan::socketcan()
 	data[4]=0x80;
 	data[5]=0;
 	data[6] = 0x64;
-     int return_code0;
+    int return_code0;
     for (size_t i = 0; i < 100; i++)
     {
         auto startTime = std::chrono::high_resolution_clock::now();
@@ -58,7 +58,9 @@ socketcan::socketcan()
     start_thread();
 }
 socketcan::~socketcan(){
+
     running = false;
+    std::cout << "running: " << running << " startsocketcanflag: " << startsocketcanflag << std::endl;
     sleep(0.1);
     unsigned char data[8] = {0,0,0,0,0,0,0,0};//0x20
 	data[0]= 0;
@@ -188,25 +190,25 @@ int socketcan::send_init(unsigned int frame_ID, unsigned char* data)
     frame.data[0] = data[0];   // 数据字节1
     frame.data[1] = data[1];   // 数据字节2
     frame.data[2] = data[2]; 
-    frame.data[3]= data[3]; 
-    frame.data[4]= data[4]; 
-    frame.data[5]= data[5]; 
-    frame.data[6]= data[6]; 
-    frame.data[7]= data[7];
+    frame.data[3] = data[3]; 
+    frame.data[4] = data[4]; 
+    frame.data[5] = data[5]; 
+    frame.data[6] = data[6]; 
+    frame.data[7] = data[7];
     // 发送CAN数据帧
     if (send(s, &frame, sizeof(struct can_frame), 0) < 0) {
         //perror("Error in sending frame");
         return -1;       
     }
 }
-void socketcan::send_data()
-{  
+
+void socketcan::send_data() {  
     std::cout<<"running"<<std::endl;
     while (running) { 
-        if (!startsocketcanflag) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            continue;
-        }
+        // if (!startsocketcanflag) {
+        //     std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        //     continue;
+        // }
         auto startTime = std::chrono::high_resolution_clock::now();
         frame.can_id = 0x20;  // 设置CAN ID
         frame.can_dlc = 8;     // 设置数据长度
@@ -214,7 +216,7 @@ void socketcan::send_data()
         // message_0x20.sw_angle = 0;
         // message_0x20.eps_auto_model=0x1;
         // message_0x20.brake =0;
-        short sw_angle = (sw_angle_ + 2048)*16;//16
+        short sw_angle = (sw_angle_ + 2048) * 16;//16
         short brake = brake_*10;
         frame.data[0] = brake;   // 数据字节1
         frame.data[1] = 0x0;   // 数据字节2
@@ -228,9 +230,10 @@ void socketcan::send_data()
         auto endTime = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> frameDuration = endTime - startTime;
         std::this_thread::sleep_for(std::chrono::duration<double>(targetFrameDuration - frameDuration.count())); 
-        if (send(s, &frame, sizeof(struct can_frame), 0) < 0) {
-                //std::cout<<"Error in sending frame"<<std::endl;
-        }
+        send_data_nobusy(s,  &frame);
+        // if (send(s, &frame, sizeof(struct can_frame), 0) < 0) {
+        //     //std::cout<<"Error in sending frame"<<std::endl;
+        // }
         
         auto startTime2 = std::chrono::high_resolution_clock::now();
 
@@ -258,10 +261,11 @@ void socketcan::send_data()
         std::chrono::duration<double> frameDuration2 = endTime2 - startTime2;
         // 等待，以使每个循环迭代的持续时间达到目标帧持续时间
         std::this_thread::sleep_for(std::chrono::duration<double>(targetFrameDuration - frameDuration2.count())); 
-        if (send(s, &frame, sizeof(struct can_frame), 0) < 0) {
-                //std::cout<<"Error in sending frame"<<std::endl;
-                // return -1;       
-        }
+        send_data_nobusy(s,  &frame);
+        // if (send(s, &frame, sizeof(struct can_frame), 0) < 0) {
+        //         //std::cout<<"Error in sending frame"<<std::endl;
+        //         // return -1;       
+        // }
     }
 }
 void socketcan::message_0x20(int brake,int sw_angle){
@@ -282,16 +286,98 @@ void socketcan::meeeage_all(int brake,int sw_angle,unsigned char gear_ask,int sp
     gear_ask_ =gear_ask;
     speed_ask_ =speed_ask;
 }
-void socketcan::start_thread()
-{
+void socketcan::start_thread() {
     // 创建线程
     running =true;
-    send_thread=std::thread(&socketcan::send_data,this);
-    send_thread.join();  // 将线程放到后台执行，此处不阻塞 or can0read_thread.join(); 
+    send_thread = std::thread(&socketcan::send_data,this);
+    recv_thread = std::thread(&socketcan::receive_data,this);
+    send_thread.detach();  // 将线程放到后台执行，此处不阻塞 or can0read_thread.join(); 
+    recv_thread.detach();
 }
 
+void socketcan::receive_data() {
+    while (running){
+        //std::cout<<"s: "<<s<<std::endl;
+        //std::cout << "running: " << running << " startsocketcanflag: " << startsocketcanflag << std::endl;
 
+        // 使用 read_fds 监视可读事件
+        fd_set read_fds;
+        FD_ZERO(&read_fds);
+        FD_SET(s, &read_fds);  // 监视套接字 s
 
+        struct timeval timeout;
+        timeout.tv_sec = 0;      // 设置超时时间
+        timeout.tv_usec = 500000; // 0.5 秒
+        int ret = select(s + 1, &read_fds, NULL, NULL, &timeout);  // 只监视读事件
 
+        if (ret < 0) {
+            //std::cerr << "select() failed: " << strerror(errno) << std::endl;
+            continue;
+        } else if (ret == 0) {
+            // 超时，继续下一个循环
+            //std::cout << "Timeout, no data available" << std::endl;
+            continue;
+        }
+
+        if (FD_ISSET(s, &read_fds)) {
+            struct can_frame receive_frame;
+            int nbytes = read(s, &receive_frame, sizeof(struct can_frame));
+            if (nbytes < 0) {
+                //std::cerr << "Error reading CAN frame: " << strerror(errno) << std::endl;
+                continue; // 错误时跳过此轮
+            }
+            // 仅处理 ID 为 0x451 的 CAN 帧
+            if (receive_frame.can_id == 0x451) {
+                std::cout << "Received CAN frame with ID 0x451:" << std::endl;
+                // 确保使用 receive_frame 来访问数据
+                unsigned char second_byte = receive_frame.data[1];
+                std::cout << "Second byte: " << static_cast<int>(second_byte) << std::endl;
+                if (static_cast<int>(second_byte) == 2) { //no
+                    brake_flag = 0;
+                } else {
+                    brake_flag = 1; //yes 
+                }
+                //std::cout << "brake_flag: " << brake_flag << std::endl;
+            } else {
+                // 可以在这里处理其他 ID 的帧
+                //std::cout << "Received a frame with different ID: " << receive_frame.can_id << std::endl;
+            }
+        }
+    }
+        
+}
+
+void socketcan::send_data_nobusy(int socket_fd, struct can_frame *frame) {
+    fd_set write_fds;
+    FD_ZERO(&write_fds);
+    FD_SET(s, &write_fds);
+
+    struct timeval timeout;
+    timeout.tv_sec = 1;
+    timeout.tv_usec = 0;
+
+    int ret = select(s + 1, NULL, &write_fds, NULL, &timeout);
+    
+    if (ret > 0 && FD_ISSET(s, &write_fds)) {
+        int nbytes = send(s, frame, sizeof(struct can_frame), 0);
+        if (nbytes < 0) {
+            if (errno == EAGAIN || errno == EWOULDBLOCK) {
+                //std::cout << "Send operation would block, try again later." << std::endl;
+            } else {
+                //perror("Error in sending frame");
+            }
+        } else {
+            std::cout << "Frame sent successfully" << std::endl;
+        }
+    } else if (ret == 0) {
+        //std::cout << "Timeout: Socket is not ready to send" << std::endl;
+    } else {
+        //perror("select() error");
+    }
+}
+
+int socketcan::getbrakeflag() {
+    return brake_flag;
+}
 
 

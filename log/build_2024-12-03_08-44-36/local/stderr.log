@@ -1,7 +1,0 @@
-[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:[m[K In member function ‘[01m[Kvoid local_dp_qp::CalculateCostTable()[m[K’:
-[01m[K/home/mm/longshan12_2/src/local/src/local_dp_qp.cpp:103:30:[m[K [01;31m[Kerror: [m[K‘[01m[Konlycost[m[K’ was not declared in this scope
-  103 |     for (uint32_t s = 1; s < [01;31m[Konlycost[m[K.size(); ++s) {
-      |                              [01;31m[K^~~~~~~~[m[K
-make[2]: *** [CMakeFiles/local_node4.dir/build.make:141：CMakeFiles/local_node4.dir/src/local_dp_qp.cpp.o] 错误 1
-make[1]: *** [CMakeFiles/Makefile2:78：CMakeFiles/local_node4.dir/all] 错误 2
-make: *** [Makefile:141：all] 错误 2

@@ -1,6 +1,3 @@
-
-
-
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
@@ -28,9 +25,14 @@
 #include <limits>
 #include<cstdio>
 #include "localmath.h"
+#include <unistd.h>
+#include<boost/filesystem.hpp>
+#include <sys/stat.h>
+#include <sys/types.h>
+
 #define NANOS_PER_SECOND  1e9
 using namespace std;
-
+namespace fs = boost::filesystem;
 class local_trajs_node : public rclcpp::Node{
     public:
         //构造函数,有一个参数为节点名称
@@ -72,6 +74,7 @@ class local_trajs_node : public rclcpp::Node{
             //timer_DecelerateFlag = this->create_wall_timer(std::chrono::milliseconds(20), std::bind(&local_trajs_node::PubDecelerateFlag, this));
             timer_getlocalpath=this->create_wall_timer(std::chrono::milliseconds(Slowdowntimethreshold), std::bind(&local_trajs_node::GetLocalPath, this));
             outputFile.open(filename);
+          
         }
         
         void SendControlObs(std::vector<obses_sd> &obses){
@@ -202,7 +205,7 @@ class local_trajs_node : public rclcpp::Node{
                     // double obsmins, obswigth;
                     // std::vector<obses_sd> rigthobstaclelist;//右边障碍物集合
                     // CalObsMInS(obsmins,globalPath(6,obs_car_globalpath_index),obswigth,obses_limit_SD,GlobalcoordinatesystemObsesLimit, rigthobstaclelist);
-
+                    
                     SendHmiObs(LidarcoordinatesystemObsesLimit);
                     SendControlObs(obses_limit_SD);
                     SendGlobalObses(GlobalcoordinatesystemObsesLimit);
@@ -335,13 +338,14 @@ class local_trajs_node : public rclcpp::Node{
                         else {
                             Eigen::VectorXd vehicle_state_(6);
                             vehicle_state_ << car(0), car(1),car(2),car(3),car(4), gpsA;
-                            std::cout<<"carx: "<<car(0)<<std::endl;
-                            std::cout<<"cary: "<<car(1)<<std::endl;
-                            std::cout<<"FrentPoint_.S: "<<FrentPoint_.s<<std::endl;
-                            std::cout<<"FrentPoint_.D: "<<FrentPoint_.d<<std::endl;
-                            std::cout<<"closestIndex: "<<closestIndex<<std::endl;
-                            std::cout<<"index: "<<index<<std::endl;
-                            std::array<double, 6> vehicle_state = Decidestartsl(FrentPoint_,closestIndex,closeroute,index,optTrajxy,vehicle_state_,
+                            // std::cout<<"carx: "<<car(0)<<std::endl;
+                            // std::cout<<"cary: "<<car(1)<<std::endl;
+                            // std::cout<<"FrentPoint_.S: "<<FrentPoint_.s<<std::endl;
+                            // std::cout<<"FrentPoint_.D: "<<FrentPoint_.d<<std::endl;
+                            // std::cout<<"closestIndex: "<<closestIndex<<std::endl;
+                            // std::cout<<"index: "<<index<<std::endl;
+                            
+                            std::array<double, 6> vehicle_state = Decidestartsl(FrentPoint_, closestIndex, closeroute, index, optTrajxy, vehicle_state_,
                                                                                 Repeatpreviouspathflag);
                             local_start_s = vehicle_state[0];
                             local_start_l = vehicle_state[1];
@@ -355,6 +359,10 @@ class local_trajs_node : public rclcpp::Node{
                             std::cout<<"ddl: "<<ddl<<std::endl;
                             std::cout<<"v: "<<car(2)<<std::endl;
                             std::cout<<"a: "<<gpsA<<std::endl;
+                            if (std::isnan(gpsA) || std::isnan(car(2))) {
+                                Numbercycles = 100;
+                                return;
+                            }
                             // std::cout<<"Trajectory_Splicing_Flag: "<<Trajectory_Splicing_Flag<<std::endl;
                             // std::cout<<"Repeatpreviouspathflag: "<<Repeatpreviouspathflag<<std::endl;
                             Slowdowntimethreshold = 100;
@@ -403,8 +411,7 @@ class local_trajs_node : public rclcpp::Node{
                                         } else { //既不能直线行使也不能超车  缩小借道超车的距离
                                             //无法缩小借到超车的距离 找不到路
                                             Pathplanningduringdeceleration(GlobalcoordinatesystemObsesLimitinlocal); //减速规划 
-                                            DecelerationPathRelease(optTrajxy); 
-                                            
+                                            DecelerationPathRelease(optTrajxy);                                             
                                         }
                                     }
                                 } else if (Decisionflags_.Overtakinginlaneflag) {//车道中超车状态下  这个应该不会执行 
@@ -488,6 +495,7 @@ class local_trajs_node : public rclcpp::Node{
                                     timer_local_callback_to_control();
                                 } else { //减速过程中的判断 车辆静止状态 
                                     if (car(2) <= 0.1) {
+                                        std::cout<<"减速-停车状态: "<<"wait_time_flag: "<<wait_time_flag<<" "<<"wait_time: "<<wait_time<<std::endl;
                                         first_time = std::chrono::high_resolution_clock::now();
                                         if (wait_time_flag) {
                                             second_time = first_time;
@@ -510,7 +518,6 @@ class local_trajs_node : public rclcpp::Node{
                                                 lastOptTrajsd.clear();
                                                 timer_local_callback_to_control();
                                             }
-
                                         }
                                     }
                                 }
@@ -670,7 +677,6 @@ class local_trajs_node : public rclcpp::Node{
                                                 none = LOCAL_.GetoptTrajxy(lastOptTrajxy,lastOptTrajsd);
                                                 if(none == 0){ //寻路失败
                                                     IsUseVehicleFlag = true;
-
                                                     size_t T = 1;//距离较近 规定车辆1秒钟必须停下来
                                                     double deceleration = - car(2) / T;
                                                     for(size_t i = 0; i < optTrajxy.cols(); ++i){
@@ -709,7 +715,7 @@ class local_trajs_node : public rclcpp::Node{
                                         //CalStartCarD(FrentPoint_.d,-1.0,start_l,end_l);
                                         start_l = -1.0; end_l = -1.0;
                                         targetl = -1; 
-                                        delta_l =0.5; target_v = 5;
+                                        delta_l = 0.5; target_v = 5;
                                     }else{
                                         //CalStartCarD(FrentPoint_.d,-1.5,start_l,end_l);
                                         start_l = -1.5; end_l = -1.5;
@@ -1160,7 +1166,6 @@ class local_trajs_node : public rclcpp::Node{
                 local_to_control_publisher->publish(local_trajs_msg);
                 local_to_hmi_publisher->publish(local_trajs_msg);
             } else {          
-                PubDecelerateFlag(false); //  
                 if (!Trajectory_Splicing_Flag) {//不进行轨迹拼接
                     for (size_t i = 0; i < optTrajxy.cols(); ++i){
                         optTrajxy(8, i) = optTrajxy(7, i) + heading_time_ + 0.1;
@@ -1200,7 +1205,7 @@ class local_trajs_node : public rclcpp::Node{
                 local_trajs_msg.data.push_back(globalPath.cols());
                 local_trajs_msg.data.push_back(heading_time_);
                 local_to_control_publisher->publish(local_trajs_msg);
-                
+                PubDecelerateFlag(false); //  
                 std_msgs::msg::Float64MultiArray local_trajs_msg2;  
                 std::vector<double> localTrajReshape2(&optTrajxy(0), optTrajxy.data() + optTrajxy.size());
                 local_trajs_msg2.data = localTrajReshape2;
@@ -1711,8 +1716,29 @@ class local_trajs_node : public rclcpp::Node{
         }
 
         void write_localpath (Eigen::MatrixXd &path) {
-            static int loopCount =1;
-            std::string fileName = "/home/mm/longshan11_14/local/" + std::to_string(loopCount) + ".txt";
+                // 获取当前路径
+            char buffer[256];
+            // 获取当前路径
+            if (getcwd(buffer, sizeof(buffer)) != nullptr) {
+                std::cout << "当前路径是: " << buffer << std::endl;
+            } else {
+                std::cerr << "获取当前路径失败" << std::endl;
+            }
+             // 获取当前时间点
+            auto now = std::chrono::system_clock::now();
+            std::time_t now_time_t = std::chrono::system_clock::to_time_t(now);
+            std::tm* tm_info = std::localtime(&now_time_t);
+
+            // 格式化时间为字符串，格式为 yyyy-mm-dd_HH-MM-SS
+            char time_buffer[256];
+            std::strftime(time_buffer, sizeof(time_buffer), "%Y-%m-%d_%H-%M-%S", tm_info);
+            // 检查local_path文件夹是否存在，如果不存在则创建
+           
+            std::string local_path_ = std::string(buffer) + "/local_path/";
+             // 生成时间作为文件夹名称
+            std::string folder_name = local_path_ + std::string(time_buffer);
+            static int loopCount = 1;
+            std::string fileName = folder_name + std::to_string(loopCount) + ".txt";
             std::ofstream outFile;
             outFile.open(fileName);
             for(size_t i = 0; i < path.cols(); ++i){
@@ -1885,7 +1911,6 @@ class local_trajs_node : public rclcpp::Node{
         
         //减速路径的发布
         void DecelerationPathRelease(Eigen::MatrixXd &dec_path){
-            PubDecelerateFlag(true); // 
             for (size_t i = 0; i < dec_path.cols(); ++i){
                 dec_path(8, i) = dec_path(7, i) + heading_time_ + 0.1;
             }
@@ -1893,7 +1918,8 @@ class local_trajs_node : public rclcpp::Node{
             std::vector<double> localTrajReshape(&dec_path(0), dec_path.data() + dec_path.size());
             local_trajs_msg.data = localTrajReshape;
             local_to_control_publisher->publish(local_trajs_msg);
-            write_localpath(dec_path);
+            PubDecelerateFlag(true); // 
+            //write_localpath(dec_path);
             std_msgs::msg::Float64MultiArray local_trajs_msg2;
             std::vector<double> localTrajReshape2(&dec_path(0), dec_path.data() + dec_path.size());
             local_trajs_msg2.data = localTrajReshape2;
@@ -1937,9 +1963,6 @@ class local_trajs_node : public rclcpp::Node{
         rclcpp::TimerBase::SharedPtr timer_DecelerateFlag;
         rclcpp::TimerBase::SharedPtr timer_stop_line;
 
-
-
-                
         Eigen::VectorXd car;
         Eigen::VectorXd car_;
 

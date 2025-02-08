@@ -3,7 +3,7 @@
 pid5=$(pgrep -f test1)
 if [ -n "$pid5" ]; then
     echo "Killing test1 process with PID $pid5"
-    kill $pid5
+    kill -15 $pid5
 else
     echo "test1 process not found."
 fi
@@ -11,7 +11,7 @@ fi
 pid6=$(pgrep -f can_node)
 if [ -n "$pid6" ]; then
     echo "Killing can_node process with PID $pid6"
-    kill $pid6
+    kill -15 $pid6
 else
     echo "can_node process not found."
 fi
@@ -19,7 +19,7 @@ fi
 pid7=$(pgrep -f real_time_plot)
 if [ -n "$pid7" ]; then
     echo "Killing real_time_plot process with PID $pid7"
-    kill $pid7
+    kill -15 $pid7
 else
     echo "real_time_plot process not found."
 fi
@@ -28,15 +28,36 @@ source  /opt/ros/foxy/setup.bash
 sleep 1
 source install/setup.bash 
 
-# ros2 launch gnss gnss.launch.py  &
-# PID3=$!
-# sleep 1
+# 获取当前工作路径
+current_path=$(pwd)
+# 打印当前工作路径
+echo "当前工作路径是: $current_path"
+# 检查 output_txt 文件夹是否存在，如果不存在则创建它
+output_dir="${current_path}/output_txt"
+if [ ! -d "$output_dir" ]; then
+  echo "output_txt 文件夹不存在，正在创建..."
+  mkdir -p "$output_dir"
+else
+  echo "output_txt 文件夹已存在，忽略创建。"
+fi
+# 获取当前日期和时间，格式为 yyyy-mm-dd_HH-MM-SS
+log_filename="${current_path}/output_txt/$(date +"%Y-%m-%d_%H-%M-%S").txt"
+# 打印生成的日志文件名
+echo "日志文件名是: $log_filename"
 
-ros2 run hmi hmi ->log1.txt &
+localpath="${current_path}/local_path"
+if [ ! -d "$localpath" ]; then
+  echo "localpath 文件夹不存在，正在创建..."
+  mkdir -p "$localpath"
+else
+  rm -rf "$localpath"
+  mkdir -p "$localpath"
+fi
+# 运行第一个命令并将日志输出到动态命名的文件
+ros2 run hmi hmi -> "$log_filename" &
 PID1=$!
 
-
-rviz2 -d ~/longshan12_2/src/myrviz/default.rviz >/dev/null 2>&1  &
+rviz2 -d ${current_path}/src/myrviz/default.rviz >/dev/null 2>&1  &
 PID2=$!
 
 # Optionally, you can wait for both commands to finish
@@ -45,19 +66,19 @@ wait
 kill_ros2_processes() {
     echo "Killing ROS 2 processes..."
     # Kill all ros2 related processes
-    kill $(ps aux | grep '[r]os2' | awk '{print $2}')
+    kill -15 $(ps aux | grep '[r]os2' | awk '{print $2}')
 
     pid=$(pgrep -f Lidar_Processing_node)
     if [ -n "$pid" ]; then
         echo "Killing Lidar_Processing_node process with PID $pid"
-        kill $pid
+        kill -15 $pid
     else
         echo "Lidar_Processing_node process not found."
     fi
     pid2=$(pgrep -f points_and_lines_publisher)
     if [ -n "$pid2" ]; then
         echo "Killing points_and_lines_publisher process with PID $pid2"
-        kill $pid2
+        kill -15 $pid2
     else
         echo "points_and_lines_publisher process not found."
     fi
@@ -65,7 +86,7 @@ kill_ros2_processes() {
     pid3=$(pgrep -f can_node)
     if [ -n "$pid3" ]; then
         echo "Killing can_node process with PID $pid3"
-        kill $pid3
+        kill -15 $pid3
     else
         echo "can_node process not found."
     fi
@@ -73,7 +94,7 @@ kill_ros2_processes() {
     pid4=$(pgrep -f gnss_node)
     if [ -n "$pid4" ]; then
         echo "Killing gnss_node process with PID $pid4"
-        kill $pid4
+        kill -15 $pid4
     else
         echo "gnss_node process not found."
     fi
@@ -81,7 +102,7 @@ kill_ros2_processes() {
     pid5=$(pgrep -f gnss_sync_node)
     if [ -n "$pid5" ]; then
         echo "Killing gnss_sync_node process with PID $pid5"
-        kill $pid5
+        kill -15 $pid5
     else
         echo "gnss_sync_node process not found."
     fi
@@ -89,7 +110,7 @@ kill_ros2_processes() {
     pid8=$(pgrep -f real_time_plot)
     if [ -n "$pid8" ]; then
         echo "Killing real_time_plot process with PID $pid8"
-        kill $pid8
+        kill -15 $pid8
     else
         echo "real_time_plot process not found."
     fi
@@ -97,7 +118,7 @@ kill_ros2_processes() {
     pidlocal=$(pgrep -f local_node4)
     if [ -n "$pidlocal" ]; then
         echo "Killing local_node4 process with PID $pidlocal"
-        kill $pidlocal
+        kill -15 $pidlocal
     else
         echo "local_node4 process not found."
     fi

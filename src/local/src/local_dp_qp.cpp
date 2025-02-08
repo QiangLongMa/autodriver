@@ -49,7 +49,7 @@ void local_dp_qp::setPatam(double car_a,double car_v,double car_s,double car_l,d
     all_distance = all_distances;
     one_distance = one_distances;//单个距离 
     globalPath_  = std::move(globalPath);
-    CAR_INDEX_ = car_index; //车辆位置编号 
+    CAR_INDEX_ = car_index; //车辆位置编号  
     SIZE_ = 2*one_distances-1;
     getsamplepoints();
     Setpraents(sample_points_);
@@ -66,6 +66,8 @@ int local_dp_qp::GetoptTrajxy(Eigen::MatrixXd &optTrajxy,std::vector<Eigen::Vect
   CalculateCostTable();//计算代价 
   return FinalPath(optTrajxy,frenet_path);//获取路径  
 }
+
+
 
 //设置
 void local_dp_qp::Setpraents(const std::vector<std::vector<std::vector<SlPoint>>>& sample_points) {
@@ -108,7 +110,7 @@ void local_dp_qp::CalculateCostTable() {
   }
   auto end = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double> duration = end - start;
-  std::cout << "AllCosttime: " << duration.count()<< " 秒" << std::endl;
+  //std::cout << "AllCosttime: " << duration.count()<< " 秒" << std::endl;
 }
 
 void local_dp_qp::CalculateCostAt(const int32_t s, const int32_t l,  std::vector<std::vector<Node>> &single_cost)
@@ -297,7 +299,7 @@ int local_dp_qp::FinalPath(Eigen::MatrixXd &optTrajxy, std::vector<Eigen::Vector
       if (!flag) {
         return 0;
       }
-      std::cout<<"slqp_.flag"<< flag <<std::endl;
+      //std::cout<<"slqp_.flag"<< flag <<std::endl;
       // for (size_t i = 0; i < frenet_path_qp.size(); i++)
       // {
       //   std::cout<<frenet_path_qp[i](0)<<" "<<frenet_path_qp[i](1)<<" "<<frenet_path_qp[i](2)<<std::endl;
@@ -521,13 +523,13 @@ void local_dp_qp::referencePath(const Eigen::MatrixXd& xy, Eigen::MatrixXd& path
     }
   }
   try{
-    std::cout<<"getspeeduseST"<<std::endl;
+    //std::cout<<"getspeeduseST"<<std::endl;
     getspeeduseST(path,frenetpath);
     if(Target_v == 0){//如果目标速度为0 则最后一点的速度和加速度一定是0
       path(2, path.cols()-1) = 0;
       path(6, path.cols()-1) = 0;
     }
-    std::cout<<"getspeeduseST over"<<std::endl;
+    //std::cout<<"getspeeduseST over"<<std::endl;
     // }else{
     //   getspeeduselinearinterpolation(path);
     // }
@@ -952,7 +954,7 @@ void local_dp_qp::getspeeduseST(Eigen::MatrixXd &path,std::vector<Eigen::Vector4
     bool speed_qp_ = PiecewiseJerkSpeedOptimizer_.Process(CAR_V,CAR_A,path,speeddata,speeddata.back().s,speeddata.back().t,
                                                           speedlimit_,curise_speed,output_speed_data,config);
     
-    std::cout<<"speed_qp_: "<<speed_qp_<<std::endl;
+    //std::cout<<"speed_qp_: "<<speed_qp_<<std::endl;
     //std::cout<<"path: "<<std::endl;
     //std::cout<<path.transpose()<<std::endl;
 

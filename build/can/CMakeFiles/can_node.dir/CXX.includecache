@@ -33,6 +33,12 @@ linux/can.h
 -
 linux/can/raw.h
 -
+fcntl.h
+-
+cstring
+-
+cerrno
+-
 unistd.h
 -
 thread

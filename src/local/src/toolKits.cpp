@@ -392,7 +392,7 @@ namespace tool{
             1-------4
 			车子的四个顶点 
         */
-		car_Fpoint.resize(2,4);
+		car_Fpoint.resize(2,5);
 		double thea = car_center[2]; //转换
         double zhouju = 1.308;
         double cos_thea = cos(thea);
@@ -414,6 +414,10 @@ namespace tool{
 		//4
 		car_Fpoint(0,3) = (length/2)*cos_thea-(-wigth/2)*sin_thea+term0;
 		car_Fpoint(1,3) = (length/2)*sin_thea+(-wigth/2)*cos_thea+term1;
+
+		car_Fpoint(0,4) = term0;
+		car_Fpoint(1,4) = term1;
+
 	}
 
 	void get_car_fourpoint_sl(Eigen::MatrixXd& car_Fpoint, int index, std::vector<std::pair<double, double>> &car_Fpoint_sl, Eigen::MatrixXd& globalpath){
@@ -567,8 +571,8 @@ namespace tool{
         car_y_min = std::min({car_point(1,0),car_point(1,1),car_point(1,2),car_point(1,3)});
         car_x_max = std::max({car_point(0,0),car_point(0,1),car_point(0,2),car_point(0,3)});
         car_y_max = std::max({car_point(1,0),car_point(1,1),car_point(1,2),car_point(1,3)});
-        car_centre_x = (car_point(0,0)+car_point(0,1)+car_point(0,2)+car_point(0,3))/4;
-        car_centre_y = (car_point(1,0)+car_point(1,1)+car_point(1,2)+car_point(1,3))/4;
+        car_centre_x = car_point(0, 4);
+        car_centre_y = car_point(1, 4);
         double cos_heading_ = std::cos(thea);    
         double sin_heading_ = std::sin(thea);
         

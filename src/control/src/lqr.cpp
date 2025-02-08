@@ -12,7 +12,6 @@ int lqr::stateSpaceMatrix(Eigen::Matrix<double, 3, 3>& A, Eigen::Matrix<double, 
 	return 0;
 }
 
-
 double lqr::lqrComputeCommand(double yaw, double delta_x ,double delta_y,double delta_yaw , 
             double curvature,double vel, double l, double dt,Eigen::MatrixXd& Q, Eigen::MatrixXd& R)
 {
